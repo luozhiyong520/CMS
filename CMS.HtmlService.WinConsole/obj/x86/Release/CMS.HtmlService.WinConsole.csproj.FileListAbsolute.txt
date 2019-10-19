@@ -74,3 +74,6 @@ E:\UP\mycms\v2.0\CMS.HtmlService.WinConsole\bin\Release\CMS.DAL.pdb
 E:\UP\mycms\v2.0\CMS.HtmlService.WinConsole\obj\x86\Release\CMS.HtmlService.WinConsole.csprojResolveAssemblyReference.cache
 E:\UP\mycms\v2.0\CMS.HtmlService.WinConsole\obj\x86\Release\CMSQY.HtmlService.WinConsole.exe
 E:\UP\mycms\v2.0\CMS.HtmlService.WinConsole\obj\x86\Release\CMSQY.HtmlService.WinConsole.pdb
+E:\github\cms\CMS.HtmlService.WinConsole\bin\Release\CMSQY.HtmlService.WinConsole.exe.config
+E:\github\cms\CMS.HtmlService.WinConsole\obj\x86\Release\CMSQY.HtmlService.WinConsole.exe
+E:\github\cms\CMS.HtmlService.WinConsole\obj\x86\Release\CMSQY.HtmlService.WinConsole.pdb
