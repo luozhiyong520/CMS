@@ -1,0 +1,60 @@
+html, body, h1, h2, h3,h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, images, ins, kbd, q, s, samp, small, strike, strong, sup, sub, tt, var, u, i, center, ul, ol, li, dl, dt, dd, table, tr, th, td, thead, tbody, tfoot, caption, form, fieldset, legend, input, textarea, select, label, applet, object, iframe, audio, video, canvas, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    border: 0 none;
+    font-family: inherit;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    outline: 0 none;
+    list-style:none;
+    text-decoration:none;
+    padding: 0;
+    vertical-align: baseline;
+}
+i{ font-style:normal}
+.bodybg{ background: #ebebeb url(http://img.stock.com/upchinav2/images/zp_top.jpg) top left repeat-x;} 
+img{ display:block; border: none;}
+.clear:after{content:'.';clear:both;display:block;height:0;visibility:hidden;
+line-height:0;}
+.clear{zoom:1;}
+.zaopan_top{ width:827px; margin:0 auto; position:relative;}
+.zp_time{ background:url(http://img.stock.com/upchinav2/images/zaopan_top.jpg) no-repeat; width:826px; height:118px; position:relative;}
+.zp_time span{ position:absolute; left:465px; top:28px; color:#fff;}
+.zp_1, .zp_2, .zp_3, .zp_4, .zp_5{ border:1px solid #ccc; margin-top:15px;}
+.zp_0{ background:#fff url(http://img.stock.com/upchinav2/images/zp_0.jpg) no-repeat; height: auto; border:1px solid #FC0;  margin-top:15px; padding:10px 50px 10px 92px; text-indent:40px; color:#474747; font-size:16px; font-weight:700; line-height:160%;}
+.zp_1{ background: #fff url(http://img.stock.com/upchinav2/images/zp_1.jpg) left top no-repeat; }
+.zp_3{ background: #fff url(http://img.stock.com/upchinav2/images/zp_3.jpg) left top no-repeat;}
+.zp_4{ background: #fff url(http://img.stock.com/upchinav2/images/zp_4.jpg) left top no-repeat;}
+.zp_5{ background: #fff url(http://img.stock.com/upchinav2/images/zp_5.jpg) left top no-repeat;}
+.zp_6{ background: #fff url(http://img.stock.com/upchinav2/images/zp_6.jpg) left top no-repeat;}
+
+.zp_1 ul, .zp_3 ul{ float:left; margin-top:15px; margin-bottom:20px; padding:20px; width:352px;}
+.zp_1 ul li, .zp_3 ul li{ line-height:200%; font-size:14px;}
+.u_1{ border-right:1px dashed #999;}
+.zp_2{ background: #fff url(http://img.stock.com/upchinav2/images/zp_2.jpg) left top no-repeat; padding-bottom:5px;}
+.zp_2 p{ padding:20px 0; margin:0 40px 0 70px; line-height:180%; font-size:14px; position:relative;}
+.zp_2 p.p_1{ padding:40px 0 20px;}
+.zp_2 b, .zp_3 b{ color:#1e5096;}
+.zp_2 i{ background:url(http://img.stock.com/upchinav2/images/zp_icon.jpg) no-repeat; width:34px; height:18px;left:-40px; display:block; position:absolute; color:#fff; font-weight:700;margin-top:5px; *margin-top:0px; text-align:center; line-height:18px;}
+.zp_4 .img_tab, .zp_5 .img_tab{/* padding:55px 0 40px 70px;*/ margin:20px auto}
+.zp_6{padding-top:20px;}
+.zp_6 dt{ padding:10px 0; font-weight:700;}
+.zp_6 dl{ padding:15px 0;}
+.zp_6 dl dd{ float:left; width:140px; margin-left:5px;}
+.zp_6 dl dd input, .zp_6 dl dd label{ height:25px;float:left;line-height:25px;}
+.zp_6 dl dd input{ vertical-align:middle; }
+.zp_6 dl dd label{width:100px; display:block; padding:0 10px; }
+.six{ position:relative}
+.zp_tp{ width:450px; margin:0 auto; padding:40px 0;}
+.zp_6 .six a{ width:189px; height:44px; display:block; margin:20px 0 0 30px} 
+.deletetext{ position:absolute; cursor:pointer; right:140px; top:14px; font-size:14px; font-weight:bold}
+.f_z1{ background:url(http://img.stock.com/upchinav2/images/bq1.jpg) 50px 0 no-repeat;}
+.f_z2{ background:url(http://img.stock.com/upchinav2/images/bq2.jpg) 50px 0 no-repeat;}
+.f_z3{ background:url(http://img.stock.com/upchinav2/images/bq3.jpg) 50px 0 no-repeat;}
+#zp_textarea{border:1px solid #ccc;  color:#999;}
+.tip{ background: url(http://img.stock.com/upchinav2/images/tips.jpg) no-repeat; width:101px; height:215px; position:absolute; top:400px; right:-121px; padding:55px 10px 0;}
+.tip a{ height:25px; width:102px; display:block; margin-bottom:6px;}
+.zp_click1 a{ height:45px; display:block; width:689px;}
+.hide{ display:none;}
+.border_dashed{ border-bottom:1px dashed #999; height:1px;margin:0 40px 0 70px;}

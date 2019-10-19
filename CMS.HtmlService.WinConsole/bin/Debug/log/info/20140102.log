@@ -1,0 +1,16 @@
+2014-01-02 10:30:25,982 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-01-02 10:30:26,044 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-01-02 10:30:26,073 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-01-02 10:31:49,826 [9] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-01-02 10:31:49,850 [9] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-01-02 10:31:49,863 [9] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-01-02 10:33:02,089 [10] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-01-02 10:33:02,113 [10] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-01-02 10:33:02,127 [10] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-01-02 10:34:31,574 [9] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-01-02 10:34:31,602 [9] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-01-02 10:34:31,612 [9] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-01-02 10:38:06,703 [8] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-01-02 10:38:06,728 [8] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-01-02 10:38:06,741 [8] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-01-02 10:38:40,806 [11] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\sasweb\zhuanti\/index.html成功！

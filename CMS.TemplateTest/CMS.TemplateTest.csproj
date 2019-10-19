@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AA48BBD1-30F0-40B1-B33F-9CE640CCEC77}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CMS.TemplateTest</RootNamespace>
+    <AssemblyName>CMS.TemplateTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CMS.BLL\CMS.BLL.csproj">
+      <Project>{DD52449A-CEB0-48FB-80DE-047D4771F5B9}</Project>
+      <Name>CMS.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.HtmlService.Contract\CMS.HtmlService.Contract.csproj">
+      <Project>{D2F4C901-F53A-43AB-A9AA-5B3E189C3F3B}</Project>
+      <Name>CMS.HtmlService.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.HTMLService\CMS.HtmlService.csproj">
+      <Project>{29F916BD-FF25-4868-89BC-D1706A8E3076}</Project>
+      <Name>CMS.HtmlService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.Model\CMS.Model.csproj">
+      <Project>{6617DEF1-FE4C-47F8-814A-277480A68216}</Project>
+      <Name>CMS.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.Template\CMS.Template.csproj">
+      <Project>{68166A95-3810-44A8-836E-4DF7EFF94E93}</Project>
+      <Name>CMS.Template</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{E0C4897C-F5AA-4111-A4D1-14977470636F}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Factory\Factory.csproj">
+      <Project>{0FDA71F1-A628-42A7-9D48-0027632AE277}</Project>
+      <Name>Factory</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="template\include\common\v2012\commonjs.shtml.bak" />
+    <None Include="template\include\lib\config.php" />
+    <None Include="template\include\lib\config.php.bak" />
+    <None Include="template\include\lib\lib.command.php" />
+    <None Include="template\include\lib\lib.function.php" />
+    <None Include="template\include\lib\lib.hex.php" />
+    <None Include="template\include\lib\lib.hex.php.bak" />
+    <None Include="template\include\lib\lib.main.php" />
+    <None Include="template\include\lib\lib.mysql.php" />
+    <None Include="template\include\lib\lib.mysql.php.bak" />
+    <None Include="template\include\lib\lib.page.php" />
+    <None Include="template\include\lib\lib.php" />
+    <None Include="template\include\lib\lib.php.bak" />
+    <None Include="template\include\lib\lib.timer.php" />
+    <None Include="template\include\lib\libs\oe.config.php" />
+    <None Include="template\include\lib\libs\oe.data.php" />
+    <None Include="template\include\lib\libs\oe.function.php" />
+    <None Include="template\include\lib\libs\oe.label.php" />
+    <None Include="template\include\lib\libs\oe.page.php" />
+    <None Include="template\include\lib\libs\var.inc.php" />
+    <None Include="template\include\lib\smarty\debug.tpl" />
+    <None Include="template\include\lib\smarty\plugins\block.php.php" />
+    <None Include="template\include\lib\smarty\plugins\block.textformat.php" />
+    <None Include="template\include\lib\smarty\plugins\function.counter.php" />
+    <None Include="template\include\lib\smarty\plugins\function.cycle.php" />
+    <None Include="template\include\lib\smarty\plugins\function.fetch.php" />
+    <None Include="template\include\lib\smarty\plugins\function.html_checkboxes.php" />
+    <None Include="template\include\lib\smarty\plugins\function.html_image.php" />
+    <None Include="template\include\lib\smarty\plugins\function.html_options.php" />
+    <None Include="template\include\lib\smarty\plugins\function.html_radios.php" />
+    <None Include="template\include\lib\smarty\plugins\function.html_select_date.php" />
+    <None Include="template\include\lib\smarty\plugins\function.html_select_time.php" />
+    <None Include="template\include\lib\smarty\plugins\function.html_table.php" />
+    <None Include="template\include\lib\smarty\plugins\function.mailto.php" />
+    <None Include="template\include\lib\smarty\plugins\function.math.php" />
+    <None Include="template\include\lib\smarty\plugins\function.popup.php" />
+    <None Include="template\include\lib\smarty\plugins\function.popup_init.php" />
+    <None Include="template\include\lib\smarty\plugins\modifier.capitalize.php" />
+    <None Include="template\include\lib\smarty\plugins\modifier.date_format.php" />
+    <None Include="template\include\lib\smarty\plugins\modifier.debug_print_var.php" />
+    <None Include="template\include\lib\smarty\plugins\modifier.escape.php" />
+    <None Include="template\include\lib\smarty\plugins\modifier.regex_replace.php" />
+    <None Include="template\include\lib\smarty\plugins\modifier.replace.php" />
+    <None Include="template\include\lib\smarty\plugins\modifier.smartTruncate.php" />
+    <None Include="template\include\lib\smarty\plugins\modifier.spacify.php" />
+    <None Include="template\include\lib\smarty\plugins\modifier.truncate.php" />
+    <None Include="template\include\lib\smarty\plugins\modifier.truncate_cn.php" />
+    <None Include="template\include\lib\smarty\plugins\modifier.truncate_cn.php.bak" />
+    <None Include="template\include\lib\smarty\plugins\modifiercompiler.cat.php" />
+    <None Include="template\include\lib\smarty\plugins\modifiercompiler.count_characters.php" />
+    <None Include="template\include\lib\smarty\plugins\modifiercompiler.count_paragraphs.php" />
+    <None Include="template\include\lib\smarty\plugins\modifiercompiler.count_sentences.php" />
+    <None Include="template\include\lib\smarty\plugins\modifiercompiler.count_words.php" />
+    <None Include="template\include\lib\smarty\plugins\modifiercompiler.default.php" />
+    <None Include="template\include\lib\smarty\plugins\modifiercompiler.indent.php" />
+    <None Include="template\include\lib\smarty\plugins\modifiercompiler.lower.php" />
+    <None Include="template\include\lib\smarty\plugins\modifiercompiler.noprint.php" />
+    <None Include="template\include\lib\smarty\plugins\modifiercompiler.string_format.php" />
+    <None Include="template\include\lib\smarty\plugins\modifiercompiler.strip.php" />
+    <None Include="template\include\lib\smarty\plugins\modifiercompiler.strip_tags.php" />
+    <None Include="template\include\lib\smarty\plugins\modifiercompiler.upper.php" />
+    <None Include="template\include\lib\smarty\plugins\modifiercompiler.wordwrap.php" />
+    <None Include="template\include\lib\smarty\plugins\outputfilter.trimwhitespace.php" />
+    <None Include="template\include\lib\smarty\plugins\shared.escape_special_chars.php" />
+    <None Include="template\include\lib\smarty\plugins\shared.make_timestamp.php" />
+    <None Include="template\include\lib\smarty\plugins\variablefilter.htmlspecialchars.php" />
+    <None Include="template\include\lib\smarty\Smarty.class.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_cacheresource_file.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compilebase.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_append.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_assign.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_block.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_break.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_call.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_capture.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_config_load.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_continue.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_debug.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_eval.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_extends.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_for.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_foreach.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_function.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_if.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_include.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_include_php.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_insert.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_ldelim.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_nocache.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_private_block_plugin.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_private_function_plugin.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_private_modifier.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_private_object_block_function.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_private_object_function.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_private_print_expression.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_private_registered_block.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_private_registered_function.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_private_special_variable.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_rdelim.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_section.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_compile_while.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_config.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_configfilelexer.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_configfileparser.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_config_file_compiler.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_data.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_debug.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_filter.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_filter_handler.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_function_call_handler.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_nocache_insert.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_parsetree.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_register.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_resource_eval.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_resource_extends.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_resource_file.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_resource_php.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_resource_registered.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_resource_stream.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_resource_string.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_smartytemplatecompiler.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_template.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_templatecompilerbase.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_templatelexer.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_templateparser.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_utility.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_wrapper.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_internal_write_file.php" />
+    <None Include="template\include\lib\smarty\sysplugins\smarty_security.php" />
+    <None Include="template\include\web\v2012\index\common\commonjs.shtml.bak" />
+    <None Include="template\include\web\v2012\list\common\commonjs.shtml.bak" />
+    <None Include="template\include\web\v2012\list\common\contextcss.shtml.bak" />
+    <None Include="模板引擎标签说明.docx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="list.shtml" />
+    <Content Include="news.shtml" />
+    <Content Include="template\editioc.gif" />
+    <Content Include="template\include.txt" />
+    <Content Include="template\include\common\v2012\commonfooter.shtml" />
+    <Content Include="template\include\common\v2012\commonjs.shtml" />
+    <Content Include="template\include\common\v2012\commonnav.shtml" />
+    <Content Include="template\include\common\v2012\commonnav_xm.shtml" />
+    <Content Include="template\include\common\v2012\commontop.shtml" />
+    <Content Include="template\include\common\v2012\commontop1130.shtml" />
+    <Content Include="template\include\common\v2012\commontop_xm.shtml" />
+    <Content Include="template\include\common\v2012\hqbj.shtml" />
+    <Content Include="template\include\common\v2012\jctjright_xm.shtml" />
+    <Content Include="template\include\common\v2012\scriptcommonhead.shtml" />
+    <Content Include="template\include\common\v2012\stockbox.shtml" />
+    <Content Include="template\include\common\v2012\stocktest.shtml" />
+    <Content Include="template\include\common\v2012\videonav.shtml" />
+    <Content Include="template\include\common\v2012\videovote.shtml" />
+    <Content Include="template\include\soft\v2012\productjdt2.shtml" />
+    <Content Include="template\include\soft\v2012\productnav.shtml" />
+    <Content Include="template\include\web\v2012\index\common\commonjs.shtml" />
+    <Content Include="template\include\web\v2012\index\common\contextcss.shtml" />
+    <Content Include="template\include\web\v2012\list\common\commonjs.shtml" />
+    <Content Include="template\include\web\v2012\list\common\contextcss.shtml" />
+    <Content Include="template\index.shtml" />
+    <Content Include="template\index_template.shtml" />
+    <Content Include="template\list_template.shtml" />
+    <Content Include="template\list\2011ssgsaqpj.shtml" />
+    <Content Include="template\list\aqtzgs.shtml" />
+    <Content Include="template\list\aqtznc.shtml" />
+    <Content Include="template\list\bgcj-2.shtml" />
+    <Content Include="template\list\bgcj.shtml" />
+    <Content Include="template\list\bjzm.shtml" />
+    <Content Include="template\list\cjrp.shtml" />
+    <Content Include="template\list\common\list-focus-img.shtml" />
+    <Content Include="template\list\common\listfocusimg.shtml" />
+    <Content Include="template\list\common\listright.shtml" />
+    <Content Include="template\list\cpdt.shtml" />
+    <Content Include="template\list\cppx.shtml" />
+    <Content Include="template\list\dizyhjbzp.shtml" />
+    <Content Include="template\list\dpzs-2.shtml" />
+    <Content Include="template\list\dpzs-3.shtml" />
+    <Content Include="template\list\dpzs-4.shtml" />
+    <Content Include="template\list\dpzs-5.shtml" />
+    <Content Include="template\list\dpzs-6.shtml" />
+    <Content Include="template\list\dpzs-7.shtml" />
+    <Content Include="template\list\dpzs.shtml" />
+    <Content Include="template\list\dtgz-2.shtml" />
+    <Content Include="template\list\dtgz-3.shtml" />
+    <Content Include="template\list\dtgz-4.shtml" />
+    <Content Include="template\list\dtgz.shtml" />
+    <Content Include="template\list\dwzj-2.shtml" />
+    <Content Include="template\list\dwzj.shtml" />
+    <Content Include="template\list\ggxw-10.shtml" />
+    <Content Include="template\list\ggxw-2.shtml" />
+    <Content Include="template\list\ggxw-3.shtml" />
+    <Content Include="template\list\ggxw-4.shtml" />
+    <Content Include="template\list\ggxw-5.shtml" />
+    <Content Include="template\list\ggxw-6.shtml" />
+    <Content Include="template\list\ggxw-7.shtml" />
+    <Content Include="template\list\ggxw-8.shtml" />
+    <Content Include="template\list\ggxw-9.shtml" />
+    <Content Include="template\list\ggxw.shtml" />
+    <Content Include="template\list\gsyw-2.shtml" />
+    <Content Include="template\list\gsyw-3.shtml" />
+    <Content Include="template\list\gsyw.shtml" />
+    <Content Include="template\list\hddt.shtml" />
+    <Content Include="template\list\jbzc.shtml" />
+    <Content Include="template\list\jbzp.shtml" />
+    <Content Include="template\list\jcyl.shtml" />
+    <Content Include="template\list\jgsd.shtml" />
+    <Content Include="template\list\jpjc.shtml" />
+    <Content Include="template\list\jrtt-2.shtml" />
+    <Content Include="template\list\jrtt-3.shtml" />
+    <Content Include="template\list\jrtt.shtml" />
+    <Content Include="template\list\list.shtml" />
+    <Content Include="template\list\mhcj-2.shtml" />
+    <Content Include="template\list\mhcj.shtml" />
+    <Content Include="template\list\mvcj-2.shtml" />
+    <Content Include="template\list\mvcj.shtml" />
+    <Content Include="template\list\qbsl.shtml" />
+    <Content Include="template\list\sp.shtml" />
+    <Content Include="template\list\ssgs-2.shtml" />
+    <Content Include="template\list\ssgs-3.shtml" />
+    <Content Include="template\list\ssgs-4.shtml" />
+    <Content Include="template\list\ssgs-5.shtml" />
+    <Content Include="template\list\ssgs-6.shtml" />
+    <Content Include="template\list\ssgs-7.shtml" />
+    <Content Include="template\list\ssgs-8.shtml" />
+    <Content Include="template\list\ssgs.shtml" />
+    <Content Include="template\list\ssjp.shtml" />
+    <Content Include="template\list\swbsquptz.shtml" />
+    <Content Include="template\list\twbd.shtml" />
+    <Content Include="template\list\upkp-2.shtml" />
+    <Content Include="template\list\upkp.shtml" />
+    <Content Include="template\list\xflc.shtml" />
+    <Content Include="template\list\xypjyx.shtml" />
+    <Content Include="template\list\ztdj.shtml" />
+    <Content Include="template\list\zxht.shtml" />
+    <Content Include="template\list\zxyj.shtml" />
+    <Content Include="template\t3.txt" />
+    <Content Include="template\t4.txt" />
+    <Content Include="template\new_template.shtml" />
+    <Content Include="template\xm_index_templae.shtml" />
+    <Content Include="template\xm_list_template.shtml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

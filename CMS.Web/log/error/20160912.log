@@ -1,0 +1,485 @@
+【异常时间】：2016-09-12 11:05:32,625 [9] 
+【异常级别】：ERROR 
+【异常类型】：TargetInvocationException
+【异常堆栈】：   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SMVC.ActionExecutor.ExecuteActionInternal(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 52
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 23
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\Pipeline\ActionHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：调用的目标发生了异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/news/GetQueryInfo.aspx
+------------------------------------
+【异常时间】：2016-09-12 11:06:51,893 [10] 
+【异常级别】：ERROR 
+【异常类型】：TargetInvocationException
+【异常堆栈】：   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SMVC.ActionExecutor.ExecuteActionInternal(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 52
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 23
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\Pipeline\ActionHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：调用的目标发生了异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/news/GetQueryInfo.aspx?newsId=1
+------------------------------------
+【异常时间】：2016-09-12 13:38:45,307 [31] 
+【异常级别】：ERROR 
+【异常类型】：TargetInvocationException
+【异常堆栈】：   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SMVC.ActionExecutor.ExecuteActionInternal(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 52
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 23
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\Pipeline\ActionHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：调用的目标发生了异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/news/GetQueryInfo.aspx?newsId=1
+------------------------------------
+【异常时间】：2016-09-12 13:39:08,058 [27] 
+【异常级别】：ERROR 
+【异常类型】：TargetInvocationException
+【异常堆栈】：   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SMVC.ActionExecutor.ExecuteActionInternal(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 52
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 23
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\Pipeline\ActionHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：调用的目标发生了异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/news/GetQueryInfo.aspx?keywords=abcd
+------------------------------------
+【异常时间】：2016-09-12 13:39:09,364 [28] 
+【异常级别】：ERROR 
+【异常类型】：TargetInvocationException
+【异常堆栈】：   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SMVC.ActionExecutor.ExecuteActionInternal(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 52
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 23
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\Pipeline\ActionHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：调用的目标发生了异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/news/GetQueryInfo.aspx?keywords=abcd
+------------------------------------
+【异常时间】：2016-09-12 16:53:08,532 [47] 
+【异常级别】：ERROR 
+【异常类型】：HttpUnhandledException
+【异常堆栈】：   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.user_userpass_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\ed67a1e2\1c6f2b30\App_Web_1ysconxn.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：引发类型为“System.Web.HttpUnhandledException”的异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/user/userpass.aspx?ModuleId=103
+------------------------------------
+【异常时间】：2016-09-12 16:59:55,267 [50] 
+【异常级别】：ERROR 
+【异常类型】：HttpCompileException
+【异常堆栈】：   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   在 SMVC.MvcPageHandlerFactory.GetHandler(HttpContext context, String requestType, String url, String pathTranslated) 位置 E:\UP\mycms\v2.0\SMVC\Pipeline\HandlerFactory.cs:行号 41
+   在 System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：e:\UP\mycms\v2.0\CMS.Web\user\userpass.aspx(20): error CS1502: 与“System.IO.TextWriter.Write(char)”最匹配的重载方法具有一些无效参数
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/user/userpass.aspx?ModuleId=103
+------------------------------------
+【异常时间】：2016-09-12 17:10:00,124 [48] 
+【异常级别】：ERROR 
+【异常类型】：HttpUnhandledException
+【异常堆栈】：   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.user_userpass_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\ed67a1e2\1c6f2b30\App_Web_nym4jfle.2.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：引发类型为“System.Web.HttpUnhandledException”的异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/user/userpass.aspx?ModuleId=103
+------------------------------------
+【异常时间】：2016-09-12 17:11:29,964 [48] 
+【异常级别】：ERROR 
+【异常类型】：HttpUnhandledException
+【异常堆栈】：   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.user_userpass_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\ed67a1e2\1c6f2b30\App_Web_pmzkbfmy.0.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：引发类型为“System.Web.HttpUnhandledException”的异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/user/userpass.aspx?ModuleId=103
+------------------------------------
+【异常时间】：2016-09-12 17:20:36,072 [36] 
+【异常级别】：ERROR 
+【异常类型】：HttpUnhandledException
+【异常堆栈】：   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.user_userpass_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\ed67a1e2\1c6f2b30\App_Web_cx0veknq.3.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：引发类型为“System.Web.HttpUnhandledException”的异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/user/userpass.aspx?ModuleId=103
+------------------------------------
+【异常时间】：2016-09-12 17:20:37,644 [38] 
+【异常级别】：ERROR 
+【异常类型】：HttpException
+【异常堆栈】：   在 System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   在 SMVC.PageExecutor.Render(HttpContext context, String pageVirtualPath, Object model) 位置 E:\UP\mycms\v2.0\SMVC\MVC\PageExecutor.cs:行号 39
+   在 SMVC.PageResult.SMVC.IActionResult.Output(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionResult.cs:行号 51
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 32
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\Pipeline\ActionHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：执行处理程序“ASP.user_userlist_aspx”的子请求时出错。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/user/userlist.aspx?ModuleId=21
+------------------------------------
+【异常时间】：2016-09-12 17:20:40,485 [18] 
+【异常级别】：ERROR 
+【异常类型】：HttpUnhandledException
+【异常堆栈】：   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.user_userpass_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\ed67a1e2\1c6f2b30\App_Web_cx0veknq.3.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：引发类型为“System.Web.HttpUnhandledException”的异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/user/userpass.aspx?ModuleId=103
+------------------------------------
+【异常时间】：2016-09-12 17:20:42,660 [43] 
+【异常级别】：ERROR 
+【异常类型】：HttpException
+【异常堆栈】：   在 System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   在 SMVC.PageExecutor.Render(HttpContext context, String pageVirtualPath, Object model) 位置 E:\UP\mycms\v2.0\SMVC\MVC\PageExecutor.cs:行号 39
+   在 SMVC.PageResult.SMVC.IActionResult.Output(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionResult.cs:行号 51
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 32
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\Pipeline\ActionHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：执行处理程序“ASP.user_userlist_aspx”的子请求时出错。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/user/userlist.aspx?ModuleId=21
+------------------------------------
+【异常时间】：2016-09-12 17:20:45,365 [45] 
+【异常级别】：ERROR 
+【异常类型】：HttpException
+【异常堆栈】：   在 System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   在 SMVC.PageExecutor.Render(HttpContext context, String pageVirtualPath, Object model) 位置 E:\UP\mycms\v2.0\SMVC\MVC\PageExecutor.cs:行号 39
+   在 SMVC.PageResult.SMVC.IActionResult.Output(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionResult.cs:行号 51
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 32
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\Pipeline\ActionHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：执行处理程序“ASP.user_userlist_aspx”的子请求时出错。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/user/userlist.aspx?ModuleId=21
+------------------------------------
+【异常时间】：2016-09-12 17:45:35,749 [10] 
+【异常级别】：ERROR 
+【异常类型】：HttpUnhandledException
+【异常堆栈】：   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.user_userpass_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\ed67a1e2\1c6f2b30\App_Web_3eaq3kvq.1.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：引发类型为“System.Web.HttpUnhandledException”的异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/user/userpass.aspx?ModuleId=103
+------------------------------------
+【异常时间】：2016-09-12 17:45:36,778 [78] 
+【异常级别】：ERROR 
+【异常类型】：HttpUnhandledException
+【异常堆栈】：   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.user_userpass_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\ed67a1e2\1c6f2b30\App_Web_3eaq3kvq.1.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：引发类型为“System.Web.HttpUnhandledException”的异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/user/userpass.aspx?ModuleId=103
+------------------------------------
+【异常时间】：2016-09-12 17:45:38,237 [71] 
+【异常级别】：ERROR 
+【异常类型】：HttpUnhandledException
+【异常堆栈】：   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.user_userpass_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\ed67a1e2\1c6f2b30\App_Web_3eaq3kvq.1.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：引发类型为“System.Web.HttpUnhandledException”的异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/user/userpass.aspx?ModuleId=103
+------------------------------------
+【异常时间】：2016-09-12 17:45:40,490 [78] 
+【异常级别】：ERROR 
+【异常类型】：HttpUnhandledException
+【异常堆栈】：   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.user_userpass_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\ed67a1e2\1c6f2b30\App_Web_3eaq3kvq.1.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：引发类型为“System.Web.HttpUnhandledException”的异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/user/userpass.aspx?ModuleId=103
+------------------------------------
+【异常时间】：2016-09-12 17:45:43,163 [72] 
+【异常级别】：ERROR 
+【异常类型】：HttpUnhandledException
+【异常堆栈】：   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.user_userpass_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\ed67a1e2\1c6f2b30\App_Web_3eaq3kvq.1.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：引发类型为“System.Web.HttpUnhandledException”的异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/user/userpass.aspx?ModuleId=103
+------------------------------------
+【异常时间】：2016-09-12 17:47:58,161 [71] 
+【异常级别】：ERROR 
+【异常类型】：HttpUnhandledException
+【异常堆栈】：   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.user_userpass_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\ed67a1e2\1c6f2b30\App_Web_bpsu1hfj.6.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：引发类型为“System.Web.HttpUnhandledException”的异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/user/userpass.aspx?ModuleId=103
+------------------------------------
+【异常时间】：2016-09-12 17:48:02,116 [74] 
+【异常级别】：ERROR 
+【异常类型】：HttpUnhandledException
+【异常堆栈】：   在 System.Web.UI.Page.HandleError(Exception e)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   在 System.Web.UI.Page.ProcessRequest()
+   在 System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   在 System.Web.UI.Page.ProcessRequest(HttpContext context)
+   在 ASP.user_userpass_aspx.ProcessRequest(HttpContext context) 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\vs\ed67a1e2\1c6f2b30\App_Web_bpsu1hfj.6.cs:行号 0
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：引发类型为“System.Web.HttpUnhandledException”的异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/user/userpass.aspx?ModuleId=103
+------------------------------------
+【异常时间】：2016-09-12 17:49:02,160 [72] 
+【异常级别】：ERROR 
+【异常类型】：TargetInvocationException
+【异常堆栈】：   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SMVC.ActionExecutor.ExecuteActionInternal(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 52
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 23
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\Pipeline\ActionHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：调用的目标发生了异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/AjaxUserManage/updatepass.cspx?pass=654321&_=1473673741996
+------------------------------------
+【异常时间】：2016-09-12 17:49:07,427 [10] 
+【异常级别】：ERROR 
+【异常类型】：TargetInvocationException
+【异常堆栈】：   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SMVC.ActionExecutor.ExecuteActionInternal(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 52
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 23
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\Pipeline\ActionHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：调用的目标发生了异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/AjaxUserManage/updatepass.cspx?pass=654321&_=1473673747418
+------------------------------------
+【异常时间】：2016-09-12 17:49:12,298 [10] 
+【异常级别】：ERROR 
+【异常类型】：TargetInvocationException
+【异常堆栈】：   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SMVC.ActionExecutor.ExecuteActionInternal(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 52
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 23
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\Pipeline\ActionHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：调用的目标发生了异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/AjaxUserManage/updatepass.cspx?pass=654321&_=1473673747418
+------------------------------------
+【异常时间】：2016-09-12 17:51:41,329 [10] 
+【异常级别】：ERROR 
+【异常类型】：TargetInvocationException
+【异常堆栈】：   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SMVC.ActionExecutor.ExecuteActionInternal(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 52
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 23
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\Pipeline\ActionHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：调用的目标发生了异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/AjaxUserManage/updatepass.cspx?pass=654321&_=1473673747418
+------------------------------------
+【异常时间】：2016-09-12 20:15:19,592 [9] 
+【异常级别】：ERROR 
+【异常类型】：TimeoutException
+【异常堆栈】：
+Server stack trace: 
+   在 System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 CMS.HtmlService.Contract.IHtmlEngine.CreateSingleNews(Int32 newsId, String operateType)
+   在 CMS.BLL.HtmlServer.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\UP\mycms\v2.0\CMS.BLL\HtmlServer.cs:行号 26
+【异常信息】：请求通道在等待 00:01:00 以后答复时超时。增加传递给请求调用的超时值，或者增加绑定上的 SendTimeout 值。分配给此操作的时间可能已经是更长超时的一部分。
+------------------------------------
+【异常时间】：2016-09-12 20:17:13,404 [8] 
+【异常级别】：ERROR 
+【异常类型】：CommunicationException
+【异常堆栈】：
+Server stack trace: 
+   在 System.ServiceModel.Channels.HttpChannelUtilities.ProcessGetResponseWebException(WebException webException, HttpWebRequest request, HttpAbortReason abortReason)
+   在 System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   在 System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 CMS.HtmlService.Contract.IHtmlEngine.CreateSingleNews(Int32 newsId, String operateType)
+   在 CMS.BLL.HtmlServer.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\UP\mycms\v2.0\CMS.BLL\HtmlServer.cs:行号 26
+【异常信息】：接收对 http://localhost:9130/HtmlService 的 HTTP 响应时发生错误。这可能是由于服务终结点绑定未使用 HTTP 协议造成的。这还可能是由于服务器中止了 HTTP 请求上下文(可能由于服务关闭)所致。有关详细信息，请参见服务器日志。
+------------------------------------
+【异常时间】：2016-09-12 20:27:19,653 [20] 
+【异常级别】：ERROR 
+【异常类型】：EndpointNotFoundException
+【异常堆栈】：
+Server stack trace: 
+   在 System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   在 System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   在 System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 CMS.HtmlService.Contract.IHtmlEngine.CreateSingleNews(Int32 newsId, String operateType)
+   在 CMS.BLL.HtmlServer.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\UP\mycms\v2.0\CMS.BLL\HtmlServer.cs:行号 26
+【异常信息】：没有终结点在侦听可以接受消息的 http://localhost:9130/HtmlService。这通常是由于不正确的地址或者 SOAP 操作导致的。如果存在此情况，请参见 InnerException 以了解详细信息。
+------------------------------------

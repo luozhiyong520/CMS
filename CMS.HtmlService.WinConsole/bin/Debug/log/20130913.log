@@ -1,0 +1,249 @@
+2013-09-13 13:54:46,741 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-13 13:54:46,760 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-13 13:54:46,764 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-13 13:55:17,362 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 13:55:58,945 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 13:57:56,254 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 14:16:41,158 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 15:05:33,111 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 15:06:06,835 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 15:07:03,089 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 15:15:30,069 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 15:16:33,363 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 15:21:58,332 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 15:22:45,906 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 15:25:42,845 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 15:28:16,496 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 15:44:29,425 [7] DEBUG log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，模板路径：/luo/upindex.shtml失败！
+2013-09-13 15:44:29,854 [7] DEBUG log [(null)] - CMS.Template.Except.ParseException: Invalid character in tag: $
+   在 CMS.Template.Lexer.TemplateLexer.NextTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 320
+   在 CMS.Template.Lexer.TemplateLexer.Next() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 202
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 32
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 110
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 212
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 112
+2013-09-13 15:46:18,030 [7] DEBUG log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，模板路径：/luo/upindex.shtml失败！
+2013-09-13 15:46:18,033 [7] DEBUG log [(null)] - CMS.Template.Except.ParseException: Invalid character in tag: $
+   在 CMS.Template.Lexer.TemplateLexer.NextTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 320
+   在 CMS.Template.Lexer.TemplateLexer.Next() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 202
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 32
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 110
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 212
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 112
+2013-09-13 15:46:44,174 [7] DEBUG log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，模板路径：/luo/upindex.shtml失败！
+2013-09-13 15:46:44,177 [7] DEBUG log [(null)] - CMS.Template.Except.ParseException: Invalid character in tag: $
+   在 CMS.Template.Lexer.TemplateLexer.NextTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 320
+   在 CMS.Template.Lexer.TemplateLexer.Next() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 202
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 32
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 110
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 212
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 112
+2013-09-13 15:47:15,495 [7] DEBUG log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，模板路径：/luo/upindex.shtml失败！
+2013-09-13 15:47:15,497 [7] DEBUG log [(null)] - CMS.Template.Except.ParseException: Invalid character in tag: $
+   在 CMS.Template.Lexer.TemplateLexer.NextTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 320
+   在 CMS.Template.Lexer.TemplateLexer.Next() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 202
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 32
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 110
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 212
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 112
+2013-09-13 15:47:28,145 [7] DEBUG log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，模板路径：/luo/upindex.shtml失败！
+2013-09-13 15:47:28,147 [7] DEBUG log [(null)] - CMS.Template.Except.ParseException: Invalid character in tag: $
+   在 CMS.Template.Lexer.TemplateLexer.NextTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 320
+   在 CMS.Template.Lexer.TemplateLexer.Next() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 202
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 32
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 110
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 212
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 112
+2013-09-13 15:47:52,086 [7] DEBUG log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，模板路径：/luo/upindex.shtml失败！
+2013-09-13 15:47:52,089 [7] DEBUG log [(null)] - CMS.Template.Except.ParseException: Invalid character in tag: $
+   在 CMS.Template.Lexer.TemplateLexer.NextTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 320
+   在 CMS.Template.Lexer.TemplateLexer.Next() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 202
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 32
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 110
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 212
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 112
+2013-09-13 15:48:13,714 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 15:49:51,015 [7] DEBUG log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，模板路径：/luo/upindex.shtml失败！
+2013-09-13 15:49:51,032 [7] DEBUG log [(null)] - CMS.Template.Except.ParseException: Invalid character in tag: $
+   在 CMS.Template.Lexer.TemplateLexer.NextTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 320
+   在 CMS.Template.Lexer.TemplateLexer.Next() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 202
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 32
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 110
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 212
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 112
+2013-09-13 15:50:08,348 [7] DEBUG log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，模板路径：/luo/upindex.shtml失败！
+2013-09-13 15:50:08,352 [7] DEBUG log [(null)] - CMS.Template.Except.ParseException: Invalid character in tag: $
+   在 CMS.Template.Lexer.TemplateLexer.NextTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 320
+   在 CMS.Template.Lexer.TemplateLexer.Next() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 202
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 32
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 110
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 212
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 112
+2013-09-13 15:50:35,971 [7] DEBUG log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，模板路径：/luo/upindex.shtml失败！
+2013-09-13 15:50:35,974 [7] DEBUG log [(null)] - CMS.Template.Except.ParseException: Unexpected token: TagEquals. Was expection '"'
+   在 CMS.Template.Parser.TemplateParser.ReadAttribute() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 147
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 116
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 212
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 112
+2013-09-13 15:52:01,325 [7] DEBUG log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，模板路径：/luo/upindex.shtml失败！
+2013-09-13 15:52:01,328 [7] DEBUG log [(null)] - CMS.Template.Except.ParseException: Invalid character in tag: $
+   在 CMS.Template.Lexer.TemplateLexer.NextTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 320
+   在 CMS.Template.Lexer.TemplateLexer.Next() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 202
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 32
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 110
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 212
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 112
+2013-09-13 15:52:21,056 [7] DEBUG log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，模板路径：/luo/upindex.shtml失败！
+2013-09-13 15:52:21,060 [7] DEBUG log [(null)] - CMS.Template.Except.ParseException: Invalid token in expression: OpGt. Was expecting ID or string.
+   在 CMS.Template.Parser.TemplateParser.PrimaryExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 331
+   在 CMS.Template.Parser.TemplateParser.RelationalExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 235
+   在 CMS.Template.Parser.TemplateParser.EqualityExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 220
+   在 CMS.Template.Parser.TemplateParser.AndExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 206
+   在 CMS.Template.Parser.TemplateParser.OrExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 192
+   在 CMS.Template.Parser.TemplateParser.TopExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 187
+   在 CMS.Template.Parser.TemplateParser.ReadExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 100
+   在 CMS.Template.Parser.TemplateParser.ReadString() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 174
+   在 CMS.Template.Parser.TemplateParser.ReadAttribute() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 145
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 116
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 212
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 112
+2013-09-13 15:55:40,320 [7] DEBUG log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，模板路径：/luo/upindex.shtml失败！
+2013-09-13 15:55:40,321 [7] DEBUG log [(null)] - CMS.Template.Except.ParseException: Invalid token in expression: OpLt. Was expecting ID or string.
+   在 CMS.Template.Parser.TemplateParser.PrimaryExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 331
+   在 CMS.Template.Parser.TemplateParser.RelationalExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 235
+   在 CMS.Template.Parser.TemplateParser.EqualityExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 220
+   在 CMS.Template.Parser.TemplateParser.AndExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 206
+   在 CMS.Template.Parser.TemplateParser.OrExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 192
+   在 CMS.Template.Parser.TemplateParser.TopExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 187
+   在 CMS.Template.Parser.TemplateParser.ReadExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 100
+   在 CMS.Template.Parser.TemplateParser.ReadString() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 174
+   在 CMS.Template.Parser.TemplateParser.ReadAttribute() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 145
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 116
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 212
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 112
+2013-09-13 15:56:00,508 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 15:56:34,599 [7] DEBUG log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，模板路径：/luo/upindex.shtml失败！
+2013-09-13 15:56:34,601 [7] DEBUG log [(null)] - CMS.Template.Except.ParseException: Invalid token in expression: OpLt. Was expecting ID or string.
+   在 CMS.Template.Parser.TemplateParser.PrimaryExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 331
+   在 CMS.Template.Parser.TemplateParser.RelationalExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 235
+   在 CMS.Template.Parser.TemplateParser.EqualityExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 220
+   在 CMS.Template.Parser.TemplateParser.AndExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 206
+   在 CMS.Template.Parser.TemplateParser.OrExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 192
+   在 CMS.Template.Parser.TemplateParser.TopExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 187
+   在 CMS.Template.Parser.TemplateParser.ReadExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 100
+   在 CMS.Template.Parser.TemplateParser.ReadString() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 174
+   在 CMS.Template.Parser.TemplateParser.ReadAttribute() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 145
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 116
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 212
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 112
+2013-09-13 15:57:06,576 [7] DEBUG log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，模板路径：/luo/upindex.shtml失败！
+2013-09-13 15:57:06,578 [7] DEBUG log [(null)] - CMS.Template.Except.ParseException: Invalid token in expression: OpGt. Was expecting ID or string.
+   在 CMS.Template.Parser.TemplateParser.PrimaryExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 331
+   在 CMS.Template.Parser.TemplateParser.RelationalExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 235
+   在 CMS.Template.Parser.TemplateParser.EqualityExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 220
+   在 CMS.Template.Parser.TemplateParser.AndExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 206
+   在 CMS.Template.Parser.TemplateParser.OrExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 192
+   在 CMS.Template.Parser.TemplateParser.TopExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 187
+   在 CMS.Template.Parser.TemplateParser.ReadExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 100
+   在 CMS.Template.Parser.TemplateParser.ReadString() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 174
+   在 CMS.Template.Parser.TemplateParser.ReadAttribute() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 145
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 116
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 212
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 112
+2013-09-13 16:04:43,762 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 16:05:37,448 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 16:06:53,516 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 16:17:34,361 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-13 16:17:34,380 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-13 16:17:34,384 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-13 16:17:58,224 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 16:19:39,956 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 16:22:05,038 [10] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-13 16:22:05,067 [10] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-13 16:22:05,254 [10] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-13 16:24:35,122 [8] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-13 16:24:35,155 [8] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-13 16:24:35,165 [8] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-13 16:26:41,719 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-13 16:26:41,738 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-13 16:26:41,742 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-13 16:26:46,553 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 16:27:37,142 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 16:28:08,236 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 16:28:37,574 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 16:30:10,060 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 16:30:59,590 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 16:31:35,308 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 16:32:04,140 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 16:32:23,842 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-13 17:41:09,255 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！

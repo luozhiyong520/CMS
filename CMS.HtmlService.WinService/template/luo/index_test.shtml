@@ -1,0 +1,1628 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<link href="http://js.upchina.com/sasweb/mainpage/css/upindex.css?20140114" type="text/css" rel="stylesheet"/>
+<!--轮换广告JS，需要时使用-->
+
+<style type="text/css">
+.js {POSITION: relative; WIDTH: 680px; HEIGHT: 360px;margin:0 auto; overflow:hidden}
+.jsNav {POSITION: absolute; WIDTH:680px; BOTTOM:2px; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 30px; RIGHT: 10px; FONT-WEIGHT: bold; left:0px}
+.jsNav A {TEXT-ALIGN: center;outline:none;blr:expression(this.onFocus=this.blur());LINE-HEIGHT: 30px; WIDTH: 224px;*width:223px;VERTICAL-ALIGN: middle; display:block; float:left; background:#000;filter:alpha(opacity=60);-moz-opacity:0.6;opacity:0.6; margin:0 0px 0 2px;}
+.jsNav A:hover{ text-decoration:none;}
+.trigger{ color:#fff;}
+.imgSelected { background:#000;filter:alpha(opacity=100);-moz-opacity:1;opacity:1;border-bottom:2px solid #fb9606;color:#ff0; font-size:16px;  }
+.icon1{ width:82px; height:82px; margin:0 9px;background:url(http://img.upchina.com/sasweb/upindex/d1.png) no-repeat left top;_background:none; _filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="http://img.upchina.com/sasweb/upindex/d1.png");}
+.icon2{ background:url(http://img.upchina.com/sasweb/upindex/d2.png) no-repeat left top;_background:none; _filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="http://img.upchina.com/sasweb/upindex/d2.png");width:82px; height:82px; margin:0 9px;}
+.icon3{ background:url(http://img.upchina.com/sasweb/upindex/d3.png) no-repeat left top;_background:none; _filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="http://img.upchina.com/sasweb/upindex/d3.png"); width:82px; height:82px; margin:0 9px;}
+.icon4{ background:url(http://img.upchina.com/sasweb/upindex/d4.png) no-repeat left top;_background:none; _filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="http://img.upchina.com/sasweb/upindex/d4.png"); width:82px; height:82px; margin:0 9px;}
+.icon5{ background:url(http://img.upchina.com/sasweb/upindex/d5.png) no-repeat left top;_background:none; _filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="http://img.upchina.com/sasweb/upindex/d5.png"); width:82px; height:82px; margin:0 9px;}
+ .bgclolck{Z-INDEX: 22;background:url(http://img.upchina.com/sasweb/upindex/novelty.png) no-repeat left top;_background:none; _filter:Progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="http://img.upchina.com/sasweb/upindex/novelty.png"); width:66px; height:66px; }
+.pf-btn {background: url(http://img.upchina.com/upchinav2/images/pf_11.png) no-repeat left top;width: 39px;height: 19px;display: block;float: left;}
+</style>
+<script type="text/javascript" src="http://js.upchina.com/lib/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="http://js.upchina.com/sasweb/mainpage/js/msclass.js"></script>
+</head>
+<body>
+ 
+   
+
+<div id="data-jhd" style="display:none"><#uptag tagtype="01" clsid="001001" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag"><#if test="${flag}">
+<#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}
+   <#else>
+     0,${d.Url},http://img.upchina.com${d.ImgUrl}
+    <#/if>
+<#else>
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}%
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}%
+    <#/if>
+<#/if>              
+<#/uptag></div>
+
+ <div id="data-jmd" style="display:none"><#uptag tagtype="01" clsid="001002" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}
+    <#/if>
+<#else>
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}%
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}%
+    <#/if>
+<#/if>              
+<#/uptag></div>
+
+ <div id="data-shyl" style="display:none">
+<#uptag tagtype="01" clsid="001003" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}
+    <#/if>
+<#else>
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}%
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}%
+    <#/if>
+<#/if>              
+<#/uptag></div>
+
+ <div id="data-js" style="display:none">
+<#uptag tagtype="01" clsid="001026" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        1,${d.Url},${d.ImgUrl}
+   <#else>
+      1,${d.Url},http://img.upchina.com${d.ImgUrl}
+    <#/if>
+<#else>
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        1,${d.Url},${d.ImgUrl}%
+   <#else>
+      1,${d.Url},http://img.upchina.com${d.ImgUrl}%
+    <#/if>
+<#/if>              
+<#/uptag></div>
+
+ <div id="data-bc" style="display:none">
+<#uptag tagtype="01" clsid="001031" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+       0,${d.Url},${d.ImgUrl}
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}
+    <#/if>
+<#else>
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}%
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}%
+    <#/if>
+<#/if>              
+<#/uptag></div>
+
+ <div id="data-ylone" style="display:none">
+<#uptag tagtype="01" clsid="001012" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}
+    <#/if>
+<#else>
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}%
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}%
+    <#/if>
+<#/if>              
+<#/uptag></div>
+
+ <div id="data-bcone" style="display:none">
+<#uptag tagtype="01" clsid="001028" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}
+    <#/if>
+<#else>
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}%
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}%
+    <#/if>
+<#/if>              
+<#/uptag></div>
+
+<div id="data-jhdone" style="display:none">
+<#uptag tagtype="01" clsid="001005" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}
+    <#/if>
+<#else>
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}%
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}%
+    <#/if>
+<#/if>              
+<#/uptag></div>
+
+<div id="data-jmdone" style="display:none">
+<#uptag tagtype="01" clsid="001009" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}
+    <#/if>
+<#else>
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}%
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}%
+    <#/if>
+<#/if>              
+<#/uptag></div>
+
+<div id="data-yltwo" style="display:none">
+<#uptag tagtype="01" clsid="001013" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}
+    <#/if>
+<#else>
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}%
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}%
+    <#/if>
+<#/if>              
+<#/uptag></div>
+
+<div id="data-bctwo" style="display:none">
+<#uptag tagtype="01" clsid="001029" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}
+    <#/if>
+<#else>
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}%
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}%
+    <#/if>
+<#/if>              
+<#/uptag></div>
+
+
+<div id="data-jhdtwo" style="display:none">
+<#uptag tagtype="01" clsid="001007" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}
+    <#/if>
+<#else>
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}%
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}%
+    <#/if>
+<#/if>              
+<#/uptag></div>
+
+<div id="data-jmdtwo" style="display:none">
+<#uptag tagtype="01" clsid="001010" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}
+    <#/if>
+<#else>
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}%
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}%
+    <#/if>
+<#/if>              
+<#/uptag></div>
+
+<div id="data-bcthree" style="display:none">
+<#uptag tagtype="01" clsid="001030" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}
+    <#/if>
+<#else>
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}%
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}%
+    <#/if>
+<#/if>              
+<#/uptag></div>
+
+<div id="data-ylthree" style="display:none">
+<#uptag tagtype="01" clsid="001014" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}
+    <#/if>
+<#else>
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}%
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}%
+    <#/if>
+<#/if>              
+<#/uptag></div>
+
+<div id="data-jhdthree" style="display:none">
+<#uptag tagtype="01" clsid="001008" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}
+    <#/if>
+<#else>
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}%
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}%
+    <#/if>
+<#/if>              
+<#/uptag></div>
+
+<div id="data-jmdthree" style="display:none">
+<#uptag tagtype="01" clsid="001011" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}
+    <#/if>
+<#else>
+	 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+        0,${d.Url},${d.ImgUrl}%
+   <#else>
+      0,${d.Url},http://img.upchina.com${d.ImgUrl}%
+    <#/if>
+<#/if>              
+<#/uptag></div>
+
+
+<div class="g-bd">
+  <!--左边内容-->
+  <div class="m-lf">
+    <div class="m-bar">
+      <!--在有两个以上广告图片需要轮换时使用-->
+ 
+         <div id="upjhdad" style="display:none">
+          <div  id="jhd"  class="js">
+            <div class="pic">
+                 
+                </div>
+                <div class=jsNav>
+                <#uptag tagtype="01" clsid="001001" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i"> 
+                <#if test="${total gt 1}">
+                    <#if  test="${equals(i,1)}">  
+                    <A class="trigger imgSelected" href="javascript:void(0)">${d.Title}</A>
+                    <#else>
+                    <A class=trigger href="javascript:void(0)">${d.Title}</A>
+                     <#/if>
+                 <#/if>
+                <#/uptag>          
+            </div>
+            </div>
+         </div>
+
+         <div id="upjmdad" style="display:none">
+         <div id="jmd"  class="js">
+         <div class="pic">
+            
+              </div>
+            <div  class=jsNav>
+            <#uptag tagtype="01" clsid="001002" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i"> 
+            <#if test="${total gt 1}">
+             <#if  test="${equals(i,1)}">  
+            <A class="trigger imgSelected" href="javascript:void(0)">${d.Title}</A>
+            <#else>
+            <A class=trigger href="javascript:void(0)">${d.Title}</A>
+             <#/if>
+             <#/if>
+             <#/uptag>
+            </div>
+         </div>
+         </div>
+
+         <div id="upshylad" style="display:none">
+          <div id="shyl" class="js">
+          <div class="pic">
+             
+           </div>
+            <div class=jsNav>
+            <#uptag tagtype="01" clsid="001003" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i"> 
+            <#if test="${total gt 1}">
+            <#if  test="${equals(i,1)}">  
+            <A class="trigger imgSelected" href="javascript:void(0)">${d.Title}</A>
+            <#else>
+            <A class=trigger href="javascript:void(0)">${d.Title}</A>
+             <#/if>
+             <#/if>
+             <#/uptag>
+            </div>
+            </div>
+         </div>
+
+          <div id="upjsad" style="display:none">
+          <div id="upjs" class="js">
+          <div class="pic">
+             
+           </div>
+            <div class=jsNav>
+            <#uptag tagtype="01" clsid="001003" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i"> 
+            <#if test="${total gt 1}">
+            <#if  test="${equals(i,1)}">  
+            <A class="trigger imgSelected" href="javascript:void(0)">${d.Title}</A>
+            <#else>
+            <A class=trigger href="javascript:void(0)">${d.Title}</A>
+             <#/if>
+             <#/if>
+             <#/uptag>
+            </div>
+            </div>
+         </div>
+
+
+          <div id="bcad" style="display:none">
+          <div id="bc" class="js">
+          <div class="pic">
+            
+           </div>
+            <div class=jsNav>
+            <#uptag tagtype="01" clsid="001031" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i"> 
+            <#if test="${total gt 1}">
+            <#if  test="${equals(i,1)}">  
+            <A class="trigger imgSelected" href="javascript:void(0)">${d.Title}</A>
+            <#else>
+            <A class=trigger href="javascript:void(0)">${d.Title}</A>
+             <#/if>
+             <#/if>
+             <#/uptag>
+            </div>
+            </div>
+         </div>
+
+          <div id="ylonead" style="display:none">
+           <div id="ylone" class="js">
+           <div class="pic">
+            
+           </div>
+          
+         </div>
+         </div>
+
+           <div id="bconead" style="display:none">
+           <div id="bcone" class="js">
+           <div class="pic">
+            
+           </div>
+          
+         </div>
+         </div>
+
+
+            <div id="jhdonead" style="display:none">
+           <div id="jhdone" class="js">
+           <div class="pic">
+             
+           </div>
+       
+         </div>
+         </div>
+
+         <div id="jmdonead" style="display:none">
+           <div id="jmdone" class="js">
+           <div class="pic">
+             
+           </div>
+        
+         </div>
+         </div>
+
+         <div id="yltwoad" style="display:none">
+           <div id="yltwo" class="js">
+           <div class="pic">
+             
+            </div>
+          
+         </div>
+         </div>
+
+         <div id="bctwoad" style="display:none">
+           <div id="bctwo" class="js">
+           <div class="pic">
+            
+            </div>
+          
+         </div>
+         </div>
+
+         
+
+           <div id="jhdtwoad" style="display:none">
+           <div id="jhdtwo" class="js">
+           <div class="pic">
+            
+            </div>
+          
+         </div>
+         </div>
+
+           <div id="jmdtwoad" style="display:none">
+           <div id="jmdtwo" class="js">
+           <div class="pic">
+             
+            </div>
+            
+         </div>
+         </div>
+
+           <div id="bcthreead" style="display:none">
+           <div id="bcthree" class="js">
+           <div class="pic">
+             
+            </div>
+        
+         </div>
+         </div>
+
+
+         <div id="ylthreead" style="display:none">
+           <div id="ylthree" class="js">
+           <div class="pic">
+             
+            </div>
+        
+         </div>
+         </div>
+ 
+         
+         <div id="jhdthreead" style="display:none">
+           <div id="jhdthree" class="js">
+           <div class="pic">
+             
+            </div>
+           
+         </div>
+         </div>
+
+         <div id="jmdthreead" style="display:none">
+           <div id="jmdthree" class="js">
+           <div class="pic">
+             
+            </div>
+       
+         </div>
+         </div>
+
+   
+   </div>
+    <div class="m-con">
+      <!--投资箴言-->
+       <div class="m-tzzy ">
+           <h1>投资箴言</h1>
+            <p id="tzzzy"></p>
+          <div id="btm_zzjs"></div>
+      </div>
+      <!--UP研究院-->
+      <div class="m-yjy">
+   
+        <!-- <#uptag tagtype="02" clsid="002001" id="data002001" viewedit="1" var="d"><p>${d.Content}</p><#/uptag>-->
+         <!--<p id="yjscontent"></p>-->
+         <#uptag tagtype="02" clsid="002001" id="data002001" viewedit="1" var="d">
+        ${d.Content}
+         <#/uptag> 
+      </div>
+      <!--猜你喜欢-->
+      <div class="m-cnxh">
+        <h1>猜你喜欢</h1>
+        <ul>
+         <#uptag tagtype="02" clsid="002002" id="data002002" viewedit="1" var="d">${d.Content}<#/uptag>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--右边内容-->
+  <div class="m-rt">
+    <!--直播时间-->
+ 
+<div class="m-clock" style="position:relative" id="m-clock">
+<DIV id=bg  style="LEFT:11px; POSITION: absolute; TOP:14px;"><div class="bgclolck"></div><!--<IMG  style="Z-INDEX: 22; WIDTH:68px; HEIGHT:68px" src="http://img.upchina.com/sasweb/upindex/novelty.png">-->  
+</DIV>
+<DIV id=h  style="WIDTH: 90px;POSITION: absolute; HEIGHT: 90px; padding:5px; LEFT:-6px;TOP:-4px;"><IMG  
+style="Z-INDEX: 22; WIDTH: 90px; HEIGHT: 90px" src="http://img.upchina.com/sasweb/upindex/novelty_h.gif">  
+</DIV> 
+<DIV id=m  style="WIDTH: 90px;POSITION: absolute; HEIGHT: 90px;padding:5px;LEFT:-6px;TOP:-4px;"><IMG  
+style="Z-INDEX: 22; WIDTH: 90px; HEIGHT: 90px" src="http://img.upchina.com/sasweb/upindex/novelty_m.gif">  
+</DIV> 
+<DIV id=s  style="WIDTH: 90px;POSITION: absolute; HEIGHT: 90px;padding:5px;LEFT:-6px;TOP:-4px;"><IMG  
+style="Z-INDEX: 22; WIDTH: 90px; HEIGHT: 90px" src="http://img.upchina.com/sasweb/upindex/novelty_s.gif">  
+</DIV> 
+<DIV id=dot  style="WIDTH: 90px; PADDING-TOP: 5px; POSITION: absolute; HEIGHT: 90px;padding:5px;LEFT:-6px;TOP:-4px;"><IMG  
+style="Z-INDEX: 22; WIDTH: 90px; HEIGHT: 90px" src="http://img.upchina.com/sasweb/upindex/novelty_dot.gif">  
+</DIV> 
+
+     <!--当天有直播，但直播未开始-->
+     
+          <div id="djs" style="display:none">
+              <h2>距离<span class="red">现货T+0操盘直播</span>还有</h2>
+              <div class="m-time"><span id="djs_time"></span><font>请等待 </font> </div>
+          </div>
+          <!--当天有直播，直播已开始，显示直播进行中-->
+          <div id="ddz" style="display:none">
+                <h2><span class="red">现货T+0操盘直播</span>敬请期待</h2>
+                 <a href="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew/jhdlizx/upjhd.html" target="_blank" class="u-btn-1"></a>
+          </div>
+          <!--当天无直播，比如休市-->
+          <div id="zbz" style="display:none">
+               <h2><span class="red">现货T+0操盘直播</span>进行中...</h2>
+               <a href="javascript:void(0)" onclick="checkbox()" class="u-btn-1" id="vip_video" style="display:none"></a>
+         </div> 
+    </div>
+
+
+     <div class="bcmk" id="bcmk" style="display:none">
+       <div class="title" style="line-height:24px">投资卫士课堂</div>
+       <div class="left">
+         <img src="http://img.upchina.com/sasweb/upindex/bf.png" width="45px" height="45px" />
+       </div>
+       <div class="right">
+           <div id="bccourse" style="margin-left:10px">
+       		 <!-- <span class="red"> 今日关注9 ： 00—9 ： 30 </span> 
+              <a href="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew/jhdlizx/upjhd.html" target="_blank" class="u-btn-1"></a>-->
+           </div>
+       </div>
+       <div class="both"></div>
+    </div>
+
+    <!--资讯-->
+    <ul class="m-news">
+    <div id="vernews">
+      <#uptag tagtype="01" clsid="001006,001034" pagesize="2" pagecount="1" viewedit="1" id="dataId001006"  var="d" index="i">  
+       <#if test="${equals(i,2)}">
+        <#if  test="${equals(d.Sort,1)}">
+            <li class="outinfo"></li>            
+            <li><a  href="javascript:void(0)" onclick="popuurl('http://www.upchina.com/news${d.Url}','797', '600')">${d.Title}</a></li>
+        <#else>
+             <li class="outinfo"></li>  
+            <li><a  href="javascript:void(0)" onclick="popuurl('${d.Url}','797', '600')">${d.Title}</a></li>
+        <#/if>
+      <#else>
+        <#if  test="${equals(d.Sort,1)}">            
+            <li><a  href="javascript:void(0)" onclick="popuurl('http://www.upchina.com/news${d.Url}','797', '600')">${d.Title}</a></li>
+        <#else>
+            <li><a  href="javascript:void(0)" onclick="popuurl('${d.Url}','797', '600')">${d.Title}</a></li>
+        <#/if>
+      <#/if>
+       <#/uptag>
+   </div>
+
+       <div style="display:none" id="bcnews">
+       <#uptag tagtype="01" clsid="001006" pagesize="7" pagecount="1" viewedit="1" id="dataId001006_2"  var="d" index="i">  
+        <#if  test="${equals(d.Sort,1)}">            
+            <li><a  href="javascript:void(0)" onclick="popuurl('http://www.upchina.com/news${d.Url}','797', '600')">${d.Title}</a></li>
+        <#else>
+            <li><a  href="javascript:void(0)" onclick="popuurl('${d.Url}','797', '600')">${d.Title}</a></li>
+        <#/if>
+       <#/uptag>
+       </div>
+
+    </ul>
+
+     <div class="m-wp">
+     <!--量化安全投资培训专场-->
+     <!--<div class="m-px"  id="lhurl">
+       <#uptag tagtype="02" clsid="002003" id="data002003" viewedit="1" var="d">${d.Content}<#/uptag>
+       </div>-->
+       <!--图解财经-->
+      <!--<div class="m-tjcj">  <#uptag tagtype="02" clsid="002004" id="data002004" viewedit="1" var="d">${d.Content}<#/uptag> 
+      </div>-->
+         <!--实盘直播-->
+
+      <div id="bchidden">
+            <a href="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/analystlive/index.html" target=_blank><div class="m-ht"></div></a>
+            <div class="box">
+              <div class="t_news" id="spzbdiv" style="text-align:left;width:293px;height:90px;overflow:hidden;*height:87px;">
+                <ul class="news_li" id="spzb">
+                 <!--#include file="/news/analystlive/indexzb.html"-->
+                </ul>
+              </div>
+            </div>
+    </div>
+    <!--天气-->
+    <ul class="m-tq">
+      <li>
+         <#uptag tagtype="04" clsid="1" pagesize="10" pagecount="1" viewedit="1" id="dataId1"  var="d" index="i">                        
+             <h1>股票市场</h1>
+            <#if test="${equals(d.MarketQuotations,"空头强势")}"> 
+                <div class="icon1"></div>
+            <#elseif test="${equals(d.MarketQuotations,"空头占优")}">
+                <div class="icon2"></div>
+            <#elseif test="${equals(d.MarketQuotations,"多空平衡")}">
+                <div class="icon3"></div>
+            <#elseif test="${equals(d.MarketQuotations,"多头占优")}">
+                <div class="icon4"></div>
+            <#elseif test="${equals(d.MarketQuotations,"多头强势")}">
+                <div class="icon5"></div>
+            <#else>
+                <div class="icon1"></div>
+            <#/if>
+             <font class="renqi">人气：${d.Popularity}</font>
+         <#/uptag>
+      </li>
+      
+      <li id="actualsmarket" style=" display:none">
+      <#uptag tagtype="04" clsid="2" pagesize="10" pagecount="1" viewedit="1" id="dataId2"  var="d" index="i">  
+        <h1>现货市场</h1>
+        <#if test="${equals(d.MarketQuotations,"空头强势")}"> 
+            <div class="icon1"></div>
+        <#elseif test="${equals(d.MarketQuotations,"空头占优")}">
+            <div class="icon2"></div>
+        <#elseif test="${equals(d.MarketQuotations,"多空平衡")}">
+            <div class="icon3"></div>
+        <#elseif test="${equals(d.MarketQuotations,"多头占优")}">
+            <div class="icon4"></div>
+        <#elseif test="${equals(d.MarketQuotations,"多头强势")}">
+            <div class="icon5"></div>
+        <#else>
+            <div class="icon1"></div> 
+        <#/if>
+        <font class="renqi">人气：${d.Popularity}</font>
+         <#/uptag>
+        </li>
+
+
+         <li id="gjsmarket" style=" display:none">
+      <#uptag tagtype="04" clsid="4" pagesize="10" pagecount="1" viewedit="1" id="dataId2"  var="d" index="i">  
+        <h1>贵金属市场</h1>
+        <#if test="${equals(d.MarketQuotations,"空头强势")}"> 
+            <div class="icon1"></div>
+        <#elseif test="${equals(d.MarketQuotations,"空头占优")}">
+            <div class="icon2"></div>
+        <#elseif test="${equals(d.MarketQuotations,"多空平衡")}">
+            <div class="icon3"></div>
+        <#elseif test="${equals(d.MarketQuotations,"多头占优")}">
+            <div class="icon4"></div>
+        <#elseif test="${equals(d.MarketQuotations,"多头强势")}">
+            <div class="icon5"></div>
+        <#else>
+            <div class="icon1"></div> 
+        <#/if>
+        <font class="renqi">人气：${d.Popularity}</font>
+         <#/uptag>
+        </li>
+
+
+      <li class="last">
+        <#uptag tagtype="04" clsid="3" pagesize="10" pagecount="1" viewedit="1" id="dataId3"  var="d" index="i">  
+        <h1>期货市场</h1>
+        <#if test="${equals(d.MarketQuotations,"空头强势")}"> 
+            <div class="icon1"></div>
+        <#elseif test="${equals(d.MarketQuotations,"空头占优")}">
+            <div class="icon2"></div>
+        <#elseif test="${equals(d.MarketQuotations,"多空平衡")}">
+            <div class="icon3"></div>
+        <#elseif test="${equals(d.MarketQuotations,"多头占优")}">
+            <div class="icon4"></div>
+        <#elseif test="${equals(d.MarketQuotations,"多头强势")}">
+            <div class="icon5"></div>
+        <#else>
+            <div class="icon1"></div>
+        <#/if>
+        <font class="renqi">人气：${d.Popularity}</font></li>
+        <#/uptag>
+    </ul>
+   
+
+    <script type="text/javascript">
+        /*********文字翻屏滚动***************/
+        new Marquee(["spzbdiv", "spzb"], 0, 1, 293, 90, 20, 4000, 2000)			//文字翻屏滚动实例
+   </script>
+
+
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="http://js.upchina.com/sasweb/mainpage/js/animate.js"></script>
+<#uptag tagtype="01" clsid="001015" pagesize="1" pagecount="1" viewedit="1" id="dataId001006"  var="d" index="i">  
+<div id="img_pos1" style="z-index: 999; position: absolute; left: 0px; top: 240px; width:130px; display:none">
+<#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+    <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img src="${d.ImgUrl}"></a>
+ <#else>
+   <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img src="http://img.upchina.com${d.ImgUrl}"> </a>
+  <#/if>
+  <a class="pf-btn" onclick="closead('img_pos1')" style=" cursor:pointer"></a>
+</div>
+<#/uptag>
+<#uptag tagtype="01" clsid="001016" pagesize="1" pagecount="1" viewedit="1" id="dataId001006"  var="d" index="i">  
+<div id="img_pos2" style="z-index: 999; position: absolute; right: 0px; top: 240px; width:130px;display:none">
+<#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+    <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img src="${d.ImgUrl}"></a>
+ <#else>
+   <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img src="http://img.upchina.com${d.ImgUrl}"> </a>
+  <#/if>
+  <a class="pf-btn" onclick="closead('img_pos2')" style="cursor:pointer"></a>
+ </div>
+<#/uptag>
+
+<#uptag tagtype="01" clsid="001017" pagesize="1" pagecount="1" viewedit="1" id="dataId001006"  var="d" index="i"> 
+<div id="img_pos3" style="z-index: 999; position: absolute; left: 0px; top: 240px; width:130px; display:none">
+<#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+    <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img src="${d.ImgUrl}"></a>
+ <#else>
+   <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img  src="http://img.upchina.com${d.ImgUrl}"> </a>
+  <#/if>
+  <a class="pf-btn" onclick="closead('img_pos3')" style="cursor:pointer"></a>
+</div>
+<#/uptag>
+<#uptag tagtype="01" clsid="001018" pagesize="1" pagecount="1" viewedit="1" id="dataId001006"  var="d" index="i"> 
+<div id="img_pos4" style="z-index: 999; position: absolute; right:0px; top: 240px; width:130px;display:none">
+<#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+    <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img src="${d.ImgUrl}"></a>
+ <#else>
+   <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img  src="http://img.upchina.com${d.ImgUrl}"> </a>
+  <#/if>
+  <a class="pf-btn" onclick="closead('img_pos4')" style="cursor:pointer"></a>
+</div>
+<#/uptag>
+<#uptag tagtype="01" clsid="001019" pagesize="1" pagecount="1" viewedit="1" id="dataId001006"  var="d" index="i"> 
+<div id="img_pos5" style="z-index: 999; position: absolute; left: 0px; top: 240px; width:130px; display:none">
+<#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+    <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img src="${d.ImgUrl}"></a>
+ <#else>
+   <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img  src="http://img.upchina.com${d.ImgUrl}"> </a>
+  <#/if>
+  <a class="pf-btn" onclick="closead('img_pos5')" style=" cursor:pointer"></a>
+</div>
+<#/uptag>
+<#uptag tagtype="01" clsid="001020" pagesize="1" pagecount="1" viewedit="1" id="dataId001006"  var="d" index="i"> 
+<div id="img_pos6" style="z-index: 999; position: absolute; right:0px; top: 240px; width:130px;display:none">
+<#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+    <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img src="${d.ImgUrl}"></a>
+ <#else>
+   <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img  src="http://img.upchina.com${d.ImgUrl}"> </a>
+  <#/if>
+  <a class="pf-btn" onclick="closead('img_pos6')" style="cursor:pointer"></a>
+ </div>
+<#/uptag>
+<#uptag tagtype="01" clsid="001021" pagesize="1" pagecount="1" viewedit="1" id="dataId001006"  var="d" index="i"> 
+<div id="img_pos7" style="z-index: 999; position: absolute; left: 0px; top: 240px; width:130px; display:none">
+<#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+    <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img src="${d.ImgUrl}"></a>
+ <#else>
+   <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img  src="http://img.upchina.com${d.ImgUrl}"> </a>
+  <#/if>
+  <a class="pf-btn" onclick="closead('img_pos5')" style="margin-right:-1px; cursor:pointer"></a>
+</div>
+<#/uptag>
+<#uptag tagtype="01" clsid="001022" pagesize="1" pagecount="1" viewedit="1" id="dataId001006"  var="d" index="i"> 
+<div id="img_pos8" style="z-index: 999; position: absolute; right:0px; top: 240px; width:130px;display:none">
+<#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+    <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img src="${d.ImgUrl}"></a>
+ <#else>
+   <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img  src="http://img.upchina.com${d.ImgUrl}"> </a>
+  <#/if>
+  <a class="pf-btn" onclick="closead('img_pos6')" style="cursor:pointer"></a>
+ </div>
+<#/uptag>
+<#uptag tagtype="01" clsid="001032" pagesize="1" pagecount="1" viewedit="1" id="dataId001032"  var="d" index="i"> 
+<div id="img_pos9" style="z-index: 999; position: absolute; right: 0px; top: 240px; width:130px;display:none">
+<#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+    <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img src="${d.ImgUrl}"></a>
+ <#else>
+   <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img  src="http://img.upchina.com${d.ImgUrl}"> </a>
+  <#/if>
+  <a class="pf-btn" onclick="closead('img_pos6')" style="cursor:pointer"></a>
+ </div>
+<#/uptag>
+<#uptag tagtype="01" clsid="001033" pagesize="1" pagecount="1" viewedit="1" id="dataId001033"  var="d" index="i"> 
+<div id="img_pos10" style="z-index: 999; position: absolute; right: 0px; top: 240px; width:130px;display:none">
+<#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+    <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img src="${d.ImgUrl}"></a>
+ <#else>
+   <a href="javascript:void(0)" onclick="gotourl('${d.Url}')"><img  src="http://img.upchina.com${d.ImgUrl}"> </a>
+  <#/if>
+  <a class="pf-btn" onclick="closead('img_pos6')" style=" cursor:pointer"></a>
+ </div>
+<#/uptag>
+
+ 
+<div id="img_pos11" style="z-index: 999; position: absolute;  width:130px; padding-right:1px; padding-bottom:50px; display:none;">
+   <div class="pf-con">
+    <div class="pf-top">UP投资卫士手机版</div>
+    <div class="pf-bd"><a href="http://m.upchina.com" target="_blank"></a></div>
+    <a class="pf-lk" href="http://m.upchina.com" target="_blank">点击或扫描下载</a>
+    <a class="pf-btn" onclick="closead('img_pos11')" style=" cursor:pointer;float:right"></a>
+   </div>
+</div><div id="img_pos12" style="z-index: 999; position: absolute;  width:130px; padding-right:1px; padding-bottom:50px; display:none;">
+   <div class="pf-con">
+    <div class="pf-top">UP投资卫士手机版</div>
+    <div class="pf-bd-md"><a href="http://free.jmdcf.com/phone/" target="_blank"></a></div>
+    <a class="pf-lk" href="http://free.jmdcf.com/phone/" target="_blank">点击或扫描下载</a>
+    <a class="pf-btn" onclick="closead('img_pos12')" style=" cursor:pointer;float:right"></a>
+   </div>
+</div>
+<script language="javascript" type="text/javascript">
+    function closead(c) {
+        $("#" + c).css("display", "none");
+    }
+    function getWhatDay() {
+        if (!external.iWinMain)
+            return 3;
+        var strUserInfo = external.iWinMain('cmd_getuserinfo');
+        var jsonUserInfo = eval("(" + strUserInfo + ")");
+        var strAd = jsonUserInfo["reg_time"]; // 获取注册时间
+        var dateAd = new Date(strAd.split("-")[0], strAd.split("-")[1] - 1, strAd.split("-")[2]); // 获取注册时间
+
+        var dateCurrent = new Date(); // 获取今天时间
+        dateCurrent = new Date(dateCurrent.getFullYear(), dateCurrent.getMonth(), dateCurrent.getDate());
+        return Math.ceil((dateCurrent - dateAd) / (24 * 60 * 60 * 1000));
+    }
+
+    //显示广告图片
+    var count;
+    var verselect;
+    var whatDay
+    try {
+        if (external.iWinMain)
+            productId = external.iWinMain("cmd_productid");
+        else
+            productId = 1;
+    } catch (e) {
+        productId = 0;
+    }
+
+    $("#img_pos11").float({
+        delay: 500, //延迟
+        position: "rb"  //位置
+
+    });
+    $("#img_pos12").float({
+        delay: 500, //延迟
+        position: "rb"  //位置
+
+    });
+
+    function gotourl(url) {
+        external.iWinMain('cmd_navigate', url);
+    }
+
+    if ((productId > 7000 && productId < 7101)) {
+        $("#bchidden").css("display", "none");
+        $("#vernews").css("display", "none");
+        $("#bcnews").css("display", "");
+        $("#bcnews").css("height", "233px");
+        $(".m-tq").css("margin-top", "0");
+        $("#m-clock").css("display", "none");
+        $("#bcmk").css("display", "block");
+        $("#gjsmarket").css("display", "");
+        $("#actualsmarket").empty();
+        $("#actualsmarket").remove();
+    } else {
+        $("#bcnews").css("display", "none");
+        $("#bchidden").css("display", "");
+        $("#vernews").css("display", "");
+        $("#m-clock").css("display", "");
+        $("#bcmk").css("display", "none");
+        $("#actualsmarket").css("display", "")
+        $("#gjsmarket").empty();
+        $("#gjsmarket").remove();
+    }
+    //    if ((productId > 3000 && productId < 3101)) {
+    //        $("#lhurl a").attr("href", "http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew/jhdlizx/upjhdagent.html")
+    //    } else if ((productId > 5000 && productId < 5101)) {
+    //        $("#lhurl a").attr("href", "http://soft.jmdcf.com/video/")
+    //    }
+    try {
+        whatDay = getWhatDay();
+    }
+    catch (e) {
+        whatDay = 3;
+    }
+
+
+
+    if ((productId > 3000 && productId < 3101)) {
+        if (whatDay == 0) {
+            var versions = "ylone";   //标志版本号---即展示图片的div的ID
+            var tag = document.getElementById(versions)
+            var tag_pic = tag.children[0];
+            var data = $("#data-ylone").text();
+            $("#ylonead").css("display", "");
+        } else if (whatDay == 1) {
+            var versions = "yltwo";   //标志版本号---即展示图片的div的ID
+            var tag = document.getElementById(versions)
+            var tag_pic = tag.children[0];
+            var data = $("#data-yltwo").text();
+            $("#yltwoad").css("display", "");
+        } else if (whatDay == 2) {
+            var versions = "ylthree";   //标志版本号---即展示图片的div的ID
+            var tag = document.getElementById(versions)
+            var tag_pic = tag.children[0];
+            var data = $("#data-ylthree").text();
+            $("#ylthreead").css("display", "");
+        }
+        else if (productId == 3001) {
+            var versions = "upjs";   //标志版本号---即展示图片的div的ID
+            var tag = document.getElementById(versions)
+            var tag_pic = tag.children[0];
+            var data = $("#data-js").text();
+            $("#img_pos7").css("display", "");
+            $("#img_pos8").css("display", "");
+            $("#img_pos11").css("display", "");
+            $("#upjsad").css("display", "");
+        } else {
+            var versions = "shyl";   //标志版本号---即展示图片的div的ID
+            var tag = document.getElementById(versions)
+            var tag_pic = tag.children[0];
+            var data = $("#data-shyl").text();
+            $("#img_pos5").css("display", "");
+            $("#img_pos6").css("display", "");
+            $("#img_pos11").css("display", "");
+            $("#upshylad").css("display", "");
+            verselect = "upshylad";
+        }
+    } else if ((productId > 5000 && productId < 5101)) { //金牡丹
+        if (whatDay == 0) {
+            var versions = "jmdone";   //标志版本号---即展示图片的div的ID
+            var tag = document.getElementById(versions)
+            var tag_pic = tag.children[0];
+            var data = $("#data-jmdone").text();
+            $("#jmdonead").css("display", "");
+        } else if (whatDay == 1) {
+            var versions = "jmdtwo";   //标志版本号---即展示图片的div的ID
+            var tag = document.getElementById(versions)
+            var tag_pic = tag.children[0];
+            var data = $("#data-jmdtwo").text();
+            $("#jmdtwoad").css("display", "");
+        } else if (whatDay == 2) {
+            var versions = "jmdthree";   //标志版本号---即展示图片的div的ID
+            var tag = document.getElementById(versions)
+            var tag_pic = tag.children[0];
+            var data = $("#data-jmdthree").text();
+            $("#jmdthreead").css("display", "");
+        } else {
+            var versions = "jmd";   //标志版本号---即展示图片的div的ID
+            var tag = document.getElementById(versions)
+            var tag_pic = tag.children[0];
+            var data = $("#data-jmd").text();
+            $("#img_pos12").css("display", "");
+            $("#img_pos3").css("display", "");
+            $("#img_pos4").css("display", "");
+            $("#upjmdad").css("display", "");
+            verselect = "upjmdad";
+        }
+
+    } else if ((productId > 7000 && productId < 7101)) {
+        if (whatDay == 0) {
+            var versions = "bcone";   //标志版本号---即展示图片的div的ID
+            var tag = document.getElementById(versions)
+            var tag_pic = tag.children[0];
+            var data = $("#data-bcone").text();
+            $("#bconead").css("display", "");
+        } else if (whatDay == 1) {
+            var versions = "bctwo";   //标志版本号---即展示图片的div的ID
+            var tag = document.getElementById(versions)
+            var tag_pic = tag.children[0];
+            var data = $("#data-bctwo").text();
+            $("#bctwoad").css("display", "");
+        } else if (whatDay == 2) {
+            var versions = "bcthree";   //标志版本号---即展示图片的div的ID
+            var tag = document.getElementById(versions)
+            var tag_pic = tag.children[0];
+            var data = $("#data-bcthree").text();
+            $("#bcthreead").css("display", "");
+        } else {
+            var versions = "bc";   //标志版本号---即展示图片的div的ID
+            var tag = document.getElementById(versions)
+            var tag_pic = tag.children[0];
+            var data = $("#data-bc").text();
+            $("#img_pos9").css("display", "");
+            $("#img_pos10").css("display", "");
+            $("#img_pos11").css("display", "");
+            $("#bcad").css("display", "");
+            verselect = "bcad";
+        }
+
+    }
+    else {//金蝴蝶
+        if (whatDay == 0) {
+            var versions = "jhdone";   //标志版本号---即展示图片的div的ID
+            var tag = document.getElementById(versions)
+            var tag_pic = tag.children[0];
+            var data = $("#data-jhdone").text();
+            $("#jhdonead").css("display", "");
+        } else if (whatDay == 1) {
+            var versions = "jhdtwo";   //标志版本号---即展示图片的div的ID
+            var tag = document.getElementById(versions)
+            var tag_pic = tag.children[0];
+            var data = $("#data-jhdtwo").text();
+            $("#jhdtwoad").css("display", "");
+        } else if (whatDay == 2) {
+            var versions = "jhdthree";   //标志版本号---即展示图片的div的ID
+            var tag = document.getElementById(versions)
+            var tag_pic = tag.children[0];
+            var data = $("#data-jhdthree").text();
+            $("#jhdthreead").css("display", "");
+
+        } else {
+            var versions = "jhd";   //标志版本号---即展示图片的div的ID
+            var tag = document.getElementById(versions)
+            var tag_pic = tag.children[0];
+            var data = $("#data-jhd").text();
+            $("#upjhdad").css("display", "");
+            $("#img_pos1").css("display", "");
+            $("#img_pos2").css("display", "");
+            $("#img_pos11").css("display", "");
+            verselect = "upjhdad";
+        }
+
+
+
+    }
+    var array_data = new Array();
+    array_data = data.split("%");
+    count = array_data.length;
+    for (var i = 0; i < array_data.length; i++) {
+        var split_data = array_data[i].split(",");
+        var tag_a = document.createElement("a");
+        var tag_img = document.createElement("img");
+        /*如果带有onclick事件则添加事件----1代表有0代表无*/
+        if (split_data[0] == 1) {
+            //            tag_a.href = "javascript:void(0)";
+            //            tag_a.onclick = function () {
+            //                gotourl(split_data[1]);
+            //            };
+            tag_a.href = "javascript:void(0)";
+            /*为标签添加onclick事件--得使用闭包传参，不然参数的值始终是最后面的*/
+            tag_a.onclick = showpage(split_data[1]);
+
+        } else {
+            tag_a.href = split_data[1];
+            tag_a.target = "_blank";
+        }
+        tag_img.src = split_data[2];
+        tag_a.appendChild(tag_img);
+        tag_pic.appendChild(tag_a);
+    }
+
+    /*闭包传参函数*/
+    function showpage(url) {
+        return function () {
+            gotourl(url);
+        }
+    }
+
+
+    $(function () {
+        (function () {
+            var curr = 0;
+            $("#" + verselect + " .jsNav .trigger").each(function (i) {
+                $(this).click(function () {
+                    curr = i;
+                    $("#" + verselect + " .pic a").eq(i).fadeIn("slow").siblings("a").hide();
+                    $(this).siblings(".trigger").removeClass("imgSelected").end().addClass("imgSelected");
+                    return false;
+                });
+            });
+
+            var pg = function (flag) {
+                //flag:true表示前翻， false表示后翻
+                if (flag) {
+                    if (curr == 0) {
+                        todo = 2;
+                    } else {
+                        todo = (curr - 1) % count;
+                    }
+                } else {
+                    todo = (curr + 1) % count;
+                }
+                $("#" + verselect + " .jsNav .trigger").eq(todo).click();
+            };
+
+
+
+            //自动翻
+            var timer = setInterval(function () {
+                todo = (curr + 1) % count;
+                $("#" + verselect + " .jsNav .trigger").eq(todo).click();
+            }, 4000);
+
+            //鼠标悬停在触发器上时停止自动翻
+            $("#" + verselect + " .jsNav a").hover(function () {
+                clearInterval(timer);
+            },
+			function () {
+			    timer = setInterval(function () {
+			        todo = (curr + 1) % count;
+			        $("#" + verselect + " .jsNav .trigger").eq(todo).click();
+			    }, 4500);
+			}
+		);
+        })();
+
+        $(".g-bd").css("padding-top", (window.screen.height - document.body.clientHeight) / 2 + "px");
+    });
+    function popuurl(url, w, h) {
+        if (external.iWinMain)
+            external.iWinMain('cmd_PopupWindow', url, w, h);
+    }
+</script>
+<script type="text/javascript" src="http://js.upchina.com/sasweb/actuals/js/init.js"></script>
+<script type="text/javascript" src="http://js.upchina.com/sasweb/mainpage/js/motto.js"></script>
+<script type="text/javascript" src="http://js.upchina.com/sasweb/mainpage/js/jquery.cookie.js"></script>
+ <script type="text/javascript" src="http://js.upchina.com/sasweb/mainpage/js/spzb2.js"></script>
+<script type="text/javascript">
+
+
+    function checkbox(valtext) {
+        if ((productId > 3000 && productId < 3101)) {
+            external.iWinMain('cmd_goto', 'OpenWebViewName', "http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew/jhdlizx/upjhdagent.html");
+        } else if ((productId > 5000 && productId < 5101)) {
+            external.iWinMain('cmd_goto', 'OpenWebViewName', "http://soft.jmdcf.com/video/");
+        } else {
+            external.iWinMain('cmd_goto', 'OpenWebViewName', "http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew/jhdlizx/upjhd.html");
+        }
+    }
+
+    $.ajax({
+        type: "POST",
+        url: "http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/boce/yjsrb.aspx?num=1",
+        success: function (jsondata) {
+            var objdata = eval("(" + jsondata + ")");
+            //  $("#yjscontent").html("<a href=\"http://www.upchina.com/yanjiusuo/v2013actualsyjs.shtml\" target=\"_blank\">" + objdata[0].Intro.substr(0, 56) + "...</a>")
+            var outlist = "";
+            outlist = "<a  href=\"javascript:void(0)\" onclick=\"popuurl('http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/bocepopup/yjscontent.html?id=" + objdata[0].ID + "&stype=index','797', '600')\">" + objdata[0].Title + "</a>"
+            $(".outinfo").html(outlist)
+        }
+    });
+
+    $(function () {
+        Date.prototype.format = function (format) {
+            var o = {
+                "M+": this.getMonth() + 1, //month 
+                "d+": this.getDate(), //day 
+                "h+": this.getHours(), //hour 
+                "m+": this.getMinutes(), //minute 
+                "s+": this.getSeconds(), //second 
+                "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+                "S": this.getMilliseconds() //millisecond 
+            }
+
+            if (/(y+)/.test(format)) {
+                format = format.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            }
+
+            for (var k in o) {
+                if (new RegExp("(" + k + ")").test(format)) {
+                    format = format.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));
+                }
+            }
+            return format;
+        }
+        var isholiday = "False";
+        $.ajax({
+            type: "GET",
+            async: false,
+            url: "http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/iface/getsuspendedday",
+            success: function (responseText) {
+                isholiday = responseText;
+            }
+        });
+        updateEndTime(23, 59, isholiday);
+
+        var clearTime = setInterval(function () { updateEndTime(23, 59, isholiday) }, 1000)
+    })
+    function updateEndTime(h, m, isholiday) {
+
+        var date = new Date();
+        var day = date.getDay();
+        var da = date.getDate();
+        var hour = date.getHours();
+        var mint = date.getMinutes();
+        var year = date.getYear();
+        var mon = date.getMonth() + 1;
+        var v;
+        if (isholiday == "True") {
+            if (productId > 7000 && productId < 7101) {
+                if (day != 6) {
+                    if (hour == 9 && mint < 30) {
+                        $("#bccourse").html(" <span class=red>《早盘关注》  9:00 — 9:30 </span><a href=\"http://soft.bccfw.com/video/\" target=\"_blank\"  class=\"u-btn-1\"></a> ");
+                    } else if ((hour == 9 && mint >= 30) || hour == 10 || (hour == 11 && mint < 35)) {
+                        $("#bccourse").html(" <span class=\"red\" style=\"line-height:50px;\"><a href=\"http://soft.bccfw.com/video/\" target=\"_blank\" >百川财富大讲堂，等待开课中</a></span>");
+                    } else if (hour == 11 && mint >= 35) {
+                        $("#bccourse").html(" <span class=red>《午间快评》  11:35 — 12:00 </span><a href=\"http://soft.bccfw.com/video/\" target=\"_blank\"  class=\"u-btn-1\"></a> ");
+                    } else if ((hour >= 12 && hour < 15) || (hour == 15 && mint < 5)) {
+                        $("#bccourse").html(" <span class=red style=\"line-height:50px;\"><a href=\"http://soft.bccfw.com/video/\" target=\"_blank\" >百川财富大讲堂，等待开课中</a></span>");
+                    } else if (hour == 15 && mint >= 5 && mint < 30) {
+                        $("#bccourse").html(" <span class=red>《收盘点金》  15:05 — 15:30 </span><a href=\"http://soft.bccfw.com/video/\" target=\"_blank\"  class=\"u-btn-1\"></a> ");
+                    } else {
+                        $("#bccourse").html(" <span class=red style=\"line-height:50px;\"><a href=\"http://soft.bccfw.com/video/\" target=\"_blank\" >百川财富大讲堂，等待开课中</a></span>");
+                    }
+                } else {
+                    $("#bccourse").html(" <span class=red style=\"line-height:50px;margin-left:10px\"><a href=\"http://soft.bccfw.com/video/\" target=\"_blank\" >百川财富大讲堂，等待开课中</a></span>");
+                }
+            }
+            else if (productId > 5000 && productId < 5101) {
+                if (hour >= 9 && hour < 11 || hour == 11 && mint < 30) {
+                    $("#djs").css("display", "none");
+                    $("#ddz").css("display", "none");
+                    $("#zbz").css("display", "");
+                    $("#vip_video").css("display", "");
+                } else if (hour == 11 && mint >= 30 || hour > 11 && hour < 13 || hour == 13 && mint < 30) {
+                    h = 13;
+                    m = 30;
+                    $("#djs").css("display", "");
+                    $("#ddz").css("display", "none");
+                    $("#zbz").css("display", "none");
+                    v = $("#djs_time");
+                    getv(h, m, v);
+                } else if (hour == 13 && mint >= 30 || hour > 13 && hour < 16) {
+                    $("#djs").css("display", "none");
+                    $("#ddz").css("display", "none");
+                    $("#zbz").css("display", "");
+                    $("#vip_video").css("display", "");
+                } else if (day != 6 && hour >= 16 && hour < 19) {
+                    h = 19;
+                    m = 0;
+                    $("#djs").css("display", "");
+                    $("#ddz").css("display", "none");
+                    $("#zbz").css("display", "none");
+                    v = $("#djs_time");
+                    getv(h, m, v);
+                } else if (day != 6 && (hour >= 19 && hour < 20 || hour == 20 && mint < 30)) {
+
+                    $("#djs").css("display", "none");
+                    $("#zbz").css("display", "");
+                    $("#ddz").css("display", "none");
+                    $("#vip_video").css("display", "");
+                } else {
+                    $("#djs").css("display", "none");
+                    $("#ddz").css("display", "");
+                    $("#zbz").css("display", "none");
+                }
+            }
+            else if (day == 6) {
+
+                if (productId > 3000 && productId < 3101) {
+                    if (hour == 8 && mint < 50) {
+                        h = 8;
+                        m = 50;
+                        $("#djs").css("display", "");
+                        $("#ddz").css("display", "none");
+                        $("#zbz").css("display", "none");
+                        v = $("#djs_time");
+                        getv(h, m, v);
+                    } else if ((hour == 8 && mint >= 50) || (hour >= 9 && hour < 11) || (hour == 11 && mint <= 30)) {
+                        $("#djs").css("display", "none");
+                        $("#ddz").css("display", "none");
+                        $("#zbz").css("display", "");
+                        $("#vip_video").css("display", "");
+                    } else if ((hour == 11 && mint > 30) || (hour > 11 && hour < 13) || (hour == 13 && mint <= 20)) {
+                        h = 13;
+                        m = 20;
+                        $("#djs").css("display", "");
+                        $("#ddz").css("display", "none");
+                        $("#zbz").css("display", "none");
+                        v = $("#djs_time");
+                        getv(h, m, v);
+                    } else if ((hour == 13 && mint > 20) || (hour > 13 && hour < 16)) {
+                        $("#djs").css("display", "none");
+                        $("#ddz").css("display", "none");
+                        $("#zbz").css("display", "");
+                        $("#vip_video").css("display", "");
+                    } else {
+                        $("#djs").css("display", "none");
+                        $("#ddz").css("display", "");
+                        $("#zbz").css("display", "none");
+                    }
+                } else if (hour < 8) {
+                    $("#djs").css("display", "none");
+                    $("#ddz").css("display", "");
+                    $("#zbz").css("display", "none");
+                } else if (hour == 8 && mint < 50) {
+                    h = 15;
+                    m = 0;
+                    $("#djs").css("display", "");
+                    $("#ddz").css("display", "none");
+                    $("#zbz").css("display", "none");
+                    v = $("#djs_time");
+                    getv(h, m, v);
+                } else if (hour < 15 || hour == 15 && mint < 30) {
+                    $("#djs").css("display", "none");
+                    $("#ddz").css("display", "none");
+                    $("#zbz").css("display", "");
+                    $("#vip_video").css("display", "");
+                } else {
+                    $("#djs").css("display", "none");
+                    $("#ddz").css("display", "");
+                    $("#zbz").css("display", "none");
+                }
+            }
+            else {
+
+                if (hour == 8 && mint < 50) {
+                    h = 8;
+                    m = 50;
+                    $("#djs").css("display", "");
+                    $("#ddz").css("display", "none");
+                    $("#zbz").css("display", "none");
+                    v = $("#djs_time");
+                    getv(h, m, v);
+                } else if ((hour == 8 && mint >= 50) || (hour >= 9 && hour < 11) || (hour == 11 && mint <= 30)) {
+                    $("#djs").css("display", "none");
+                    $("#ddz").css("display", "none");
+                    $("#zbz").css("display", "");
+                    $("#vip_video").css("display", "");
+                } else if ((hour == 11 && mint > 30) || (hour > 11 && hour < 13) || (hour == 13 && mint <= 20)) {
+                    h = 13;
+                    m = 20;
+                    $("#djs").css("display", "");
+                    $("#ddz").css("display", "none");
+                    $("#zbz").css("display", "none");
+                    v = $("#djs_time");
+                    getv(h, m, v);
+
+                } else if ((hour == 13 && mint > 20) || (hour > 13 && hour < 16)) {
+                    $("#djs").css("display", "none");
+                    $("#ddz").css("display", "none");
+                    $("#zbz").css("display", "");
+                    $("#vip_video").css("display", "");
+                } else if ((hour >= 16 && hour < 18) || (hour == 18 && mint <= 50)) {
+                    h = 18;
+                    m = 50;
+                    $("#djs").css("display", "");
+                    $("#ddz").css("display", "none");
+                    $("#zbz").css("display", "none");
+                    v = $("#djs_time");
+                    getv(h, m, v);
+                } else if ((hour == 18 && mint > 50) || hour == 19 || (hour == 20 && mint <= 45)) {
+                    $("#djs").css("display", "none");
+                    $("#ddz").css("display", "none");
+                    $("#zbz").css("display", "");
+                    $("#vip_video").css("display", "");
+                } else if ((hour == 20 && mint > 45) || hour > 20) {
+                    $("#djs").css("display", "none");
+                    $("#ddz").css("display", "");
+                    $("#zbz").css("display", "none");
+                } else {
+                    $("#djs").css("display", "none");
+                    $("#ddz").css("display", "");
+                    $("#zbz").css("display", "none");
+                }
+            }
+        } else {
+            if (productId > 7000 && productId < 7101) {
+                $("#bccourse").html(" <span class=red style=\"line-height:50px;margin-left:10px\"><a href=\"http://soft.bccfw.com/video/\" target=\"_blank\" >百川财富大讲堂，等待开课中</a></span>");
+            } else {
+                $("#djs").css("display", "none");
+                $("#ddz").css("display", "");
+                $("#zbz").css("display", "none");
+            }
+        }
+
+
+    }
+
+    function getv(h, m, v) {
+        var date = new Date();
+        var mint = date.getMinutes();
+        var s = date.getSeconds();
+        var hour = date.getHours();
+
+        var end = h * 3600 + m * 60;
+        var st = hour * 3600 + mint * 60 + s;
+
+        var lag = (end - st)
+
+        if (lag > 0) {
+            var second = Math.floor(lag % 60) > 9 ? Math.floor(lag % 60) : "0" + Math.floor(lag % 60);
+            var minite = Math.floor((lag / 60) % 60) > 9 ? Math.floor((lag / 60) % 60) : "0" + Math.floor((lag / 60) % 60);
+            var hour = Math.floor((lag / 3600) % 24) > 9 ? Math.floor((lag / 3600) % 24) : "0" + Math.floor((lag / 3600) % 24);
+            $(v).html("<lable>" + hour + ":" + minite + ":" + second + "</lable>");
+        }
+        else {
+            return false;
+        }
+    }
+
+    function entermeeting(roomID) {
+        var room = roomID;
+        if (roomID == "" || roomID == undefined) {
+            room = 36916;
+        }
+
+
+        var timee = new Date().getTime();
+        var username = User.GetUserName();
+
+
+        var url = 'http://ws.fsmeeting.com/userMgr/entermeeting.jsp?userType=0&roomID=' + room + '&userName=' + encodeURI(username);
+
+        external.iWinMain('cmd_navigate', url);
+    }
+
+
+</script>
+
+<SCRIPT>
+    //oObj input requires that a matrix filter be applied.  
+    //deg input defines the requested angle of rotation. 
+    var deg2radians = Math.PI * 2 / 360;
+    function MatrixFilter(obj) {
+        if (!obj.filters) return;
+        //alert(obj.filters.item(0)); 
+        var Matrix;
+        for (p in obj.filters) {
+            if (p == "DXImageTransform.Microsoft.Matrix") Matrix = obj.filters["DXImageTransform.Microsoft.Matrix"];
+        }
+        if (!Matrix) {
+            obj.style.filter += "progid:DXImageTransform.Microsoft.Matrix()";
+        }
+        Matrix = obj.filters["DXImageTransform.Microsoft.Matrix"];
+        this.equal = function (Matrix2D_x) {
+            if (Matrix2D_x.M11) Matrix.M11 = Matrix2D_x.M11;
+            if (Matrix2D_x.M12) Matrix.M12 = Matrix2D_x.M12;
+            if (Matrix2D_x.M21) Matrix.M21 = Matrix2D_x.M21;
+            if (Matrix2D_x.M22) Matrix.M22 = Matrix2D_x.M22;
+        }
+
+        if (arguments[1]) this.equal(arguments[1]);
+
+        this.Rotate = function (deg) {
+            rad = deg * deg2radians;
+            costheta = Math.cos(rad);
+            sintheta = Math.sin(rad);
+            var d = new Matrix2D(costheta, -sintheta, sintheta, costheta);
+            this.equal(Matrix2D.Mul(Matrix, d));
+        }
+        this.RotateTo = function (deg) {
+            rad = deg * deg2radians;
+            costheta = Math.cos(rad);
+            sintheta = Math.sin(rad);
+            var d = new Matrix2D(costheta, -sintheta, sintheta, costheta);
+            this.equal(d);
+        }
+        this.RotateAt = function (deg, sx, sy) {
+            rad = deg * deg2radians;
+            costheta = Math.cos(rad);
+            sintheta = Math.sin(rad);
+            var d = new Matrix2D(costheta, -sintheta, sintheta, costheta);
+            var x = sx - Matrix.Dx;
+            var y = sy - Matrix.Dy;
+            this.MoveTo(x * costheta + y * sintheta - x, -x * sintheta + y * costheta - y);
+            this.equal(Matrix2D.Mul(Matrix, d));
+        }
+        this.RotateToAt = function (deg, sx, sy) {
+            rad = deg * deg2radians;
+            costheta = Math.cos(rad);
+            sintheta = Math.sin(rad);
+            var d = new Matrix2D(costheta, -sintheta, sintheta, costheta);
+            var x = sx;
+            var y = sy;
+            this.MoveTo(x - (x * costheta - y * sintheta), -(x * sintheta + y * costheta - x));
+            this.equal(d);
+        }
+
+        this.MoveTo = function (sx, sy) {
+            Matrix.Dx = sx;
+            Matrix.Dy = sy;
+        }
+        this.toMatrix2D = function () {
+            return new Matrix2D(Matrix.M11, Matrix.M12, Matrix.M21, Matrix.M22);
+        }
+        this.ZoomBy = function (sx, sy) {
+            var d = new Matrix2D(sx, 0, 0, sy);
+            this.equal(Matrix2D.Mul(Matrix, d));
+        }
+        this.toString = function () {
+            return "" + Matrix.M11 + " " + Matrix.M12 + "\n" + Matrix.M21 + " " + Matrix.M22 + "\n"
+        }
+        //Matrix.SizingMethod='clip to original'; 
+        //this.fnSetRotation(30); 
+        //alert(Matrix.M11); 
+        //alert(obj.filters["DXImageTransform.Microsoft.Matrix"]); 
+    }
+    function Matrix2D() {
+        this.M11 = arguments[0] || 1;
+        this.M12 = arguments[1] || 0;
+        this.M21 = arguments[2] || 0;
+        this.M22 = arguments[3] || 1;
+        this.Mul_Matrix2D = function (Matrix2D_b) {
+            var r = new Matrix2D();
+            r = Matrix2D.Mul(this, Matrix2D_b);
+            return r;
+        }
+        this.toString = function () {
+            return "" + this.M11 + " " + this.M12 + "\n" + this.M21 + " " + this.M22 + "\n"
+        }
+    }
+    Matrix2D.Mul = function (Matrix2D_a, Matrix2D_b) {
+        var r = new Matrix2D();
+        r.M11 = Matrix2D_a.M11 * Matrix2D_b.M11 + Matrix2D_a.M12 * Matrix2D_b.M21;
+        r.M12 = Matrix2D_a.M11 * Matrix2D_b.M12 + Matrix2D_a.M12 * Matrix2D_b.M22;
+        r.M21 = Matrix2D_a.M21 * Matrix2D_b.M11 + Matrix2D_a.M22 * Matrix2D_b.M21;
+        r.M22 = Matrix2D_a.M21 * Matrix2D_b.M12 + Matrix2D_a.M22 * Matrix2D_b.M22;
+        return r;
+    }
+
+
+    var ms = new MatrixFilter(s);
+    var mm = new MatrixFilter(m);
+    var mh = new MatrixFilter(h);
+    if (ms.RotateToAt)
+        setInterval("ms.RotateToAt((new Date()).getSeconds()*6+6,49,49)", 500);
+    if (mm.RotateToAt)
+        setInterval("mm.RotateToAt((new Date()).getMinutes()*6+6,49,49)", 500);
+    if (mh.RotateToAt)
+        setInterval("mh.RotateToAt(((new Date()).getHours()+(new Date()).getMinutes()/60)*30,49,49)", 500);
+    //mf.MoveTo(30,70); 
+    //mf.ZoomBy(1.5,1.5); 
+    //mf.ZoomBy(1.5,1.5); 
+    //alert(mf.toMatrix2D()); 
+
+    //alert(Matrix2D.Mul(m2d1,m2d2)); 
+    //fnSetRotation(oDiv.filters.item(0),30); 
+</SCRIPT> 
+<div style="display:none;">
+<script src="http://s22.cnzz.com/z_stat.php?id=1000125520&web_id=1000125520" language="JavaScript"></script>
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4228384-4']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+</div>
+<script type="text/javascript">
+    (function () {
+        var jkb = document.createElement('script'); jkb.type = "text/javascript"; jkb.async = true;
+        jkb.src = document.location.protocol + "//exp.jiankongbao.com/loadtrace.php?host_id=12341&style=6&type=1";
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(jkb, s);
+    })();
+</script>
+</body>
+</html>

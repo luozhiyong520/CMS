@@ -1,0 +1,91 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>常见问题</title>
+        <script src="http://js.upchina.com/sasweb/goodsbillboard/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+        <style>
+            html{overflow:hidden;}
+body{background:#f5f5f5;margin:0;padding:0;font-family:Times New Roman,Arial;}
+ul,li,h1,h2,p{margin:0;padding:0;list-style:none;}
+img{border:none;}
+a{text-decoration:none}
+a:hover{text-decoration:underline;}
+            /*#bgPosition{ background:#000; position:absolute; z-index:99; width:100%; height:100%; top:0; left:0; opacity:0.8; filter:alpha(opacity:80); display:none;}*/
+.tab_video{ min-height:300px;}
+
+.lightBox{ padding:5px 0 0 10px;}
+.lightBox a{ text-decoration:underline;}
+
+.l_bg{display:block; background:#000;opacity:0.9; filter:alpha(opacity=90); position: absolute; top:0; left:0; z-index:20; display:none;}
+.l_box{ width:600px; height: auto; background:#FFF;border:5px solid #666; border-radius:2px; z-index:100; position:absolute; margin-left:-290px; margin-top:-150px;}
+.l_box span{ position:absolute; right:5px; top:5px; width:16px; height:16px; text-align:center;display:block; background:#fff;border-radius:50%; color:#000; border:2px solid #000; cursor:pointer;}
+.l_bg_text{ padding-top: 0;margin: 0;padding-left: 10px;}
+.l_bg_text dl dt,dd{ line-height:220%;}
+.l_bg_text span{font-family: 宋体;font-style: normal;padding: 3px 10px;background: #ff8a00;cursor: pointer;color: #fff;}
+.height1114{height: 1014px; position:relative;}
+dl, dt, dd
+{
+     border: 0 none;
+    font-size: 12px;
+    margin: 0;
+    outline: 0 none;
+    list-style:none;
+	 line-height:20px;
+    text-decoration:none;
+    padding: 0;
+    vertical-align: baseline;
+    }
+    .l_bg_text a{ color:#ff8a00}
+        </style>
+	</head>
+	<body>
+    <div class="l_bg_text">
+      <dl>
+        <dt>常见问题:</dt>
+        <dd>1、进入培训课堂请使用IE浏览器，切勿使用其他浏览器。</dd>
+        <dd>2、如果下载安装后仍无法正常登陆培训课堂，请复制以下链接到IE浏览器中打开后输入任意昵称即可进入课堂。</dd>
+        <dd><hr /></dd>
+         <dd>普通用户培训课堂游客链接</dd>
+        <dd style="table-layout:fixed; word-break: break-all; overflow:hidden; "><a href="javascript:;" id="crtC4" >http://ws.fsmeeting.com:80/userMgr/entermeeting.jsp?userType=0&roomID=36916</a> <span onclick="copyText(document.all.crtC4)">复制</span></dd>
+        <dd>会员用户晚间加密培训链接:(登陆输入会员培训课堂密码)</dd>
+        <dd style="table-layout:fixed; word-break: break-all; overflow:hidden;"><a href="javascript:;" id="crtC5">http://ws.fsmeeting.com:80/userMgr/entermeeting.jsp?userType=0&roomID=57046</a> <span onclick="copyText(document.all.crtC5)">复制</span></dd>
+        <dd>钻石实播课堂链接:(登陆输入钻石培训课堂密码)</dd>
+        <dd style="table-layout:fixed; word-break: break-all; overflow:hidden; "><a href="javascript:;" id="crtC" >http://ws.fsmeeting.com:80/userMgr/entermeeting.jsp?userType=0&roomID=51138</a> <span onclick="copyText(document.all.crtC)">复制</span></dd>
+        <dd>皇冠实播课堂链接:(登陆输入皇冠培训课堂密码)</dd>
+        <dd style="table-layout:fixed; word-break: break-all; overflow:hidden;"><a href="javascript:;" id="crtC2">http://ws.fsmeeting.com:80/userMgr/entermeeting.jsp?userType=0&roomID=59026</a> <span onclick="copyText(document.all.crtC2)">复制</span></dd>
+        <dd>T+0淘金大课堂链接</dd>
+        <dd style="table-layout:fixed; word-break: break-all; overflow:hidden;"><a href="javascript:;" id="crtC3">http://ws.fsmeeting.com:80/userMgr/entermeeting.jsp?userType=0&roomID=74160</a> <span onclick="copyText(document.all.crtC3)">复制</span></dd>
+      </dl>
+    </div>
+<!--</div>-->
+<script type="text/javascript">
+//    $(document).ready(light);
+//    $(window).resize(light);
+//    function light() {
+//        var l_box = $("#ligBg"), l_bg = $("#bgPosition"), light = $("#lightBox"), oClose = $("#close");
+//        l_box.css({ left: 40 + '%', top: 40 + '%' })
+//        l_bg.css({ height: function () { return $(window).height() }, width: function () { return $(document.body).width() } });
+//        light.click(function () {
+//            l_box.show();
+//            l_bg.css("display", "block");
+//        });
+//        oClose.click(function () {
+//            l_box.hide();
+//            l_bg.hide();
+//        });
+//    }
+    $(function () {
+        external.SetTitle("常见问题");
+    })
+    function copyText(obj) {
+        var rng = document.body.createTextRange();
+        rng.moveToElementText(obj);
+        rng.scrollIntoView();
+        rng.select();
+        rng.execCommand("Copy");
+        rng.collapse(false);
+        alert("已经复制");
+    }
+</script>
+	</body>
+</html>

@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>高手藏金阁</title>
+ <link href="http://js.upchina.com/sasweb/zhuanti/css/gsgz.css" type="text/css" rel="stylesheet"/>
+   <script type="text/javascript" src="http://js.upchina.com/lib/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript">
+        //获取URL参数的值
+        function GetUrlParame(parame, url) {
+            var reg = new RegExp("(^|&)" + parame + "=([^&]*)(&|$)", "i");
+            var res = "";
+            try {
+                if (url == "" || url == undefined)
+                    res = window.location.search.substr(1).match(reg)[2];
+                else
+                    res = url.match(reg)[2];
+            } catch (e) { }
+            return res;
+        }
+
+        $(function () {
+            Date.prototype.format = function (format) {
+                var o = {
+                    "M+": this.getMonth() + 1, //month 
+                    "d+": this.getDate(), //day 
+                    "h+": this.getHours(), //hour 
+                    "m+": this.getMinutes(), //minute 
+                    "s+": this.getSeconds(), //second 
+                    "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+                    "S": this.getMilliseconds() //millisecond 
+                }
+
+                if (/(y+)/.test(format)) {
+                    format = format.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+                }
+
+                for (var k in o) {
+                    if (new RegExp("(" + k + ")").test(format)) {
+                        format = format.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));
+                    }
+                }
+                return format;
+            }
+            $(".right_part").width(document.documentElement.clientWidth - 335);
+            $(".news_part").width(document.documentElement.clientWidth - 360);
+
+            $(window).resize(function () {
+                $(".right_part").width(document.documentElement.clientWidth - 335);
+                $(".news_part").width(document.documentElement.clientWidth - 360);
+            });
+
+            $(".sj_btn").hover(function () {
+                $(this).css({ "backgroundPosition": "-64px 0" });
+            }, function () {
+                $(this).css({ "backgroundPosition": "0 0" });
+            })
+
+            $(".yj_btn").hover(function () {
+                $(this).css({ "backgroundPosition": "-64px -64px" });
+            }, function () {
+                $(this).css({ "backgroundPosition": "0 -64px" });
+            })
+            var firsturl = $(".news_list li a:first").attr("url")
+            getinfo(firsturl, 1);
+            $(".news_list .date1").each(function (i) {
+                if (new Date($(this).html()).format("yyyy-MM-dd") == new Date().format("yyyy-MM-dd")) {
+                    $(".news_list .date:eq(" + i + ")").html(new Date($(this).html()).format("hh:mm"));
+                } else {
+                    $(".news_list .date:eq(" + i + ")").html(new Date($(this).html()).format("MM-dd"));
+                };
+            })
+        })
+
+        /*点击播放视频*/
+        function getinfo(url, i) {
+            $.ajax({
+                url: url,
+                type: 'GET',
+                cache: false,
+                success: function (data) {
+                    $(".news_list li").removeClass("active_li");
+                    $("#t" + i).addClass("active_li");
+                    $("#c" + i).addClass("active_li");
+
+                    $(".news_part").html(data);
+                    var datetime = decodeURI(GetUrlParame("datetime", url.substring(url.indexOf("?") + 1, url.length)));
+                    var topicTitle = decodeURI(GetUrlParame("topicTitle", url.substring(url.indexOf("?") + 1, url.length)));
+                  //  var source = decodeURI(GetUrlParame("source", url.substring(url.indexOf("?") + 1, url.length)));
+                    $("#topicTitle").html(topicTitle);
+                    $("#update_time").html(datetime);
+                   // $("#source").html("来源："+source);
+                }
+            });
+
+        }
+    </script>
+</head>
+<body>
+    <div class="left_part">
+        <div class="fl">
+            <div class="divide">
+                <div class="lp_content">
+                    <ul class="news_list">
+                     <#uptag tagtype="07" topictype="9" pagesize="50" pagecount="1" viewedit="1" id="dataId2"  var="d" index="i" islast="flag">
+                        <li id="t${i}">
+                            <span class="date"></span>
+                             <span class="date1" style="display:none">${d.CreatedTime}</span>
+                              <a  href="javascript:void(0)"  onclick="getinfo('http://app.upchina.com/news/gscjg/${cdatestring(d.CreatedTime,"yyyyMM")}/${cdatestring(d.CreatedTime,"yyyy-MM-dd")}_1.html?datetime=${cdatestring(d.CreatedTime,"MM-dd HH:mm")}&topicTitle=${d.TopicName}',${i})" url="http://app.upchina.com/news/gscjg/${cdatestring(d.CreatedTime,"yyyyMM")}/${cdatestring(d.CreatedTime,"yyyy-MM-dd")}_1.html?datetime=${cdatestring(d.CreatedTime,"MM-dd HH:mm")}&topicTitle=${d.TopicName}">${substr(filterhtml(d.TopicName),20)}</a>            
+                        </li>
+                        <li class="detail" style="padding: 0px 10px 10px 20px;height: auto;" id="c${i}">
+                            <div class="related_ct1">
+                                <p>
+                                    <a  href="javascript:void(0)"  onclick="getinfo('http://app.upchina.com/news/gscjg/${cdatestring(d.CreatedTime,"yyyyMM")}/${cdatestring(d.CreatedTime,"yyyy-MM-dd")}_1.html?datetime=${cdatestring(d.CreatedTime,"MM-dd HH:mm")}&topicTitle=${d.TopicName}',${i})">${substr(filterhtml(d.Remark),50)}</a>
+                                </p>
+                            </div>
+                        </li>
+                     <#/uptag>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="right_part">
+        <div class="news_part">
+          
+        </div>
+    </div>
+</body>
+</html>

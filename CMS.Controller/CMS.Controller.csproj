@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{146913ED-0D0F-423F-A6B6-473A71E1051D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CMS.Controller</RootNamespace>
+    <AssemblyName>CMS.Controller</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ajax\AjaxActualsAssociate.cs" />
+    <Compile Include="Ajax\AjaxAnalyst.cs" />
+    <Compile Include="Ajax\AjaxAnalystLive.cs" />
+    <Compile Include="Ajax\AjaxAuthorityDot.cs" />
+    <Compile Include="Ajax\AjaxCustomerGroup.cs" />
+    <Compile Include="Ajax\AjaxDirection.cs" />
+    <Compile Include="Ajax\AjaxFragment.cs" />
+    <Compile Include="Ajax\AjaxInformationStatistic.cs" />
+    <Compile Include="Ajax\AjaxMedia.cs" />
+    <Compile Include="Ajax\AjaxArticle.cs" />
+    <Compile Include="Ajax\AjaxNewsTitlePrefix.cs" />
+    <Compile Include="Ajax\AjaxPageTemplate.cs" />
+    <Compile Include="Ajax\AjaxPopupMsgPlan.cs" />
+    <Compile Include="Ajax\AjaxPopup.cs" />
+    <Compile Include="Ajax\AjaxQuestionnaire.cs" />
+    <Compile Include="Ajax\AjaxSendMsg.cs" />
+    <Compile Include="Ajax\AjaxSSOResult.cs" />
+    <Compile Include="Ajax\Ajaxtemplatedetail.cs" />
+    <Compile Include="Ajax\AjaxTest.cs" />
+    <Compile Include="Ajax\AjaxTitlePrefix.cs" />
+    <Compile Include="Ajax\AjaxUserManage.cs" />
+    <Compile Include="Ajax\AjaxChannel.cs" />
+    <Compile Include="Ajax\AjaxLogin.cs" />
+    <Compile Include="Ajax\AjaxVisualEditing.cs" />
+    <Compile Include="Ajax\AjaxTopic.cs" />
+    <Compile Include="Ajax\AjaxTBPUSHINFO.cs" />
+    <Compile Include="Ajax\AjaxActualsGoods.cs" />
+    <Compile Include="Controller\AnalystLiveController.cs" />
+    <Compile Include="Controller\CourseProgramController.cs" />
+    <Compile Include="Controller\CustomerGroupController.cs" />
+    <Compile Include="Controller\DirectionController.cs" />
+    <Compile Include="Controller\FragmentController.cs" />
+    <Compile Include="Controller\MediaController.cs" />
+    <Compile Include="Controller\NewsInterfaceController.cs" />
+    <Compile Include="Controller\NewsController.cs" />
+    <Compile Include="Controller\QuestionnaAnswerController.cs" />
+    <Compile Include="Controller\SendMsgController.cs" />
+    <Compile Include="Controller\StockContestController.cs" />
+    <Compile Include="Controller\TemplatedetailController.cs" />
+    <Compile Include="Controller\TestController.cs" />
+    <Compile Include="Controller\UsCollectController.cs" />
+    <Compile Include="Controller\UserManageController.cs" />
+    <Compile Include="Controller\AnalystController.cs" />
+    <Compile Include="Controller\YmsController.cs" />
+    <Compile Include="PermissionModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UploadMedia.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CMS.BLL\CMS.BLL.csproj">
+      <Project>{DD52449A-CEB0-48FB-80DE-047D4771F5B9}</Project>
+      <Name>CMS.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.HtmlService.Contract\CMS.HtmlService.Contract.csproj">
+      <Project>{D2F4C901-F53A-43AB-A9AA-5B3E189C3F3B}</Project>
+      <Name>CMS.HtmlService.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.HTMLService\CMS.HtmlService.csproj">
+      <Project>{29F916BD-FF25-4868-89BC-D1706A8E3076}</Project>
+      <Name>CMS.HtmlService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.Model\CMS.Model.csproj">
+      <Project>{6617DEF1-FE4C-47F8-814A-277480A68216}</Project>
+      <Name>CMS.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.Template\CMS.Template.csproj">
+      <Project>{68166A95-3810-44A8-836E-4DF7EFF94E93}</Project>
+      <Name>CMS.Template</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.Utility\CMS.Utility.csproj">
+      <Project>{A5116182-E29F-4B02-B37D-694CEC08A473}</Project>
+      <Name>CMS.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.ViewModel\CMS.ViewModel.csproj">
+      <Project>{91C4C149-4DFD-4465-8B94-3823F3FB5E18}</Project>
+      <Name>CMS.ViewModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{E0C4897C-F5AA-4111-A4D1-14977470636F}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Factory\Factory.csproj">
+      <Project>{0FDA71F1-A628-42A7-9D48-0027632AE277}</Project>
+      <Name>Factory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SMVC\SMVC.csproj">
+      <Project>{7D06107D-1F72-4C57-B5E4-744634219413}</Project>
+      <Name>SMVC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

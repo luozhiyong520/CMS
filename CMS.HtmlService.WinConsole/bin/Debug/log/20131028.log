@@ -1,0 +1,115 @@
+2013-10-28 13:26:22,143 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-10-28 13:26:22,172 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-10-28 13:26:22,176 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-10-28 13:28:37,300 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-10-28 13:28:37,319 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-10-28 13:28:37,323 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-10-28 13:30:03,129 [3] DEBUG log [(null)] - 方法名：CreateSingleNews，生成NewsId:598失败
+2013-10-28 13:30:03,148 [3] DEBUG log [(null)] - CMS.Template.Except.ParseException: Unexpected token: EOF. Was expecting: ExpEnd
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 35
+   在 CMS.Template.Parser.TemplateParser.ReadExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 102
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 77
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 211
+   在 CMS.HtmlService.HtmlEngine.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 43
+2013-10-28 13:31:20,213 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-10-28 13:31:20,231 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-10-28 13:31:20,235 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-10-28 13:31:47,580 [6] DEBUG log [(null)] - 方法名：CreateSingleNews，生成NewsId:600失败
+2013-10-28 13:31:47,587 [6] DEBUG log [(null)] - CMS.Template.Except.ParseException: Unexpected token: EOF. Was expecting: ExpEnd
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 35
+   在 CMS.Template.Parser.TemplateParser.ReadExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 102
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 77
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 211
+   在 CMS.HtmlService.HtmlEngine.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 43
+2013-10-28 13:33:37,095 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-10-28 13:33:37,112 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-10-28 13:33:37,117 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-10-28 13:33:45,583 [3] DEBUG log [(null)] - 方法名：CreateSingleNews，生成NewsId:601失败
+2013-10-28 13:33:45,590 [3] DEBUG log [(null)] - CMS.Template.Except.ParseException: Unexpected token: EOF. Was expecting: ExpEnd
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 35
+   在 CMS.Template.Parser.TemplateParser.ReadExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 102
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 77
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 211
+   在 CMS.HtmlService.HtmlEngine.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 43
+2013-10-28 13:34:11,849 [3] DEBUG log [(null)] - 方法名：CreateSingleNews，生成NewsId:602失败
+2013-10-28 13:34:11,850 [3] DEBUG log [(null)] - CMS.Template.Except.ParseException: Unexpected token: EOF. Was expecting: ExpEnd
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 35
+   在 CMS.Template.Parser.TemplateParser.ReadExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 102
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 77
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 211
+   在 CMS.HtmlService.HtmlEngine.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 43
+2013-10-28 13:38:35,205 [3] DEBUG log [(null)] - 方法名：CreateSingleNews，生成NewsId:603失败
+2013-10-28 13:38:35,208 [3] DEBUG log [(null)] - CMS.Template.Except.ParseException: Unexpected token: EOF. Was expecting: ExpEnd
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 35
+   在 CMS.Template.Parser.TemplateParser.ReadExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 102
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 77
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 211
+   在 CMS.HtmlService.HtmlEngine.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 43
+2013-10-28 13:39:13,812 [3] DEBUG log [(null)] - 方法名：CreateSingleNews，生成NewsId:604失败
+2013-10-28 13:39:13,814 [3] DEBUG log [(null)] - CMS.Template.Except.ParseException: Unexpected token: EOF. Was expecting: ExpEnd
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 35
+   在 CMS.Template.Parser.TemplateParser.ReadExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 102
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 77
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 211
+   在 CMS.HtmlService.HtmlEngine.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 43
+2013-10-28 13:39:27,875 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-10-28 13:39:27,893 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-10-28 13:39:27,898 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-10-28 13:40:16,800 [3] DEBUG log [(null)] - 方法名：CreateSingleNews，生成NewsId:605失败
+2013-10-28 13:40:16,807 [3] DEBUG log [(null)] - CMS.Template.Except.ParseException: Unexpected token: EOF. Was expecting: ExpEnd
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 35
+   在 CMS.Template.Parser.TemplateParser.ReadExpression() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 102
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 77
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 211
+   在 CMS.HtmlService.HtmlEngine.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 43
+2013-10-28 13:40:41,828 [3] INFO  log [(null)] - 方法名：CreateSingleNews，新增新闻，生成NewsId:606文件成功，文件路径:/qwfx/201310/28134036736.html
+2013-10-28 13:41:30,108 [9] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-10-28 13:41:30,145 [9] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-10-28 13:41:30,155 [9] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-10-28 13:45:28,875 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-10-28 13:45:28,894 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-10-28 13:45:28,898 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-10-28 13:45:38,983 [5] INFO  log [(null)] - 方法名：CreateSingleNews，新增新闻，生成NewsId:609文件成功，文件路径:/qjkp/201310/28134532837.html
+2013-10-28 13:45:39,142 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：83，模板名称：蒙json测试列表模板，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\jsonlist.shtml成功！
+2013-10-28 13:46:12,709 [5] INFO  log [(null)] - 方法名：CreateSingleNews，新增新闻，生成NewsId:610文件成功，文件路径:/qjkp/201310/28134606678.html
+2013-10-28 13:46:12,715 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：83，模板名称：蒙json测试列表模板，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\jsonlist.shtml成功！
+2013-10-28 13:58:43,233 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：83，模板名称：蒙json测试列表模板，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\jsonlist.shtml成功！
+2013-10-28 14:00:23,953 [5] INFO  log [(null)] - 方法名：GetTemplagePreview，预览模块Id：83，模板名称：蒙json测试列表模板，模板路径：/meng/jsonlist.shtml成功
+2013-10-28 14:00:57,462 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：83，模板名称：蒙json测试列表模板，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\jsonlist.shtml成功！
+2013-10-28 14:02:04,592 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：83，模板名称：蒙json测试列表模板，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\jsonlist.shtml成功！
+2013-10-28 14:03:07,708 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：83，模板名称：蒙json测试列表模板，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\jsonlist.shtml成功！
+2013-10-28 14:04:51,211 [9] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-10-28 14:04:51,242 [9] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-10-28 14:04:51,252 [9] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-10-28 14:08:43,183 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-10-28 14:08:43,201 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-10-28 14:08:43,205 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-10-28 14:08:47,540 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：83，模板名称：蒙json测试列表模板，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\jsonlist.shtml成功！

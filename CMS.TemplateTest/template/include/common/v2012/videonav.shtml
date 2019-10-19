@@ -1,0 +1,80 @@
+<div class="upHeader">
+<div class="logonav Area newup">
+    <div class="up_logo">
+  		<h1 style="top:10px;">   
+	    	<a href="/">
+	    		<img alt="UP投资" src="http://img.upchina.com/logo/logoold.png">
+	        </a>   
+	    </h1>
+	    <em class="videoImg"><img src="http://img.upchina.com/upchinav2/images/video.png"></em>
+    </div>
+  <!--<div class="upSearch">
+  	<form action="#" method="post">
+  		<p>
+  			<input type="text" size="12" value="股票代码" onBlur="javascript:b(this)" onFocus="javascript:f(this)">
+  			<input type="text" size="17" value="输入您的手机号码" onBlur="javascript:b(this)" onFocus="javascript:f(this)">
+  			<input type="submit" class="serBtn" value="">
+  		</p>
+  	</form>
+  </div>-->
+</div>
+</div>
+<!--logo&&search end-->
+<!--nav start-->
+<div class="videoNav">
+	<ul>
+		<li><a href="/v/">视频首页</a></li>
+		<li><a href="/v/upsd.shtml">九宫视点</a></li>
+		<li><a href="/v/mryz.shtml">经典实战</a></li>
+		<li><a href="/v/cjyd.shtml">财经热评</a></li>
+		<li><a href="/v/mjjp.shtml">机构解盘</a></li>
+		<li><a href="/v/cppx.shtml">产品培训</a></li>
+		<li><a href="#">特别推荐</a></li>
+	</ul>
+</div>
+<script type="text/javascript">
+    $(function(){
+		var videoNav=$('.videoNav ul li a');
+		var url=window.location.href.toLowerCase();
+		var i=0;
+		
+		if(url.indexOf('/v/upsd.shtml')>0)
+		{
+			videoNav.eq(1).attr('class','active')
+		}
+		else if(url.indexOf('/v/mryz.shtml')>0)
+		{
+			videoNav.eq(2).attr('class','active')
+		}
+		else if(url.indexOf('/v/cjyd.shtml')>0)
+		{
+			videoNav.eq(3).attr('class','active')
+		}
+		else if(url.indexOf('/v/mjjp.shtml')>0)
+		{
+			videoNav.eq(4).attr('class','active')
+		}
+		else if(url.indexOf('/v/cppx.shtml')>0)
+		{
+			videoNav.eq(5).attr('class','active')
+		}
+		else if(url.indexOf('/v/tbtj.shtml')>0)
+		{
+			videoNav.eq(5).attr('class','active')
+		}
+		else if(url.indexOf('/v/')>0 || url.indexOf('/v/index.shtml')>0)
+		{
+			videoNav.eq(0).attr('class','active')
+		}
+	})
+	
+	function f(obj)
+	{
+		if(obj.value == obj.defaultValue) obj.value = ''; 
+	}
+	function b(obj)
+	{
+		if(obj.value=='')obj.value = obj.defaultValue;
+	} 
+    </script>
+<!--nav end-->

@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>UP下午茶</title>
+<link href="http://js.upchina.com/sasweb/zhuanti/css/upxwc.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="http://js.upchina.com/upchinav2/js/jquery-1.4.2.js"></script>
+<link href="http://js.upchina.com/sasweb/zhuanti/css/date.css" type="text/css" rel="stylesheet"/>
+<script src="http://js.upchina.com/sasweb/zhuanti/js/updatepicker.js" type="text/javascript"></script>
+
+</head>
+<body>
+ 
+<div class="g-head">
+  <div class="g-top ie6fixedTL">
+    <!--头部-->
+    <div class="m-top">
+      <div class="m-logo"></div>
+      <div class="m-date"><span id="curdate"></span><a href="javascript:void(0)" id="getdate"></a></div>
+    </div>
+    <!--导航-->
+    <div class="m-nav">
+      <ul>
+        <li class="cur"><a href="#m1">A股综合评述</a></li>
+        <li><a href="#m2">主力指南针</a></li>
+        <li><a href="#m3">异动涨停榜</a></li>
+        <li><a href="#m4">五星操盘榜</a></li>
+        <li><a href="#m5">收市大家评</a></li>
+        <li><a href="#m6">理财风向标</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="m-interval"></div>
+<!--A股综合评述-->
+<div class="g-con" id="m1">
+  <h1 >A股综合评述</h1>
+  <div class="m-con">
+    <div class="m-bkzs">
+      <div class="m-lf">
+        <ul>
+          <#uptag tagtype="02" clsid="006001" pagesize="1" pagecount="1" viewedit="1" id="dataId003051"  var="d" index="i"> 
+            ${d.Content}
+             <#/uptag>  
+        </ul>
+      </div>
+      <div class="m-rt"></div>
+    </div>
+    <div class="m-phgs">
+      <div class="m-lf">
+        <h2>盘后概述</h2>
+        <p>
+           <#uptag tagtype="01" clsid="005003" pagesize="1" pagecount="1" viewedit="1" id="dataId001030"  var="d" index="i"  > 
+             ${d.NewsAbstract}
+             <#/uptag>  
+         </p>
+      </div>
+      <div class="m-rt"></div>
+    </div>
+  </div>
+  <div class="m-con">
+    <div class="m-cake">
+       <#uptag tagtype="02" clsid="006002" pagesize="1" pagecount="1" viewedit="1" id="dataId003052"  var="d" index="i"> 
+             ${d.Content}
+             <#/uptag> 
+     </div>
+    <div class="m-sj">
+      <#uptag tagtype="02" clsid="006003" pagesize="1" pagecount="1" viewedit="1" id="dataId003053"  var="d" index="i"> 
+             ${d.Content}
+             <#/uptag> 
+    </div>
+  </div>
+</div>
+<!--主力指南针-->
+<div class="g-con" id="m2" >
+  <h1 >主力指南针</h1>
+  <ul class="m-znz" id="znzul">
+    <li class="cur" t="1">A股板块指数资金动向</li>
+    <li t="2">行业资金流入/流出前五</li>
+    <li t="3">概念资金流入/流出前五</li>
+    <li t="4">个股资金流入/流出前五</li>
+  </ul>
+  <div id="div-1" class="m-znz-con">
+     <#uptag tagtype="02" clsid="006004" pagesize="1" pagecount="1" viewedit="1" id="dataId003054"  var="d" index="i"> 
+              <center>${d.Content}</center>
+             <#/uptag> 
+  </div>
+  <div id="div-2" class="m-znz-con" style="display:none;"> <#uptag tagtype="02" clsid="006005" pagesize="1" pagecount="1" viewedit="1" id="dataId003055"  var="d" index="i"> 
+             <center> ${d.Content}</center>
+             <#/uptag> </div>
+  <div id="div-3" class="m-znz-con" style="display:none;"> <#uptag tagtype="02" clsid="006006" pagesize="1" pagecount="1" viewedit="1" id="dataId003056"  var="d" index="i"> 
+             <center> ${d.Content}</center>
+             <#/uptag> </div>
+  <div id="div-4" class="m-znz-con" style="display:none;"> <#uptag tagtype="02" clsid="006007" pagesize="1" pagecount="1" viewedit="1" id="dataId003057"  var="d" index="i"> 
+              <center>${d.Content}</center>
+             <#/uptag> </div>
+</div>
+<!--异动涨停榜-->
+<div class="g-con" id="m3" >
+  <h1 >异动涨停榜</h1>
+  <div style="margin-top:20px; text-align:center;">
+    <#uptag tagtype="01" clsid="005004" pagesize="1" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i"> 
+    <center>
+        <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+            <img alt="" src="${d.ImgUrl}"> 
+        <#else>
+            <img alt="" src="http://img.upchina.com${d.ImgUrl}"> 
+        <#/if>
+    </center>
+     <#/uptag>   
+  </div>
+</div>
+<!--五星操盘榜-->
+<div class="g-con" id="m4">
+  <h1  >五星操盘榜</h1>
+  <div style="margin-top:20px; text-align:center;">
+  <#uptag tagtype="01" clsid="005005" pagesize="1" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i"> 
+   <center> 
+        <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+            <img alt="" src="${d.ImgUrl}"> 
+        <#else>
+            <img alt="" src="http://img.upchina.com${d.ImgUrl}"> 
+        <#/if>
+   </center>
+     <#/uptag>
+    </div>
+   
+</div>
+<!--收市大家评-->
+<div class="g-con" id="m5">
+  <h1>收市大家评</h1>
+  <div class="m-djp">
+    <div class="m-djp-tt"></div>
+    <ul>
+     <#uptag tagtype="01" clsid="005006" pagesize="6" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i"  begindate="today"> 
+    <li>●<a  href="javascript:void(0)" onclick="popuurl('http://www.upchina.com/news${d.Url}','797', '600')"> ${d.Title}</a></li>
+     <#/uptag>
+     </ul>
+
+     <ul>
+     <#uptag tagtype="01" clsid="005007" pagesize="6" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i"  begindate="today"> 
+   <li>● <a  href="javascript:void(0)" onclick="popuurl('http://www.upchina.com/news${d.Url}','797', '600')">${d.Title}</a></li>
+     <#/uptag>
+    </ul>
+
+  </div>
+</div>
+<!--理财风向标-->
+<div class="g-con" id="m6">
+  <h1 >理财风向标</h1>
+  <div class="m-fxb">
+   
+       
+       <#uptag tagtype="01" clsid="005008" pagesize="6" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i"> 
+       <#if test="${equals(i,1)}">
+        <div class="m-fxb-lf">
+          <div class="img">
+            <div><a  href="javascript:void(0)" onclick="popuurl('http://www.upchina.com/news${d.Url}','797', '600')">
+            <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+                <img alt="" src="${d.ImgUrl}" width="220" height="90"/> 
+           <#else>
+                <img alt="" src="http://img.upchina.com${d.ImgUrl}" width="220" height="90"/> 
+           <#/if>
+            </a></div>
+            <p><a  href="javascript:void(0)" onclick="popuurl('http://www.upchina.com/news${d.Url}','797', '600')"> ${d.Title}</a></p>
+          </div>
+       <#elseif  test="${equals(i,2)}">
+            <div class="img">
+            <div><a  href="javascript:void(0)" onclick="popuurl('http://www.upchina.com/news${d.Url}','797', '600')">
+             <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+                <img alt="" src="${d.ImgUrl}" width="220" height="90"/> 
+           <#else>
+                <img alt="" src="http://img.upchina.com${d.ImgUrl}" width="220" height="90"/> 
+           <#/if>
+            </a></div>
+            <p><a  href="javascript:void(0)" onclick="popuurl('http://www.upchina.com/news${d.Url}','797', '600')"> ${d.Title}</a></p>
+          </div>
+         </div>
+        <#elseif  test="${equals(i,3)}">
+            <div class="m-fxb-ct">
+                <div class="img">
+                     <div><a  href="javascript:void(0)" onclick="popuurl('http://www.upchina.com/news${d.Url}','797', '600')"> 
+                      <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+                <img alt="" src="${d.ImgUrl}" width="449" height="227"/> 
+           <#else>
+                <img alt="" src="http://img.upchina.com${d.ImgUrl}" width="449" height="227"/> 
+           <#/if>
+                     </a></div>
+                     <p><a  href="javascript:void(0)" onclick="popuurl('http://www.upchina.com/news${d.Url}','797', '600')"> ${d.Title}</a></p>
+                </div>
+            </div>
+         <#elseif test="${equals(i,4)}">
+              <div class="m-fxb-rt">
+              <div class="img">
+                 <div><a  href="javascript:void(0)" onclick="popuurl('http://www.upchina.com/news${d.Url}','797', '600')">
+                  <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+                <img alt="" src="${d.ImgUrl}" width="220" height="90"/> 
+           <#else>
+                <img alt="" src="http://img.upchina.com${d.ImgUrl}" width="220" height="90"/> 
+           <#/if>
+                 </a></div>
+            <p><a  href="javascript:void(0)" onclick="popuurl('http://www.upchina.com/news${d.Url}','797', '600')"> ${d.Title}</a></p>
+              </div>
+         <#elseif test="${equals(i,5)}">
+              <div class="img">
+                 <div><a  href="javascript:void(0)" onclick="popuurl('http://www.upchina.com/news${d.Url}','797', '600')">
+                  <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+                <img alt="" src="${d.ImgUrl}" width="220" height="90"/> 
+           <#else>
+                <img alt="" src="http://img.upchina.com${d.ImgUrl}" width="220" height="90"/> 
+           <#/if>
+                 </a></div>
+                 <p><a  href="javascript:void(0)" onclick="popuurl('http://www.upchina.com/news${d.Url}','797', '600')"> ${d.Title}</a></p>
+              </div>
+            </div>
+       <#/if>
+     <#/uptag>
+    </div>
+  
+  </div>
+</div>
+<!--评价建议-->
+<div class="g-con">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="m-jy">
+<tr><td>
+ <iframe frameborder="0" scrolling="no"  src="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/questionnai/upxwcdc.aspx?parentid=43" id="main" name="main" style="width: 100%; height: 450px; margin-top:15px; "></iframe>
+</td></tr>
+   
+</table>
+
+</div>
+<script src="http://js.upchina.com/sasweb/zhuanti/js/upxwc.js" type="text/javascript"></script>
+</body>
+</html>

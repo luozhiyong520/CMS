@@ -1,0 +1,24 @@
+2013-08-06 11:36:28,659 [10] ERROR log [(null)] - HtmlEngine服务出错。
+2013-08-06 11:36:28,695 [10] ERROR log [(null)] - HtmlEngine服务启动失败：
+System.ServiceModel.AddressAlreadyInUseException: 已有针对 IP 终结点 0.0.0.0:9123 的侦听器。请确保没有在应用程序中多次尝试使用此终结点，也没有其他应用程序在侦听此终结点。 ---> System.Net.Sockets.SocketException: 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。
+   在 System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   在 System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   在 System.ServiceModel.Channels.SocketConnectionListener.Listen()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.ServiceModel.Channels.SocketConnectionListener.Listen()
+   在 System.ServiceModel.Channels.BufferedConnectionListener.Listen()
+   在 System.ServiceModel.Channels.ExclusiveTcpTransportManager.OnOpen()
+   在 System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   在 System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   在 System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.ConnectionOrientedTransportChannelListener.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.TcpChannelListener`2.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open()
+   在 CMS.HtmlService.ServerManager`2.Start() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\ServerManager.cs:行号 39
+2013-08-06 11:36:29,993 [10] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-08-06 11:36:30,015 [10] INFO  log [(null)] - 己成功启动SsoOutWindow服务。

@@ -1,0 +1,1677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BBF24552-04E5-4998-AAD3-77E03C16C300}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CMS.Web</RootNamespace>
+    <AssemblyName>CMS.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SMVC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SMVC\bin\Debug\SMVC.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cgds\yms.aspx" />
+    <Content Include="courseprogram\index.html" />
+    <Content Include="courseprogram\index.js" />
+    <Content Include="cpzb\analystlist.aspx" />
+    <Content Include="cpzb\analystrank.aspx" />
+    <Content Include="cpzb\analystrelative.aspx" />
+    <Content Include="cpzb\analystuser.aspx" />
+    <Content Include="cpzb\gjsanalystlist.aspx" />
+    <Content Include="cpzb\zbedit.aspx" />
+    <Content Include="cpzb\zblist.aspx" />
+    <Content Include="cpzb\cprecord.aspx" />
+    <Content Include="cpzb\zbadd.aspx" />
+    <Content Include="cpzb\pcedit.aspx" />
+    <Content Include="cpzb\analystadd.aspx" />
+    <Content Include="cpzb\analysttotallist.aspx" />
+    <Content Include="html\index.html" />
+    <Content Include="html\JScript1.js" />
+    <Content Include="html\queryallsite.html" />
+    <Content Include="html\queryqy.html" />
+    <Content Include="html\theme\default\css\style.css" />
+    <Content Include="html\theme\default\css\video-js.css" />
+    <Content Include="html\theme\default\images\151419533158.jpg" />
+    <Content Include="html\theme\default\images\151420449518.jpg" />
+    <Content Include="html\theme\default\images\151741224626.jpg" />
+    <Content Include="html\theme\default\images\161038416344.jpg" />
+    <Content Include="html\theme\default\images\161137356605.jpg" />
+    <Content Include="html\theme\default\images\161413424232.jpg" />
+    <Content Include="html\theme\default\images\161510564349.jpg" />
+    <Content Include="html\theme\default\images\161611098286.png" />
+    <Content Include="html\theme\default\images\161611188381.png" />
+    <Content Include="html\theme\default\images\161617301783.png" />
+    <Content Include="html\theme\default\images\161617373175.png" />
+    <Content Include="html\theme\default\images\161624336100.png" />
+    <Content Include="html\theme\default\images\161626414593.png" />
+    <Content Include="html\theme\default\images\161629112903.png" />
+    <Content Include="html\theme\default\images\161629165272.png" />
+    <Content Include="html\theme\default\images\161632326064.png" />
+    <Content Include="html\theme\default\images\161632371238.png" />
+    <Content Include="html\theme\default\images\161638502051.png" />
+    <Content Include="html\theme\default\images\161638588468.png" />
+    <Content Include="html\theme\default\images\161646148777.png" />
+    <Content Include="html\theme\default\images\161646192803.png" />
+    <Content Include="html\theme\default\images\161648083908.png" />
+    <Content Include="html\theme\default\images\161648138767.png" />
+    <Content Include="html\theme\default\images\161650429341.png" />
+    <Content Include="html\theme\default\images\161650504921.png" />
+    <Content Include="html\theme\default\images\161653459302.png" />
+    <Content Include="html\theme\default\images\161653515695.png" />
+    <Content Include="html\theme\default\images\161713418105.png" />
+    <Content Include="html\theme\default\images\161713475004.png" />
+    <Content Include="html\theme\default\images\161716365451.png" />
+    <Content Include="html\theme\default\images\161716417776.png" />
+    <Content Include="html\theme\default\images\161718485859.png" />
+    <Content Include="html\theme\default\images\161722462527.png" />
+    <Content Include="html\theme\default\images\161725398751.png" />
+    <Content Include="html\theme\default\images\161725451036.png" />
+    <Content Include="html\theme\default\images\161735584394.png" />
+    <Content Include="html\theme\default\images\161736069566.png" />
+    <Content Include="html\theme\default\images\161741412351.png" />
+    <Content Include="html\theme\default\images\161741467571.png" />
+    <Content Include="html\theme\default\images\161743582434.png" />
+    <Content Include="html\theme\default\images\161744046876.png" />
+    <Content Include="html\theme\default\images\161746088026.png" />
+    <Content Include="html\theme\default\images\161746154073.png" />
+    <Content Include="html\theme\default\images\161749444205.png" />
+    <Content Include="html\theme\default\images\161749501942.png" />
+    <Content Include="html\theme\default\images\161752145567.png" />
+    <Content Include="html\theme\default\images\161753023296.png" />
+    <Content Include="html\theme\default\images\161754226918.png" />
+    <Content Include="html\theme\default\images\161755521627.png" />
+    <Content Include="html\theme\default\images\161800267884.png" />
+    <Content Include="html\theme\default\images\161806051554.png" />
+    <Content Include="html\theme\default\images\161826478442.jpg" />
+    <Content Include="html\theme\default\images\161829394123.jpg" />
+    <Content Include="html\theme\default\images\161829577040.jpg" />
+    <Content Include="html\theme\default\images\161832371645.jpg" />
+    <Content Include="html\theme\default\images\161843507537.png" />
+    <Content Include="html\theme\default\images\161937461375.png" />
+    <Content Include="html\theme\default\images\161938279103.png" />
+    <Content Include="html\theme\default\images\170913593806.jpg" />
+    <Content Include="html\theme\default\images\211101306351.jpg" />
+    <Content Include="html\theme\default\images\241050524547.jpg" />
+    <Content Include="html\theme\default\images\250954004423.jpg" />
+    <Content Include="html\theme\default\images\251002333971.jpg" />
+    <Content Include="html\theme\default\images\281057042889.jpg" />
+    <Content Include="html\theme\default\images\281430548719.jpg" />
+    <Content Include="html\theme\default\images\app-10.png" />
+    <Content Include="html\theme\default\images\app-11.png" />
+    <Content Include="html\theme\default\images\app-13.png" />
+    <Content Include="html\theme\default\images\app-14.png" />
+    <Content Include="html\theme\default\images\app-15.png" />
+    <Content Include="html\theme\default\images\app-2.png" />
+    <Content Include="html\theme\default\images\app-3.png" />
+    <Content Include="html\theme\default\images\app-5.png" />
+    <Content Include="html\theme\default\images\app-7.png" />
+    <Content Include="html\theme\default\images\app-8.png" />
+    <Content Include="html\theme\default\images\app-hd.png" />
+    <Content Include="html\theme\default\images\appwx-10.png" />
+    <Content Include="html\theme\default\images\appwx-11.png" />
+    <Content Include="html\theme\default\images\appwx-13.png" />
+    <Content Include="html\theme\default\images\appwx-14.png" />
+    <Content Include="html\theme\default\images\appwx-15.png" />
+    <Content Include="html\theme\default\images\appwx-2.png" />
+    <Content Include="html\theme\default\images\appwx-3.png" />
+    <Content Include="html\theme\default\images\appwx-5.png" />
+    <Content Include="html\theme\default\images\appwx-7.png" />
+    <Content Include="html\theme\default\images\appwx-8.png" />
+    <Content Include="html\theme\default\images\hd-bg.png" />
+    <Content Include="html\theme\default\images\hn-hd.png" />
+    <Content Include="html\theme\default\images\hn-line.png" />
+    <Content Include="html\theme\default\images\logo.png" />
+    <Content Include="html\theme\default\images\more-link.png" />
+    <Content Include="html\theme\default\js\jquery.js" />
+    <Content Include="html\theme\default\js\main.js" />
+    <Content Include="html\theme\default\js\swiper.js" />
+    <Content Include="html\theme\default\uploads\151440447728.jpg" />
+    <Content Include="html\theme\default\uploads\cps-1.png" />
+    <Content Include="html\theme\default\uploads\cps-2.png" />
+    <Content Include="html\theme\default\uploads\cps-3.png" />
+    <Content Include="html\theme\default\uploads\cps-4.png" />
+    <Content Include="html\theme\default\uploads\intro-banner.jpg" />
+    <Content Include="html\theme\default\video\video-js.css" />
+    <Content Include="html\theme\default\video\video-js.swf" />
+    <Content Include="html\theme\default\video\video.js" />
+    <Content Include="js\authoritydot.js" />
+    <Content Include="js\collectsite.js" />
+    <Content Include="js\collectsiteedit.js" />
+    <Content Include="js\collectsiterfolder.js" />
+    <Content Include="js\collectsitethree.js" />
+    <Content Include="js\collectsitetwo.js" />
+    <Content Include="js\customergroup.js" />
+    <Content Include="js\FlexPaperViewer.swf" />
+    <Content Include="js\flexpaper_flash.js" />
+    <Content Include="js\flexpaper_flash_debug.js" />
+    <Content Include="js\goodsType.js" />
+    <Content Include="js\jquery-1.4.1.js" />
+    <Content Include="js\jquery.dragsort-0.4.min.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquerydatatime\css\images\icon_calendar.gif" />
+    <Content Include="js\jquerydatatime\css\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="js\jquerydatatime\css\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="js\jquerydatatime\css\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="js\jquerydatatime\css\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="js\jquerydatatime\css\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="js\jquerydatatime\css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="js\jquerydatatime\css\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="js\jquerydatatime\css\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="js\jquerydatatime\css\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="js\jquerydatatime\css\images\ui-icons_222222_256x240.png" />
+    <Content Include="js\jquerydatatime\css\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="js\jquerydatatime\css\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="js\jquerydatatime\css\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="js\jquerydatatime\css\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="js\jquerydatatime\css\jquery-ui-1.8.17.custom.css" />
+    <Content Include="js\jquerydatatime\css\jquery-ui-timepicker-addon.css" />
+    <Content Include="js\jquerydatatime\js\jquery-1.7.1.min.js" />
+    <Content Include="js\jquerydatatime\js\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="js\jquerydatatime\js\jquery-ui-timepicker-addon.js" />
+    <Content Include="js\jquerydatatime\js\jquery-ui-timepicker-zh-CN.js" />
+    <Content Include="js\jsontimeconvertor.js" />
+    <Content Include="js\popupadd.js" />
+    <Content Include="js\popupedit.js" />
+    <Content Include="js\popupinformation\add.js" />
+    <Content Include="js\popupmsgplanhistory.js" />
+    <Content Include="js\promptbox.js" />
+    <Content Include="js\Prototype.js" />
+    <Content Include="js\public.js" />
+    <Content Include="js\sendmsg.js" />
+    <Content Include="js\sendmsgedit.js" />
+    <Content Include="js\ssoresult.js" />
+    <Content Include="js\statistics.js" />
+    <Content Include="js\test\jquery.fileupload.js" />
+    <Content Include="js\test\visualediting.js" />
+    <Content Include="js\topic.js" />
+    <Content Include="js\uplogo.js" />
+    <Content Include="js\uscollect.js" />
+    <Content Include="js\yms.js" />
+    <Content Include="js\_medialist.js" />
+    <Content Include="js\newstitleprefix.js" />
+    <Content Include="js\actualsassociate.js" />
+    <Content Include="js\analystinfo.js" />
+    <Content Include="media\mediaupload.aspx" />
+    <Content Include="news\actualsassociatelist.aspx" />
+    <Content Include="cpzb\analystinfo.aspx" />
+    <Content Include="news\editarticle.aspx" />
+    <Content Include="news\editemptyarticle.aspx" />
+    <Content Include="news\editpicarticle.aspx" />
+    <Content Include="controls\header.htm" />
+    <Content Include="controls\ucfragment.ascx" />
+    <Content Include="fragment\fckeidtor.aspx" />
+    <Content Include="fragment\fragmentlist.aspx" />
+    <Content Include="fragment\fragment_history.aspx" />
+    <Content Include="fragment\pagertest.aspx" />
+    <Content Include="js\addarticle.js" />
+    <Content Include="js\channelifo.js" />
+    <Content Include="js\ColorPalette.htm" />
+    <Content Include="js\editarticle.js" />
+    <Content Include="js\fragment.js" />
+    <Content Include="js\fragmenthistory.js" />
+    <Content Include="js\globalarticle.js" />
+    <Content Include="js\imagelist.js" />
+    <Content Include="js\mediaclass.js" />
+    <Content Include="js\medialist.js" />
+    <Content Include="js\menumodule.js" />
+    <Content Include="js\article.js" />
+    <Content Include="js\pagetemplate.js" />
+    <Content Include="js\permission.js" />
+    <Content Include="js\preview.js" />
+    <Content Include="js\sitemaster.js" />
+    <Content Include="js\templatedetail.js" />
+    <Content Include="js\usergroup.js" />
+    <Content Include="js\usermanage.js" />
+    <Content Include="media\imagelist.aspx" />
+    <Content Include="media\mediaclass.aspx" />
+    <Content Include="media\medialist.aspx" />
+    <Content Include="news\addemptyarticle.aspx" />
+    <Content Include="news\addarticle.aspx" />
+    <Content Include="news\addpicarticle.aspx" />
+    <Content Include="news\channellist.aspx" />
+    <Content Include="controls\mainmenu.ascx" />
+    <Content Include="controls\pageheader.ascx" />
+    <Content Include="Global.asax" />
+    <Content Include="index.aspx" />
+    <Content Include="js\dd_belatedpng.js" />
+    <Content Include="js\dialog.js" />
+    <Content Include="js\init.js" />
+    <Content Include="js\jquery.form.js" />
+    <Content Include="js\manage.js" />
+    <Content Include="js\md5.js" />
+    <Content Include="js\setstyle.js" />
+    <Content Include="news\articlelist.aspx" />
+    <Content Include="news\goodstype.aspx" />
+    <Content Include="news\informationstatistics.aspx" />
+    <Content Include="news\newstitleprefixlist.aspx" />
+    <Content Include="news\popupadd.aspx" />
+    <Content Include="news\templatedetailmenu.aspx" />
+    <Content Include="news\templatelist.aspx" />
+    <Content Include="news\addtitlearticle.aspx" />
+    <Content Include="news\edittitlearticle.aspx" />
+    <Content Include="news\topiclist.aspx" />
+    <Content Include="notice\notice.aspx" />
+    <Content Include="popupinformation\informationadd.aspx" />
+    <Content Include="popupinformation\informationlist.aspx" />
+    <Content Include="popupwindow\customergroup.aspx" />
+    <Content Include="popupwindow\popupadd.aspx" />
+    <Content Include="popupwindow\popupmsgplanhistory.aspx" />
+    <Content Include="popupwindow\popupzx.aspx" />
+    <Content Include="popupwindow\sendmsgedit.aspx" />
+    <Content Include="popupwindow\sendmsglist.aspx" />
+    <Content Include="popupwindow\ssolist.aspx" />
+    <Content Include="popupwindow\tbpushinfolist.aspx" />
+    <Content Include="preview.aspx" />
+    <Content Include="statistics\index.aspx" />
+    <Content Include="statistics\questionnaireAdd.aspx" />
+    <Content Include="statistics\questionnaireEdit.aspx" />
+    <Content Include="statistics\questionnairesanswer.aspx" />
+    <Content Include="test.aspx" />
+    <Content Include="test\HTMLPage1.htm" />
+    <Content Include="test\HTMLPage2.htm" />
+    <Content Include="test\sso.aspx" />
+    <Content Include="test\test1.aspx" />
+    <Content Include="test\visualediting.htm" />
+    <Content Include="themes\default\images\001.jpg" />
+    <Content Include="themes\default\images\002.jpg" />
+    <Content Include="themes\default\images\003.jpg" />
+    <Content Include="themes\default\images\admin\1.jpg" />
+    <Content Include="themes\default\images\admin\16-member-add.png" />
+    <Content Include="themes\default\images\admin\16-member.png" />
+    <Content Include="themes\default\images\admin\2.jpg" />
+    <Content Include="themes\default\images\admin\4.jpg" />
+    <Content Include="themes\default\images\admin\56.png" />
+    <Content Include="themes\default\images\admin\6.jpg" />
+    <Content Include="themes\default\images\admin\7.jpg" />
+    <Content Include="themes\default\images\admin\addtitle.gif" />
+    <Content Include="themes\default\images\admin\BalloonA.png" />
+    <Content Include="themes\default\images\admin\bg1.jpg" />
+    <Content Include="themes\default\images\admin\bg_line.png" />
+    <Content Include="themes\default\images\admin\bj.png" />
+    <Content Include="themes\default\images\admin\cloud.png" />
+    <Content Include="themes\default\images\admin\d1.png" />
+    <Content Include="themes\default\images\admin\d2.png" />
+    <Content Include="themes\default\images\admin\d3.png" />
+    <Content Include="themes\default\images\admin\d4.png" />
+    <Content Include="themes\default\images\admin\d5.png" />
+    <Content Include="themes\default\images\admin\EditTableHS.gif" />
+    <Content Include="themes\default\images\admin\edit_add.png" />
+    <Content Include="themes\default\images\admin\FindHS.png" />
+    <Content Include="themes\default\images\admin\Gcolor.gif" />
+    <Content Include="themes\default\images\admin\g_menu_left.gif" />
+    <Content Include="themes\default\images\admin\g_menu_left_s.gif" />
+    <Content Include="themes\default\images\admin\g_menu_right.gif" />
+    <Content Include="themes\default\images\admin\g_menu_right_s.gif" />
+    <Content Include="themes\default\images\admin\help.png" />
+    <Content Include="themes\default\images\admin\ht.jpg" />
+    <Content Include="themes\default\images\admin\Item.Doc.Del.gif" />
+    <Content Include="themes\default\images\admin\Item.Doc.Insert.gif" />
+    <Content Include="themes\default\images\admin\Item.Doc.Update.gif" />
+    <Content Include="themes\default\images\admin\Item.Option.gif" />
+    <Content Include="themes\default\images\admin\L.gif" />
+    <Content Include="themes\default\images\admin\left_bg.gif" />
+    <Content Include="themes\default\images\admin\left_libg.gif" />
+    <Content Include="themes\default\images\admin\left_libgs.gif" />
+    <Content Include="themes\default\images\admin\login.jpg" />
+    <Content Include="themes\default\images\admin\loginbg.jpg" />
+    <Content Include="themes\default\images\admin\login_1.png" />
+    <Content Include="themes\default\images\admin\login_2.png" />
+    <Content Include="themes\default\images\admin\login_3.gif" />
+    <Content Include="themes\default\images\admin\login_4.png" />
+    <Content Include="themes\default\images\admin\login_5.png" />
+    <Content Include="themes\default\images\admin\login_bg.jpg" />
+    <Content Include="themes\default\images\admin\login_button.jpg" />
+    <Content Include="themes\default\images\admin\logo.png" />
+    <Content Include="themes\default\images\admin\none.gif" />
+    <Content Include="themes\default\images\admin\number_1.gif" />
+    <Content Include="themes\default\images\admin\number_2.gif" />
+    <Content Include="themes\default\images\admin\number_3.gif" />
+    <Content Include="themes\default\images\admin\page.gif" />
+    <Content Include="themes\default\images\admin\panel_title.png" />
+    <Content Include="themes\default\images\admin\pic.png" />
+    <Content Include="themes\default\images\admin\pic0200708221717047984.jpg" />
+    <Content Include="themes\default\images\admin\progress_loading.gif" />
+    <Content Include="themes\default\images\admin\Rect.gif" />
+    <Content Include="themes\default\images\admin\Rect2.gif" />
+    <Content Include="themes\default\images\admin\refresh.gif" />
+    <Content Include="themes\default\images\admin\rq.jpg" />
+    <Content Include="themes\default\images\admin\st.png" />
+    <Content Include="themes\default\images\admin\Style1.png" />
+    <Content Include="themes\default\images\admin\T.gif" />
+    <Content Include="themes\default\images\admin\titlerule.gif" />
+    <Content Include="themes\default\images\admin\_Item.Doc.Del.gif" />
+    <Content Include="themes\default\images\admin\_Item.Doc.Update.gif" />
+    <Content Include="themes\default\images\admin\_login_2.png" />
+    <Content Include="themes\default\images\admin\_logo.png" />
+    <Content Include="themes\default\images\editioc.gif" />
+    <Content Include="themes\default\images\loading.gif" />
+    <Content Include="themes\default\images\loadings.gif" />
+    <Content Include="themes\default\images\Recommend.gif" />
+    <Content Include="themes\default\images\u0_normal.png" />
+    <Content Include="themes\default\images\unRecommend.gif" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\artDialog.js" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\artDialog.source.js" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\index.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\jquery.artDialog.js" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\jquery.artDialog.source.js" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\license.txt" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\plugins\iframeTools.js" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\plugins\iframeTools.source.js" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\aero.css" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\aero\aero_s.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\aero\aero_s2.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\aero\ie6\aui_close.hover.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\aero\ie6\aui_close.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\aero\ie6\aui_e.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\aero\ie6\aui_n.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\aero\ie6\aui_ne.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\aero\ie6\aui_nw.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\aero\ie6\aui_s.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\aero\ie6\aui_se.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\aero\ie6\aui_sw.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\aero\ie6\aui_title_icon.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\aero\ie6\aui_w.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\black.css" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\black\bg.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\black\bg2.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\black\bg_css3.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\black\bg_css3_2.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\black\ie6\close.hover.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\black\ie6\close.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\black\ie6\e.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\black\ie6\n.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\black\ie6\ne.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\black\ie6\nw.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\black\ie6\s.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\black\ie6\se.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\black\ie6\sw.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\black\ie6\w.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\blue.css" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\blue\bg.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\blue\bg2.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\blue\bg_css3.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\blue\bg_css3_2.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\blue\ie6\close.hover.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\blue\ie6\close.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\blue\ie6\e.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\blue\ie6\n.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\blue\ie6\ne.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\blue\ie6\nw.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\blue\ie6\s.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\blue\ie6\se.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\blue\ie6\sw.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\blue\ie6\w.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\chrome.css" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\chrome\border.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\chrome\chrome_s.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\default.css" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\green.css" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\green\bg.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\green\bg2.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\green\bg_css3.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\green\bg_css3_2.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\green\color_bg.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\green\ie6\close.hover.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\green\ie6\close.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\green\ie6\e.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\green\ie6\n.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\green\ie6\ne.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\green\ie6\nw.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\green\ie6\s.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\green\ie6\se.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\green\ie6\sw.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\green\ie6\w.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\icons\error.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\icons\face-sad.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\icons\face-smile.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\icons\loading.gif" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\icons\question.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\icons\succeed.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\icons\warning.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\idialog.css" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\idialog\idialog_s.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\idialog\idialog_s2.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\idialog\ie6\aui_close.hover.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\idialog\ie6\aui_close.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\idialog\ie6\aui_e.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\idialog\ie6\aui_n.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\idialog\ie6\aui_ne.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\idialog\ie6\aui_nw.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\idialog\ie6\aui_s.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\idialog\ie6\aui_se.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\idialog\ie6\aui_sw.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\idialog\ie6\aui_w.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\opera.css" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\opera\ie6\aui_close.hover.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\opera\ie6\aui_close.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\opera\ie6\aui_e.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\opera\ie6\aui_n.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\opera\ie6\aui_ne.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\opera\ie6\aui_nw.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\opera\ie6\aui_s.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\opera\ie6\aui_se.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\opera\ie6\aui_sw.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\opera\ie6\aui_w.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\opera\s1.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\opera\s2.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\simple.css" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\skins\twitter.css" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\ajaxContent\content.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\ajaxContent\googleMaps.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\ajaxContent\login.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\API.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\demo.css" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\demo.js" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\down.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\frameset.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\googleMaps.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\helloWorld.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\highlight\AUTHORS.en.txt" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\highlight\export.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\highlight\highlight.js" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\highlight\highlight.pack.js" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\highlight\languages\javascript.js" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\highlight\readme.eng.txt" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\highlight\styles\magula.css" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\highlight\test.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\iframe.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\iframeA.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\iframeB.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\iframeTop.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\iframe_frameset.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\images\alipay.jpg" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\images\bg.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\images\bottom.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\images\doc.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\images\lixiaolong.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\images\logo.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\images\opensource.gif" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\images\photo.jpg" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\images\text.png" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\labs.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\license.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\log.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\login_iframe.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\login_iframe_2.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\new.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\plugin.iframe.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\topFrame.html" />
+    <Content Include="themes\default\scripts\artDialog4.1.6\_doc\upd.txt" />
+    <Content Include="themes\default\scripts\getcolor\dialog.css" />
+    <Content Include="themes\default\scripts\getcolor\dialog.js" />
+    <Content Include="themes\default\scripts\getverifyimage\getverifyimage.aspx" />
+    <Content Include="themes\default\scripts\jquery-1.7.2.min.js" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\easyui-lang-zh_CN.js" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\jquery.easyui.min.js" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\easyui.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\accordion_collapse.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\accordion_expand.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\button_a_bg.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\button_plain_hover.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\button_span_bg.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\calendar_nextmonth.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\calendar_nextyear.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\calendar_prevmonth.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\calendar_prevyear.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\combo_arrow.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\datagrid_header_bg.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\datagrid_row_collapse.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\datagrid_row_expand.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\datagrid_sort_asc.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\datagrid_sort_desc.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\datagrid_title_bg.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\datebox_arrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\layout_button_down.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\layout_button_left.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\layout_button_right.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\layout_button_up.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\menu.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\menu_downarrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\menu_rightarrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\menu_sep.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\menu_split_downarrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\messager_error.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\messager_info.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\messager_question.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\messager_warning.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\pagination_first.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\pagination_last.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\pagination_load.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\pagination_loading.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\pagination_next.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\pagination_prev.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\panel_loading.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\panel_title.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\panel_tools.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\panel_tool_collapse.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\panel_tool_expand.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\spinner_arrow_down.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\spinner_arrow_up.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\tabs_active.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\tabs_close.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\tabs_enabled.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\tabs_leftarrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\tabs_rightarrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\tree_arrows.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\tree_checkbox_0.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\tree_checkbox_1.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\tree_checkbox_2.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\tree_dnd_no.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\tree_dnd_yes.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\tree_file.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\tree_folder.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\tree_folder_open.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\tree_loading.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\validatebox_pointer.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\default\images\validatebox_warning.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\icon.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\icons\back.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\icons\cancel.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\icons\cut.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\icons\edit_add.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\icons\edit_remove.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\icons\filesave.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\icons\help.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\icons\no.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\icons\ok.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\icons\pencil.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\icons\print.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\icons\redo.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\icons\reload.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\icons\search.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.2\themes\icons\undo.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\easyui-lang-zh_CN.js" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\jquery.easyui.min.js" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\accordion.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\calendar.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\combo.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\combobox.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\datagrid.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\datebox.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\dialog.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\easyui.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\accordion_collapse.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\accordion_expand.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\blank.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\button_a_bg.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\button_plain_hover.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\button_span_bg.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\calendar_nextmonth.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\calendar_nextyear.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\calendar_prevmonth.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\calendar_prevyear.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\combo_arrow.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\datagrid_header_bg.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\datagrid_row_collapse.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\datagrid_row_expand.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\datagrid_sort_asc.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\datagrid_sort_desc.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\datagrid_title_bg.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\datebox_arrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\layout_arrows.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\menu.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\menu_downarrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\menu_rightarrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\menu_sep.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\menu_split_downarrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\messager_error.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\messager_info.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\messager_question.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\messager_warning.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\pagination_first.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\pagination_last.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\pagination_load.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\pagination_loading.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\pagination_next.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\pagination_prev.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\panel_loading.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\panel_title.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\panel_tools.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\panel_tool_collapse.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\panel_tool_expand.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\searchbox_button.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\slider_handle.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\spinner_arrow_down.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\spinner_arrow_up.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\tabs_active.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\tabs_close.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\tabs_enabled.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\tabs_leftarrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\tabs_rightarrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\tree_arrows.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\tree_checkbox_0.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\tree_checkbox_1.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\tree_checkbox_2.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\tree_dnd_no.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\tree_dnd_yes.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\tree_elbow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\tree_file.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\tree_folder.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\tree_folder_open.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\tree_loading.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\validatebox_pointer.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\validatebox_warning.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\layout.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\linkbutton.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\menu.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\menubutton.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\messager.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\pagination.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\panel.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\progressbar.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\propertygrid.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\searchbox.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\slider.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\spinner.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\splitbutton.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\tabs.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\tree.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\validatebox.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\default\window.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\accordion.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\calendar.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\combo.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\combobox.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\datagrid.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\datebox.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\dialog.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\easyui.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\accordion_collapse.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\accordion_expand.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\blank.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\button_a_bg.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\button_plain_hover.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\button_span_bg.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\calendar_nextmonth.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\calendar_nextyear.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\calendar_prevmonth.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\calendar_prevyear.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\combo_arrow.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\datagrid_header_bg.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\datagrid_row_collapse.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\datagrid_row_expand.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\datagrid_sort_asc.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\datagrid_sort_desc.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\datagrid_title_bg.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\datebox_arrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\layout_arrows.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\menu.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\menu_downarrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\menu_rightarrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\menu_sep.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\menu_split_downarrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\messager_error.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\messager_info.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\messager_question.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\messager_warning.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\pagination_first.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\pagination_last.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\pagination_load.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\pagination_loading.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\pagination_next.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\pagination_prev.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\panel_loading.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\panel_title.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\panel_tools.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\panel_tool_collapse.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\panel_tool_expand.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\searchbox_button.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\slider_handle.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\spinner_arrow_down.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\spinner_arrow_up.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\tabs_close.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\tabs_enabled.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\tabs_leftarrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\tabs_rightarrow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\tree_arrows.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\tree_checkbox_0.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\tree_checkbox_1.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\tree_checkbox_2.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\tree_dnd_no.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\tree_dnd_yes.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\tree_elbow.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\tree_file.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\tree_folder.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\tree_folder_open.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\tree_loading.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\validatebox_pointer.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\validatebox_warning.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\layout.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\linkbutton.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\menu.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\menubutton.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\messager.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\pagination.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\panel.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\progressbar.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\propertygrid.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\searchbox.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\slider.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\spinner.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\splitbutton.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\tabs.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\tree.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\validatebox.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\window.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icon.css" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\back.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\blank.gif" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\cancel.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\cut.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\edit_add.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\edit_remove.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\filesave.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\help.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\mini_add.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\mini_edit.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\mini_refresh.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\no.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\ok.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\pencil.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\print.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\redo.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\reload.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\search.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\sum.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\tip.png" />
+    <Content Include="themes\default\scripts\jquery-easyui-1.3\themes\icons\undo.png" />
+    <Content Include="themes\default\scripts\jquery.cookie.js" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\css\demo.css" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\css\zTreeStyle\img\diy\1_close.png" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\css\zTreeStyle\img\diy\1_open.png" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\css\zTreeStyle\img\diy\2.png" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\css\zTreeStyle\img\diy\3.png" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\css\zTreeStyle\img\diy\4.png" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\css\zTreeStyle\img\diy\5.png" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\css\zTreeStyle\img\diy\6.png" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\css\zTreeStyle\img\diy\7.png" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\css\zTreeStyle\img\diy\8.png" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\css\zTreeStyle\img\diy\9.png" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\css\zTreeStyle\img\line_conn.gif" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\css\zTreeStyle\img\loading.gif" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\css\zTreeStyle\img\zTreeStandard.gif" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\css\zTreeStyle\img\zTreeStandard.png" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\css\zTreeStyle\zTreeStyle.css" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\js\jquery-1.4.4.min.js" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\js\jquery.ztree.all-3.5.js" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\js\jquery.ztree.all-3.5.min.js" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\js\jquery.ztree.core-3.5.js" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\js\jquery.ztree.core-3.5.min.js" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\js\jquery.ztree.excheck-3.5.js" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\js\jquery.ztree.excheck-3.5.min.js" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\js\jquery.ztree.exedit-3.5.js" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\js\jquery.ztree.exedit-3.5.min.js" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\js\jquery.ztree.exhide-3.5.js" />
+    <Content Include="themes\default\scripts\jquery_ztree_3.5.02\js\jquery.ztree.exhide-3.5.min.js" />
+    <Content Include="themes\default\scripts\koo\koo.js" />
+    <Content Include="themes\default\scripts\koo\koo.mini.js" />
+    <Content Include="themes\default\scripts\getcolor\selcolor.htm" />
+    <Content Include="themes\default\scripts\swfupload\handler.js" />
+    <Content Include="themes\default\scripts\swfupload\handlers.js" />
+    <Content Include="themes\default\scripts\swfupload\swfupload.js" />
+    <Content Include="themes\default\scripts\swfupload\swfupload.swf" />
+    <Content Include="themes\default\scripts\swfupload\swfupload_fp9.swf" />
+    <Content Include="themes\default\scripts\ueditor\CHANGELOG.TXT" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\anchor\anchor.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\attachment\attachment.css" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\attachment\attachment.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\attachment\callbacks.js" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\attachment\fileTypeImages\icon_chm.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\attachment\fileTypeImages\icon_default.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\attachment\fileTypeImages\icon_doc.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\attachment\fileTypeImages\icon_exe.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\attachment\fileTypeImages\icon_mp3.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\attachment\fileTypeImages\icon_mv.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\attachment\fileTypeImages\icon_pdf.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\attachment\fileTypeImages\icon_ppt.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\attachment\fileTypeImages\icon_psd.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\attachment\fileTypeImages\icon_rar.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\attachment\fileTypeImages\icon_txt.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\attachment\fileTypeImages\icon_xls.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\attachment\fileTypeMaps.js" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\background\background.css" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\background\background.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\background\background.js" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\emotion.css" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\emotion.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\emotion.js" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\0.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0001.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0002.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0003.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0004.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0005.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0006.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0007.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0008.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0009.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0010.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0011.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0012.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0013.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0014.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0015.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0016.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0017.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0018.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0019.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\babycat\C_0020.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bface.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0001.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0002.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0003.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0004.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0005.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0006.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0007.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0008.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0009.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0010.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0011.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0012.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0013.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0014.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0015.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0016.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0017.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0018.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0019.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0020.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0021.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0022.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0023.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0024.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0025.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0026.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0027.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0028.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0029.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0030.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0031.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0032.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0033.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0034.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0035.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0036.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0037.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0038.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0039.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0040.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0041.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0042.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0043.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0044.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0045.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0046.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0047.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0048.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0049.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0050.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0051.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0052.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0053.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0054.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0055.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0056.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0057.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0058.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0059.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0060.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0061.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0062.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\bobo\b_0063.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\cface.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_01.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_02.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_03.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_04.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_05.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_06.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_07.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_08.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_09.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_10.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_11.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_12.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_13.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_14.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_15.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_16.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_17.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_18.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_19.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_20.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_21.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_22.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_23.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_24.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_25.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_26.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_27.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_28.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_29.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_30.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_31.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_32.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_33.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_34.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_35.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_36.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_37.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_38.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_39.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_40.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_41.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_42.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_43.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_44.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_45.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_46.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_47.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_48.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_49.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\face\i_f_50.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\fface.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0001.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0002.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0003.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0004.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0005.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0006.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0007.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0008.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0009.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0010.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0011.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0012.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0013.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0014.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0015.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0016.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0017.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0018.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0019.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0020.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0021.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0022.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0023.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0024.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0025.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0026.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0027.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0028.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0029.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0030.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0031.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0032.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0033.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0034.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0035.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0036.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0037.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0038.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0039.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0040.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0041.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0042.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0043.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0044.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0045.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0046.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0047.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0048.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0049.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0050.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0051.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0052.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0053.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0054.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0055.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0056.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0057.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0058.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0059.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0060.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0061.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0062.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0063.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0064.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0065.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0066.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0067.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0068.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0069.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0070.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0071.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0072.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0073.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0074.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0075.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0076.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0077.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0078.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0079.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0080.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0081.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0082.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0083.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jx2\j_0084.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\jxface2.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0001.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0002.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0003.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0004.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0005.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0006.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0007.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0008.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0009.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0010.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0011.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0012.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0013.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0014.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0015.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0016.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0017.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0018.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0019.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0020.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0021.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0022.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0023.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0024.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0025.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0026.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0027.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0028.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0029.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0030.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0031.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0032.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0033.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0034.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0035.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0036.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0037.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0038.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0039.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0040.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0041.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0042.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0043.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0044.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0045.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0046.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0047.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0048.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0049.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0050.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0051.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\ldw\w_0052.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tface.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0001.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0002.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0003.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0004.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0005.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0006.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0007.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0008.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0009.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0010.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0011.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0012.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0013.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0014.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0015.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0016.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0017.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0018.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0019.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0020.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0021.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0022.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0023.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0024.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0025.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0026.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0027.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0028.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0029.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0030.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0031.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0032.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0033.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0034.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0035.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0036.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0037.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0038.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0039.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\tsj\t_0040.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\wface.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\yface.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0001.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0002.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0003.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0004.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0005.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0006.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0007.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0008.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0009.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0010.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0011.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0012.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0013.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0014.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0015.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0016.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0017.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0018.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0019.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0020.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0021.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0022.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0023.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0024.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0025.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0026.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0027.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0028.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0029.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0030.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0031.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0032.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0033.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0034.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0035.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0036.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0037.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0038.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0039.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\emotion\images\youa\y_0040.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\gmap\gmap.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\help\help.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\highlightcode\highlightcode.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\image\image.css" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\image\image.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\image\image.js" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\image\imageUploader.swf" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\insertframe\insertframe.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\internal.js" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\link\link.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\map\map.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\scrawl\images\addimg.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\scrawl\images\brush.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\scrawl\images\delimg.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\scrawl\images\delimgH.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\scrawl\images\empty.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\scrawl\images\emptyH.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\scrawl\images\eraser.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\scrawl\images\redo.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\scrawl\images\redoH.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\scrawl\images\scale.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\scrawl\images\scaleH.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\scrawl\images\size.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\scrawl\images\undo.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\scrawl\images\undoH.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\scrawl\scrawl.css" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\scrawl\scrawl.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\scrawl\scrawl.js" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\searchreplace\searchreplace.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\snapscreen\snapscreen.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\spechars\spechars.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\table\edittd.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\table\table.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\table\table.js" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\tangram.js" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\template\config.js" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\template\images\bg.gif" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\template\images\pre0.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\template\images\pre1.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\template\images\pre2.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\template\images\pre3.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\template\images\pre4.png" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\template\template.css" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\template\template.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\template\template.js" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\video\video.css" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\video\video.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\video\video.js" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\webapp\webapp.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\wordimage\fClipboard_ueditor.swf" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\wordimage\imageUploader.swf" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\wordimage\wordimage.html" />
+    <Content Include="themes\default\scripts\ueditor\dialogs\wordimage\wordimage.js" />
+    <Content Include="themes\default\scripts\ueditor\editor_all.js" />
+    <Content Include="themes\default\scripts\ueditor\editor_all_min.js" />
+    <Content Include="themes\default\scripts\ueditor\editor_config.js" />
+    <Content Include="themes\default\scripts\ueditor\lang\en\en.js" />
+    <Content Include="themes\default\scripts\ueditor\lang\en\images\addimage.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\en\images\alldeletebtnhoverskin.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\en\images\alldeletebtnupskin.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\en\images\background.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\en\images\button.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\en\images\copy.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\en\images\deletedisable.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\en\images\deleteenable.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\en\images\imglabel.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\en\images\listbackground.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\en\images\localimage.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\en\images\rotateleftdisable.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\en\images\rotateleftenable.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\en\images\rotaterightdisable.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\en\images\rotaterightenable.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\en\images\upload.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\zh-cn\images\copy.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\zh-cn\images\imglabel.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\zh-cn\images\localimage.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\zh-cn\images\upload.png" />
+    <Content Include="themes\default\scripts\ueditor\lang\zh-cn\zh-cn.js" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\iframe.css" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\anchor.gif" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\arrow.png" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\button-bg.gif" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\cancelbutton.gif" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\center_focus.jpg" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\dialog-title-bg.png" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\filescan.png" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\icons-all.gif" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\icons.gif" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\icons.png" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\left.jpg" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\left_focus.jpg" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\lock.gif" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\logo.png" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\menu\sparator_v.png" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\neweditor-tab-bg.png" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\none.jpg" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\none_focus.jpg" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\pagebreak.gif" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\right.jpg" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\right_focus.jpg" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\spacer.gif" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\tablepicker\highlighted.gif" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\tablepicker\unhighlighted.gif" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\toolbar_bg.png" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\topbottom.jpg" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\topbottom_focus.jpg" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\upload.png" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\videologo.gif" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\images\word.gif" />
+    <Content Include="themes\default\scripts\ueditor\themes\default\ueditor.css" />
+    <Content Include="themes\default\scripts\ueditor\third-party\codemirror\codemirror.css" />
+    <Content Include="themes\default\scripts\ueditor\third-party\codemirror\codemirror.js" />
+    <Content Include="themes\default\scripts\ueditor\third-party\snapscreen\setup.exe" />
+    <Content Include="themes\default\scripts\ueditor\third-party\snapscreen\Snapsie.dll" />
+    <Content Include="themes\default\scripts\ueditor\third-party\snapscreen\test.html" />
+    <Content Include="themes\default\scripts\ueditor\third-party\snapscreen\UEditorSnapscreen.exe" />
+    <Content Include="themes\default\scripts\ueditor\third-party\snapscreen\user_manual.txt" />
+    <Content Include="themes\default\scripts\ueditor\third-party\swfupload\fileprogress.js" />
+    <Content Include="themes\default\scripts\ueditor\third-party\swfupload\swfupload.cookies.js" />
+    <Content Include="themes\default\scripts\ueditor\third-party\swfupload\swfupload.js" />
+    <Content Include="themes\default\scripts\ueditor\third-party\swfupload\swfupload.proxy.js" />
+    <Content Include="themes\default\scripts\ueditor\third-party\swfupload\swfupload.queue.js" />
+    <Content Include="themes\default\scripts\ueditor\third-party\swfupload\swfupload.speed.js" />
+    <Content Include="themes\default\scripts\ueditor\third-party\swfupload\swfupload.swf" />
+    <Content Include="themes\default\scripts\ueditor\third-party\swfupload\swfupload_fp9.swf" />
+    <Content Include="themes\default\scripts\ueditor\third-party\SyntaxHighlighter\shCore.js" />
+    <Content Include="themes\default\scripts\ueditor\third-party\SyntaxHighlighter\shCoreDefault.css" />
+    <Content Include="themes\default\scripts\ueditor\_src\commands.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\core\ajax.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\core\browser.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\core\dom\domUtils.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\core\dom\dtd.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\core\dom\Range.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\core\dom\Selection.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\core\Editor.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\core\EventBase.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\core\utils.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\customEvent.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\editor.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\editor_api.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\anchor.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\attachment.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\autofloat.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\autoheight.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\autolink.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\autosubmit.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\autotypeset.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\background.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\basestyle.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\blockquote.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\catchremoteimage.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\cleardoc.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\contextmenu.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\convertcase.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\customstyle.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\delete.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\directionality.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\elementpath.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\emotion.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\enterkey.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\fiximgclick.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\font.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\formatmatch.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\highlightcode.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\horizontal.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\iframe.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\image.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\indent.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\inserthtml.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\justify.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\keystrokes.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\lineheight.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\link.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\list.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\map.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\pagebreak.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\paragraph.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\paste.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\preview.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\print.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\removeformat.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\rowspacing.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\scrawl.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\searchreplace.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\selectall.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\serialize.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\shortcutkeys.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\snapscreen.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\source.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\spechars.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\table.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\template.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\time.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\undo.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\video.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\webapp.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\wordcount.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\plugins\wordimage.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\autotypesetbutton.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\autotypesetpicker.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\button.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\colorbutton.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\colorpicker.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\combox.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\dialog.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\editor.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\editorui.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\mask.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\menu.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\menubutton.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\multiMenu.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\popup.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\separator.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\splitbutton.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\stateful.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\tablebutton.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\tablepicker.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\toolbar.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\ui.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\uibase.js" />
+    <Content Include="themes\default\scripts\ueditor\_src\ui\uiutils.js" />
+    <Content Include="themes\default\styles\manage.css" />
+    <Content Include="themes\default\styles\pagestyle.css" />
+    <Content Include="themes\default\styles\upload.css" />
+    <Content Include="updirection\updirection.aspx" />
+    <Content Include="user\authoritydot.aspx" />
+    <Content Include="user\authoritydotadmin.aspx" />
+    <Content Include="user\functions.aspx" />
+    <Content Include="user\menumodule.aspx" />
+    <Content Include="user\menupermission.aspx" />
+    <Content Include="user\permission.aspx" />
+    <Content Include="user\usergroup.aspx" />
+    <Content Include="user\userpass.aspx" />
+    <Content Include="user\userlist.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="login.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cpzb\uploadimg.ashx.cs">
+      <DependentUpon>uploadimg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="fragment\pagertest.aspx.cs">
+      <DependentUpon>pagertest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fragment\pagertest.aspx.designer.cs">
+      <DependentUpon>pagertest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="media\upload.ashx.cs">
+      <DependentUpon>upload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="news\uploaddoc.ashx.cs">
+      <DependentUpon>uploaddoc.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="news\uploadimg.ashx.cs">
+      <DependentUpon>uploadimg.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="popupinformation\informationadd.aspx.cs">
+      <DependentUpon>informationadd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="popupinformation\informationadd.aspx.designer.cs">
+      <DependentUpon>informationadd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="popupinformation\informationlist.aspx.cs">
+      <DependentUpon>informationlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="popupinformation\informationlist.aspx.designer.cs">
+      <DependentUpon>informationlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="preview.aspx.cs">
+      <DependentUpon>preview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="preview.aspx.designer.cs">
+      <DependentUpon>preview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="themes\default\scripts\getverifyimage\getverifyimage.aspx.cs">
+      <DependentUpon>getverifyimage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="themes\default\scripts\getverifyimage\getverifyimage.aspx.designer.cs">
+      <DependentUpon>getverifyimage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="themes\default\scripts\ueditor\net\Uploader\Uploader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="themes\default\scripts\ueditor\net\fileUp.ashx" />
+    <Content Include="themes\default\scripts\ueditor\net\getContent.ashx" />
+    <Content Include="themes\default\scripts\ueditor\net\getMovie.ashx" />
+    <Content Include="themes\default\scripts\ueditor\net\getRemoteImage.ashx" />
+    <Content Include="themes\default\scripts\ueditor\net\imageManager.ashx" />
+    <Content Include="themes\default\scripts\ueditor\net\imageUp.ashx" />
+    <Content Include="themes\default\scripts\ueditor\net\scrawlUp.ashx" />
+    <Content Include="themes\default\scripts\ueditor\net\Web.config" />
+    <Content Include="themes\default\scripts\ueditor\third-party\source code for imgupload with flash.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CMS.BLL\CMS.BLL.csproj">
+      <Project>{DD52449A-CEB0-48FB-80DE-047D4771F5B9}</Project>
+      <Name>CMS.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.Controller\CMS.Controller.csproj">
+      <Project>{146913ED-0D0F-423F-A6B6-473A71E1051D}</Project>
+      <Name>CMS.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.Controller\CMS.Controller.csproj">
+      <Project>{146913ED-0D0F-423F-A6B6-473A71E1051D}</Project>
+      <Name>CMS.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.DAL\CMS.DAL.csproj">
+      <Project>{DFA0F04D-B701-47FE-BF01-817276EDF4BF}</Project>
+      <Name>CMS.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.HtmlService.Contract\CMS.HtmlService.Contract.csproj">
+      <Project>{D2F4C901-F53A-43AB-A9AA-5B3E189C3F3B}</Project>
+      <Name>CMS.HtmlService.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.HTMLService\CMS.HtmlService.csproj">
+      <Project>{29F916BD-FF25-4868-89BC-D1706A8E3076}</Project>
+      <Name>CMS.HtmlService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.Model\CMS.Model.csproj">
+      <Project>{6617DEF1-FE4C-47F8-814A-277480A68216}</Project>
+      <Name>CMS.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.Utility\CMS.Utility.csproj">
+      <Project>{A5116182-E29F-4B02-B37D-694CEC08A473}</Project>
+      <Name>CMS.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.ViewModel\CMS.ViewModel.csproj">
+      <Project>{91C4C149-4DFD-4465-8B94-3823F3FB5E18}</Project>
+      <Name>CMS.ViewModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.ViewModel\CMS.ViewModel.csproj">
+      <Project>{91C4C149-4DFD-4465-8B94-3823F3FB5E18}</Project>
+      <Name>CMS.ViewModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{E0C4897C-F5AA-4111-A4D1-14977470636F}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Factory\Factory.csproj">
+      <Project>{0FDA71F1-A628-42A7-9D48-0027632AE277}</Project>
+      <Name>Factory</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fragment\datagrid_data.aspx" />
+    <Content Include="media\upload.ashx" />
+    <Content Include="cpzb\uploadimg.ashx" />
+    <None Include="js\jquerydatatime\css\images\Thumbs.db" />
+    <Content Include="news\uploaddoc.ashx" />
+    <Content Include="news\uploadimg.ashx" />
+    <None Include="Properties\PublishProfiles\up.pubxml" />
+    <None Include="themes\default\scripts\artDialog4.1.6\_doc\ajaxContent\content.json" />
+    <None Include="themes\default\scripts\artDialog4.1.6\_doc\commercial_license.doc" />
+    <None Include="themes\default\scripts\artDialog4.1.6\_doc\highlight\LICENSE" />
+    <None Include="themes\default\scripts\jquery-easyui-1.3\themes\default\images\Thumbs.db" />
+    <None Include="themes\default\scripts\jquery-easyui-1.3\themes\gray\images\Thumbs.db" />
+    <Content Include="xml\sys\base.config" />
+    <Content Include="xml\sys\upChina.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>29406</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

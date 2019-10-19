@@ -1,0 +1,7 @@
+﻿  <div id="search_area">
+      <div class="gegu">
+        <input type="text"  name="stockcode" id="stockcode" class="text1">
+        <input type="button" id="stockcodeButton"  value="" class="search">
+      </div>
+    </div>
+

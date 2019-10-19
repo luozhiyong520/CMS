@@ -1,0 +1,5 @@
+﻿<#uptag tagtype="01" clsid="003002" pagesize="20" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+<#if test="${flag}">${d.NewsAbstract}
+<#else>${d.NewsAbstract}|
+<#/if>
+<#/uptag>

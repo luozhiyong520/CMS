@@ -1,0 +1,6 @@
+2014-03-14 10:51:39,741 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-03-14 10:51:39,794 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-03-14 10:51:39,825 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-03-14 10:51:47,396 [4] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：105，模板名称：首页测试，生成文件路径：E:\comsite\sasweb\zhuanti/index_test.html成功！
+2014-03-14 11:02:12,611 [4] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：105，模板名称：首页测试，生成文件路径：E:\comsite\sasweb\zhuanti/index_test.html成功！
+2014-03-14 11:04:28,585 [4] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：105，模板名称：首页测试，生成文件路径：E:\comsite\sasweb\zhuanti/index_test.html成功！

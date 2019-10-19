@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>投资参考</title>
+    <link href="http://js.upchina.com/sasweb/zhuanti/css/tzck.css" rel="stylesheet" type="text/css" />
+   <script type="text/javascript" src="http://js.upchina.com/lib/jquery-1.8.0.min.js"></script>
+    <script language="javascript">
+
+        //获取URL参数的值
+        function GetUrlParame(parame, url) {
+            var reg = new RegExp("(^|&)" + parame + "=([^&]*)(&|$)", "i");
+            var res = "";
+            try {
+               
+                if(url == "" || url == undefined)
+                    res = window.location.search.substr(1).match(reg)[2];
+                else
+                    res = url.match(reg)[2];
+            } catch (e) { }
+            return res;
+        }
+
+        $(function () {
+
+            var firsturl = $(".news_list li a:first").attr("url")
+            $.ajax({
+                url: firsturl,
+                type: 'GET',
+                cache: false,
+                async: false,
+                success: function (data) {
+                    $("#tzck_content").html(data);
+                    var datetime = decodeURI(GetUrlParame("datetime", firsturl.substring(firsturl.indexOf("?") + 1, firsturl.length)));
+                    var topicTitle = decodeURI(GetUrlParame("topicTitle", firsturl.substring(firsturl.indexOf("?") + 1, firsturl.length)));
+
+                    $("#topicTitle").html(topicTitle)
+                    $("#update_time").html("更新时间：" + datetime)
+                }
+            });
+
+            $(".lp_content").height(document.documentElement.clientHeight / 2 - 29);
+            $(".news_part").width(document.documentElement.clientWidth - 361);
+            $(".video_part").width(document.documentElement.clientWidth - 335);
+
+            /*控制图片自适应宽高*/
+            var img_width = $(".each_news").outerWidth();
+            $(".news_img img").width(img_width);
+            $(".news_img img").height((img_width / 40) * 7);
+
+            /*点击折叠按钮*/
+            var is_flex = false;  //是否折叠
+            $(".flex_btn").toggle(function () {
+                is_flex = true;
+                $(".lp_title").animate({ "width": "0px" }, 400, function () {
+                    $(this).hide();
+                });
+                $(".lp_content").animate({ "width": "0px" }, 400);
+                $(".fl").animate({ "width": "0px" }, 400);
+                $(".left_part").animate({ "width": "7px" }, 400);
+                $(".right_part").animate({ "left": "7px" }, 400);
+                $(".flex_btn").addClass("unfold");
+
+                $(".right_part").width(document.documentElement.clientWidth - 7);
+                $(".news_part").width(document.documentElement.clientWidth - 33);
+              //  $(".video_part").width(document.documentElement.clientWidth - 7);
+
+                /*重新设定图片宽高*/
+                setTimeout(function () {
+                    img_width = $(".each_news").outerWidth();
+                    $(".news_img img").width(img_width);
+                    $(".news_img img").height((img_width / 40) * 7);
+                }, 100);
+
+            }, function () {
+                is_flex = false;
+                $(".lp_title").show().animate({ "width": "328px" }, 400);
+                $(".lp_content").animate({ "width": "328px" }, 400, function () {
+                    $(this).css({ "overflowY": "scroll" });
+                });
+                $(".fl").animate({ "width": "328px" }, 400);
+                $(".left_part").animate({ "width": "335px" }, 400);
+                $(".right_part").animate({ "left": "335px" }, 400);
+                $(".flex_btn").removeClass("unfold");
+                $(".news_part").width(document.documentElement.clientWidth - 361);
+                $(".video_part").width(document.documentElement.clientWidth - 335);
+
+                /*重新设定图片宽高*/
+                setTimeout(function () {
+                    img_width = $(".each_news").outerWidth();
+                    $(".news_img img").width(img_width);
+                    $(".news_img img").height((img_width / 40) * 7);
+                }, 100);
+            });
+
+
+
+            /*点击显示文章内容*/
+            $(".news_list li a").click(function () {
+                /*重新设定图片宽高*/
+                setTimeout(function () {
+                    img_width = $(".each_news").outerWidth();
+                    $(".news_img img").width(img_width);
+                    $(".news_img img").height((img_width / 40) * 7);
+                }, 200);
+
+                $(".video_part").hide();
+                $(".right_part").css({ "background": "#101010" });
+                $("body").css({ "background": "#101010" });
+                $(".gray_line").show();
+                $(".news_part").show();
+                var url = $(this).attr("url");
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    cache: false,
+                    success: function (data) {
+                        $("#tzck_content").html(data);
+                        var datetime = decodeURI(GetUrlParame("datetime", url.substring(url.indexOf("?") + 1, url.length)));
+                        var topicTitle = decodeURI(GetUrlParame("topicTitle", url.substring(url.indexOf("?") + 1, url.length)));
+
+                        $("#topicTitle").html(topicTitle)
+                        $("#update_time").html("更新时间：" + datetime)
+                    }
+                });
+            });
+
+            /*点击播放视频*/
+            $(".video_list li a").click(function () {
+                $(".news_part").hide();
+                $(".gray_line").hide();
+                $(".right_part").css({ "background": "#010101" });
+                $("body").css({ "background": "#010101" });
+                $(".video_part").show();
+                var url = $(this).attr("url");
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    cache: false,
+                    success: function (data) {
+                      
+                        var str = data.replace("<p>","");
+                        str = str.replace("</p>","");
+                        $("#tzck_video").html(str);
+                         $(".video_part embed").attr("width", "70%");
+                          $(".video_part embed").attr("height", "100%");
+                    }
+                });
+
+            });
+
+            /*监听浏览器窗口大小改变事件*/
+            $(window).resize(function () {
+
+                if (!is_flex) {
+                    img_width = $(".each_news").outerWidth();
+                    $(".news_img img").width(img_width);
+                    $(".news_img img").height((img_width / 40) * 7);
+
+                    $(".lp_content").height(document.documentElement.clientHeight / 2 - 29);
+                    $(".news_part").width(document.documentElement.clientWidth - 361);
+                    $(".video_part").width(document.documentElement.clientWidth - 335);
+                } else {
+                    img_width = $(".each_news").outerWidth();
+                    $(".news_img img").width(img_width);
+                    $(".news_img img").height((img_width / 40) * 7);
+
+                    $(".right_part").width(document.documentElement.clientWidth - 7);
+                    $(".news_part").width(document.documentElement.clientWidth - 48);
+                    $(".video_part").width(document.documentElement.clientWidth - 7);
+                }
+
+            });
+
+        })
+    </script>
+</head>
+<body>
+    <div class="left_part">
+        <div class="fl">
+            <div class="divide">
+                <div class="lp_title">
+                    投资日刊
+                </div>
+                <div class="lp_content">
+                    <ul class="news_list">
+                      <#uptag tagtype="07" topictype="5,6" pagesize="10" pagecount="1" viewedit="1" id="dataId2"  var="d" index="i" islast="flag">
+                         <#if test="${equals(i,1)}">
+                        <li class="active_li">
+                            <span class="date"> ${cdatestring(d.CreatedTime,"MM-dd")}</span>
+                            <#if test="${equals(d.TopicTypeId,5)}">
+                            <a href="javascript:void(0)" url="http://app.upchina.com/news/tzck/${cdatestring(d.CreatedTime,"yyyyMM")}/${cdatestring(d.CreatedTime,"yyyy-MM-dd")}_1.html?datetime=${cdatestring(d.CreatedTime,"MM-dd HH:mm")}&topicTitle=${d.TopicName}"> ${d.TopicName}</a>   
+                            <#else>
+                                <a href="javascript:void(0)" url="http://app.upchina.com/news/tzck/${cdatestring(d.CreatedTime,"yyyyMM")}/${cdatestring(d.CreatedTime,"yyyy-MM-dd")}_2.html?datetime=${cdatestring(d.CreatedTime,"MM-dd HH:mm")}&topicTitle=${d.TopicName}"> ${d.TopicName}</a>   
+                            <#/if>   
+                        </li>
+                        <li class="detail">
+                            <div class="related_img">
+                                <img src="http://img.upchina.com/sasweb/zhuanti/tzck/mrsd.jpg" width="93px" height="92px" />
+                            </div>
+                            <div class="related_ct">
+                                <p>
+                                    ${substr(filterhtml(d.Remark),100)}
+                                </p>
+                            </div>
+                        </li>
+                           <#else>
+                     
+                        <li>
+                            <span class="date"> ${cdatestring(d.CreatedTime,"MM-dd")}</span>
+                              <#if test="${equals(d.TopicTypeId,5)}">
+                           <a  href="javascript:void(0)" url="http://app.upchina.com/news/tzck/${cdatestring(d.CreatedTime,"yyyyMM")}/${cdatestring(d.CreatedTime,"yyyy-MM-dd")}_1.html?datetime=${cdatestring(d.CreatedTime,"MM-dd HH:mm")}&topicTitle=${d.TopicName}"> ${d.TopicName}</a>   
+                             <#else>
+                                 <a  href="javascript:void(0)" url="http://app.upchina.com/news/tzck/${cdatestring(d.CreatedTime,"yyyyMM")}/${cdatestring(d.CreatedTime,"yyyy-MM-dd")}_2.html?datetime=${cdatestring(d.CreatedTime,"MM-dd HH:mm")}&topicTitle=${d.TopicName}"> ${d.TopicName}</a>    
+                            <#/if>      
+                             
+                        </li>
+                             <#/if>
+                         <#/uptag>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="divide">
+                <div class="lp_title">
+                    每日视点
+                </div>
+                <div class="lp_content">
+                    <ul class="video_list">
+                     <#uptag tagtype="01" clsid="003004" pagesize="10" pagecount="1" viewedit="1" id="dataId003003"  var="d" index="i" islast="flag">
+                         <#if test="${equals(i,1)}">
+                        <li class="active_li">
+                            <span class="date">${cdatestring(d.CreatedTime,"MM-dd")}</span>
+                           <a href="javascript:void(0)" url="http://app.upchina.com/news${d.Url}"> ${d.Title}</a>    
+                        </li>
+                        <li class="detail">
+                            <div class="related_img">
+                                <img src="http://img.upchina.com/sasweb/zhuanti/tzck/sp.jpg" width="93px" height="92px" />
+                            </div>
+                            <div class="related_ct">
+                                <p>
+                                    ${d.NewsAbstract}
+                                </p>
+                            </div>
+                        </li>
+                        <#else>
+                        
+                         <li>
+                            <span class="date"> ${cdatestring(d.CreatedTime,"MM-dd")}</span>
+                           <a href="javascript:void(0)" url="http://app.upchina.com/news${d.Url}"> ${d.Title}</a>        
+                        </li>
+                         <#/if>
+                         <#/uptag>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="flex_btn">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="right_part">
+          <div class="news_part" id="tzck_content">
+
+         </div>
+
+        <div class="video_part" id="tzck_video">
+
+         </div>
+
+    </div>
+    <div style="display:none">
+<script src="http://s22.cnzz.com/z_stat.php?id=1000125520&web_id=1000125520" language="JavaScript"></script>
+</div>
+</body>
+</html>

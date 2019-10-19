@@ -1,0 +1,121 @@
+﻿/* CSS Document */
+/*系统样式*/
+body,div, dl, dt, dd, ul, ol, li,pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td,table { font-size:12px; font-family:Tahoma, Geneva, sans-serif;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, button, p, blockquote{margin:0;padding:0;  border:0;}
+
+body{ position:relative; }
+table { outline:0;}
+li{list-style:none;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {height: 1%;}
+.red{ color:#ff0000}
+
+/*登录*/
+#loginbg{ background:url("/themes/default/images/admin/bg_line.png") repeat-x scroll center 0 #8EC1DA; }
+#footer {background: url("/themes/default/images/admin/cloud.png") repeat-x scroll left top transparent; clear: both; height: 260px;position: absolute;top: 76px;width: 100%;
+z-index: -1;}
+#BalloonA {background: url("/themes/default/images/admin/BalloonA.png") no-repeat scroll 0 0 transparent; display: none;height: 379px; position: absolute; right: 51px; width: 278px;
+ z-index: 1;}
+.login_bg{ width:548px;margin:0 auto; position:relative;}
+.login_bg .login_bk{ background:url(/themes/default/images/admin/login_2.png) no-repeat; width:548px; height:300px; top:200px;position:absolute;}
+.login_bk .login_top{ margin-left:96px; margin-top:6px; height:100px;}
+.login_bk .login_top img{float:left;}
+.login_bk .login_title{ float:left; color:#ffffff; font-size:26px; font-family:微软雅黑; line-height:42px; margin-left:24px;}
+.login_bk .c_left{ float:left; padding-left:15px; margin-top:2px;}
+.login_bk .c_right{float:left; margin-left:18px;}
+
+.c_text{background: url("/themes/default/images/admin/login_1.png") no-repeat scroll 8px -54px #ffffff; padding-left:24px;}
+.c_text1{background: url("/themes/default/images/admin/login_1.png") no-repeat scroll 8px -76px #ffffff; padding-left:24px;}
+.c_right ul li{ line-height:24px; margin-bottom:10px; display:block}
+.c_right ul li label{ line-height:24px; height:24px; font-size:14px; float:left}
+.c_right ul li input{ line-height:24px;height:24px; border:1px solid #CECECE; width:180px;}
+#buttonBar1{ margin-top:10px; text-align:center }
+.loginButton1{ background: url("/themes/default/images/admin/login_1.png") no-repeat scroll 0 0 transparent; border: medium none; font-weight: bold;height:54px;width:121px;}
+.w300{ width:300px;}
+
+#login_bg{ background:url(/themes/default/images/admin/login_bg.jpg) no-repeat;}
+.word_14{font-size: 14px;}
+.word_neirong{font-size: 14px; line-height:20px;}
+.word_hongse{color:#FF0000;}
+.inp{height:20px; border:solid #999 1px; line-height:20px;}
+.word_dazi{font-weight:bold;font-size: 18px;color:#02688A}
+/*登录结束*/
+
+
+#admin li {  line-height:30px; height:30px; margin-top:10px;}
+#admin ul { padding:0 0 15px 30px;}
+h1 { height:66px; overflow:hidden; text-indent:-9999px; background:url(/themes/default/images/admin/login_head.gif) no-repeat;}
+h2 { font-size:14px;}
+a{color:#000; text-decoration:none;}
+a img{border:0;}
+#wrap {height: 592px;margin: 0 auto;position: relative;width: 979px;}
+#loginBox {height: 260px;left: 165px; padding-left: 320px;position: absolute; top: 135px; width: 332px; background:url(/themes/default/images/admin/logo.png) no-repeat 60px 126px;}
+#loginBox ul {margin: 70px 0 0 32px;}
+#loginBox li {height: 32px;line-height: 32px;}
+#loginBox label {font-size: 12px;}
+#loginBox .inText {  background: none repeat scroll 0 0 #EBF4FE; border: 1px solid #999999;  height:24px; line-height:24px; padding: 3px;width: 160px;}
+#buttonBar { margin-top: 8px; text-align: center;}
+.loginButton { background: url("/themes/default/images/admin/login_button.jpg") no-repeat scroll 0 0 transparent; border: medium none; font-weight: bold;height: 36px;width: 126px;}
+#copyRight { color: #999999; font-family: "Verdana";font-size: 12px;left:420px;position: absolute;top: 250px; width: 235px;}
+#login_bg { background: url("/themes/default/images/admin/login_bg.jpg") no-repeat scroll center top transparent;}
+#header { background: url("/themes/default/images/admin/bj.png") repeat-x scroll 0 0 transparent; width:100%}
+#left_menu{ width:160px; background:url(/themes/default/images/admin/left_bg.gif) repeat-y; height:100%; padding-top:10px;}
+#left_menu ul{ list-style-type:none}
+#left_menu ul li a img{ padding-top:2px;}
+#left_menu ul li a{ display:block; height:24px; line-height:24px; padding-top:-4px; padding-left:30px; text-decoration:none;  padding-top:1px;}
+#left_menu ul li a:hover{ background:url(/themes/default/images/admin/left_libg.gif) no-repeat;}
+.links{ background:url(/themes/default/images/admin/left_libgs.gif) no-repeat;color:#13438D; font-weight:700}
+<!-- IE下消除点击图片文字后出现的虚线框代码 -->
+a{blr:expression(this.onFocus=this.blur())}
+
+#menu{ display:block; position:absolute; left:198px; top:30px; z-index:2; overflow:hidden; white-space:nowrap;}
+#menu ul { clear:both; height:1%; overflow:hidden}
+#header #menu ul li { float: left;height: 27px; display:block;}
+#header #menu ul li a {color:#0099CC;float: left; height: 27px;line-height: 27px; padding: 0 6px;text-decoration: none; font-size:14px; font-weight:bold;cursor:pointer}
+#header #menu ul li a:hover { color: #02688a;}
+#header #menu ul li.selected {background: url("/themes/default/images/admin/g_menu_left_s.gif") no-repeat scroll left top transparent;float: left;
+height: 27px;}
+#header #menu ul li.selected a { background: url("/themes/default/images/admin/g_menu_right_s.gif") no-repeat scroll right top transparent;color: #FFFFFF;float: left;  font-weight: bold; height: 27px; line-height: 27px; padding: 0 6px;text-decoration: none; cursor:pointer}
+#header #menu ul li.menuL {padding: 0;width: 0;}
+#header #menu ul li.menuR { padding: 0;width: 0;}
+.menuright{ position:absolute; top:0; right:0; padding-top:6px; padding-right:26px; z-index:100}
+
+/*右边*/
+.con_p{ padding:10px}
+.tips,.success,.error { background:#ffffff;padding:5px 10px;}
+div.table { margin-left:1px !important; margin:10px 0 0;}
+.c_table{ width:100%}
+.con_p h2{font-size:12px; font-weight:700; margin-left:10px;}
+.con_p tr { line-height:30px; height:30px;}
+.red {color: #FF0000;}
+strong {font-weight: bold;}
+.submit1 {background: url("/themes/default/images/admin/btnbg.gif") repeat-x scroll 0 0 transparent; border: 1px solid #909090;  padding: 0; width: auto;}
+.lm_div{ background:url(/themes/default/images/admin/panel_title.png) repeat-x; height:24px; padding-left:6px; line-height:24px; color:#15428B; font-weight:700; border-bottom:1px solid #99BBE8}
+.lm{float:left}
+.pic_1{background:url(../images/admin/pic.png) no-repeat 0 0px; height:16px; float:right; width:16px; margin-right:6px; margin-top:3px;}
+.button1{background:url(/themes/default/images/admin/pic.png) no-repeat 0 -18px; width:109px; height:24px; border:0}
+.tr_bg{background:#EFEFEF; color:#444444; text-align:center}
+.cz_bk{ border:1px #99BBE8 solid; margin-bottom:4px;}
+.cz_tj{ margin-left:4px; padding:4px; width:36%}
+.cz_tj em{ line-height:36px; float:left; font-style:normal}
+.td_ys td{padding-left:4px;}
+.cz_xx {padding:4px}
+.cz_xx a{margin:0 4px;}
+.inButton{ height: 30px;width: 80px;font-weight: bold;margin: 10px;}
+.inTextbox{ margin: 4px 0 2px 4px; line-height:22px; height:22px;background-color: #FFFFFF;border: 1px solid #CCCCCC;}
+.lm_name{ border-top:1px solid #cccccc; border-bottom:1px solid #cccccc;}
+.t_table td{ border-left:1px solid #cccccc;border-bottom:1px solid #cccccc;}
+.c_table td{ border-left:1px dotted #cccccc;border-bottom:1px dotted #cccccc;}
+.c_table th{border-left:1px solid #ccc; background:#EEEEFF;border-bottom:1px solid #ccc; line-height:24px;}
+.p10{padding-left:10px;}
+.icon-find{background:url('/themes/default/images/admin/FindHS.png') no-repeat;}
+.cz a{margin:0 4px}
+.ColorPickerDivSample { border: 1px solid #000000;cursor: pointer;margin: 0 0 0 4px; padding: 0 10px;position: relative;}
+/*添加文章栏目关联下拉框*/
+.in-row li{float:left}
+ .wraper{position:relative}
+ .otherChanneList{width: 200px;height: 200px;overflow: auto;position: absolute;border: 1px solid #617775;display: none;background: none repeat scroll 0 0 #F0F6E4;float: left;z-index: 1000000;
+left:0;top:20px;}
+.otherChanneList ul li{padding-left: 0px; padding-top: 2px;padding-bottom: 2px;border-top: 1px solid black;}
+ ul{ list-style:none outside none;padding-left:3px; }
+ .progressContainer{ color:#ff0000; margin-right:15px;}

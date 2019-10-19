@@ -1,0 +1,6 @@
+﻿[<#uptag tagtype="01" clsid="003008" id="data003008" viewedit="1"  newssort="1"  pagecount="1" pagesize="50" var="d" index="i" islast="flag"> 
+{"id":"${d.NewsId}","p":"${stringtounicode(d.Prefix)}","t":"${stringtounicode(d.Title)}","d":"${cdatestring(d.CreatedTime,"yyyy-MM-dd HH:mm:ss")}","s":"${stringtounicode(d.Author)}","url":"http://app.upchina.com/news${d.url}"}
+<#if test="${flag}">
+            <#else>,
+            <#/if>
+    <#/uptag>]

@@ -1,0 +1,73 @@
+2013-11-01 15:06:57,250 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-11-01 15:06:57,268 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-11-01 15:06:57,272 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-11-01 15:07:03,477 [6] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-11-01 15:08:11,597 [6] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-11-01 16:32:22,103 [6] ERROR log [(null)] - System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, SqlConnection owningObject)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Common.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 496
+   在 CMS.DAL.DataAccess.ExecuteDataSet(CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\DataAccess.cs:行号 272
+   在 CMS.DAL.DataAccess.ExecuteDataSet(String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\DataAccess.cs:行号 245
+   在 CMS.DAL.BaseDAL`1.Get(Dictionary`2 keyProps) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\BaseDAL.cs:行号 429
+   在 CMS.BLL.PageTemplateBLL.Get(Dictionary`2 keyProps) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.BLL\PageTemplate.generated.cs:行号 94
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 104
+   在 SyncInvokeCreateTemplatePage(Object , Object[] , Object[] )
+   在 System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+2013-11-01 16:32:23,107 [6] ERROR log [(null)] - System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: Named Pipes Provider, error: 40 - 无法打开到 SQL Server 的连接)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, SqlConnection owningObject)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, TimeoutTimer timeout)
+   在 System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, TimeoutTimer timeout, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection)
+   在 System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 Common.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 496
+   在 CMS.DAL.DataAccess.ExecuteDataSet(CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\DataAccess.cs:行号 272
+   在 CMS.DAL.DataAccess.ExecuteDataSet(String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\DataAccess.cs:行号 245
+   在 CMS.DAL.BaseDAL`1.Get(Dictionary`2 keyProps) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\BaseDAL.cs:行号 429
+   在 CMS.BLL.PageTemplateBLL.Get(Dictionary`2 keyProps) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.BLL\PageTemplate.generated.cs:行号 94
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 104
+   在 SyncInvokeCreateTemplatePage(Object , Object[] , Object[] )
+   在 System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)

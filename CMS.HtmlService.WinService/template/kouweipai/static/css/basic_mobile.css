@@ -1,0 +1,27 @@
+﻿@charset "utf-8";
+@media screen and (max-width: 1480px) and (min-width: 1120px) {
+.w90{width:1180px}
+.main_fl,.promo_left{float:left;width:870px;}
+.main_fr,.promo_right{float:right;width:300px;}
+.p_fl{width:360px;}
+.p_fr{width:700px;}
+.kf_left{margin:0;left:0;}
+}
+@media screen and (max-width: 1121px){
+.w90{width:990px}
+.main_fl,.promo_left{float:left;width:680px;}
+.main_fr,.promo_right{float:right;width:300px;}
+.p_fl{width:360px;}
+.p_fr{width:500px;}
+.item .price_off{display:none;}
+.nav_c{margin-left:5px;}
+
+.header li {padding: 0 30px;}
+
+.header li{padding:0 18px;}
+.kf_left{margin:0;left:0;}
+.moblie_none{display:none;}
+.nav_r_2016{float:left;margin-left:10px;}
+
+.ship_left_service{ top:25%;margin-left:506px;}
+}

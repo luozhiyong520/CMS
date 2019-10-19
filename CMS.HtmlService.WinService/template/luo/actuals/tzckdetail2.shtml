@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>咨询中心</title>
+  
+</head>
+<body>
+      <div class="wrap_div">
+                <div class="news_title">
+                    <h1 id="topicTitle"></h1>
+                </div>
+                <div class="update_date">
+                    <span id="update_time">更新时间：</span>
+                </div>
+
+
+                  <#uptag tagtype="01" clsid="003005" pagesize="1" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+                <div class="news_img">
+              
+                    <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+                    <img alt="" src="${d.ImgUrl}"  width="100%"> 
+                    <#else>
+                    <img alt="" src="http://img.upchina.com${d.ImgUrl}"  width="100%"> 
+                    <#/if>
+                </div> 
+                  <#/uptag>
+ 
+                <#uptag tagtype="01" clsid="003006" pagesize="10" pagecount="1" viewedit="1" id="dataId003006"  var="d" index="i" islast="flag" begindate="mdate">
+                <div class="each_news">
+                    <div class="each_news_til">
+                    <#if test="${isnotempty(filterhtml(d.Prefix))}">
+                        <b>【${d.Prefix}】</b> ${d.Title}
+                    <#else>
+                        ${d.Title}
+                      <#/if>
+                    </div>
+                    <div class="divide_line">
+                        
+                    </div>
+                    <div class="each_news_ct">
+                       ${d.Content}
+                    </div>
+                </div>
+                   <#/uptag>
+                <div class="statement">
+                    免责申明：本产品内发布的信息，目的在于传播更多信息，与本终端立场无关。
+                </div>
+            </div>
+ 
+ 
+</body>
+</html>

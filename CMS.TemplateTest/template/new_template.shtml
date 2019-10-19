@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<base target="_blank"/>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+
+<!-- 正文页css start -->
+<!--#include virtual="/detail/common/contextcss.shtml"-->
+<!-- 正文页css end -->
+
+<!--通用js start -->
+<!--#include virtual="/include/common/v2012/commonjs.shtml"-->
+<!--通用js end -->
+
+</head>
+
+<body>
+<!-- 顶部  登录 收藏 设为首页  start-->
+<!--#include virtual="/include/common/v2012/commontop.shtml"-->
+<!-- 顶部  登录 收藏 设为首页  end-->
+
+<div class="hr_6"></div>
+
+<!-- 网站导航条 start -->
+<!--#include virtual="/include/common/v2012/commonnav.shtml"-->
+<!-- 网站导航条 end -->
+
+<div class="hr_6"></div>
+<!-- 面包屑  start-->
+<div class="Area"> 
+	<div class="crumbs">
+      <ul>
+        <li> 当前位置：</li>
+        <li>
+          <a href="/">首页</a>
+        </li>
+        <li>&gt;</li>
+        <li>
+      
+        </li>        
+      </ul>
+    </div>
+ </div>
+<!-- 面包屑  end-->
+
+<div class="Area">
+  <div class="wrapper_left">
+   
+    <div class="content">
+      <!-- 文章标题 stat -->
+      <h1>  ${art.Title}</h1>
+      <!-- 文章标题 end -->
+      <!-- 文章基本信息 start -->
+      <div class="artInfo">
+        <span id="art_source"><a href="/">http://www.upchina.com</a>
+        </span>
+        <span id="pub_date">  ${art.CreatedTime}</span>
+        <span id="media_name">来源：</span>
+      </div>
+      <!-- 文章基本信息 end -->
+      <!-- 正文部分 start -->
+      <div class="wz_ctn">
+        <div class="fenge"></div>
+        <!-- 画中画 start -->        
+       
+        <!-- 画中画 end -->
+        <!-- 正文 start -->
+     ${art.Content}
+     	<!-- 正文 end -->
+      </div>
+       <!-- 正文部分 end -->
+      <div class="hr_6"></div>
+      <!-- 作者 start-->
+      <div class="editor">
+        <div class="edit_ctn"><span></span></div>
+        <div class="edit_logo">
+          <img src="http://img.upchina.com/logo/editorlogo.jpg"/>
+        </div>
+      </div>
+      <!-- 作者 end-->
+      <div class="hr_10"></div>
+      <!-- 小工具 start -->
+      <!--#include virtual="/detail/common/contexttools.shtml"-->
+      <!-- 小工具 end -->
+      <div class="hr_10"></div>
+      <!-- 相关阅读 start -->
+      <div class="Related_news ">
+     
+      </div>      
+      <!-- 相关阅读 end -->
+      
+      <div class="hr_10"></div>
+      <!-- 精彩推荐 start 嵌入一个碎片-->
+      <!--#include virtual="/detail/common/commontextjctj.shtml"-->
+      <!-- 精彩推荐 end -->
+    </div>
+  </div>
+  <!-- 正文页右侧 start -->
+  <!--#include virtual="/detail/common/contextright.shtml"-->
+  <!-- 正文页右侧 end -->
+</div>
+<div class="hr_10"></div>
+<!-- 尾部 start -->
+<!--#include virtual="/include/common\v2012/commonfooter.shtml"-->
+<!-- 尾部 start -->
+<!-- 正文页使用js  start -->
+<!--#include virtual="/detail/common/contextjs.shtml"-->
+<!-- 正文页使用js 正是环境将放到页面尾部 end -->
+</body>
+</html>

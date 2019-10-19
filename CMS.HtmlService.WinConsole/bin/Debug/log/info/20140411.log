@@ -1,0 +1,7 @@
+2014-04-11 10:58:12,439 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-04-11 10:58:12,457 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-04-11 10:58:12,494 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-04-11 11:02:25,213 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-04-11 11:02:25,231 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-04-11 11:02:25,258 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-04-11 11:02:32,227 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：108，模板名称：现货直播金蝴蝶版至尊区，生成文件路径：E:\comsite\sasweb\zhuanti/vip/zzbjhd.html成功！

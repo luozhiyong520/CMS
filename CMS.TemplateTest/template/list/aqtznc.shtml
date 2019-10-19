@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<base target="_blank"/>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title>安全投资研究中心-安全投资A股内参-UP投资网</title>
+<meta name="keywords" content="UP投资,UP安全赢家炒股平台,安全赢家炒股平台,价值投资,安全投资" />
+<meta name="description" content="“UP投资”是以价值投资为根基，以保护中小投资者利益为宗旨，积极响应监管层号召坚持“长期投资、理性投资、价值投资”，开创并全面倡导安全投资理念与方法论体系。“安全赢家炒股平台”是“UP投资”全力打造的一款融贯全新安全投资理念的投资工具。" />
+<!-- 列表页用css start -->
+<!--#include virtual="/include/web/v2012/list/common/contextcss.shtml"-->
+<!-- 列表用css end -->
+<!--通用js start -->
+<!--#include virtual="/include/common/v2012/commonjs.shtml"-->
+<!--通用js end -->
+</head>
+<body>
+<!--mininav-->
+<!-- 顶部  登录 收藏 设为首页  start-->
+<!--#include virtual="/include/common/v2012/commontop.shtml"-->
+<!-- 顶部  登录 收藏 设为首页  end-->
+<!--\mininav-->
+<div class="hr_6"></div>
+<!-- 网站导航条 start -->
+<!--#include virtual="/include/common/v2012/commonnav.shtml"-->
+<!-- 网站导航条 end -->
+<div class="hr_10"></div>
+<div class="Area">
+  <div class="wrapper_left">
+    <div class="mini_banner">   		
+<!--列表页焦点图-2012-v1 start-->
+<!--#include virtual="/list/common/listfocusimg.shtml"-->
+<!--列表页焦点图-2012-v1 end-->
+    </div>
+    <div class="hr_6"></div>
+    <div class="crumbs">
+      <ul>
+        <li>当前位置:</li>
+        <li>
+          <a href="http://www.upchina.com">UP投资首页</a>
+        </li>
+        <li>&gt;</li>
+        <li>
+          安全投资A股内参
+        </li>
+      </ul>
+    </div>    
+    <div class="content">
+    	<div class="title3 title_ctn">
+    <a class="need">安全投资A股内参</a>
+  </div>
+    <div class="list_ctn">
+    	<ul>	
+	<li><a target="_blank" href="/detail/2012/0426/67.shtml" title="每日A股安全投资内参-4.23">每日A股安全投资内参-4.23</a><span>2012-04-26</span></li><li><a target="_blank" href="/detail/2012/0426/66.shtml" title="每日A股安全投资内参-4.20">每日A股安全投资内参-4.20</a><span>2012-04-26</span></li><li><a target="_blank" href="/detail/2012/0426/65.shtml" title="每日A股安全投资内参-4.19">每日A股安全投资内参-4.19</a><span>2012-04-26</span></li><li><a target="_blank" href="/detail/2012/0426/64.shtml" title="每日A股安全投资内参-4.18">每日A股安全投资内参-4.18</a><span>2012-04-26</span></li><li><a target="_blank" href="/detail/2012/0426/63.shtml" title="每日A股安全投资内参-4.17">每日A股安全投资内参-4.17</a><span>2012-04-26</span></li>
+</ul>
+</div>
+     <div class="pager">
+    <ul>
+        </ul>      
+    </div>
+    </div>
+  </div>
+<!-- 列表页-正文页右侧 start -->
+<!-- 网站导航条 start -->
+<!--#include virtual="/list/common/listright.shtml"-->
+  <!-- 列表页-正文页右侧 end -->
+</div>
+<!--列表页用js start -->
+<!--#include virtual="/include/web/v2012/list/common/commonjs.shtml"-->
+<!--列表页用js end -->
+<div class="hr_10"></div>
+<!-- 尾部 start -->
+		<!--#include virtual="/include/common/v2012/commonfooter.shtml"-->
+<!-- 尾部 end -->
+</body>
+</html>

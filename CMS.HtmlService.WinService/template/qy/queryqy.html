@@ -1,0 +1,157 @@
+﻿
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+    <title>红旗汇 让互联网+更简单 中小企业互联网+贴心卫士</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="cache-control" content="no-siteapp">
+    <link rel="stylesheet" href="theme/default/css/style.css">
+    <link href="theme/default/video/video-js.css" rel="stylesheet" type="text/css">
+    <script src="theme/default/video/video.js"></script>
+    <script>
+        videojs.options.flash.swf = "theme/default/video/video-js.swf";
+    </script>
+    <!--[if lt IE 9]>
+    <script src="theme/default/js/selectivizr.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <div class="header">
+        <div class="hd-bar wrap">
+            <div class="logo"><a href="/"><img src="theme/default/images/logo.png" alt=""></a></div>
+            <div class="hd-tel">
+                <div class="ht-num">4000-818-026</div>
+            </div>
+        </div>
+        <div class="hd-nav">
+            <div class="wrap">
+                <ul>
+                    <li class="cur"><a href="/">首  页</a></li>
+                    <li>
+                        <a href="/qy/about.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="/qy/platform.html">贴心服务</a>
+                        
+                    </li>
+                    <li>
+                        <a href="/qy/case.html">案例展示</a>
+                    </li>
+                    <li>
+                        <a href="/qy/tecnews.html">科技新闻</a>
+                    </li>
+                    <li>
+                        <a href="/qy/industry.html">产业政策</a>
+                    </li>
+                     
+                    <li>
+                        <a href="/qy/college.html">移商学院</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="wide-main">
+        <style>
+            #sear-page {
+                width: 700px;
+                margin: 0 auto;
+                border: 2px solid #eee;
+                padding: 0;
+                min-height:350px;
+                margin-bottom: 40px;
+ background:url("/theme/default/images/23413186.jpg") repeat;
+   padding-bottom:20px;
+   margin-top:30px;
+            }
+
+                #sear-page .pgt {
+                    height: 40px;
+                    background: #ccc;
+                    font-size: 16px;
+                    font-weight: bold;
+                    font-family: '微软雅黑';
+                    line-height: 40px;
+                    color: #333;
+                }
+
+                #sear-page .btt {
+                    height: 60px;
+                    font-size: 14px;
+                    line-height: 60px;
+                    color: #fff;
+                    text-align: center;
+                  
+                }
+        </style>
+        <div class="sear-page" id="sear-page">
+            <div class="pgt">查询结果</div>
+            <div class="btt"></div>
+            <div class="sp-result"></div>
+        </div>
+    </div>
+
+    <div class="footer wrap">
+        <div class="friendlink">
+            <h4>相关链接</h4>
+            <ul>
+                <#uptag tagtype="01" clsid="001009" pagesize="100" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+                    <li><a href="${d.Url}"><img src="http://img.pinyifu.com/${d.ImgUrl}" style="width:100%;max-width:100%;max-height:170px;" alt="" title="${d.Title}"></a></li>
+                    <#/uptag>
+
+</ul>
+        </div>
+        <div class="ft">
+            <div class="ft-text" style="margin-top:10px;">
+                <p style="color:#333;font-weight:bold;letter-spacing:1px;">服务监督热线：010-63691741</p>
+            </div>
+            <div class="ft-nav" style="margin-top:10px;">
+                <a href="#" title="关于我们">关于我们</a>
+                |
+                <a href="#" title="联系方式">联系方式</a>
+                |
+                <a href="#" title="网站地图">网站地图</a>
+                |
+                <a href="#" title="法律声明">法律声明</a>
+            </div>
+            <div class="ft-text">
+                <p>红旗汇版权所有，未经书面授权禁止使用</p>
+                <p>沪ICP备16007511号-1</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="theme/default/js/jquery.js"></script>
+    <script src="theme/default/js/swiper.js"></script>
+    <script src="theme/default/js/main.js"></script>
+    <script language="javascript">
+        $(function () {
+        jQuery.getJSON("http://cms.zongxue.net/news/GetQueryInfo.aspx?keywords=" + encodeURIComponent(getQueryString('keywords')) + "&ChannelId=001019&callbak=?", function (data) {
+   
+            if (data != "") {
+                var obj = eval('(' + data + ')');
+                $(".btt").html(decodeURIComponent(getQueryString('keywords')));
+                $(".sp-result").html(obj["Content"]);
+
+            } else {
+                $(".btt").html(decodeURIComponent(getQueryString('keywords')));
+            }
+        });
+});
+       
+        //获取url中的参数
+        function getQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;
+    }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+<div class="product_nav Area">
+	 <div class="up_logo">
+	   	<h1>   
+	    	<a href="/">
+	    		<img src="http://img.upchina.com/logo/logo.png" alt="UP投资"/>
+	        </a>   
+	    </h1>
+	  </div>
+    <div class="nav">
+  <a class="red" href="http://www.upchina.com/chanpin/">产品首页：</a>
+        <a href="http://www.upchina.com/chanpin/help.shtml">产品学堂</a>
+        <a href="http://www.upchina.com/chanpin/message.shtml">百问百答</a>
+        <a href="http://www.upchina.com/list/cpdt.shtml">产品动态</a>
+        <a name="downparam" target="_self" href="http://d.upchina.cn/cattle/full/free/UPSetup.exe">免费下载</a>
+        <a href="http://www.upchina.com/about.shtml">关于我们</a>
+        <a href="http://weibo.com/u/2676385273">官方微博</a>
+  </div>
+  <div class="tel"></div>
+  <div id="divT"></div>
+</div>

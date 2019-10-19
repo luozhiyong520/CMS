@@ -1,0 +1,8 @@
+2014-05-15 15:17:12,406 [8] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-05-15 15:17:12,561 [8] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-05-15 15:17:12,587 [8] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-05-15 16:32:03,567 [9] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-05-15 16:32:03,615 [9] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-05-15 16:32:03,633 [9] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-05-15 16:32:09,759 [12] INFO  log [(null)] - 方法名：GetTemplagePreview，预览模块Id：140，模板名称：银家路线图，模板路径：/luo/vip/yjlxt.shtml成功
+2014-05-15 16:32:29,017 [12] INFO  log [(null)] - 方法名：GetTemplagePreview，预览模块Id：140，模板名称：银家路线图，模板路径：/luo/vip/yjlxt.shtml成功

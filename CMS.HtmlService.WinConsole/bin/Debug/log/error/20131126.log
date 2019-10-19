@@ -1,0 +1,215 @@
+【异常时间】：2013-11-26 14:42:34,385 [13] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 14:51:51,526 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 14:52:12,484 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 14:56:07,938 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 14:56:56,693 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 14:59:45,104 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 15:04:06,075 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 15:06:08,572 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 15:07:18,423 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 15:08:36,645 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 15:11:38,716 [5] 
+【异常级别】：ERROR 
+【异常类型】：SqlException
+【异常堆栈】：   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   在 System.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode)
+   在 System.Data.SqlClient.TdsParserStateObject.ExecuteFlush()
+   在 System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 Common.SqlHelper.ExecuteReader(SqlConnection connection, SqlTransaction transaction, CommandType commandType, String commandText, SqlParameter[] commandParameters, SqlConnectionOwnership connectionOwnership) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 813
+   在 Common.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 864
+   在 CMS.DAL.NewsDAL.GetNewsInfo(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\Ext\NewsDAL.cs:行号 125
+   在 CMS.BLL.NewsBLL.GetNewsInfo(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.BLL\Ext\NewsBLL.cs:行号 47
+   在 CMS.HtmlService.HtmlEngine.getNews(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 246
+   在 CMS.HtmlService.HtmlEngine.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 35
+   在 SyncInvokeCreateSingleNews(Object , Object[] , Object[] )
+   在 System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+【异常信息】：在向服务器发送请求时发生传输级错误。 (provider: TCP Provider, error: 0 - 远程主机强迫关闭了一个现有的连接。)
+------------------------------------
+【异常时间】：2013-11-26 15:11:38,820 [5] 
+【异常级别】：ERROR 
+【异常类型】：SqlException
+【异常堆栈】：   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   在 System.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode)
+   在 System.Data.SqlClient.TdsParserStateObject.ExecuteFlush()
+   在 System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 Common.SqlHelper.ExecuteReader(SqlConnection connection, SqlTransaction transaction, CommandType commandType, String commandText, SqlParameter[] commandParameters, SqlConnectionOwnership connectionOwnership) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 813
+   在 Common.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 864
+   在 CMS.DAL.NewsDAL.GetNewsInfo(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\Ext\NewsDAL.cs:行号 125
+   在 CMS.BLL.NewsBLL.GetNewsInfo(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.BLL\Ext\NewsBLL.cs:行号 47
+   在 CMS.HtmlService.HtmlEngine.getNews(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 246
+   在 CMS.HtmlService.HtmlEngine.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 35
+   在 SyncInvokeCreateSingleNews(Object , Object[] , Object[] )
+   在 System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+【异常信息】：在向服务器发送请求时发生传输级错误。 (provider: TCP Provider, error: 0 - 远程主机强迫关闭了一个现有的连接。)
+------------------------------------
+【异常时间】：2013-11-26 15:16:02,604 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 15:19:47,939 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 15:22:29,202 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 15:23:08,029 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 16:00:12,840 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 16:07:29,804 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 16:10:54,318 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 16:18:33,243 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 16:18:37,589 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 16:31:12,242 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 16:51:30,898 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 16:58:34,884 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 17:03:55,254 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 17:14:42,478 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 17:15:28,816 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 17:17:20,404 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 17:24:36,433 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 17:28:47,927 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 17:33:23,638 [5] 
+【异常级别】：ERROR 
+【异常类型】：NullReferenceException
+【异常堆栈】：   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 133
+【异常信息】：未将对象引用设置到对象的实例。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-26 17:33:55,322 [5] 
+【异常级别】：ERROR 
+【异常类型】：NullReferenceException
+【异常堆栈】：   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 133
+【异常信息】：未将对象引用设置到对象的实例。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-26 17:34:16,990 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 17:34:21,551 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 17:34:24,644 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-26 17:35:16,111 [5] 
+【异常级别】：ERROR 
+【异常类型】：NullReferenceException
+【异常堆栈】：   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 133
+【异常信息】：未将对象引用设置到对象的实例。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------

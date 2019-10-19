@@ -1,0 +1,53 @@
+.PageStyle {
+	text-align:center;
+	clear:both;
+	padding:10px;
+}
+.PageStyle A {
+	color:#333;
+	margin-right:2px;
+	cursor:pointer;
+	border:#8db5d7 1px solid;
+	text-decoration:none;
+	padding:2px 5px;
+	background-color:#cde7fd
+}
+.PageStyle A:hover {
+	margin-right:2px;
+	padding:2px 5px;
+	background-color:#F93;
+	border:1px solid #F60
+}
+.PageStyle A:link {
+	 color:#000
+}
+.PageStyle A:active {
+	margin-right:2px;
+	border:red 1px solid;
+	padding:2px 5px;
+}
+.PageStyle SPAN.current {
+	border:#e89954 1px solid;
+	font-weight:700;
+	color:#000;
+	margin-right:2px;
+	background-color:#ffca7d;
+	padding:2px 5px;
+}
+.PageStyle SPAN.disabled {
+	border:#ccc 1px solid;
+	color:#ccc;
+	margin-right:2px;
+	padding:2px 5px;
+}
+.tx1 {
+	height:20px;
+	width:200px;
+	font-size:12px;
+	border:1px solid;
+	color:#00F;
+	border-color:#000;
+}
+.commen_paging	{	height:48px; width:100%; text-align:center; margin:20px auto; float:left}
+.commen_paging a{	padding:3px 8px; border:1px solid #ccc; margin-right:3px; font-size:12px; position:relative; background:#f6f6f6}
+.commen_paging a:hover	{	padding:3px 8px; border:1px solid #c00; margin-right:3px; cursor:pointer}

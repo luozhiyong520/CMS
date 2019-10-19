@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+<!-- 列表页用css start -->
+		<!--#include virtual="/include/web/v2012/list/common/contextcss.shtml"-->
+<!-- 列表用css end -->
+<!--通用js start -->
+		<!--#include virtual="/include/common/v2012/commonjs.shtml"-->
+<!--通用js end -->
+<meta name="keywords" content="UP投资网,美女财经" />
+<meta name="description" content="欢迎访问UP投资网站美女财经栏目，美女财经栏目囊括财经美女pk秀、靓
+
+妆彩照、隽秀博文，个人风采，希望能让你一饱眼福。" />
+<title>美女财经-UP投资网 </title>
+</head>
+<body>
+<!--mininav-->
+<!-- 顶部  登录 收藏 设为首页  start-->
+		<!--#include virtual="/include/common/v2012/commontop.shtml"-->
+<!-- 顶部  登录 收藏 设为首页  end-->
+<!--\mininav-->
+<div class="hr_6"></div>
+<!-- 网站导航条 start -->
+		<!--#include virtual="/include/common/v2012/commonnav.shtml"-->
+<!-- 网站导航条 end -->
+<div class="hr_10"></div>
+<div class="Area">
+  <div class="wrapper_left">
+    <div class="mini_banner">
+   		<div id="qhimg">
+         <a href="#"><img src="http://img.upchina.com/upchinav2/images/miniBanner_01.jpg"></a>
+     </div>
+       <div id="dh">
+            	<a id="module_1" onmouseover="change(0)">独创操盘九宫格</a>
+                <a id="module_2" onmouseover="change(1)">看盘决策大不同</a>
+                <a id="module_3" onmouseover="change(2)">国家级安全评级</a>
+                <a id="module_4" onmouseover="change(3)">商务部唯一授权发布</a>
+                <a id="module_5" onmouseover="change(4)">经典操盘线 完美越狱</a>      
+       </div>
+    </div>
+    <div class="hr_6"></div>
+    <div class="crumbs">
+      <ul>
+        <li> 当前位置： </li>
+        <li>
+          <a href="#">UP投资首页</a>
+        </li>
+        <li>&gt;</li>
+        <li>
+          <a href="#">股市快递</a>
+        </li>
+        <li>
+          <a href="#">&gt;</a>
+        </li>
+        <li>
+          <a href="#">今日头条</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="content">
+    	<div class="title3 title_ctn">
+    <a href="#" class="need">今日头条</a>
+    <a href="#" class="wqhg"><img src="images/wqhg.jpg"/></a>
+    
+  </div>
+    <div class="list_ctn">
+    
+    	<ul>	
+        <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+         <li><a href="#">·酒店给政府道歉花了多少钱中国建筑巨头兵败欧</a>
+          <span>2012-06-19  15:45</span></li>
+          <li><a href="#">·农民被撞死交警不管不问被性侵的小学生遭冷处</a>
+          <span>2012-06-19  15:45</span></li>
+           <li><a href="#">·中国跟日本无需再纠缠中国人看朝鲜的"六大误区 </a><span>2012-06-19  
+
+15:45</span></li>
+         <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+          <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+           <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+         <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+          <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+           <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+           
+        
+        </ul>
+          <div class="division">&nbsp;</div>
+          
+          <ul>	
+      	  <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+         <li><a href="#">·酒店给政府道歉花了多少钱中国建筑巨头兵败欧</a>
+          <span>2012-06-19  15:45</span></li>
+          <li><a href="#">·农民被撞死交警不管不问被性侵的小学生遭冷处</a>
+          <span>2012-06-19  15:45</span></li>
+           <li><a href="#">·中国跟日本无需再纠缠中国人看朝鲜的"六大误区 </a><span>2012-06-19  
+
+15:45</span></li>
+         <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+          <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+           <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+         <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+          <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+           <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+     
+        </ul>
+        <div class="division">&nbsp;</div>
+          
+          <ul>	
+      	  <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+         <li><a href="#">·酒店给政府道歉花了多少钱中国建筑巨头兵败欧</a>
+          <span>2012-06-19  15:45</span></li>
+          <li><a href="#">·农民被撞死交警不管不问被性侵的小学生遭冷处</a>
+          <span>2012-06-19  15:45</span></li>
+           <li><a href="#">·中国跟日本无需再纠缠中国人看朝鲜的"六大误区 </a><span>2012-06-19  
+
+15:45</span></li>
+         <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+          <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+           <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+         <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+          <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+           <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+     
+        </ul>
+        <div class="division">&nbsp;</div>
+          
+          <ul>	
+      	  <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+         <li><a href="#">·酒店给政府道歉花了多少钱中国建筑巨头兵败欧</a>
+          <span>2012-06-19  15:45</span></li>
+          <li><a href="#">·农民被撞死交警不管不问被性侵的小学生遭冷处</a>
+          <span>2012-06-19  15:45</span></li>
+           <li><a href="#">·中国跟日本无需再纠缠中国人看朝鲜的"六大误区 </a><span>2012-06-19  
+
+15:45</span></li>
+         <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+          <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+           <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+         <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+          <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+           <li><a href="#">·忍值强再放炮中国无房奴中国养老金的缺口吓死</a><span>2012-06-19  
+
+15:45</span></li>
+     
+        </ul>
+    </div>
+    <div class="pager">
+    <ul>
+    	<li class="current"><span><a href="#">1</a></span></li>
+        <li><span><a href="#">2</a></span></li>
+        <li><span><a href="#">3</a></span></li>
+        <li><span><a href="#">4</a></span></li>
+        <li><span><a href="#">5</a></span></li>
+        <li><span><a href="#">6</a></span></li>
+        <li><span><a href="#">7</a></span></li>
+        <li><span><a href="#">8</a></span></li>
+        <li><span><a href="#">9</a></span></li>
+        <li><span><a href="#">10</a></span></li>
+   
+        <li><a class="qb">全部&gt;&gt;</a></li>
+        </ul>
+      
+    </div>
+    </div>
+  </div>
+  <div class="wrapper_right">
+  	<div class="move">
+        	<img src="images/lin_4.jpg">
+        </div>
+        <div class="hr_6"></div>
+        <div id="search_area">
+      <div class="gegu">
+        <input type="text" onfocus="if(this.value == this.defaultValue) this.value = ''" 
+
+onblur="if(this.value == '') this.value = this.defaultValue" value="输入股票或代码" 
+
+name="stockcode" class="text1">
+        <input type="submit" value="" class="search">
+      </div>
+    </div>
+      <div class="hr_6"></div>
+      <div class="latest_market ">
+      <div class="newhq"></div>
+      <div id="hq_ctn">
+        <div id="zs_wrap" class="tep">          
+		   <ul class="index-trigger" data-code="000001">
+            <li class="t_bar">
+				<span class="">上证指数</span>
+			</li>
+            <li class="number">
+				<span id="np-000001" class="jrj-red"></span>
+				<span id="hlp-000001" class="jrj-red"></span>
+				<span id="pl-000001" class="jrj-red"></span>
+			</li>
+          </ul>	
+		<div id="index-panel-000001" class="first">			
+			<img id="hqImg-000001" src="/img/000001.png" >				
+		</div>		  
+        </div>
+		
+        <div id="zs_wrap" class="tep">
+          <ul class="index-trigger" data-code="399001">
+            <li class="t_bar">
+				<span class="">深证成指</span>
+			</li>
+            <li class="number">
+				<span id="np-399001" class="jrj-red"></span>
+				<span id="hlp-399001" class="jrj-red"></span>
+				<span id="pl-399001" class="jrj-red"></span>
+			</li>
+          </ul>
+		  <div id="index-panel-399001" class="tu">
+			<img id="hqImg-399001" src="/img/399001.png" >
+		</div>
+        </div>
+		
+        <div id="zs_wrap" class="tep">
+          <ul class="index-trigger" data-code="399300">
+            <li class="t_bar">
+				<span class="">沪深300</span>
+			</li>
+            <li class="number">
+				<span id="np-399300" class="jrj-red"></span>
+				<span id="hlp-399300" class="jrj-red"></span>
+				<span id="pl-399300" class="jrj-red"></span>
+			</li>
+          </ul>
+		  <div id="index-panel-399300" class="tu">
+			<img id="hqImg-399300" src="/img/399300.png" >
+		  </div>
+        </div>
+		
+
+        <div id="zs_wrap" class="tep">
+          <ul class="index-trigger" data-code="000016">
+            <li class="t_bar">
+				<span class="">上证50</span>
+			</li>
+            <li class="number">
+				<span id="np-000016" class="jrj-red"></span>
+				<span id="hlp-000016" class="jrj-red"></span>
+				<span id="pl-000016" class="jrj-red"></span>
+			</li>
+          </ul>
+		  <div id="index-panel-000016" class="tu">
+			<img id="hqImg-000016" src="/img/000016.png" >
+		  </div>
+        </div>
+		
+      </div>
+    </div>
+  <div class="hr_6"></div>
+      <div class="title1 title_ctn">
+    <a href="#">精彩视频</a>
+  </div>
+      <div class="Wonderful_video">
+      	<div class="video video_left">
+        	<div class="show">
+            	<a href="#"><img src="images/lin_15.jpg"/></a>
+            </div>
+            <a href="#">每月看盘解读</a>
+        </div>
+        <div class="video video_right">
+        <div class="show">
+            	<a href="#"><img src="images/lin_15.jpg"/></a>
+            </div>
+            <a href="#">每月看盘解读</a>
+        </div>
+      </div>
+       <div class="hr_6"></div>
+      <div class="title1 title_ctn">
+    <a href="#">热点专题</a>
+  </div>
+  <div class="Hot_topic ">
+  	
+ <a href="#"> <img src="images/lin_16.jpg"/></a>
+  </div>
+  <div class="hr_6"></div>
+  <div class="Hot_topic ">
+  <a href="#"><img src="images/lin_16.jpg"/></a>
+  
+  </div>
+   <div class="hr_6"></div>
+   <div class="Micro_bo ">
+      <div class="title3 title_ctn">
+        <a class="need">今日头条</a>
+       
+      </div>
+      <div class="Micro_bo_ctn">     
+     <iframe width="260" height="275" class="share_self"  frameborder="0" scrolling="no" 
+
+src="http://widget.weibo.com/weiboshow/index.php?
+
+language=&width=260&height=275&fansRow=2&ptype=0&speed=300&skin=1&isTitle=0&noborder=0&isWeibo=1&is
+
+Fans=0&uid=2892625807&verifier=dcb475f3&dpc=1"></iframe>     
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!--列表页用js start -->
+		<!--#include virtual="/include/web/v2012/list/common/commonjs.shtml"-->
+<!--列表页用js end -->
+<div class="hr_10"></div>
+<!-- 尾部 start -->
+		<!--#include virtual="/include/common/v2012/commonfooter.shtml"-->
+<!-- 尾部 start -->
+</body>
+</html>

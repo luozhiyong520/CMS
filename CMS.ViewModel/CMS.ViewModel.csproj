@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91C4C149-4DFD-4465-8B94-3823F3FB5E18}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CMS.ViewModel</RootNamespace>
+    <AssemblyName>CMS.ViewModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Common\bin\Debug\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\AddPermisson.cs" />
+    <Compile Include="Model\JsTreeNode.cs" />
+    <Compile Include="Model\PageTemplateInfoModel.cs" />
+    <Compile Include="Model\zTreeNode.cs" />
+    <Compile Include="PageData\AdminControlModel.cs" />
+    <Compile Include="PageData\AuthoritydotPageModel.cs" />
+    <Compile Include="PageData\CourseProgramPageModel.cs" />
+    <Compile Include="PageData\CustomerGroupPageModel.cs" />
+    <Compile Include="PageData\DirectionPageModel.cs" />
+    <Compile Include="PageData\DsYmsUserPageModel.cs" />
+    <Compile Include="PageData\MediaPageModel.cs" />
+    <Compile Include="PageData\ArticlePageModel.cs" />
+    <Compile Include="PageData\NewsPageModel.cs" />
+    <Compile Include="PageData\NewsTitlePrefixModel.cs" />
+    <Compile Include="PageData\PageTemplatePageModel.cs" />
+    <Compile Include="PageData\PopupListModel.cs" />
+    <Compile Include="PageData\PopupMsgPlanModel.cs" />
+    <Compile Include="PageData\QuestionnairePageModel.cs" />
+    <Compile Include="PageData\QuestionnairesAnswerPageModel.cs" />
+    <Compile Include="PageData\SendMsgPageModel.cs" />
+    <Compile Include="PageData\TemplatedetailPageModel.cs" />
+    <Compile Include="PageData\AnalystLivePageModel.cs" />
+    <Compile Include="PageData\AnalystPageModel.cs" />
+    <Compile Include="PageData\XH_GoodsTypeModel.cs" />
+    <Compile Include="SearchInfo\FragmentSerachInfo.cs" />
+    <Compile Include="SearchInfo\PageTemplateSerachInfo.cs" />
+    <Compile Include="UcData\FragmentInfoModel.cs" />
+    <Compile Include="PageData\FragmentPageModel.cs" />
+    <Compile Include="PageData\UserManagePageModel.cs" />
+    <Compile Include="PageData\ChannelPageModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CMS.Model\CMS.Model.csproj">
+      <Project>{6617DEF1-FE4C-47F8-814A-277480A68216}</Project>
+      <Name>CMS.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

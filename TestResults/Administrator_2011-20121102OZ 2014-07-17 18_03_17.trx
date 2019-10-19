@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d8d192b7-0953-49de-95f8-84e12062ccb2" name="Administrator@2011-20121102OZ 2014-07-17 18:03:17" runUser="2011-20121102OZ\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="347e0169-c17f-41d9-8419-aab056f126dc">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_2011-20121102OZ 2014-07-17 18_03_17">
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Utility\bin\Debug\CMS.Utility.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\SMVC\bin\Debug\SMVC.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\bin\Debug\CMS.Template.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\Factory\bin\x64\Debug\Factory.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\bin\Debug\CMS.HtmlService.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Controller\bin\Debug\CMS.Controller.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HtmlService.Contract\bin\Debug\CMS.HtmlService.Contract.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Test\bin\Debug\Autofac.Integration.Wcf.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Test\bin\Debug\UpchinaSecurity.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\bin\Debug\CMS.DAL.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\bin\Debug\Common.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Test\bin\Debug\Autofac.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Model\bin\Debug\CMS.Model.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.ViewModel\bin\Debug\CMS.ViewModel.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Test\bin\Debug\log4net.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.BLL\bin\Debug\CMS.BLL.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-07-17T18:03:17.1729108+08:00" queuing="2014-07-17T18:03:17.1989122+08:00" start="2014-07-17T18:03:17.2019124+08:00" finish="2014-07-17T18:03:17.3689220+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AddEditArticleTest" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="9a79164d-67f1-a759-c2fa-04f2f519ad8e">
+      <Execution id="05b4849c-b666-47bf-90c5-d6633817f2cb" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.AjaxArticleTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddEditArticleTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="9a79164d-67f1-a759-c2fa-04f2f519ad8e" executionId="05b4849c-b666-47bf-90c5-d6633817f2cb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="05b4849c-b666-47bf-90c5-d6633817f2cb" testId="9a79164d-67f1-a759-c2fa-04f2f519ad8e" testName="AddEditArticleTest" computerName="2011-20121102OZ" duration="00:00:00.0331881" startTime="2014-07-17T18:03:17.2039125+08:00" endTime="2014-07-17T18:03:17.3589214+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="05b4849c-b666-47bf-90c5-d6633817f2cb">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 CMS.Test.AjaxArticleTest.AddEditArticleTest 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 CMS.Controller.AjaxArticle.AddEditArticle(News news, String operateType, String blod, Int32 checkAbstract) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Controller\Ajax\AjaxArticle.cs:行号 40
+   在 CMS.Test.AjaxArticleTest.AddEditArticleTest() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Test\AjaxArticleTest.cs:行号 81
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

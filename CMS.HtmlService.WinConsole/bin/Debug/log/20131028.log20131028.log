@@ -1,0 +1,57 @@
+2013-10-28 13:41:23,772 [10] ERROR log [(null)] - HtmlEngine服务出错。
+2013-10-28 13:41:23,800 [10] ERROR log [(null)] - HtmlEngine服务启动失败：
+System.ServiceModel.AddressAlreadyInUseException: HTTP 无法注册 URL http://+:9123/。另一应用程序已使用 HTTP.SYS 注册了该 URL。 ---> System.Net.HttpListenerException: 在前缀“http://+:9123/”上侦听失败，因为它与计算机上的现有注册冲突。
+   在 System.Net.HttpListener.AddAllPrefixes()
+   在 System.Net.HttpListener.Start()
+   在 System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   在 System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   在 System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   在 System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.HttpChannelListener.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open()
+   在 CMS.HtmlService.ServerManager`2.Start() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\ServerManager.cs:行号 39
+2013-10-28 13:41:23,884 [10] ERROR log [(null)] - FileReceive服务出错。
+2013-10-28 13:41:23,885 [10] ERROR log [(null)] - FileReceive服务启动失败：
+System.ServiceModel.AddressAlreadyInUseException: HTTP 无法注册 URL http://+:9127/。另一应用程序已使用 HTTP.SYS 注册了该 URL。 ---> System.Net.HttpListenerException: 在前缀“http://+:9127/”上侦听失败，因为它与计算机上的现有注册冲突。
+   在 System.Net.HttpListener.AddAllPrefixes()
+   在 System.Net.HttpListener.Start()
+   在 System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   在 System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   在 System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   在 System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.HttpChannelListener.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open()
+   在 CMS.HtmlService.ServerManager`2.Start() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\ServerManager.cs:行号 39
+2013-10-28 13:41:23,970 [10] ERROR log [(null)] - SsoOutWindow服务出错。
+2013-10-28 13:41:23,971 [10] ERROR log [(null)] - SsoOutWindow服务启动失败：
+System.ServiceModel.AddressAlreadyInUseException: HTTP 无法注册 URL http://+:9129/。另一应用程序已使用 HTTP.SYS 注册了该 URL。 ---> System.Net.HttpListenerException: 在前缀“http://+:9129/”上侦听失败，因为它与计算机上的现有注册冲突。
+   在 System.Net.HttpListener.AddAllPrefixes()
+   在 System.Net.HttpListener.Start()
+   在 System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.ServiceModel.Channels.SharedHttpTransportManager.OnOpen()
+   在 System.ServiceModel.Channels.TransportManager.Open(TransportChannelListener channelListener)
+   在 System.ServiceModel.Channels.TransportManagerContainer.Open(SelectTransportManagersCallback selectTransportManagerCallback)
+   在 System.ServiceModel.Channels.TransportChannelListener.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.HttpChannelListener.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.ChannelDispatcher.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open()
+   在 CMS.HtmlService.ServerManager`2.Start() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\ServerManager.cs:行号 39

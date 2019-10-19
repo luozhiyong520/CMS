@@ -1,0 +1,163 @@
+﻿
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+    <title>互联网+企业全网平台</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="cache-control" content="no-siteapp">
+    <link rel="stylesheet" href="theme/default/css/style.css">
+    <link href="theme/default/video/video-js.css" rel="stylesheet" type="text/css">
+    <script src="theme/default/video/video.js"></script>
+    <script>
+        videojs.options.flash.swf = "theme/default/video/video-js.swf";
+    </script>
+    <!--[if lt IE 9]>
+    <script src="theme/default/js/selectivizr.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <div class="header">
+        <div class="hd-bar wrap">
+            <div class="logo"><a href="/"><img src="theme/default/images/logo.png" alt="上海网站建设|网页设计|网站制作-引航博景"></a></div>
+            <div class="hd-tel">
+                <div class="ht-num">4000-818-026</div>
+            </div>
+        </div>
+        <div class="hd-nav">
+            <div class="wrap">
+                <ul>
+                    <li class="cur"><a href="/">首  页</a></li>
+                    <li>
+                        <a href="/qy/about.html">关于网站</a>
+                    </li>
+                    <li>
+                        <a href="/qy/platform.html">全网平台</a>
+                        <div class="subnav">
+                            <dl>
+                                <dd><a href="/qy/mallpf.html">商城全网平台</a></dd>
+                                <dd><a href="/qy/indplatform.html">行业全网平台</a></dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/qy/case.html">案例展示</a>
+                    </li>
+                    <li>
+                        <a href="/qy/tecnews.html">科技新闻</a>
+                    </li>
+                    <li>
+                        <a href="/qy/industry.html">产业政策</a>
+                    </li>
+                    <li>
+                        <a href="/qy/datanews.html">数据资讯</a>
+                    </li>
+                    <li>
+                        <a href="/qy/business.html">企业人物</a>
+                    </li>
+                    <li>
+                        <a href="/qy/college.html">移商学院</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="wide-main">
+        <div class="sear-page">
+            <div class="sp-hd">查询结果：</div>
+            <div class="sp-box">
+                <div class="sp-text">
+                    <div class="spt-title">暂未申请</div>
+                    <div class="spt-text">温馨提示：广州联线共进不可恶意使用他人商标或品牌，查询相关商标点击此处</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fly-password">
+        <div class="fp-box">
+            <div class="fpb-hd">输入查询密码，并确认</div>
+            <div class="fpb-form">
+                <form action="?c=article&a=type&tid=24&title=广州联线共进" method="post" name="form2">
+                    <p><input type="text" style="width:249px;height:32px;border:3px solid #1060A2;margin:21px 0 0;padding:0 10px;" name="pass2" id="pass2"></p>
+                    <p><input type="submit" value="确认"><span class="cancel" style="cursor:pointer;">取消</span></p>
+                </form>
+            </div>
+        </div>
+        <div class="fly-close"></div>
+    </div>
+
+    <div class="footer wrap">
+        <div class="friendlink">
+            <h4>友情链接</h4>
+            <ul>
+                <#uptag tagtype="01" clsid="001009" pagesize="100" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+                    <li><a href="${d.Url}">${d.Title}</a></li>
+                    <#/uptag>
+
+            </ul>
+        </div>
+        <div class="ft">
+            <div class="ft-text" style="margin-top:10px;">
+                <p style="color:#333;font-weight:bold;letter-spacing:1px;">服务监督热线：010-63691741</p>
+            </div>
+            <div class="ft-nav" style="margin-top:10px;">
+                <a href="#" title="关于我们">关于我们</a>
+                |
+                <a href="#" title="联系方式">联系方式</a>
+                |
+                <a href="#" title="网站地图">网站地图</a>
+                |
+                <a href="#" title="法律声明">法律声明</a>
+            </div>
+            <div class="ft-text">
+                <p>中国发展网版权所有，未经书面授权禁止使用</p>
+                <p>沪ICP备16007511号-1</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="theme/default/js/jquery.js"></script>
+    <script src="theme/default/js/swiper.js"></script>
+    <script src="theme/default/js/main.js"></script>
+</body>
+</html>
+<script>
+ function ipass2(){
+ 	$(".fly-password").css('display','block');
+ }
+
+</script>
+<script language="javascript">
+
+    jQuery.getJSON("http://cms.zongxue.net/news/GetPassWord.aspx?pass=" + getUrlParam('pass') + "&callbak=?", function (data) {
+        if (data["result"] == "false") {
+          alert('密码不正确')
+         
+        } else {
+            jQuery.getJSON("http://cms.zongxue.net/news/GetQueryInfo.aspx?keywords=" + getUrlParam('keywords') + "&ChannelId=001018&callbak=?", function (data) {
+
+                if (data != "") {
+                    var obj = eval('(' + data + ')');
+                    $(".sp-hd").html("查询结果:"+getUrlParam('keywords'));
+                    $(".sp-text").html(obj["Content"]);
+
+                }
+            });
+        }
+             
+        });
+
+
+        //获取url中的参数
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return unescape(r[2]); return null; //返回参数值
+        }
+
+</script>

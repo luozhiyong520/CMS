@@ -1,0 +1,66 @@
+    <div class="hr_6"></div>
+    <div class="latest_market ">
+      <div class="newhq"></div>
+      <div id="hq_ctn">
+        <div id="zs_wrap" class="tep">          
+		   <ul class="index-trigger" data-code="000001">
+            <li class="t_bar">
+				<span class="">上证指数</span>
+			</li>
+            <li class="number">
+				<span id="np-000001" class="up-red"></span>
+				<span id="hlp-000001" class="up-red"></span>
+				<span id="pl-000001" class="up-red"></span>
+			</li>
+          </ul>	
+		<div id="index-panel-000001" class="first">			
+			<img id="hqImg-000001" src="http://img.upchina.com/quote/000001.png" />				
+		</div>		  
+        </div>		
+        <div id="zs_wrap" class="tep">
+          <ul class="index-trigger" data-code="399001">
+            <li class="t_bar">
+				<span class="">深证成指</span>
+			</li>
+            <li class="number">
+				<span id="np-399001" class="up-red"></span>
+				<span id="hlp-399001" class="up-red"></span>
+				<span id="pl-399001" class="up-red"></span>
+			</li>
+          </ul>
+		  <div id="index-panel-399001" class="tu">
+			<img id="hqImg-399001" src="http://img.upchina.com/quote/399001.png" />
+		</div>
+        </div>	
+        <div id="zs_wrap" class="tep">
+          <ul class="index-trigger" data-code="399300">
+            <li class="t_bar">
+				<span class="">沪深300</span>
+			</li>
+            <li class="number">
+				<span id="np-399300" class="up-red"></span>
+				<span id="hlp-399300" class="up-red"></span>
+				<span id="pl-399300" class="up-red"></span>
+			</li>
+          </ul>
+		  <div id="index-panel-399300" class="tu">
+			<img id="hqImg-399300" src="http://img.upchina.com/quote/399300.png" />
+		  </div>
+        </div>
+        <div id="zs_wrap" class="tep">
+          <ul class="index-trigger" data-code="000016">
+            <li class="t_bar">
+				<span class="">上证50</span>
+			</li>
+            <li class="number">
+				<span id="np-000016" class="up-red"></span>
+				<span id="hlp-000016" class="up-red"></span>
+				<span id="pl-000016" class="up-red"></span>
+			</li>
+          </ul>
+		  <div id="index-panel-000016" class="tu">
+			<img id="hqImg-000016" src="http://img.upchina.com/quote/000016.png" />
+		  </div>
+        </div>		
+      </div>
+    </div>

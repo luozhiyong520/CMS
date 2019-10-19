@@ -1,0 +1,112 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>${art.Title}</title>
+<link rel="stylesheet" type="text/css" href="http://js.upchina.com/sasweb/actuals/css/pxcss.css" media="all" />
+</head>
+<body class="xhbg">
+<div class="wrap">
+<#uptag tagtype="02" clsid="011001" id="data011001" viewedit="1" var="d"> ${d.Content}<#/uptag>
+  <div class="main">
+    <div class="clear">
+      <div class="left">
+        <div class="zList">
+          ${Content}
+        </div>
+      </div>
+      <div class="right">
+        <h3 class="title">经典视频回顾</h3>
+        <div class="right_list">
+          <div>
+            <ul class="tabUl clear" id="tabul">
+              <li>量化安全投资专场</li>
+              <li class="act">现货专场</li>
+              <li style="margin-right:0;">期货专场</li>
+            </ul>
+            <div id="tab_div">
+              <div class="list_inside">
+                <ul class="dateTitle clear">
+                  <!--<li>日期</li>-->
+                  <li style="border:none;">视频名称</li>
+                </ul>
+                <ul class="date_scroll clear" id="ul1">
+                  <!--#include virtual="/news/list/lhaqtz.html"-->
+                </ul>
+              </div>
+              <div class="list_inside"  style="display:block;" >
+                <ul class="dateTitle clear">
+                  <li>日期</li>
+                  <li style="border:none;">视频名称</li>
+                </ul>
+                <ul class="date_scroll clear" id="ul2">
+                  <!--#include virtual="/news/list/xhzc.html"-->
+                </ul>
+              </div>
+              <div class="list_inside">
+                <ul class="dateTitle clear">
+                  <li>日期</li>
+                  <li style="border:none;">视频名称</li>
+                </ul>
+                <ul class="date_scroll clear" id="ul3">
+                 <!--#include virtual="/news/list/qhzc.html"-->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video clear">
+      <h3 class="title">更多视频回顾</h3>
+       <#uptag tagtype="02" clsid="011002" id="data011002" viewedit="1" var="d"> ${d.Content}<#/uptag>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  	window.onload=function()
+	{
+		var div=document.getElementById("tab_div").getElementsByTagName("div"), oLi=document.getElementById("tabul").getElementsByTagName("li"), i=0,ul=document.getElementById("ul1"),li=ul.getElementsByTagName("li"),ul2=document.getElementById("ul2"),li2=ul2.getElementsByTagName("li"), ul3=document.getElementById("ul3"), li3=ul3.getElementsByTagName("li");
+		for(i=0;i<oLi.length;i++)
+		{
+			oLi[i].index=i;
+			oLi[i].onclick=function()
+			{
+				for(var j=0;j<div.length;j++) div[j].style.display='none';
+				for(var j=0;j<oLi.length;j++) oLi[j].className="";
+				div[this.index].style.display='block';
+				oLi[this.index].className="act"
+			}	
+		}
+		function line(ul,li)
+		{
+	
+			for(i=0;i<li.length;i++)
+			{
+				if(i%2==1)
+				{
+					li[i].style.backgroundColor="#eee";
+				}
+				li[i].onmouseover=function(){this.className+=" black_border"}
+				li[i].onmouseout=function(){this.className=this.className.replace("black_border","")}
+			}
+		}
+		line(ul,li)
+		line(ul2,li2)
+		line(ul3,li3)
+	}
+  </script>
+<script type="text/javascript" src="http://js.upchina.com/sasweb/actuals/js/jquery.min.js"></script>
+<script src="http://js.upchina.com/upchinav2/js/scroll.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('.marqueeHide').jCarouselLite({
+        btnPrev: '.mq_prve',
+        btnNext: '.mq_next',
+        speed:1000,
+        visible: 2
+    });     
+})
+</script>  
+</body>
+</html>

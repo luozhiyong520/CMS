@@ -1,0 +1,3 @@
+﻿ <#uptag tagtype="01" clsid="001046" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i"> 
+               ${d.total}
+ <#/uptag>

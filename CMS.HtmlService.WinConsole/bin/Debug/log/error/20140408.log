@@ -1,0 +1,156 @@
+【异常时间】：2014-04-08 15:17:24,856 [6] 
+【异常级别】：ERROR 
+【异常类型】：FileNotFoundException
+【异常堆栈】：   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   在 System.IO.StreamReader..ctor(String path)
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 45
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 61
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 256
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 115
+【异常信息】：未能找到文件“E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HtmlService.WinService\templatezzbjmd.shtml”。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：109，模板名称：现货直播金牡丹版至尊区，模板路径：zzbjmd.shtml失败！
+------------------------------------
+【异常时间】：2014-04-08 15:18:06,242 [6] 
+【异常级别】：ERROR 
+【异常类型】：FileNotFoundException
+【异常堆栈】：   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   在 System.IO.StreamReader..ctor(String path)
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 45
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 61
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 256
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 115
+【异常信息】：未能找到文件“E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HtmlService.WinService\template\luo\zzbjmd.shtml”。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：109，模板名称：现货直播金牡丹版至尊区，模板路径：/luo/zzbjmd.shtml失败！
+------------------------------------
+【异常时间】：2014-04-08 15:19:52,103 [3] 
+【异常级别】：ERROR 
+【异常类型】：FileNotFoundException
+【异常堆栈】：   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   在 System.IO.StreamReader..ctor(String path)
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 45
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 61
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 256
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 115
+【异常信息】：未能找到文件“E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HtmlService.WinService\template\luo\zzbjmd.shtml”。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：109，模板名称：现货直播金牡丹版至尊区，模板路径：/luo/zzbjmd.shtml失败！
+------------------------------------
+【异常时间】：2014-04-08 15:21:17,834 [4] 
+【异常级别】：ERROR 
+【异常类型】：FileNotFoundException
+【异常堆栈】：   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   在 System.IO.StreamReader..ctor(String path)
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 45
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 61
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 256
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 115
+【异常信息】：未能找到文件“E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HtmlService.WinService\template\luo\zzbjmd.shtml”。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：109，模板名称：现货直播金牡丹版至尊区，模板路径：/luo/zzbjmd.shtml失败！
+------------------------------------
+【异常时间】：2014-04-08 17:15:32,426 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:15:32,517 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:15:32,521 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:15:32,524 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:15:32,528 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:15:32,533 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:15:52,487 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:15:52,492 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:15:52,497 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:15:52,522 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:15:52,528 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:15:52,533 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:16:07,427 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:16:07,430 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:16:07,434 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:16:07,437 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:16:07,440 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:16:07,443 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:16:35,732 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:16:35,736 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:16:35,741 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:16:35,747 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:16:35,751 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-08 17:16:35,755 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------

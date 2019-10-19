@@ -1,0 +1,8 @@
+﻿[<#uptag tagtype="06" modudle="bjbjmd"  count="20" viewedit="1" id="dataId001006"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+{"LiveId":"${d.LiveId}","LiveType":"${d.LiveType}","ActualName":"${stringtounicode(d.ActualName)}","ActualCode":"${d.ActualCode}","TransPrice":"${d.TransPrice}","TransType":"${stringtounicode(d.TransType)}","StopProfit":"${d.StopProfit}","StopLoss":"${d.StopLoss}","CreateTime":"${cdatestring(d.CreateTime,"yyyy-MM-dd HH:mm:ss")}","AnalystId":"${d.AnalystId}","NickName":"${stringtounicode(d.NickName)}","Info":"${stringtounicode(d.Info)}","ImgUrl":"${d.ImgUrl}","LinkUrl":"${d.LinkUrl}","BuyLiveId":"${d.BuyLiveId}","ProfitRate":"${d.ProfitRate}","IsSell":"${d.IsSell}","SuccessRate":"${d.SuccessRate}","FansNum":"${d.FansNum}","Intro":"${stringtounicode(d.Intro)}","AnalystImg":"${d.AnalystImg}","ShowTime":"${stringtounicode(d.ShowTime)}"}
+<#else>
+{"LiveId":"${d.LiveId}","LiveType":"${d.LiveType}","ActualName":"${stringtounicode(d.ActualName)}","ActualCode":"${d.ActualCode}","TransPrice":"${d.TransPrice}","TransType":"${stringtounicode(d.TransType)}","StopProfit":"${d.StopProfit}","StopLoss":"${d.StopLoss}","CreateTime":"${cdatestring(d.CreateTime,"yyyy-MM-dd HH:mm:ss")}","AnalystId":"${d.AnalystId}","NickName":"${stringtounicode(d.NickName)}","Info":"${stringtounicode(d.Info)}","ImgUrl":"${d.ImgUrl}","LinkUrl":"${d.LinkUrl}","BuyLiveId":"${d.BuyLiveId}","ProfitRate":"${d.ProfitRate}","IsSell":"${d.IsSell}","SuccessRate":"${d.SuccessRate}","FansNum":"${d.FansNum}","Intro":"${stringtounicode(d.Intro)}","AnalystImg":"${d.AnalystImg}","ShowTime":"${stringtounicode(d.ShowTime)}"},
+<#/if>
+<#/uptag>]
+

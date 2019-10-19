@@ -1,0 +1,103 @@
+<UPTAG 
+tagtype="01" 
+clsid="001001012" 
+pagesize="1" 
+pagecount="1" 
+viewedit="1" 
+id="dataid12" />
+<#if dataid12?exists>
+<#list dataid12 as d>
+${d.intor}
+</#list>
+</#if>
+
+<UPTAG 
+tagtype="01" 
+clsid="001001011" 
+pagesize="1" 
+pagecount="1" 
+viewedit="1" 
+id="dataid11" />
+<#if dataid11?exists>
+<#list dataid11 as d>
+${d.intor}
+</#list>
+</#if> 
+ 
+<UPTAG 
+tagtype="02" 
+clsid="001002111" 
+pagesize="1" 
+pagecount="1" 
+viewedit="1" 
+id="dataid1" />
+<#if dataid1?exists>
+<#list dataid1 as d>
+${d.intor}
+</#list>
+</#if> 
+
+<UPTAG 
+tagtype="01" 
+clsid="001001013" 
+pagesize="1" 
+pagecount="1" 
+viewedit="1" 
+id="dataid013" />
+<#if dataid013?exists>
+<#list dataid013 as d>
+${d.intor}
+</#list>
+</#if> 
+  
+  <UPTAG 
+tagtype="01" 
+clsid="001001014" 
+pagesize="1" 
+pagecount="1" 
+viewedit="1" 
+id="dataid14" />
+<#if dataid14?exists>
+<#list dataid14 as d>
+${d.intor}
+</#list>
+</#if> 
+
+ <UPTAG 
+tagtype="01" 
+clsid="001001015" 
+pagesize="1" 
+pagecount="1" 
+viewedit="1" 
+id="dataid15" />
+<#if dataid15?exists>
+<#list dataid15 as d>
+${d.intor}
+</#list>
+</#if> 
+
+ <UPTAG 
+tagtype="02" 
+clsid="001002113" 
+pagesize="1" 
+pagecount="1" 
+viewedit="1" 
+id="dataid13" />
+<#if dataid13?exists>
+<#list dataid13 as d>
+${d.intor}
+</#list>
+</#if> 
+
+ <UPTAG 
+tagtype="01" 
+clsid="001001017" 
+pagesize="1" 
+pagecount="1" 
+viewedit="1" 
+id="dataid17" />
+<#if dataid17?exists>
+<#list dataid17 as d>
+${d.intor}
+</#list>
+</#if> 

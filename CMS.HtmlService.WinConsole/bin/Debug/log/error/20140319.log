@@ -1,0 +1,42 @@
+【异常时间】：2014-03-19 13:45:33,220 [1] 
+【异常级别】：ERROR 
+HtmlEngine服务出错。
+------------------------------------
+【异常时间】：2014-03-19 13:45:33,359 [1] 
+【异常级别】：ERROR 
+【异常类型】：FormatException
+【异常堆栈】：   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(String format, Object arg0)
+   在 CMS.HtmlService.ServerManager`2.Start() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\ServerManager.cs:行号 44
+   在 CMS.HtmlService.WinConsole.Program.Main(String[] args) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HtmlService.WinConsole\Program.cs:行号 16
+【异常信息】：索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+------------------------------------
+【异常时间】：2014-03-19 13:45:38,285 [1] 
+【异常级别】：ERROR 
+HtmlEngine服务出错。
+------------------------------------
+【异常时间】：2014-03-19 13:45:38,298 [1] 
+【异常级别】：ERROR 
+【异常类型】：FormatException
+【异常堆栈】：   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(String format, Object arg0)
+   在 CMS.HtmlService.ServerManager`2.Start() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\ServerManager.cs:行号 44
+   在 CMS.HtmlService.WinConsole.Program.Main(String[] args) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HtmlService.WinConsole\Program.cs:行号 16
+【异常信息】：索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+------------------------------------
+【异常时间】：2014-03-19 13:46:48,192 [1] 
+【异常级别】：ERROR 
+HtmlEngine服务出错。
+------------------------------------
+【异常时间】：2014-03-19 13:46:48,206 [1] 
+【异常级别】：ERROR 
+【异常类型】：FormatException
+【异常堆栈】：   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(String format, Object arg0)
+   在 CMS.HtmlService.ServerManager`2.Start() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\ServerManager.cs:行号 44
+   在 CMS.HtmlService.WinConsole.Program.Main(String[] args) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HtmlService.WinConsole\Program.cs:行号 16
+【异常信息】：索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+------------------------------------

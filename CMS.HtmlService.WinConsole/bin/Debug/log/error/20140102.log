@@ -1,0 +1,7 @@
+【异常时间】：2014-01-02 10:35:18,271 [11] 
+【异常级别】：ERROR 
+【异常类型】：NullReferenceException
+【异常堆栈】：   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 119
+【异常信息】：未将对象引用设置到对象的实例。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，模板路径：/luo/upindex.shtml失败！
+------------------------------------

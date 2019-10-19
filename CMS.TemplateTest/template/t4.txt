@@ -1,0 +1,10 @@
+***************************************************
+${art.Title}
+****************************************************
+${substr(art.Title,2)}
+${substr("abscs",2)}
+****************************************************
+<#include virtual="D:\CMS_V1\code\branches\v1.0\CMS.TemplateTest\template\include.txt" />
+
+****************************************************
+ ${cdatestring(art.CreatedTime,"yy-MM-dd")}

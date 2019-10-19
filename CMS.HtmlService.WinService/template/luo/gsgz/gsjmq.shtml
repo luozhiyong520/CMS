@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>高手解码器</title>
+    <link href="http://js.upchina.com/sasweb/zhuanti/css/gsgz.css" type="text/css" rel="stylesheet"/>
+   <script type="text/javascript" src="http://js.upchina.com/lib/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            Date.prototype.format = function (format) {
+                var o = {
+                    "M+": this.getMonth() + 1, //month 
+                    "d+": this.getDate(), //day 
+                    "h+": this.getHours(), //hour 
+                    "m+": this.getMinutes(), //minute 
+                    "s+": this.getSeconds(), //second 
+                    "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+                    "S": this.getMilliseconds() //millisecond 
+                }
+
+                if (/(y+)/.test(format)) {
+                    format = format.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+                }
+
+                for (var k in o) {
+                    if (new RegExp("(" + k + ")").test(format)) {
+                        format = format.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));
+                    }
+                }
+                return format;
+            }
+
+            $(".video_part").width(document.documentElement.clientWidth - 335);
+
+            $(".sj_btn").hover(function () {
+                $(this).css({ "backgroundPosition": "-64px 0" });
+            }, function () {
+                $(this).css({ "backgroundPosition": "0 0" });
+            });
+
+            $(".yj_btn").hover(function () {
+                $(this).css({ "backgroundPosition": "-64px -64px" });
+            }, function () {
+                $(this).css({ "backgroundPosition": "0 -64px" });
+            });
+
+
+            var firsturl = $(".news_list li a:first").attr("url")
+            getinfo(firsturl, 1);
+            $(".news_list .date1").each(function (i) {
+                //alert($(".news_list .date:eq("+i+")").html())
+                //alert(new Date($(this).html()).format("yyyy-MM-dd") == new Date().format("yyyy-MM-dd"))
+                if (new Date($(this).html()).format("yyyy-MM-dd") == new Date().format("yyyy-MM-dd")) {
+                    $(".news_list .date:eq(" + i + ")").html(new Date($(this).html()).format("hh:mm"));
+                } else {
+                    $(".news_list .date:eq(" + i + ")").html(new Date($(this).html()).format("MM-dd"));
+                };
+            })
+        })
+
+        /*点击播放视频*/
+        function getinfo(url,i) {
+            $.ajax({
+                url: url,
+                type: 'GET',
+                cache: false,
+                success: function (data) {
+                    $(".news_list li").removeClass("active_li");
+                    $("#t" + i).addClass("active_li");
+                    $("#c" + i).addClass("active_li");
+                    var str = data.replace("<p>", "");
+                    str = str.replace("</p>", "");
+                    $(".video_part").html(str);
+
+                      $(".video_play embed").attr("width", "100%");
+                      $(".video_play embed").attr("height", "100%");
+                }
+            });
+
+        }
+    </script>
+</head>
+<body>
+<div>
+    <div class="left_part">
+        <div class="fl">
+            <div class="divide">
+                <div class="lp_content">
+                    <ul class="news_list">
+                        <#uptag tagtype="01" clsid="005025" pagesize="50" pagecount="1" viewedit="1" id="dataId005025"  var="d" index="i">
+                            <li id="t${i}">
+                                <span class="date"></span>
+                                    <span class="date1" style="display:none">${d.CreatedTime}</span>
+                                <a  href="javascript:void(0)"  onclick="getinfo('http://app.upchina.com/news${d.Url}',${i})" url="http://app.upchina.com/news${d.Url}"> ${substr(filterhtml(d.Title),20)}</a>      
+                            </li>
+                            <li class="detail" id="c${i}">
+                                <div class="related_img">
+                                <#if test="${isnotempty(d.ImgUrl)}">
+                                    <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+                                    <a  href="javascript:void(0)"  onclick="getinfo('http://app.upchina.com/news${d.Url}',${i})"><img src="${d.ImgUrl}"  width="90px" height="120px" border="0" >    </a>
+                                <#else>
+                                    <a  href="javascript:void(0)"  onclick="getinfo('http://app.upchina.com/news${d.Url}',${i})"><img src="http://img.upchina.com${d.ImgUrl}"   width="90px" height="120px" border="0" ></a>
+                                <#/if>
+                                    <#/if>   
+                                </div>
+                                <div class="related_ct">
+                                    <p>
+                                        <a  href="javascript:void(0)"  onclick="getinfo('http://app.upchina.com/news${d.Url}',${i})">${substr(filterhtml(d.NewsAbstract),50)}</a>
+                                    </p>
+                                </div>
+                            </li>
+                        <#/uptag>
+                         
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right_part">
+       <div class="video_part">
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>

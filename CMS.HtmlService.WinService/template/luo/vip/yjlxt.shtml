@@ -1,0 +1,7 @@
+﻿[<#uptag tagtype="01" clsid="007006" id="data007006" viewedit="1"  newssort="1"  pagecount="1" pagesize="1000" var="d" index="i" islast="flag"> 
+<#if test="${flag}">{"title":"${stringtounicode(d.Title)}","content":"${stringtounicode(filterts(d.Content))}","star":"${d.Effect}","deadline":"${cdatestring(d.DeadLine,"yyyy-MM-dd HH:mm:ss")}","lastvalue":"${d.LastValue}","forecast":"${stringtounicode(filterhtml(d.forecast))}","hurl":"${d.HUrl}","curl":"${d.CUrl}"}
+<#else>{"title":"${stringtounicode(d.Title)}","content":"${stringtounicode(filterts(d.Content))}","star":"${d.Effect}","deadline":"${cdatestring(d.DeadLine,"yyyy-MM-dd HH:mm:ss")}","lastvalue":"${d.LastValue}","forecast":"${stringtounicode(filterhtml(d.forecast))}","hurl":"${d.HUrl}","curl":"${d.CUrl}"},
+<#/if>
+<#/uptag>]
+
+

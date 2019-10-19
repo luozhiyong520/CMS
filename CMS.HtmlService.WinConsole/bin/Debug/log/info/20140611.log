@@ -1,0 +1,12 @@
+2014-06-11 11:33:29,206 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-06-11 11:33:29,269 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-06-11 11:33:29,275 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-06-11 11:39:19,932 [5] INFO  log [(null)] - 方法名：CreateFileImage，创建图片文件成功，文件路径:E:\comsite\ftp\sasweb/upimg/201406/11113919157.jpg
+2014-06-11 13:10:54,312 [5] INFO  log [(null)] - 方法名：CreateFileImage，创建图片文件成功，文件路径:E:\comsite\ftp\sasweb/upimg/201406/11131054183.jpg
+2014-06-11 13:14:21,280 [5] INFO  log [(null)] - 方法名：CreateFileImage，创建图片文件成功，文件路径:E:\comsite\ftp\sasweb/upimg/201406/11131421248.jpg
+2014-06-11 13:15:49,384 [5] INFO  log [(null)] - 方法名：CreateFileImage，创建图片文件成功，文件路径:E:\comsite\ftp\sasweb/upimg/201406/11131549352.jpg
+2014-06-11 13:17:20,500 [5] INFO  log [(null)] - 方法名：CreateFileImage，创建图片文件成功，文件路径:E:\comsite\ftp\sasweb/upimg/201406/11131720475.jpg
+2014-06-11 13:18:41,075 [5] INFO  log [(null)] - 方法名：CreateFileImage，创建图片文件成功，文件路径:E:\comsite\ftp\sasweb/upimg/201406/11131840876.jpg
+2014-06-11 13:19:28,246 [5] INFO  log [(null)] - 方法名：CreateFileImage，创建图片文件成功，文件路径:E:\comsite\ftp\sasweb/upimg/201406/11131928225.jpg
+2014-06-11 13:26:37,802 [5] INFO  log [(null)] - 方法名：CreateFileImage，创建图片文件成功，文件路径:E:\comsite\ftp\sasweb/upimg/201406/11132637693.docx
+2014-06-11 13:36:28,514 [5] INFO  log [(null)] - 方法名：CreateFileImage，创建图片文件成功，文件路径:E:\comsite\ftp\sasweb/upimg/201406/11133628481.jpg

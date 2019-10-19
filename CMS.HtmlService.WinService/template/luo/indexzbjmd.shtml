@@ -1,0 +1,29 @@
+﻿ <#uptag tagtype="06" modudle="analystlivejsonjmd"  count="3" viewedit="1" id="dataId001006"  var="d" index="i" islast="flag">  
+ <!--平仓-->
+ <#if test ="${equals(d.LiveType,2)}">
+   <li><dl><dt><div><a onclick="RemoveCookieNum()" href="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/analystlive/index.html"  target="_blank"><img src="http://img.upchina.com${d.AnalystImg}" width="60" height="60" /></a></div>
+<a onclick="RemoveCookieNum()" href="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/analystlive/index.html" target="_blank">${d.AnalystName}</a></dt>
+<dd class="tt3"> ${cdatestring(d.CreateTime,"MM-dd HH:mm")}</dd><dd class="txt"><a onclick="RemoveCookieNum()" href="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/analystlive/index.html" target="_blank">${d.ActualName} （${d.ActualCode}） ${d.TransPrice} 元  ${d.TransType} [详情]</a></dd>
+</dl></li>
+ <!--平仓结束-->
+
+
+
+ <!--开仓-->
+ <#elseif test ="${equals(d.LiveType,1)}">
+    <li><dl><dt><div><a onclick="RemoveCookieNum()" href="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/analystlive/index.html"  target="_blank"><img src="http://img.upchina.com${d.AnalystImg}" width="60" height="60" /></a></div>
+<a onclick="RemoveCookieNum()" href="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/analystlive/index.html" target="_blank">${d.AnalystName}</a></dt>
+<dd class="tt1"> ${cdatestring(d.CreateTime,"MM-dd HH:mm")}</dd><dd class="txt"><a onclick="RemoveCookieNum()" href="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/analystlive/index.html" target="_blank">${d.ActualName} （${d.ActualCode}） ${d.TransPrice} 元  ${d.TransType} [详情]</a></dd>
+</dl></li>
+ <!--开仓结束-->
+
+ <!--观点-->
+<#elseif test ="${equals(d.LiveType,3)}">
+<li><dl><dt><div><a onclick="RemoveCookieNum()" href="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/analystlive/index.html"  target="_blank"><img src="http://img.upchina.com${d.AnalystImg}" width="60" height="60" /></a></div>
+<a onclick="RemoveCookieNum()" href="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/analystlive/index.html" target="_blank">${d.AnalystName}</a></dt>
+<dd class="tt2"> ${cdatestring(d.CreateTime,"MM-dd HH:mm")}</dd><dd class="txt"><a onclick="RemoveCookieNum()" href="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/analystlive/index.html" target="_blank"> ${substr(filterhtml(d.Info),50)} [详情]</a></dd>
+</dl></li>
+ <#/if>
+ <!--观点结束-->
+   <#/uptag>
+ 

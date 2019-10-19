@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9ff40e88-c03b-4be0-8790-114f67ff7048" name="Administrator@2011-20121102OZ 2014-07-18 09:12:16" runUser="2011-20121102OZ\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="347e0169-c17f-41d9-8419-aab056f126dc">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_2011-20121102OZ 2014-07-18 09_12_16">
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Utility\bin\Debug\CMS.Utility.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\SMVC\bin\Debug\SMVC.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\bin\Debug\CMS.Template.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\Factory\bin\x64\Debug\Factory.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\bin\Debug\CMS.HtmlService.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Controller\bin\Debug\CMS.Controller.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HtmlService.Contract\bin\Debug\CMS.HtmlService.Contract.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Test\bin\Debug\Autofac.Integration.Wcf.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Test\bin\Debug\UpchinaSecurity.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\bin\Debug\CMS.DAL.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\bin\Debug\Common.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Test\bin\Debug\Autofac.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Model\bin\Debug\CMS.Model.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.ViewModel\bin\Debug\CMS.ViewModel.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Test\bin\Debug\log4net.dll" />
+      <DeploymentItem filename="E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.BLL\bin\Debug\CMS.BLL.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-07-18T09:12:16.8908246+08:00" queuing="2014-07-18T09:12:19.5669776+08:00" start="2014-07-18T09:12:19.6919848+08:00" finish="2014-07-18T09:12:34.8948543+08:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="20" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="19" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="2011-20121102OZ" outcome="Error" timestamp="2014-07-18T09:12:34.8928542+08:00">
+        <Text>测试宿主进程意外退出。</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreateSingleNewsTest1" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="524b3b6c-7920-56ed-daa3-bf82d081e246">
+      <Execution id="a67f8d6e-fb94-42ba-8e21-af995c1d0bf6" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.HtmlEngineTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateSingleNewsTest1" />
+    </UnitTest>
+    <UnitTest name="GetTemplagePreviewTest" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="4bb22c2f-b5c9-da7e-a662-0ff56769d20b">
+      <Execution id="5ae9e1aa-d946-4c49-950b-58665ab9430d" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.HtmlEngineTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetTemplagePreviewTest" />
+    </UnitTest>
+    <UnitTest name="CreateTemplatePageTest" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="1097a3e1-67f5-3bd5-c707-b6db0a5ded87">
+      <Execution id="651d99c1-81e9-44fa-8687-8191a79dd43f" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.HtmlEngineTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateTemplatePageTest" />
+    </UnitTest>
+    <UnitTest name="directionFragmentTest" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="216378b3-d1a8-24cd-d67d-f8032d428fce">
+      <DeploymentItems>
+        <DeploymentItem filename="CMS.Template.dll" />
+      </DeploymentItems>
+      <Execution id="2fc36de8-7dad-4c54-947f-987ed91e0f01" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.TemplateManagerTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="directionFragmentTest" />
+    </UnitTest>
+    <UnitTest name="GetPicTest" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="5b13a789-85c6-53c3-d372-16764a4a6146">
+      <Execution id="330ff1fb-7365-4419-ad4f-5e3babf1d199" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.FileReceiveTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetPicTest" />
+    </UnitTest>
+    <UnitTest name="isCreateDirTest" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="f863e3b9-397a-2ea7-d34e-ab1869736cb3">
+      <DeploymentItems>
+        <DeploymentItem filename="CMS.HtmlService.dll" />
+      </DeploymentItems>
+      <Execution id="21027254-03bb-45ab-8eef-3904cc12aac4" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.FileReceiveTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="isCreateDirTest" />
+    </UnitTest>
+    <UnitTest name="AddUserNameTest" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="27221dd6-e806-7e36-c261-a02d3299f573">
+      <DeploymentItems>
+        <DeploymentItem filename="CMS.HtmlService.dll" />
+      </DeploymentItems>
+      <Execution id="261850a1-1210-46b6-99af-730f2c9ccb99" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.SsoOutWindowTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddUserNameTest" />
+    </UnitTest>
+    <UnitTest name="CreateSingleNewsTest" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="c9d5efbc-153c-e555-4286-08fbed27ce08">
+      <Execution id="0a8fd6d3-1120-4848-8f23-fb0314c264bb" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.EngineTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateSingleNewsTest" />
+    </UnitTest>
+    <UnitTest name="SearchPageTemplateTest" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="f4ef1dce-b232-aeb1-3629-61ef70c45917">
+      <Execution id="882456e0-d18b-4b8c-92c2-f5bb9e4e62ca" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.AjaxPageTemplateTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SearchPageTemplateTest" />
+    </UnitTest>
+    <UnitTest name="FullLinkTest" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="1d38e8c2-e770-4c89-efed-641f970f4bdf">
+      <Execution id="9c2e15bf-3896-441a-a0f2-ebac8cd04f8c" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.NewsTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FullLinkTest" />
+    </UnitTest>
+    <UnitTest name="AddEditArticleTest" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="9a79164d-67f1-a759-c2fa-04f2f519ad8e">
+      <Execution id="864dc7e7-1a7a-4fec-bbff-97233580b112" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.AjaxArticleTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddEditArticleTest" />
+    </UnitTest>
+    <UnitTest name="CreateSingleNewsTest1" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="e22501a4-8bf5-dbf3-affb-1f701a34d3d0">
+      <Execution id="9bc3d698-d996-44a8-90a2-ac6d1af27077" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.EngineTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateSingleNewsTest1" />
+    </UnitTest>
+    <UnitTest name="UpDateStatusTest" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="32c3f29c-607d-57df-8a74-7dc749ee4406">
+      <Execution id="8e063c82-1dad-436d-9501-16208212f60b" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.SsoOutWindowTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="UpDateStatusTest" />
+    </UnitTest>
+    <UnitTest name="GetFunctionCheckedInfoTest" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="43105b9d-8813-0a4b-f886-5d076b2eb0dc">
+      <Execution id="2a3993a0-e7b4-48f5-8adc-6919bdd17375" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.UserManagePageModelTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetFunctionCheckedInfoTest" />
+    </UnitTest>
+    <UnitTest name="FtpTest" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="deb5dab9-7f30-a5ca-8097-49e2c5edb3e9">
+      <Execution id="57de4feb-e1ce-4d7f-80eb-9c1cd8a8b215" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.AjaxPageTemplateTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FtpTest" />
+    </UnitTest>
+    <UnitTest name="GetTemplateIdListByChanelTest1" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="ad9e15bd-0390-2425-7e09-0d231c5a3794">
+      <Execution id="b039c2c3-211c-4935-81b1-0119b97ad08b" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.FragmentBLLTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetTemplateIdListByChanelTest1" />
+    </UnitTest>
+    <UnitTest name="CreateSingleNewsTest" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="3751672e-6a0d-9d06-a6b2-c2b062bff9a1">
+      <Execution id="9a8f06af-1f0b-45e3-a427-36aed8015e16" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.HtmlEngineTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateSingleNewsTest" />
+    </UnitTest>
+    <UnitTest name="CreateTemplatePageByChannelIdTest" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="695fe04e-9657-7328-10eb-eea2a29b9caa">
+      <Execution id="947e7582-f3a3-4bd3-acb3-a5862df6f9e8" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.HtmlEngineTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateTemplatePageByChannelIdTest" />
+    </UnitTest>
+    <UnitTest name="GetTemplateIdListByChanelTest" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="fbebb6aa-f950-dad8-7fcf-0b00b42654da">
+      <Execution id="904de391-fa41-4b98-ae82-6a7cf571eb3a" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.FragmentBLLTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetTemplateIdListByChanelTest" />
+    </UnitTest>
+    <UnitTest name="CreateSingleNewsTest2" storage="e:\comsite\svn\dev456\cms\code\branches\v1.0\cms.test\bin\debug\cms.test.dll" id="8c7fec06-cab2-a56b-9047-c945537767f9">
+      <Execution id="2f08f034-f446-46e6-a54f-d6150469e612" />
+      <TestMethod codeBase="E:/comsite/svn/dev456/CMS/code/branches/v1.0/CMS.Test/bin/Debug/CMS.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CMS.Test.EngineTest, CMS.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreateSingleNewsTest2" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1d38e8c2-e770-4c89-efed-641f970f4bdf" executionId="9c2e15bf-3896-441a-a0f2-ebac8cd04f8c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="43105b9d-8813-0a4b-f886-5d076b2eb0dc" executionId="2a3993a0-e7b4-48f5-8adc-6919bdd17375" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="216378b3-d1a8-24cd-d67d-f8032d428fce" executionId="2fc36de8-7dad-4c54-947f-987ed91e0f01" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3751672e-6a0d-9d06-a6b2-c2b062bff9a1" executionId="9a8f06af-1f0b-45e3-a427-36aed8015e16" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="695fe04e-9657-7328-10eb-eea2a29b9caa" executionId="947e7582-f3a3-4bd3-acb3-a5862df6f9e8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1097a3e1-67f5-3bd5-c707-b6db0a5ded87" executionId="651d99c1-81e9-44fa-8687-8191a79dd43f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4bb22c2f-b5c9-da7e-a662-0ff56769d20b" executionId="5ae9e1aa-d946-4c49-950b-58665ab9430d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="524b3b6c-7920-56ed-daa3-bf82d081e246" executionId="a67f8d6e-fb94-42ba-8e21-af995c1d0bf6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="27221dd6-e806-7e36-c261-a02d3299f573" executionId="261850a1-1210-46b6-99af-730f2c9ccb99" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="32c3f29c-607d-57df-8a74-7dc749ee4406" executionId="8e063c82-1dad-436d-9501-16208212f60b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4ef1dce-b232-aeb1-3629-61ef70c45917" executionId="882456e0-d18b-4b8c-92c2-f5bb9e4e62ca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="deb5dab9-7f30-a5ca-8097-49e2c5edb3e9" executionId="57de4feb-e1ce-4d7f-80eb-9c1cd8a8b215" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fbebb6aa-f950-dad8-7fcf-0b00b42654da" executionId="904de391-fa41-4b98-ae82-6a7cf571eb3a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ad9e15bd-0390-2425-7e09-0d231c5a3794" executionId="b039c2c3-211c-4935-81b1-0119b97ad08b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b13a789-85c6-53c3-d372-16764a4a6146" executionId="330ff1fb-7365-4419-ad4f-5e3babf1d199" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f863e3b9-397a-2ea7-d34e-ab1869736cb3" executionId="21027254-03bb-45ab-8eef-3904cc12aac4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c9d5efbc-153c-e555-4286-08fbed27ce08" executionId="0a8fd6d3-1120-4848-8f23-fb0314c264bb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e22501a4-8bf5-dbf3-affb-1f701a34d3d0" executionId="9bc3d698-d996-44a8-90a2-ac6d1af27077" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8c7fec06-cab2-a56b-9047-c945537767f9" executionId="2f08f034-f446-46e6-a54f-d6150469e612" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a79164d-67f1-a759-c2fa-04f2f519ad8e" executionId="864dc7e7-1a7a-4fec-bbff-97233580b112" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9c2e15bf-3896-441a-a0f2-ebac8cd04f8c" testId="1d38e8c2-e770-4c89-efed-641f970f4bdf" testName="FullLinkTest" computerName="2011-20121102OZ" duration="00:00:15.0838628" startTime="2014-07-18T09:12:19.8099915+08:00" endTime="2014-07-18T09:12:34.8938543+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c2e15bf-3896-441a-a0f2-ebac8cd04f8c">
+    </UnitTestResult>
+    <UnitTestResult executionId="2a3993a0-e7b4-48f5-8adc-6919bdd17375" testId="43105b9d-8813-0a4b-f886-5d076b2eb0dc" testName="GetFunctionCheckedInfoTest" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a3993a0-e7b4-48f5-8adc-6919bdd17375">
+    </UnitTestResult>
+    <UnitTestResult executionId="2fc36de8-7dad-4c54-947f-987ed91e0f01" testId="216378b3-d1a8-24cd-d67d-f8032d428fce" testName="directionFragmentTest" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2fc36de8-7dad-4c54-947f-987ed91e0f01">
+    </UnitTestResult>
+    <UnitTestResult executionId="9a8f06af-1f0b-45e3-a427-36aed8015e16" testId="3751672e-6a0d-9d06-a6b2-c2b062bff9a1" testName="CreateSingleNewsTest" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a8f06af-1f0b-45e3-a427-36aed8015e16">
+    </UnitTestResult>
+    <UnitTestResult executionId="947e7582-f3a3-4bd3-acb3-a5862df6f9e8" testId="695fe04e-9657-7328-10eb-eea2a29b9caa" testName="CreateTemplatePageByChannelIdTest" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="947e7582-f3a3-4bd3-acb3-a5862df6f9e8">
+    </UnitTestResult>
+    <UnitTestResult executionId="651d99c1-81e9-44fa-8687-8191a79dd43f" testId="1097a3e1-67f5-3bd5-c707-b6db0a5ded87" testName="CreateTemplatePageTest" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="651d99c1-81e9-44fa-8687-8191a79dd43f">
+    </UnitTestResult>
+    <UnitTestResult executionId="5ae9e1aa-d946-4c49-950b-58665ab9430d" testId="4bb22c2f-b5c9-da7e-a662-0ff56769d20b" testName="GetTemplagePreviewTest" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5ae9e1aa-d946-4c49-950b-58665ab9430d">
+    </UnitTestResult>
+    <UnitTestResult executionId="a67f8d6e-fb94-42ba-8e21-af995c1d0bf6" testId="524b3b6c-7920-56ed-daa3-bf82d081e246" testName="CreateSingleNewsTest1" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a67f8d6e-fb94-42ba-8e21-af995c1d0bf6">
+    </UnitTestResult>
+    <UnitTestResult executionId="261850a1-1210-46b6-99af-730f2c9ccb99" testId="27221dd6-e806-7e36-c261-a02d3299f573" testName="AddUserNameTest" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="261850a1-1210-46b6-99af-730f2c9ccb99">
+    </UnitTestResult>
+    <UnitTestResult executionId="8e063c82-1dad-436d-9501-16208212f60b" testId="32c3f29c-607d-57df-8a74-7dc749ee4406" testName="UpDateStatusTest" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e063c82-1dad-436d-9501-16208212f60b">
+    </UnitTestResult>
+    <UnitTestResult executionId="882456e0-d18b-4b8c-92c2-f5bb9e4e62ca" testId="f4ef1dce-b232-aeb1-3629-61ef70c45917" testName="SearchPageTemplateTest" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="882456e0-d18b-4b8c-92c2-f5bb9e4e62ca">
+    </UnitTestResult>
+    <UnitTestResult executionId="57de4feb-e1ce-4d7f-80eb-9c1cd8a8b215" testId="deb5dab9-7f30-a5ca-8097-49e2c5edb3e9" testName="FtpTest" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="57de4feb-e1ce-4d7f-80eb-9c1cd8a8b215">
+    </UnitTestResult>
+    <UnitTestResult executionId="904de391-fa41-4b98-ae82-6a7cf571eb3a" testId="fbebb6aa-f950-dad8-7fcf-0b00b42654da" testName="GetTemplateIdListByChanelTest" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="904de391-fa41-4b98-ae82-6a7cf571eb3a">
+    </UnitTestResult>
+    <UnitTestResult executionId="b039c2c3-211c-4935-81b1-0119b97ad08b" testId="ad9e15bd-0390-2425-7e09-0d231c5a3794" testName="GetTemplateIdListByChanelTest1" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b039c2c3-211c-4935-81b1-0119b97ad08b">
+    </UnitTestResult>
+    <UnitTestResult executionId="330ff1fb-7365-4419-ad4f-5e3babf1d199" testId="5b13a789-85c6-53c3-d372-16764a4a6146" testName="GetPicTest" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="330ff1fb-7365-4419-ad4f-5e3babf1d199">
+    </UnitTestResult>
+    <UnitTestResult executionId="21027254-03bb-45ab-8eef-3904cc12aac4" testId="f863e3b9-397a-2ea7-d34e-ab1869736cb3" testName="isCreateDirTest" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="21027254-03bb-45ab-8eef-3904cc12aac4">
+    </UnitTestResult>
+    <UnitTestResult executionId="0a8fd6d3-1120-4848-8f23-fb0314c264bb" testId="c9d5efbc-153c-e555-4286-08fbed27ce08" testName="CreateSingleNewsTest" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0a8fd6d3-1120-4848-8f23-fb0314c264bb">
+    </UnitTestResult>
+    <UnitTestResult executionId="9bc3d698-d996-44a8-90a2-ac6d1af27077" testId="e22501a4-8bf5-dbf3-affb-1f701a34d3d0" testName="CreateSingleNewsTest1" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9bc3d698-d996-44a8-90a2-ac6d1af27077">
+    </UnitTestResult>
+    <UnitTestResult executionId="2f08f034-f446-46e6-a54f-d6150469e612" testId="8c7fec06-cab2-a56b-9047-c945537767f9" testName="CreateSingleNewsTest2" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2f08f034-f446-46e6-a54f-d6150469e612">
+    </UnitTestResult>
+    <UnitTestResult executionId="864dc7e7-1a7a-4fec-bbff-97233580b112" testId="9a79164d-67f1-a759-c2fa-04f2f519ad8e" testName="AddEditArticleTest" computerName="2011-20121102OZ" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="864dc7e7-1a7a-4fec-bbff-97233580b112">
+    </UnitTestResult>
+  </Results>
+</TestRun>

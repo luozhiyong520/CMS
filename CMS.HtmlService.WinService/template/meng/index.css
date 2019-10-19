@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+html{height:100%;overflow:hidden;}
+body{height:100%;background:#f5f5f5;margin:0;padding:0;font-family:Times New Roman,Arial;}
+ul,li,h1,h2,p{margin:0;padding:0;list-style:none;}
+img{border:none;}
+a{text-decoration:none}
+a:hover{text-decoration:underline;}
+.left_part{width:301px;float:left;height:100%;background:#101010;position:absolute;left:0px;top:0px;display:inline;*zoom:1;border-right:3px solid #404040;
+scrollbar-arrow-color:#5A5A5A;
+    scrollbar-face-color:#333333;
+    scrollbar-3dlight-color:#1E1E1E;
+    scrollbar-highlight-color:#1E1E1E;
+    scrollbar-shadow-color:#1E1E1E;
+    scrollbar-darkshadow-color:#1E1E1E;
+    scrollbar-track-color:#1E1E1E;
+    srcollbar-base-color:#F8F8F8;}
+.calendar_title{width:301px;height:34px;}
+.calendar_title .text{width:160px;height:34px;line-height:34px;font-size:14px;color:#ccc;text-align:center;float:left}
+.calendar_title .arrow1{width:70px;height:34px;background:url(http://img.upchina.com/sasweb/upjhd/date_arrow.gif) 60px 12px no-repeat;cursor:pointer;float:left}
+.calendar_title .arrow2{width:70px;height:34px;background:url(http://img.upchina.com/sasweb/upjhd/date_arrow.gif) -85px 12px no-repeat;cursor:pointer;float:right}
+.calendar_title{width:301px;height:34px;line-height:34px;font-size:14px;color:#ccc;text-align:center;background:url(http://img.upchina.com/sasweb/upjhd/calendar_title.gif)}
+.calendar_con{width:301px;font-family:Arial;}
+.calendar_con ul.week{width:301px;height:36px;line-height:36px;border-bottom:1px solid #0b0b0b;float:left}
+.calendar_con ul.week li{width:42px;height:36px;line-height:36px;text-align:center;background:#2f516f;font-size:14px;color:#fff;border-right:1px solid #0b0b0b;float:left}
+.calendar_con ul.date{width:301px;height:198px;background:url(http://img.upchina.com/sasweb/upjhd/calendar_bg.gif);float:left}
+.calendar_con ul.date li{width:42px;height:32px;line-height:32px;margin-right:1px;margin-bottom:1px;text-align:center;font-size:14px;color:#fff;float:left}
+.calendar_con ul.date li.today{background:url(http://img.upchina.com/sasweb/upjhd/today.gif) no-repeat;}
+.calendar_con ul.date li.select{color:#ff3c3c;background:#2a2a2a}
+.calendar_con ul.date li.after{color:#444}
+.divide{width:301px;margin-top:15px;height:58%;float:left}
+.fin_title{background:#1d1d1d;height:27px;padding-top:7px}
+.fin_title .t01{width:75px;height:27px;line-height:27px;color:#fff;font-size:14px;text-align:center;background:url(http://img.upchina.com/sasweb/upjhd/title_01.gif) no-repeat;cursor:pointer;float:left}
+.fin_title .t02{width:75px;height:27px;line-height:27px;color:#999;font-size:14px;text-align:center;background:url(http://img.upchina.com/sasweb/upjhd/title_01.gif) no-repeat -75px 0;cursor:pointer;float:left}
+.lp_content{width:301px;height:100%;overflow-y:scroll;overflow-x:hidden;}
+.lp_content ul{padding:0 14px;padding-top:10px;}
+.lp_content ul li{background:url(http://img.upchina.com/sasweb/upjhd/dot.gif) no-repeat 2px 14px;height:30px;padding-left:10px;line-height:30px;font-size:14px;border-bottom: 1px solid #1B1B1B;color: #999;white-space: nowrap;}
+.lp_content ul li a{color: #999;}
+.lp_content ul li span.date{color:#434343;float:right;margin-right:10px;font-size:13px;font-family:Arial;}
+.lp_content ul li .ti{color:#fdff66;padding-right:3px;}
+.lp_content ul li .ti a{color:#fdff66;}
+/*页面右侧*/
+.right_part{width:auto;height:100%;position:absolute;left:304px;right:0px;top:0px;*zoom:1;overflow-y:scroll;overflow-x:none;color:#333;}
+.con_k{max-width:1000px;width:auto!important;*zoom:1;width: expression( this.offsetWidth > 1000 ? "1000px" : "auto" );margin:0 auto}
+.banner{max-width:1000px;width:auto !important;*zoom:1;width:expression(document.body.clientWidth>1000?"1000px":"auto");max-height:200px;overflow:hidden;}
+.con_title{width:auto;padding:15px 0 8px 0;font-size:14px;font-weight:bold;color:#ff6000;text-indent:10px;}
+.con_list table{max-width:1000px;width:expression(this.width > 1000 ? "1000px" : this.width);width:100%;background:#fff;border-top:1px solid #d1d1d1;border-left:1px solid #d1d1d1}
+.con_list th{padding:5px 0;line-height:20px;font-size:14px;font-weight:bold;color:#333;background:#eaeaea;border-bottom:1px solid #d1d1d1;border-right:1px solid #d1d1d1;text-align:center;}
+.con_list th.w1{width:15%}
+.con_list th.w2{width:20%}
+.con_list th.w3{width:35%}
+.con_list td{padding:5px 0;line-height:20px;font-size:14px;border-bottom:1px solid #d1d1d1;border-right:1px solid #d1d1d1;text-align:center;font-family:Arial}
+.con_list td.t1{text-align:left;padding:0 12px}
+.con_list tr.bg{background:#eaeaea}
+.text_red{color:#cd1a1c}
+.text_ora{color:#ff6000}
+.text_gray{color:#888}
+.xz{_width:96%;line-height:20px;padding:10px 10px 0 0;font-size:12px;text-align:right;}
+.tishi {
+width: 140px;
+height: 42px;
+line-height: 42px;
+background: url(http://img.upchina.com/sasweb/upjhd/tishi.gif) no-repeat;
+padding-left: 50px;
+font-size: 14px;
+text-align: left;
+margin: 10px 0 10px 400px;
+display: inline;
+float: left;
+}
+/*embed object{ padding-left: 220px;position: absolute; padding-top:100px;}*/
+.zList{top: 80px;left:240px;position: absolute;}
+.tab_01 {display: none;}
+.tab_02 {display: none;}
+.clear {zoom: 1;}
+.ligb{background-color: #194e6f;}
+.right_part_context p{ margin:0 auto; width:850px; padding-top:100px;}

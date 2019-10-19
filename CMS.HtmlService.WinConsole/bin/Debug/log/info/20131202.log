@@ -1,0 +1,13 @@
+2013-12-02 10:21:35,028 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-12-02 10:21:35,080 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-12-02 10:21:35,112 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-12-02 13:46:28,259 [8] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-12-02 13:46:28,330 [8] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-12-02 13:46:28,352 [8] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-12-02 16:41:14,062 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-12-02 16:41:14,100 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-12-02 16:41:14,107 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-12-02 16:42:36,514 [6] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，生成文件路径：E:\comsite\sasweb\zhuanti\week/2013-12-02.html成功！
+2013-12-02 16:42:36,584 [6] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：86，模板名称：投资日历首页，生成文件路径：E:\comsite\sasweb\zhuanti\/week/index.html成功！
+2013-12-02 17:17:41,625 [6] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，生成文件路径：E:\comsite\sasweb\zhuanti\week/2013-12-02.html成功！
+2013-12-02 17:17:41,659 [6] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：86，模板名称：投资日历首页，生成文件路径：E:\comsite\sasweb\zhuanti\/week/index.html成功！

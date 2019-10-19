@@ -1,0 +1,14 @@
+【异常时间】：2013-12-18 10:42:55,540 [1] 
+【异常级别】：ERROR 
+HtmlEngine服务出错。
+------------------------------------
+【异常时间】：2013-12-18 10:42:55,658 [1] 
+【异常级别】：ERROR 
+【异常类型】：FormatException
+【异常堆栈】：   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(String format, Object arg0)
+   在 CMS.HtmlService.ServerManager`2.Start() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\ServerManager.cs:行号 44
+   在 CMS.HtmlService.WinConsole.Program.Main(String[] args) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HtmlService.WinConsole\Program.cs:行号 16
+【异常信息】：索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+------------------------------------

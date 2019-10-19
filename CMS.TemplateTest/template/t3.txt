@@ -1,0 +1,40 @@
+<!--html>
+<body>
+<#UPTAG tagtype="01" clsid="001" pagesize="1" pagecount="3" viewedit="1" id="dataId007"  var="d" index="i">
+  ${i}   ${d.NewsID}  ${d.ChannelId}   ${d.Title}
+<#/UPTAG>
+</body>
+</html-->
+ <#set name="name" value="expression"/>
+                                    
+                    ${name}
+
+
+					<!--#for from="1" to=${pagecount} index="rowindex">
+                      <#if test="${equals(curpage,1)}">
+                         <#if test="${equals(curpage,rowindex}">
+                         <li class="current"><span><a>${rowindex}</a></span></li>
+                         <#else>
+                          <li><span><a href="${locafilename}.shtml" target="_self">${rowindex}</a></span></li>
+                         <#/if>
+                      <#else>
+                       <#if curpage=rowindex>
+                        <li class="current"><span><a>${rowindex}</a></span></li>
+                        <#else>
+				      <li><span><a href="${locafilename}-${rowindex}.shtml" target="_self">${rowindex}</a></span></li>
+                      <#/if>
+                    <#/for-->   
+
+
+					 <#if test="${equals(curpage,1)}">
+                         <#if test="${equals(curpage,rowindex}">
+                         <li class="current"><span><a>${rowindex}</a></span></li>
+                         <#else>
+                          <li><span><a href="${locafilename}.shtml" target="_self">${rowindex}</a></span></li>
+                         <#/if>
+                      <#else>
+                       <#if test="${equals(curpage,rowindex)}">
+                        <li class="current"><span><a>${rowindex}</a></span></li>
+                        <#else>
+				      <li><span><a href="${locafilename}-${rowindex}.shtml" target="_self">${rowindex}</a></span></li>
+                      <#/if>

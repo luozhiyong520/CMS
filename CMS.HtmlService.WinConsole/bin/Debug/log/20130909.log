@@ -1,0 +1,186 @@
+2013-09-09 09:58:06,820 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-09 09:58:06,864 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-09 09:58:06,896 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-09 09:58:12,998 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 10:09:33,038 [1] ERROR log [(null)] - HtmlEngine服务出错。
+2013-09-09 10:09:33,112 [1] ERROR log [(null)] - HtmlEngine服务启动失败：
+System.InvalidOperationException: 服务“CMS.HtmlService.HtmlEngine”有零个应用程序(非基础结构)终结点。这可能是因为未找到应用程序的配置文件，或者在配置文件中未找到与服务名称匹配的服务元素，或者服务元素中未定义终结点。
+   在 System.ServiceModel.Description.DispatcherBuilder.EnsureThereAreApplicationEndpoints(ServiceDescription description)
+   在 System.ServiceModel.Description.DispatcherBuilder.InitializeServiceHost(ServiceDescription description, ServiceHostBase serviceHost)
+   在 System.ServiceModel.ServiceHostBase.InitializeRuntime()
+   在 System.ServiceModel.ServiceHostBase.OnBeginOpen()
+   在 System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open()
+   在 CMS.HtmlService.ServerManager`2.Start()
+2013-09-09 10:09:33,120 [1] ERROR log [(null)] - FileReceive服务出错。
+2013-09-09 10:09:33,121 [1] ERROR log [(null)] - FileReceive服务启动失败：
+System.InvalidOperationException: 服务“CMS.HtmlService.FileReceive”有零个应用程序(非基础结构)终结点。这可能是因为未找到应用程序的配置文件，或者在配置文件中未找到与服务名称匹配的服务元素，或者服务元素中未定义终结点。
+   在 System.ServiceModel.Description.DispatcherBuilder.EnsureThereAreApplicationEndpoints(ServiceDescription description)
+   在 System.ServiceModel.Description.DispatcherBuilder.InitializeServiceHost(ServiceDescription description, ServiceHostBase serviceHost)
+   在 System.ServiceModel.ServiceHostBase.InitializeRuntime()
+   在 System.ServiceModel.ServiceHostBase.OnBeginOpen()
+   在 System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open()
+   在 CMS.HtmlService.ServerManager`2.Start()
+2013-09-09 10:09:33,128 [1] ERROR log [(null)] - SsoOutWindow服务出错。
+2013-09-09 10:09:33,130 [1] ERROR log [(null)] - SsoOutWindow服务启动失败：
+System.InvalidOperationException: 服务“CMS.HtmlService.SsoOutWindow”有零个应用程序(非基础结构)终结点。这可能是因为未找到应用程序的配置文件，或者在配置文件中未找到与服务名称匹配的服务元素，或者服务元素中未定义终结点。
+   在 System.ServiceModel.Description.DispatcherBuilder.EnsureThereAreApplicationEndpoints(ServiceDescription description)
+   在 System.ServiceModel.Description.DispatcherBuilder.InitializeServiceHost(ServiceDescription description, ServiceHostBase serviceHost)
+   在 System.ServiceModel.ServiceHostBase.InitializeRuntime()
+   在 System.ServiceModel.ServiceHostBase.OnBeginOpen()
+   在 System.ServiceModel.ServiceHostBase.OnOpen(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Open()
+   在 CMS.HtmlService.ServerManager`2.Start()
+2013-09-09 10:10:13,459 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-09 10:10:13,478 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-09 10:10:13,487 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-09 10:10:19,926 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 10:10:43,713 [10] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 10:12:20,589 [9] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 10:12:53,599 [11] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 10:14:01,230 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-09 10:14:01,250 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-09 10:14:01,258 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-09 10:14:01,860 [6] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 10:14:04,894 [6] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 10:17:16,642 [11] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 10:22:17,281 [19] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 10:26:54,669 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-09 10:26:54,687 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-09 10:26:54,696 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-09 10:27:06,145 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：77，模板名称：特定页面，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/tdym/appointpage.html成功！
+2013-09-09 10:31:12,135 [10] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 10:43:42,181 [37] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 10:44:14,663 [39] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 10:44:54,172 [41] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 10:45:13,694 [43] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 10:45:26,613 [7] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 10:45:59,694 [45] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 10:50:58,804 [56] ERROR log [(null)] - System.Data.SqlClient.SqlException (0x80131904): 在向服务器发送请求时发生传输级错误。 (provider: TCP Provider, error: 0 - 远程主机强迫关闭了一个现有的连接。)
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   在 System.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode)
+   在 System.Data.SqlClient.TdsParserStateObject.ExecuteFlush()
+   在 System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Common.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 587
+   在 Common.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 499
+   在 CMS.DAL.DataAccess.ExecuteDataSet(CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\DataAccess.cs:行号 272
+   在 CMS.DAL.DataAccess.ExecuteDataSet(String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\DataAccess.cs:行号 245
+   在 CMS.DAL.BaseDAL`1.Get(Dictionary`2 keyProps) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\BaseDAL.cs:行号 415
+   在 CMS.BLL.PageTemplateBLL.Get(Dictionary`2 keyProps) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.BLL\PageTemplate.generated.cs:行号 94
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+   在 SyncInvokeCreateTemplatePage(Object , Object[] , Object[] )
+   在 System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+2013-09-09 10:50:59,094 [56] ERROR log [(null)] - System.ServiceModel.CommunicationException: 套接字连接已中止。这可能是由于处理消息时出错或远程主机超过接收超时或者潜在的网络资源问题导致的。本地套接字超时是“00:00:10”。 ---> System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.ServiceModel.Channels.SocketConnection.ReadCore(Byte[] buffer, Int32 offset, Int32 size, TimeSpan timeout, Boolean closing)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.ServiceModel.Channels.SocketConnection.ReadCore(Byte[] buffer, Int32 offset, Int32 size, TimeSpan timeout, Boolean closing)
+   在 System.ServiceModel.Channels.SocketConnection.Read(Byte[] buffer, Int32 offset, Int32 size, TimeSpan timeout)
+   在 System.ServiceModel.Channels.DelegatingConnection.Read(Byte[] buffer, Int32 offset, Int32 size, TimeSpan timeout)
+   在 System.ServiceModel.Channels.SessionConnectionReader.Receive(TimeSpan timeout)
+   在 System.ServiceModel.Channels.SynchronizedMessageSource.Receive(TimeSpan timeout)
+   在 System.ServiceModel.Channels.FramingDuplexSessionChannel.OnClose(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Close(TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.OnClose(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Close(TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.MessageRpc.CloseChannel()
+2013-09-09 10:50:59,116 [56] ERROR log [(null)] - System.Data.SqlClient.SqlException (0x80131904): 在向服务器发送请求时发生传输级错误。 (provider: TCP Provider, error: 0 - 远程主机强迫关闭了一个现有的连接。)
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   在 System.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode)
+   在 System.Data.SqlClient.TdsParserStateObject.ExecuteFlush()
+   在 System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 Common.SqlHelper.ExecuteDataset(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 587
+   在 Common.SqlHelper.ExecuteDataset(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 499
+   在 CMS.DAL.DataAccess.ExecuteDataSet(CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\DataAccess.cs:行号 272
+   在 CMS.DAL.DataAccess.ExecuteDataSet(String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\DataAccess.cs:行号 245
+   在 CMS.DAL.BaseDAL`1.Get(Dictionary`2 keyProps) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\BaseDAL.cs:行号 415
+   在 CMS.BLL.PageTemplateBLL.Get(Dictionary`2 keyProps) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.BLL\PageTemplate.generated.cs:行号 94
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+   在 SyncInvokeCreateTemplatePage(Object , Object[] , Object[] )
+   在 System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+2013-09-09 10:55:24,178 [10] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-09 10:55:24,208 [10] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-09 10:55:24,222 [10] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-09 11:03:08,284 [10] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-09 11:03:08,312 [10] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-09 11:03:08,326 [10] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-09 11:03:55,182 [10] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-09 11:03:55,208 [10] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-09 11:03:55,222 [10] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-09 11:24:42,864 [13] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 11:24:43,415 [13] ERROR log [(null)] - System.ServiceModel.CommunicationObjectAbortedException: 无法将通信对象 System.ServiceModel.Channels.ServerSessionPreambleConnectionReader+ServerFramingDuplexSessionChannel 用于通信，因为它已经被中止。
+   在 System.ServiceModel.Channels.CommunicationObject.ThrowIfDisposedOrNotOpen()
+   在 System.ServiceModel.Channels.OutputChannel.Send(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.DuplexChannelBinder.DuplexRequestContext.OnReply(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.RequestContextBase.Reply(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.Reply(MessageRpc& rpc)
+2013-09-09 11:24:53,107 [9] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-09 11:24:53,134 [9] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-09 11:24:53,148 [9] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-09 11:25:32,953 [9] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-09 11:25:32,980 [9] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-09 11:25:33,023 [9] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-09 11:30:29,052 [9] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-09 11:30:29,080 [9] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-09 11:30:29,095 [9] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-09 11:30:49,838 [13] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 11:32:02,228 [8] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-09 11:32:02,256 [8] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-09 11:32:02,271 [8] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-09 11:32:42,084 [9] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-09 11:32:42,112 [9] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-09 11:32:42,127 [9] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-09 11:32:45,230 [12] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 11:33:51,066 [6] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 11:39:24,558 [24] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 11:50:23,130 [48] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 11:51:02,624 [50] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-09 12:00:30,158 [71] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！

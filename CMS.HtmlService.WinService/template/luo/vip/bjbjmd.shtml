@@ -1,0 +1,67 @@
+﻿ 
+ 
+  
+                <div class="core_part">
+                 <#uptag tagtype="06" modudle="bjbjmd"  count="20" viewedit="1" id="dataId001006"  var="d" index="i" islast="flag">
+                  
+                  <#if test ="${equals(i,1)}">
+                     <div id="StartCreateTime" style="display:none">${cdatestring(d.CreateTime,"yyyy-MM-dd HH:mm:ss")}</div>
+                  <#/if>
+                 <#if test="${flag}">
+                    <div id="EndCreateTime" style="display:none">${cdatestring(d.CreateTime,"yyyy-MM-dd HH:mm:ss")}</div>
+                  <#/if>
+
+                  <#if test ="${equals(d.LiveType,1)}">
+                    <div class="kc">
+                     <#elseif test ="${equals(d.LiveType,2)}">
+                     <div class="pc">
+                     <#elseif test ="${equals(d.LiveType,3)}">
+                     <div class="ptc">
+                     <#/if>
+                        <div class="personal_head">
+                             <a href="mycps.html?analystId=${d.AnalystId}"><img src="http://img.upchina.com${d.AnalystImg}" width="58px" height="57px" /></a>
+                        </div>
+                        <div class="stock_detail">
+                            <div class="first_div">
+                                <div class="personal_name"> <a href="mycps.html?analystId=${d.AnalystId}">${d.NickName}</a></div>
+                                <div class="date">${cdatestring(d.CreateTime,"MM-dd HH:mm")}</div>
+                            </div>
+                             <#if test ="${equals(d.LiveType,1) or equals(d.LiveType,2)}">
+                            <div class="second_div">
+                                 <#if test ="${equals(d.LiveType,1)}">
+                                <div class="kc_title">
+                             <#elseif test ="${equals(d.LiveType,2)}">
+                               <div class="pc_title">
+                              <#/if>
+                                <#if test ="${equals(d.LiveType,1)}">
+                                     <img class="icon_kc" src="http://img.upchina.com/sasweb/analystlive/extreme/icon_kc.png" />
+                                     <#elseif test ="${equals(d.LiveType,2)}">
+                                    <img class="icon_pc" src="http://img.upchina.com/sasweb/analystlive/extreme/icon_pc.png" />
+                                <#/if>
+                                 <#if test ="${equals(d.LiveType,1)}">
+                                     ${d.ActualName}（${d.ActualCode}） ${d.TransPrice}元  ${d.TransType} 
+
+                                      <#if test ="${isnotempty(d.StopProfit)}">
+                                      止盈：${d.StopProfit} 
+                                       <#/if>
+                                         <#if test ="${isnotempty(d.StopLoss)}">
+                                            止损：${d.StopLoss}
+                                      <#/if>
+                                 <#elseif test ="${equals(d.LiveType,2)}">
+                                     ${d.ActualName}（${d.ActualCode}） ${d.TransPrice}元  ${d.TransType}   盈亏：  ${d.VipProfitRate}%
+                                  <#/if>
+                                  </div>
+                                <div class="gd"> </div>
+                            </div>
+                             <#/if>
+                            <div class="third_div">
+                               ${d.Info} 
+                                <div id="imgurl${i}" style="display:none">${d.ImgUrl}</div>
+                                   <div><a href="${d.LinkUrl}" target="_blank">${d.LinkUrl}</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <#/uptag>
+                    </div>
+  

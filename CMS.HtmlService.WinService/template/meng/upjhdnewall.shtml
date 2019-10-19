@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>理财大讲堂</title>
+<link href="http://js.upchina.com/sasweb/upjhd/css/index.css" type="text/css" rel="stylesheet"/>
+<script src="http://js.upchina.com/sasweb/goodsbillboard/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<style type="text/css">
+.right_part_context{   
+width: 100%;
+height: 100%;
+position: absolute;
+left: 304px;
+right: 0px;
+top:0px;
+overflow-y: scroll;
+overflow-x: none;
+color: #333;
+background: #101010;
+}
+.zList{top: 80px;left:240px;position: absolute;}
+.tab_01 {display: none;}
+.tab_02 {display: none;}
+.clear {zoom: 1;}
+.ligb{background-color: #194e6f;}
+</style>
+<script type="text/javascript">
+    function Download(url) {
+        if (external.iWinMain) {
+            external.iWinMain('cmd_navigate', url);
+        }
+        else {
+            window.location.href = url;
+        }
+    }
+    var now = new Date();                    //当前日期  
+    var nowDayOfWeek = now.getDay();         //今天本周的第几天  
+    var nowDay = now.getDate();              //当前日  
+    var nowMonth = now.getMonth() + 1;           //当前月  
+    var nowYear = now.getYear();             //当前年  
+    nowYear += (nowYear < 2000) ? 1900 : 0;
+    var nowYearurl = '';
+    var nowMonthurl = '';
+    var nowDayurl = '';
+    var hdyear = '';
+    var hdmoth = '';
+    $(function () {
+        $(".text").html(nowYear + '年' + nowMonth + '月');
+        nowYearurl = GetUrlParame('getnowYear');
+        nowMonthurl = GetUrlParame('getnowMonth');
+        nowDayurl = GetUrlParame('getnowDay');
+        hdyear = GetUrlParame('gethdyear');
+        hdmoth = GetUrlParame('gethdmoth');
+        if (nowYearurl == '' || nowYearurl == null || nowMonthurl == '' || nowMonthurl == null) {
+            LoadDay(nowMonth, 1, nowYear);
+        } else {
+            $(".calendar_con .date li").removeClass('select');
+            if (hdyear == '' || hdyear == null || hdmoth == '' || hdmoth == null) {
+                $(".text").html(nowYearurl + '年' + nowMonthurl + '月');
+                LoadDay(nowMonthurl, 1, nowYearurl);
+            } else {
+                $(".text").html(hdyear + '年' + hdmoth + '月');
+                LoadDay(hdmoth, 1, hdyear);
+            }
+
+        }
+        $(".arrow1").click(function () {
+            if (nowMonth <= 12 && nowMonth >= 2) {
+                nowMonth = nowMonth - 1;
+            } else {
+                nowMonth = 12;
+                nowYear = nowYear - 1;
+            }
+            LoadDay(nowMonth, 1, nowYear);
+            $(".text").html(nowYear + '年' + nowMonth + '月');
+            $(".calendar_con .date li").removeClass('today');
+            $("#hdyear").val(nowYear);
+            $("#hdmoth").val(nowMonth);
+        });
+        $(".arrow2").click(function () {
+            if (nowMonth < 12 && nowMonth >= 0) {
+                nowMonth = nowMonth + 1;
+            } else if (nowMonth == 12) {
+                nowMonth = 1;
+                nowYear = nowYear + 1;
+            }
+            //            nowYearurl = GetUrlParame('getnowYear');
+            //            nowMonthurl = GetUrlParame('getnowMonth');
+            //            nowDayurl = GetUrlParame('getnowDay');
+
+            //            if (nowYearurl == '' || nowYearurl == null || nowMonthurl == '' || nowMonthurl == null) {
+            //                LoadDay(nowMonth, 1, nowYear);
+            //            } else {
+            //                LoadDay(nowMonth, 1, nowYear);
+            //            }
+            LoadDay(nowMonth, 1, nowYear);
+            $(".calendar_con .date li").removeClass('today');
+            $(".text").html(nowYear + '年' + nowMonth + '月');
+            $("#hdyear").val(nowYear);
+            $("#hdmoth").val(nowMonth);
+        });
+        $(".lp_content a").each(function () {
+            if ('http://app.upchina.com' + $(this).attr('href') == String(window.location)) {
+                $(this).parent().css('background-color', '#194e6f');
+                $(this).parent().children("span").css('color', '#F3EEEE');
+            }
+        })
+        nowDayurl = GetUrlParame('getnowDay');
+        if (nowDayurl == "" || nowDayurl == null) {
+        } else {
+            $('.calendar_con .date li').each(function () {
+                $(this).removeClass('today');
+                if ($(this).html() == "" || $(this).html() == null) {
+                    $(this).removeClass('today');
+                }
+                if ($(this).html() == nowDayurl) {
+                    $(this).addClass('today').removeClass('select');
+                }
+                //                console.log('$(this).html():' + $(this).html())
+                //                console.log('nowDayurl:' + nowDayurl)
+                //                console.log('nowDay:' + nowDay)
+            });
+        }
+    })
+
+    function getWeekDay(month, day, year) {
+        today = new Date();
+        if (month == nowMonth && year == nowYear) {
+            today = new Date();
+        } else {
+            today = new Date('' + year + '/' + month + '/' + day + '');
+        }
+        year = year || today.getFullYear();
+        today.setFullYear(year, month - 1, day);
+        weekDay = today.getDay();
+        return weekDay
+    }
+
+    //获得某月的天数  
+    function getMonthDays(myMonth) {
+        var monthStartDate = new Date(nowYear, myMonth, 1);
+        var monthEndDate = new Date(nowYear, myMonth + 1, 1);
+        var days = (monthEndDate - monthStartDate) / (1000 * 60 * 60 * 24);
+        return days;
+    }
+    //加载遍历月中的天数
+    function LoadDay(month, day, year) {
+        var li = "";
+        var st = getWeekDay(month, day, year);
+        for (var i = 1; i <= getMonthDays(month - 1) + st; i++) {
+            var ss = (i - st) == nowDay ? 'today' : '';
+            if (i <= st)
+                li += "<li class=" + ss + ">" + "" + "</li>";
+            else {
+                var CDate = new Date(year, month - 1, i - st);
+                var NDate = new Date();
+                var M = 'after';
+                if (CDate > NDate) {
+                    if ((nowYear == nowYearurl && nowDay > nowDayurl) || (nowYear > nowYearurl)) {
+                        li += "<li class=" + ss + ">" + (i - st) + "</li>";
+                    } else
+                    // li += "<li class=" + M + ">" + (i - st) + "</li>";
+                        li += "<li class=" + ss + ">" + (i - st) + "</li>";
+                } else
+                    li += "<li class=" + ss + ">" + (i - st) + "</li>";
+            }
+        }
+        $('.calendar_con .date').html(li);
+        $('.calendar_con .date li').css("cursor", "pointer");
+        //遍历月中的天数的添加点击事件
+        $('.calendar_con .date li').click(function () {
+            $('.calendar_con .date li').each(function () {
+                $(this).removeClass('today');
+            });
+            $(this).addClass('today');
+            if ($(this).attr("class") == "select" || $(this).attr("class") == "select today") {
+                $(".right_part").show();
+                $(".right_part_context").hide();
+                nowYearurl = GetUrlParame('getnowYear');
+                nowMonthurl = GetUrlParame('getnowMonth');
+                nowDayurl = GetUrlParame('getnowDay');
+                hdyear = GetUrlParame('gethdyear');
+                hdmoth = GetUrlParame('gethdmoth');
+                if (hdyear == '' || hdmoth == '') {
+                    hdyear = $("#hdyear").val();
+                    hdmoth = $("#hdmoth").val();
+                }
+                else {
+                    if ((hdyear == $("#hdyear").val()) && (hdmoth == $("#hdmoth").val())) {
+                    } else {
+                        if ($("#hdyear").val() == '' || $("#hdmoth").val() == '') {
+                        } else {
+                            hdyear = $("#hdyear").val();
+                            hdmoth = $("#hdmoth").val();
+                        }
+                    }
+                }
+                if (nowYearurl == '' || nowYearurl == null || nowMonthurl == '' || nowMonthurl == null) {
+                    var getDay = new Date('' + nowYear + '/' + nowMonth + '/' + nowDay + '').getDay();
+                    window.location.href = "http://app.upchina.com/news/jhdlizx/upjhd.html?getDay=" + getDay + '&getnowDay=' + $(this).html() + '&getnowYear=' + nowYear + '&getnowMonth=' + nowMonth + '&gethdyear=' + hdyear + '&gethdmoth=' + hdmoth;
+                } else {
+                    var getDay = new Date('' + nowYearurl + '/' + nowMonthurl + '/' + $(this).html() + '').getDay();
+                    window.location.href = "http://app.upchina.com/news/jhdlizx/upjhd.html?getDay=" + getDay + '&getnowDay=' + $(this).html() + '&getnowYear=' + nowYear + '&getnowMonth=' + nowMonth + '&gethdyear=' + hdyear + '&gethdmoth=' + hdmoth;
+                }
+            } else {
+                if ($(this).attr("class") != "after today") {
+                    if ($(this).html() == "" || $(this).html() == null) {
+                        $(this).removeClass('today');
+                    } else {
+                        if (hdyear == '' || hdmoth == '') {
+                            hdyear = $("#hdyear").val();
+                            hdmoth = $("#hdmoth").val();
+                        }
+                        else {
+                            if ((hdyear == $("#hdyear").val()) && (hdmoth == $("#hdmoth").val())) {
+                            } else {
+                                if ($("#hdyear").val() == '' || $("#hdmoth").val() == '') {
+                                } else {
+                                    hdyear = $("#hdyear").val();
+                                    hdmoth = $("#hdmoth").val();
+                                }
+                            }
+                        }
+
+                        if (nowYearurl == '' || nowYearurl == null || nowMonthurl == '' || nowMonthurl == null) {
+                            var getDay = new Date('' + nowYear + '/' + nowMonth + '/' + nowDay + '').getDay();
+                            window.location.href = "http://app.upchina.com/news/jhdlizx/upjhd.html?getDay=" + getDay + '&getnowDay=' + $(this).html() + '&getnowYear=' + nowYear + '&getnowMonth=' + nowMonth + '&gethdyear=' + hdyear + '&gethdmoth=' + hdmoth;
+                        } else {
+                            if (nowMonth == nowMonthurl && nowYear == nowYearurl) {
+                                var getDay = new Date('' + nowYearurl + '/' + nowMonthurl + '/' + $(this).html() + '').getDay();
+                                //window.location.href = "http://app.upchina.com/news/jhdlizx/upjhd.html?getDay=" + getDay + '&getnowDay=' + $(this).html() + '&getnowYear=' + nowYear + '&getnowMonth=' + nowMonth;
+                                window.location.href = "http://app.upchina.com/news/jhdlizx/upjhd.html?getDay=" + getDay + '&getnowDay=' + $(this).html() + '&getnowYear=' + nowYear + '&getnowMonth=' + nowMonth + '&gethdyear=' + hdyear + '&gethdmoth=' + hdmoth;
+                            } else {
+                                if (hdyear != '') {
+                                    var getDay = new Date('' + hdyear + '/' + hdmoth + '/' + $(this).html() + '').getDay();
+                                    window.location.href = "http://app.upchina.com/news/jhdlizx/upjhd.html?getDay=" + getDay + '&getnowDay=' + $(this).html() + '&getnowYear=' + hdyear + '&getnowMonth=' + hdmoth + '&gethdyear=' + hdyear + '&gethdmoth=' + hdmoth;
+                                } else {
+                                    var getDay = new Date('' + nowYearurl + '/' + nowMonthurl + '/' + $(this).html() + '').getDay();
+                                    //window.location.href = "http://app.upchina.com/news/jhdlizx/upjhd.html?getDay=" + getDay + '&getnowDay=' + $(this).html() + '&getnowYear=' + nowYear + '&getnowMonth=' + nowMonthurl;
+                                    window.location.href = "http://app.upchina.com/news/jhdlizx/upjhd.html?getDay=" + getDay + '&getnowDay=' + $(this).html() + '&getnowYear=' + nowYear + '&getnowMonth=' + nowMonthurl + '&gethdyear=' + hdyear + '&gethdmoth=' + hdmoth;
+                                }
+                            }
+
+                        }
+
+                    }
+                } else
+                    $(this).removeClass('today');
+            }
+        });
+    }
+    
+</script>
+</head>
+<body>
+<div class="left_part">
+<input type="hidden" id="hdyear" />
+<input type="hidden" id="hdmoth" />     
+  <div class="calendar_title"><div class="arrow1"></div><div class="text"></div><div class="arrow2"></div></div>
+  <div class="calendar_con">
+  <ul class="week"><li>日</li><li>一</li><li>二</li><li>三</li><li>四</li><li>五</li><li>六</li></ul>
+ <ul class="date"><!--<li></li><li></li><li></li><li></li><li>1</li><li>2</li><li>3</li><li>4<li>5</li><li>6</li><li>7</li><li class="select">8</li><li>9</li><li>10</li><li>11</li><li12><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li>
+ <li class="today">28</li><li class="after">29</li><li class="after">30</li><li class="after">31</li>--></ul>
+</div>
+<div class="divide">
+     <div class="fin_title">
+<script type="text/javascript">
+    function GetUrlParame(parame) {
+        var reg = new RegExp("(^|&)" + parame + "=([^&]*)(&|$)", "i");
+        var res = "";
+        try {
+            res = window.location.search.substr(1).match(reg)[2];
+        } catch (e) { }
+        return res;
+    }
+    function switchMenu(curr_id, total_num) {
+        for (var i = 0; i < total_num; i++) {
+            var el = document.getElementById('menu_sub_' + i);
+            if (!el) return;
+            var divs = document.getElementById('show_' + i);
+            if (i == curr_id) {
+                el.style.display = "block";
+                divs.className = 't01';
+                el.className = '';
+            }
+            else {
+                el.style.display = "none";
+                divs.className = 't02';
+                el.className = '';
+            }
+        }
+    };
+</script>
+    <ul><li class="t02" onmouseover="switchMenu(0, 4);" id="show_0">股票专场</li>
+	<li class="t01" onmouseover="switchMenu(1, 4);" id="show_1">现货专场</li>
+	<li class="t02" onmouseover="switchMenu(2, 4);" id="show_2">培训专场</li>
+    </ul>
+	</div>    
+       <div class="lp_content">
+            <!--股票专场-->
+         <ul id="menu_sub_0" style="display:block">
+            <#uptag tagtype="01" clsid="010001" pagesize="100" pagecount="1" viewedit="1" id="dataId010001"  var="d" index="i">                        
+<li><span class="date">${cdatestring(d.CreatedTime,"MM-dd")}</span><a title="${substr(d.Title,38)}" href="/news${d.Url}">${substr(d.Title,10)}</a></li>
+<#/uptag>
+         </ul> 
+         <!--现货专场-->
+         <ul id="menu_sub_1" style="display:none">
+         <#uptag tagtype="01" clsid="010002" pagesize="100" pagecount="1" viewedit="1" id="dataId010002"  var="d" index="i">                        
+<li><span class="date">${cdatestring(d.CreatedTime,"MM-dd")}</span><a title="${substr(d.Title,38)}" href="/news${d.Url}">${substr(d.Title,10)}</a></li>
+<#/uptag>
+         </ul>
+          <!--培训专场-->
+          <ul id="menu_sub_2" style="display:none">
+          <#uptag tagtype="01" clsid="010003" pagesize="100" pagecount="1" viewedit="1" id="dataId010003"  var="d" index="i">                        
+<li><span class="date">${cdatestring(d.CreatedTime,"MM-dd")}</span><a title="${substr(d.Title,38)}" href="/news${d.Url}">${substr(d.Title,10)}</a></li>
+<#/uptag>
+          </ul>
+         </div>
+       </div>
+</div>
+   <div class="frame right_part_context" id="iframe" style="float:left; overflow:hidden;">
+       <div id="setHeight" style="height:700px; width:100%; overflow:hidden; overflow-y:auto">
+         <iframe src="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/bocepopup/yjscontentnew.html?id=4309" id="iframe_a" name="frame" style="width:100%; height:100%"  frameborder="0"></iframe>
+       </div>
+    </div>     
+</body>
+</html>

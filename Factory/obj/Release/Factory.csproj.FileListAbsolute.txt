@@ -1,0 +1,12 @@
+E:\UP\mycms\v1.0\Factory\bin\Release\Factory.dll
+E:\UP\mycms\v1.0\Factory\bin\Release\Factory.pdb
+E:\UP\mycms\v1.0\Factory\bin\Release\DynamicProxy.dll
+E:\UP\mycms\v1.0\Factory\obj\Release\Factory.csprojResolveAssemblyReference.cache
+E:\UP\mycms\v1.0\Factory\obj\Release\Factory.dll
+E:\UP\mycms\v1.0\Factory\obj\Release\Factory.pdb
+E:\UP\mycms\v2.0\Factory\bin\Release\Factory.dll
+E:\UP\mycms\v2.0\Factory\bin\Release\Factory.pdb
+E:\UP\mycms\v2.0\Factory\bin\Release\DynamicProxy.dll
+E:\UP\mycms\v2.0\Factory\obj\Release\Factory.csprojResolveAssemblyReference.cache
+E:\UP\mycms\v2.0\Factory\obj\Release\Factory.dll
+E:\UP\mycms\v2.0\Factory\obj\Release\Factory.pdb

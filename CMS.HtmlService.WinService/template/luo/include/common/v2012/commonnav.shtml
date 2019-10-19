@@ -1,0 +1,52 @@
+﻿
+ 
+<div class="logonav Area">
+ <div class="up_logo">
+  	<h1>   
+    	<a href="/">
+    		<img src="http://img.upchina.com/logo/logo.png" alt="UP投资"/>
+        </a>   
+    </h1>
+  </div>
+  <!-- 导航部分 start -->
+  <div class="nav">
+    <ul class="w1">
+      <li><a class="red">资讯：</a>
+        <a href="http://www.upchina.com/">网站首页</a>
+        <a href="http://www.upchina.com/list/jrtt.shtml">今日头条</a>
+        <a href="http://www.upchina.com/list/dwzj.shtml">多维资金</a>
+        <a href="http://www.upchina.com/list/dtgz.shtml">动态估值</a>
+        <a href="http://www.upchina.com/list/dpzs.shtml">大盘走势</a>
+        <a href="http://www.upchina.com/list/ggxw.shtml">个股新闻</a>
+        <a href="http://www.upchina.com/list/ssgs.shtml">上市公司</a>
+           <a href="http://www.upchina.com/xiuxian/">UP休闲区</a>
+      </li>
+    </ul>
+    <ul class="w1">
+      <li><a class="red" href="http://www.upchina.com/chanpin/">产品：</a>
+        <a name="downparam" target="_self" href="http://d.upchina.cn/cattle/full/free/UPSetup.exe">软件下载</a>
+        <a href="http://www.upchina.com/chanpin/help.shtml">产品学堂</a>
+        <a href="http://www.upchina.com/chanpin/message.shtml">百问百答</a>
+        <a href="http://www.upchina.com/list/cpdt.shtml">产品动态</a>
+        <a href="http://weibo.com/u/2676385273">官方微博</a>
+        <a href="http://www.upchina.com/a/chanpin/">为何选择</a>
+        <a href="http://www.upchina.com/about.shtml">联系我们</a>
+      </li>
+    </ul>
+    <ul class="w1">
+      <li><a  class="red">特色：</a>
+        <a href="/focus/aqtzyjzx/index.shtml">安全投资研究中心</a>
+        <a href="/focus/aqtzwlx/index.shtml">安全投资万里行活动</a>
+      </li>
+    </ul>
+  </div>
+  <!-- 导航部分 end -->
+  <!-- 时间 start -->
+  <div class="tel_time">
+     <div id="tel"></div>
+ 	 <div id="divT"></div>
+  </div>
+  <!-- 时间 end -->
+</div>
+
+

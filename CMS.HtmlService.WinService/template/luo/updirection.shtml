@@ -1,0 +1,64 @@
+﻿ <ul class="m-tq">
+      <li>
+         <#uptag tagtype="04" clsid="1" pagesize="10" pagecount="1" viewedit="1" id="dataId1"  var="d" index="i">                        
+             <h1>股票市场</h1>
+            <#if test="${equals(d.MarketQuotations,"空头强势")}"> 
+                <div class="icon1"></div>
+            <#elseif test="${equals(d.MarketQuotations,"空头占优")}">
+                <div class="icon2"></div>
+            <#elseif test="${equals(d.MarketQuotations,"多空平衡")}">
+                <div class="icon3"></div>
+            <#elseif test="${equals(d.MarketQuotations,"多头占优")}">
+                <div class="icon4"></div>
+            <#elseif test="${equals(d.MarketQuotations,"多头强势")}">
+                <div class="icon5"></div>
+            <#else>
+                <div class="icon1"></div>
+            <#/if>
+             <font class="renqi">人气：${d.Popularity}</font>
+         <#/uptag>
+      </li>
+      
+      <li id="actualsmarket">
+      <#uptag tagtype="04" clsid="2" pagesize="10" pagecount="1" viewedit="1" id="dataId2"  var="d" index="i">  
+        <h1>现货市场</h1>
+        <#if test="${equals(d.MarketQuotations,"空头强势")}"> 
+            <div class="icon1"></div>
+        <#elseif test="${equals(d.MarketQuotations,"空头占优")}">
+            <div class="icon2"></div>
+        <#elseif test="${equals(d.MarketQuotations,"多空平衡")}">
+            <div class="icon3"></div>
+        <#elseif test="${equals(d.MarketQuotations,"多头占优")}">
+            <div class="icon4"></div>
+        <#elseif test="${equals(d.MarketQuotations,"多头强势")}">
+            <div class="icon5"></div>
+        <#else>
+            <div class="icon1"></div> 
+        <#/if>
+        <font class="renqi">人气：${d.Popularity}</font>
+         <#/uptag>
+        </li>
+
+
+         
+
+
+      <li class="last">
+        <#uptag tagtype="04" clsid="3" pagesize="10" pagecount="1" viewedit="1" id="dataId3"  var="d" index="i">  
+        <h1>期货市场</h1>
+        <#if test="${equals(d.MarketQuotations,"空头强势")}"> 
+            <div class="icon1"></div>
+        <#elseif test="${equals(d.MarketQuotations,"空头占优")}">
+            <div class="icon2"></div>
+        <#elseif test="${equals(d.MarketQuotations,"多空平衡")}">
+            <div class="icon3"></div>
+        <#elseif test="${equals(d.MarketQuotations,"多头占优")}">
+            <div class="icon4"></div>
+        <#elseif test="${equals(d.MarketQuotations,"多头强势")}">
+            <div class="icon5"></div>
+        <#else>
+            <div class="icon1"></div>
+        <#/if>
+        <font class="renqi">人气：${d.Popularity}</font></li>
+        <#/uptag>
+    </ul>

@@ -1,0 +1,14 @@
+2014-02-26 11:37:21,692 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-02-26 11:37:21,766 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-02-26 11:37:21,793 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-02-26 11:41:32,076 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-02-26 11:41:32,093 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-02-26 11:41:32,100 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-02-26 11:41:39,911 [4] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\sasweb\zhuanti/index.html成功！
+2014-02-26 17:48:26,591 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-02-26 17:48:26,608 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-02-26 17:48:26,645 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-02-26 17:50:17,801 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-02-26 17:50:17,818 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-02-26 17:50:17,831 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-02-26 17:50:20,307 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：90，模板名称：首页直播分析师实时动态，生成文件路径：E:\comsite\sasweb\zhuanti/analystlivejson.html成功！

@@ -1,0 +1,16 @@
+2014-04-09 17:31:18,540 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-04-09 17:31:18,586 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-04-09 17:31:18,603 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-04-09 17:31:31,965 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：121，模板名称：vip直播首页右边，生成文件路径：E:\comsite\sasweb\zhuanti/vip/rsxqb.html成功！
+2014-04-09 17:35:25,992 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：121，模板名称：vip直播首页右边，生成文件路径：E:\comsite\sasweb\zhuanti/vip/rsxqb.html成功！
+2014-04-09 17:39:17,036 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：121，模板名称：vip直播首页右边，生成文件路径：E:\comsite\sasweb\zhuanti/vip/rsxqb.html成功！
+2014-04-09 17:41:36,451 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：121，模板名称：vip直播首页右边，生成文件路径：E:\comsite\sasweb\zhuanti/vip/rsxqb.html成功！
+2014-04-09 17:42:45,880 [9] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-04-09 17:42:45,923 [9] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-04-09 17:42:45,930 [9] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-04-09 17:46:53,064 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-04-09 17:46:53,082 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-04-09 17:46:53,089 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-04-09 17:46:58,112 [3] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：121，模板名称：vip直播首页右边，生成文件路径：E:\comsite\sasweb\zhuanti/vip/rsxqb.html成功！
+2014-04-09 17:50:38,288 [3] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：121，模板名称：vip直播首页右边，生成文件路径：E:\comsite\sasweb\zhuanti/vip/rsxqb.html成功！
+2014-04-09 17:51:53,628 [3] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：121，模板名称：vip直播首页右边，生成文件路径：E:\comsite\sasweb\zhuanti/vip/rsxqb.html成功！

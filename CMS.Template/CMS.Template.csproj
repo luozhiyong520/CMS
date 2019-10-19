@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{68166A95-3810-44A8-836E-4DF7EFF94E93}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CMS.Template</RootNamespace>
+    <AssemblyName>CMS.Template</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Complex\IncludeTagHandler.cs" />
+    <Compile Include="Complex\ITagHandler.cs" />
+    <Compile Include="Complex\ITemplateHandler.cs" />
+    <Compile Include="Complex\StaticTypeReference.cs" />
+    <Compile Include="Complex\UserTag.cs" />
+    <Compile Include="Complex\UserTemplate.cs" />
+    <Compile Include="Complex\TemplateManager.cs" />
+    <Compile Include="Complex\Util.cs" />
+    <Compile Include="Complex\VariableScope.cs" />
+    <Compile Include="Complex\Enum\TokenKind.cs" />
+    <Compile Include="Except\ParseException.cs" />
+    <Compile Include="Except\TemplateRuntimeException.cs" />
+    <Compile Include="Lexer\TemplateLexer.cs" />
+    <Compile Include="Lexer\Token.cs" />
+    <Compile Include="Parser\AST\ArrayAccess.cs" />
+    <Compile Include="Parser\AST\BinaryExpression.cs" />
+    <Compile Include="Parser\AST\DoubleLiteral.cs" />
+    <Compile Include="Parser\AST\Element.cs" />
+    <Compile Include="Parser\AST\Expression.cs" />
+    <Compile Include="Parser\AST\FCall.cs" />
+    <Compile Include="Parser\AST\FieldAccess.cs" />
+    <Compile Include="Parser\AST\IntLiteral.cs" />
+    <Compile Include="Parser\AST\MethodCall.cs" />
+    <Compile Include="Parser\AST\Name.cs" />
+    <Compile Include="Parser\AST\StringExpression.cs" />
+    <Compile Include="Parser\AST\StringLiteral.cs" />
+    <Compile Include="Parser\AST\Tag.cs" />
+    <Compile Include="Parser\AST\TagAttribute.cs" />
+    <Compile Include="Parser\AST\TagClose.cs" />
+    <Compile Include="Parser\AST\TagIf.cs" />
+    <Compile Include="Parser\AST\Text.cs" />
+    <Compile Include="Parser\TemplateParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Parser\TagParser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CMS.BLL\CMS.BLL.csproj">
+      <Project>{DD52449A-CEB0-48FB-80DE-047D4771F5B9}</Project>
+      <Name>CMS.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.Model\CMS.Model.csproj">
+      <Project>{6617DEF1-FE4C-47F8-814A-277480A68216}</Project>
+      <Name>CMS.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.Utility\CMS.Utility.csproj">
+      <Project>{A5116182-E29F-4B02-B37D-694CEC08A473}</Project>
+      <Name>CMS.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{E0C4897C-F5AA-4111-A4D1-14977470636F}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Factory\Factory.csproj">
+      <Project>{0FDA71F1-A628-42A7-9D48-0027632AE277}</Project>
+      <Name>Factory</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

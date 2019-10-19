@@ -1,0 +1,721 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1CC5E945-7598-4D84-9991-11D3B0B9C30B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CMS.HtmlService.WinService</RootNamespace>
+    <AssemblyName>CMSQY.HtmlService.WinService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\pinyifu\aa\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=3.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IoC.cs" />
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.Designer.cs">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlServiceQY.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HtmlServiceQY.Designer.cs">
+      <DependentUpon>HtmlServiceQY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CMS.HtmlService.Contract\CMS.HtmlService.Contract.csproj">
+      <Project>{D2F4C901-F53A-43AB-A9AA-5B3E189C3F3B}</Project>
+      <Name>CMS.HtmlService.Contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CMS.HTMLService\CMS.HtmlService.csproj">
+      <Project>{29F916BD-FF25-4868-89BC-D1706A8E3076}</Project>
+      <Name>CMS.HtmlService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="template\co-learn\hkj.html" />
+    <Content Include="template\co-learn\yjfx.html" />
+    <Content Include="template\co-learn\gngl.html" />
+    <Content Include="template\co-learn\cjrd.html" />
+    <Content Include="template\co-learn\co-learnv1.0\cjjd.html" />
+    <Content Include="template\co-learn\co-learnv1.0\cjtt.html" />
+    <Content Include="template\co-learn\co-learnv1.0\detail.html" />
+    <Content Include="template\co-learn\co-learnv1.0\gngl.html" />
+    <Content Include="template\co-learn\co-learnv1.0\gsdz.html" />
+    <Content Include="template\co-learn\co-learnv1.0\gsxl.html" />
+    <Content Include="template\co-learn\co-learnv1.0\index.html" />
+    <Content Include="template\co-learn\co-learnv1.0\jdyl.html" />
+    <Content Include="template\co-learn\co-learnv1.0\jszb.html" />
+    <Content Include="template\co-learn\co-learnv1.0\list.html" />
+    <Content Include="template\co-learn\co-learnv1.0\lzp.html" />
+    <Content Include="template\co-learn\co-learnv1.0\ngfx.html" />
+    <Content Include="template\co-learn\co-learnv1.0\nrfx.html" />
+    <Content Include="template\co-learn\co-learnv1.0\so.html" />
+    <Content Include="template\co-learn\co-learnv1.0\spjx.html" />
+    <Content Include="template\co-learn\co-learnv1.0\tjsj.html" />
+    <Content Include="template\co-learn\co-learnv1.0\tjxw.html" />
+    <Content Include="template\co-learn\cnxh.html" />
+    <Content Include="template\co-learn\lzrs.html" />
+    <Content Include="template\co-learn\shbt.html" />
+    <Content Include="template\co-learn\gsxl.html" />
+    <Content Include="template\co-learn\detail.html" />
+    <Content Include="template\co-learn\cpjq.html" />
+    <Content Include="template\co-learn\spjx.html" />
+    <Content Include="template\co-learn\index.html" />
+    <Content Include="template\co-learn\gpzs.html" />
+    <Content Include="template\co-learn\ydgp.html" />
+    <Content Include="template\co-learn\mjgd.html" />
+    <Content Include="template\co-learn\jdyl.html" />
+    <Content Include="template\co-learn\so.html" />
+    <Content Include="template\co-learn\static\font-awesome.css" />
+    <Content Include="template\co-learn\static\js\form.js" />
+    <Content Include="template\co-learn\static\js\html5.js" />
+    <Content Include="template\co-learn\static\js\jquery\jquery.js" />
+    <Content Include="template\co-learn\static\js\jquery\jquery.min.js" />
+    <Content Include="template\co-learn\static\js\responsiveslides.min.js" />
+    <Content Include="template\co-learn\static\js\um.js" />
+    <Content Include="template\co-learn\static\js\wp-embed.min.js" />
+    <Content Include="template\co-learn\static\style.css" />
+    <Content Include="template\co-learn\static\um.css" />
+    <Content Include="template\czt0731\index - 复制%282%29.html" />
+    <Content Include="template\czt0731\page.html" />
+    <Content Include="template\czt0731\so.html" />
+    <Content Include="template\czt0731\qw.html" />
+    <Content Include="template\czt0731\zs.html" />
+    <Content Include="template\czt0731\ly.html" />
+    <Content Include="template\czt0731\jt.html" />
+    <Content Include="template\czt0731\jh.html" />
+    <Content Include="template\czt0731\tt.html" />
+    <Content Include="template\czt0731\tc.html" />
+    <Content Include="template\czt0731\wh.html" />
+    <Content Include="template\czt0731\jy.html" />
+    <Content Include="template\czt0731\sy.html" />
+    <Content Include="template\czt0731\fc.html" />
+    <Content Include="template\czt0731\detail.html" />
+    <Content Include="template\czt0731\index.html" />
+    <Content Include="template\czt0731\static\css\czt0731.css" />
+    <Content Include="template\czt0731\static\css\fontello.css" />
+    <Content Include="template\czt0731\static\images\arrow.gif" />
+    <Content Include="template\czt0731\static\images\fancybox_overlay.png" />
+    <Content Include="template\czt0731\static\images\logo.png" />
+    <Content Include="template\czt0731\static\images\logo_w.png" />
+    <Content Include="template\czt0731\static\images\nav.svg" />
+    <Content Include="template\czt0731\static\js\affix.js" />
+    <Content Include="template\czt0731\static\js\bootstrap.js" />
+    <Content Include="template\czt0731\static\js\common.js" />
+    <Content Include="template\czt0731\static\js\jquery-1.7.2.min.js" />
+    <Content Include="template\czt0731\static\js\jquery-ias.min.js" />
+    <Content Include="template\czt0731\static\js\jquery.lazyload.min.js" />
+    <Content Include="template\czt0731\static\js\responsiveslides.min.js" />
+    <Content Include="template\czt0731\static\js\traveler.js" />
+    <Content Include="template\czt0731\static\js\wp-embed.min.js" />
+    <Content Include="template\kouweipai\shlq.html" />
+    <Content Include="template\kouweipai\rqjx.html" />
+    <Content Include="template\kouweipai\yszs.html" />
+    <Content Include="template\kouweipai\cy.html" />
+    <Content Include="template\kouweipai\detail.html" />
+    <Content Include="template\kouweipai\gdtc.html" />
+    <Content Include="template\kouweipai\gh.html" />
+    <Content Include="template\kouweipai\hxsc.html" />
+    <Content Include="template\kouweipai\jk.html" />
+    <Content Include="template\kouweipai\index.html" />
+    <Content Include="template\kouweipai\lyss.html" />
+    <Content Include="template\kouweipai\myfs.html" />
+    <Content Include="template\kouweipai\rpcy.html" />
+    <Content Include="template\kouweipai\so.html" />
+    <Content Include="template\kouweipai\static\css\basic_all.css" />
+    <Content Include="template\kouweipai\static\css\basic_mobile.css" />
+    <Content Include="template\kouweipai\static\css\main.css" />
+    <Content Include="template\kouweipai\static\images\001.png" />
+    <Content Include="template\kouweipai\static\images\002.png" />
+    <Content Include="template\kouweipai\static\images\0021.png" />
+    <Content Include="template\kouweipai\static\images\0022.png" />
+    <Content Include="template\kouweipai\static\images\1 %281%29.png" />
+    <Content Include="template\kouweipai\static\images\1 %282%29.png" />
+    <Content Include="template\kouweipai\static\images\1.png" />
+    <Content Include="template\kouweipai\static\images\cancel.png" />
+    <Content Include="template\kouweipai\static\images\car_weight.png" />
+    <Content Include="template\kouweipai\static\images\country.png" />
+    <Content Include="template\kouweipai\static\images\coupon_get.png" />
+    <Content Include="template\kouweipai\static\images\dot.png" />
+    <Content Include="template\kouweipai\static\images\loading.gif" />
+    <Content Include="template\kouweipai\static\images\logo.png" />
+    <Content Include="template\kouweipai\static\images\love.png" />
+    <Content Include="template\kouweipai\static\images\plane.png" />
+    <Content Include="template\kouweipai\static\images\pro_img.png" />
+    <Content Include="template\kouweipai\static\images\search.png" />
+    <Content Include="template\kouweipai\static\images\soldout.png" />
+    <Content Include="template\kouweipai\static\images\trash.png" />
+    <Content Include="template\kouweipai\static\js\jquery.flexslider-min.js" />
+    <Content Include="template\kouweipai\static\js\function.js" />
+    <Content Include="template\kouweipai\static\js\basic.js" />
+    <Content Include="template\kouweipai\static\js\jquery.lazyload.min.js" />
+    <Content Include="template\kouweipai\static\js\jquery.infinitescroll.min.js" />
+    <Content Include="template\kouweipai\static\js\common.js" />
+    <Content Include="template\kouweipai\static\js\jquery.min.js" />
+    <Content Include="template\kouweipai\static\js\product_tips.js" />
+    <Content Include="template\kouweipai\sxsg.html" />
+    <Content Include="template\kouweipai\xxls.html" />
+    <Content Include="template\kouweipai\zwmj.html" />
+    <Content Include="template\pf\detail.html" />
+    <Content Include="template\pf\index.html" />
+    <Content Include="template\pf\map.html" />
+    <Content Include="template\pf\so.html" />
+    <Content Include="template\pf\static\font-awesome.css" />
+    <Content Include="template\pf\static\images\logo.png" />
+    <Content Include="template\pf\static\js\form.js" />
+    <Content Include="template\pf\static\js\html5.js" />
+    <Content Include="template\pf\static\js\jquery\jquery.js" />
+    <Content Include="template\pf\static\js\jquery\jquery.min.js" />
+    <Content Include="template\pf\static\js\responsiveslides.min.js" />
+    <Content Include="template\pf\static\js\um.js" />
+    <Content Include="template\pf\static\js\wp-embed.min.js" />
+    <Content Include="template\pf\static\style.css" />
+    <Content Include="template\pf\static\um.css" />
+    <Content Include="template\pf\v1.0\1.html" />
+    <Content Include="template\pf\v1.0\detail.html" />
+    <Content Include="template\pf\v1.0\detail_.html" />
+    <Content Include="template\pf\v1.0\index.html" />
+    <Content Include="template\pf\v1.0\list.html" />
+    <Content Include="template\pf\v1.0\static\font-awesome.css" />
+    <Content Include="template\pf\v1.0\static\images\arrows.png" />
+    <Content Include="template\pf\v1.0\static\images\cover.png" />
+    <Content Include="template\pf\v1.0\static\images\icon.png" />
+    <Content Include="template\pf\v1.0\static\images\loading.gif" />
+    <Content Include="template\pf\v1.0\static\images\logo.png" />
+    <Content Include="template\pf\v1.0\static\images\pause.png" />
+    <Content Include="template\pf\v1.0\static\images\play.png" />
+    <Content Include="template\pf\v1.0\static\images\qrcode_for_gh_951764820d4d_430.jpg" />
+    <Content Include="template\pf\v1.0\static\images\r_line.jpg" />
+    <Content Include="template\pf\v1.0\static\images\shadow.png" />
+    <Content Include="template\pf\v1.0\static\images\share.png" />
+    <Content Include="template\pf\v1.0\static\images\shop-bg.jpg" />
+    <Content Include="template\pf\v1.0\static\images\themes.png" />
+    <Content Include="template\pf\v1.0\static\js\form.js" />
+    <Content Include="template\pf\v1.0\static\js\html5.js" />
+    <Content Include="template\pf\v1.0\static\js\jquery\jquery.js" />
+    <Content Include="template\pf\v1.0\static\js\jquery\jquery.min.js" />
+    <Content Include="template\pf\v1.0\static\js\responsiveslides.min.js" />
+    <Content Include="template\pf\v1.0\static\js\um.js" />
+    <Content Include="template\pf\v1.0\static\js\wp-embed.min.js" />
+    <Content Include="template\pf\v1.0\static\style.css" />
+    <Content Include="template\pf\v1.0\static\um.css" />
+    <Content Include="template\pf\yyk.html" />
+    <Content Include="template\pinyifu\detail.html" />
+    <Content Include="template\pinyifu\qt.html" />
+    <Content Include="template\pinyifu\tt.html" />
+    <Content Include="template\pinyifu\so.html" />
+    <Content Include="template\pinyifu\xx.html" />
+    <Content Include="template\pinyifu\pj.html" />
+    <Content Include="template\pinyifu\tz.html" />
+    <Content Include="template\pinyifu\ny.html" />
+    <Content Include="template\pinyifu\nvzhuang.html" />
+    <Content Include="template\pinyifu\sh.html" />
+    <Content Include="template\pinyifu\mr.html" />
+    <Content Include="template\pinyifu\ml.html" />
+    <Content Include="template\pinyifu\nz.html" />
+    <Content Include="template\pinyifu\yw.html" />
+    <Content Include="template\pinyifu\sj.html" />
+    <Content Include="template\pinyifu\dp.html" />
+    <Content Include="template\pinyifu\pp.html" />
+    <Content Include="template\pinyifu\static\images\sprite.png" />
+    <Content Include="template\pinyifu\static\js\common.js" />
+    <Content Include="template\pinyifu\jp.html" />
+    <Content Include="template\pinyifu\sz.html" />
+    <Content Include="template\pinyifu\index.html" />
+    <Content Include="template\pinyifu\static\css\pinyifu.css" />
+    <Content Include="template\pinyifu\static\css\kube.css" />
+    <Content Include="template\pinyifu\static\images\favicon.ico" />
+    <Content Include="template\pinyifu\static\images\icon.png" />
+    <Content Include="template\pinyifu\static\images\logo.png" />
+    <Content Include="template\pinyifu\static\images\pinyifu.jpg" />
+    <Content Include="template\pinyifu\static\js\orange.js.js" />
+    <Content Include="template\pinyifu\static\js\jquery-1.7.2.min.js" />
+    <Content Include="template\pinyifu\v2.0\aa.html" />
+    <Content Include="template\pinyifu\v2.0\detail.html" />
+    <Content Include="template\pinyifu\v2.0\index - 复制.html" />
+    <Content Include="template\pinyifu\v2.0\index.html" />
+    <Content Include="template\pinyifu\v2.0\map.html" />
+    <Content Include="template\pinyifu\v2.0\so.html" />
+    <Content Include="template\pinyifu\v2.0\static\css\ie6.css" />
+    <Content Include="template\pinyifu\v2.0\static\css\ie7.css" />
+    <Content Include="template\pinyifu\v2.0\static\css\ie9.css" />
+    <Content Include="template\pinyifu\v2.0\static\css\pyf.css" />
+    <Content Include="template\pinyifu\v2.0\static\css\style.css" />
+    <Content Include="template\pinyifu\v2.0\static\images\1.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\19.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\2.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\24.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\3.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\4.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\5.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\6.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\7.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\8.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\bell.png" />
+    <Content Include="template\pinyifu\v2.0\static\images\bg_new.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\buy.png" />
+    <Content Include="template\pinyifu\v2.0\static\images\clipboard.png" />
+    <Content Include="template\pinyifu\v2.0\static\images\contact.png" />
+    <Content Include="template\pinyifu\v2.0\static\images\dlbutton.png" />
+    <Content Include="template\pinyifu\v2.0\static\images\dream.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\favicon.ico" />
+    <Content Include="template\pinyifu\v2.0\static\images\fxfxfx.jpg" />
+    <Content Include="template\pinyifu\v2.0\static\images\home-18.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\i_bg.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\i_gz.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\list_desc.png" />
+    <Content Include="template\pinyifu\v2.0\static\images\logo.png" />
+    <Content Include="template\pinyifu\v2.0\static\images\menuright.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\menu_top.png" />
+    <Content Include="template\pinyifu\v2.0\static\images\newAirtl_icon.png" />
+    <Content Include="template\pinyifu\v2.0\static\images\noway.png" />
+    <Content Include="template\pinyifu\v2.0\static\images\quebanban2.jpg" />
+    <Content Include="template\pinyifu\v2.0\static\images\rdzx01.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\rss_icon.jpg" />
+    <Content Include="template\pinyifu\v2.0\static\images\slider_2.png" />
+    <Content Include="template\pinyifu\v2.0\static\images\slider_3.png" />
+    <Content Include="template\pinyifu\v2.0\static\images\title_fenlei.jpg" />
+    <Content Include="template\pinyifu\v2.0\static\images\top-post.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\top-post2.gif" />
+    <Content Include="template\pinyifu\v2.0\static\images\新建文本文档 %282%29.txt" />
+    <Content Include="template\pinyifu\v2.0\static\js\jquery-1.7.2.min.js" />
+    <Content Include="template\pinyifu\v2.0\static\js\jquery-yanci-jiazai.js" />
+    <Content Include="template\pinyifu\v2.0\yyk.html" />
+    <Content Include="template\qy\about.html" />
+    <Content Include="template\qy\business.html" />
+    <Content Include="template\qy\case.html" />
+    <Content Include="template\qy\college.html" />
+    <Content Include="template\qy\hyhd.html" />
+    <Content Include="template\qy\caseinfo.html" />
+    <Content Include="template\qy\queryqy.html" />
+    <Content Include="template\qy\queryallsite.html" />
+    <Content Include="template\qy\datanews.html" />
+    <Content Include="template\qy\index.html" />
+    <Content Include="template\qy\industry.html" />
+    <Content Include="template\qy\info.html" />
+    <Content Include="template\qy\indplatform.html" />
+    <Content Include="template\qy\mallpf.html" />
+    <Content Include="template\qy\platform.html" />
+    <Content Include="template\qy\tecnews.html" />
+    <Content Include="template\qy\theme\default\css\style.css" />
+    <Content Include="template\qy\theme\default\css\video-js.css" />
+    <Content Include="template\qy\theme\default\images\151419533158.jpg" />
+    <Content Include="template\qy\theme\default\images\151420449518.jpg" />
+    <Content Include="template\qy\theme\default\images\151741224626.jpg" />
+    <Content Include="template\qy\theme\default\images\161038416344.jpg" />
+    <Content Include="template\qy\theme\default\images\161137356605.jpg" />
+    <Content Include="template\qy\theme\default\images\161413424232.jpg" />
+    <Content Include="template\qy\theme\default\images\161510564349.jpg" />
+    <Content Include="template\qy\theme\default\images\161611098286.png" />
+    <Content Include="template\qy\theme\default\images\161611188381.png" />
+    <Content Include="template\qy\theme\default\images\161617301783.png" />
+    <Content Include="template\qy\theme\default\images\161617373175.png" />
+    <Content Include="template\qy\theme\default\images\161624336100.png" />
+    <Content Include="template\qy\theme\default\images\161626414593.png" />
+    <Content Include="template\qy\theme\default\images\161629112903.png" />
+    <Content Include="template\qy\theme\default\images\161629165272.png" />
+    <Content Include="template\qy\theme\default\images\161632326064.png" />
+    <Content Include="template\qy\theme\default\images\161632371238.png" />
+    <Content Include="template\qy\theme\default\images\161638502051.png" />
+    <Content Include="template\qy\theme\default\images\161638588468.png" />
+    <Content Include="template\qy\theme\default\images\161646148777.png" />
+    <Content Include="template\qy\theme\default\images\161646192803.png" />
+    <Content Include="template\qy\theme\default\images\161648083908.png" />
+    <Content Include="template\qy\theme\default\images\161648138767.png" />
+    <Content Include="template\qy\theme\default\images\161650429341.png" />
+    <Content Include="template\qy\theme\default\images\161650504921.png" />
+    <Content Include="template\qy\theme\default\images\161653459302.png" />
+    <Content Include="template\qy\theme\default\images\161653515695.png" />
+    <Content Include="template\qy\theme\default\images\161713418105.png" />
+    <Content Include="template\qy\theme\default\images\161713475004.png" />
+    <Content Include="template\qy\theme\default\images\161716365451.png" />
+    <Content Include="template\qy\theme\default\images\161716417776.png" />
+    <Content Include="template\qy\theme\default\images\161718485859.png" />
+    <Content Include="template\qy\theme\default\images\161722462527.png" />
+    <Content Include="template\qy\theme\default\images\161725398751.png" />
+    <Content Include="template\qy\theme\default\images\161725451036.png" />
+    <Content Include="template\qy\theme\default\images\161735584394.png" />
+    <Content Include="template\qy\theme\default\images\161736069566.png" />
+    <Content Include="template\qy\theme\default\images\161741412351.png" />
+    <Content Include="template\qy\theme\default\images\161741467571.png" />
+    <Content Include="template\qy\theme\default\images\161743582434.png" />
+    <Content Include="template\qy\theme\default\images\161744046876.png" />
+    <Content Include="template\qy\theme\default\images\161746088026.png" />
+    <Content Include="template\qy\theme\default\images\161746154073.png" />
+    <Content Include="template\qy\theme\default\images\161749444205.png" />
+    <Content Include="template\qy\theme\default\images\161749501942.png" />
+    <Content Include="template\qy\theme\default\images\161752145567.png" />
+    <Content Include="template\qy\theme\default\images\161753023296.png" />
+    <Content Include="template\qy\theme\default\images\161754226918.png" />
+    <Content Include="template\qy\theme\default\images\161755521627.png" />
+    <Content Include="template\qy\theme\default\images\161800267884.png" />
+    <Content Include="template\qy\theme\default\images\161806051554.png" />
+    <Content Include="template\qy\theme\default\images\161826478442.jpg" />
+    <Content Include="template\qy\theme\default\images\161829394123.jpg" />
+    <Content Include="template\qy\theme\default\images\161829577040.jpg" />
+    <Content Include="template\qy\theme\default\images\161832371645.jpg" />
+    <Content Include="template\qy\theme\default\images\161843507537.png" />
+    <Content Include="template\qy\theme\default\images\161937461375.png" />
+    <Content Include="template\qy\theme\default\images\161938279103.png" />
+    <Content Include="template\qy\theme\default\images\170913593806.jpg" />
+    <Content Include="template\qy\theme\default\images\211101306351.jpg" />
+    <Content Include="template\qy\theme\default\images\241050524547.jpg" />
+    <Content Include="template\qy\theme\default\images\250954004423.jpg" />
+    <Content Include="template\qy\theme\default\images\251002333971.jpg" />
+    <Content Include="template\qy\theme\default\images\281057042889.jpg" />
+    <Content Include="template\qy\theme\default\images\281430548719.jpg" />
+    <Content Include="template\qy\theme\default\images\app-10.png" />
+    <Content Include="template\qy\theme\default\images\app-11.png" />
+    <Content Include="template\qy\theme\default\images\app-13.png" />
+    <Content Include="template\qy\theme\default\images\app-14.png" />
+    <Content Include="template\qy\theme\default\images\app-15.png" />
+    <Content Include="template\qy\theme\default\images\app-2.png" />
+    <Content Include="template\qy\theme\default\images\app-3.png" />
+    <Content Include="template\qy\theme\default\images\app-5.png" />
+    <Content Include="template\qy\theme\default\images\app-7.png" />
+    <Content Include="template\qy\theme\default\images\app-8.png" />
+    <Content Include="template\qy\theme\default\images\app-hd.png" />
+    <Content Include="template\qy\theme\default\images\appwx-10.png" />
+    <Content Include="template\qy\theme\default\images\appwx-11.png" />
+    <Content Include="template\qy\theme\default\images\appwx-13.png" />
+    <Content Include="template\qy\theme\default\images\appwx-14.png" />
+    <Content Include="template\qy\theme\default\images\appwx-15.png" />
+    <Content Include="template\qy\theme\default\images\appwx-2.png" />
+    <Content Include="template\qy\theme\default\images\appwx-3.png" />
+    <Content Include="template\qy\theme\default\images\appwx-5.png" />
+    <Content Include="template\qy\theme\default\images\appwx-7.png" />
+    <Content Include="template\qy\theme\default\images\appwx-8.png" />
+    <Content Include="template\qy\theme\default\images\hd-bg.png" />
+    <Content Include="template\qy\theme\default\images\hn-hd.png" />
+    <Content Include="template\qy\theme\default\images\hn-line.png" />
+    <Content Include="template\qy\theme\default\images\logo.png" />
+    <Content Include="template\qy\theme\default\images\more-link.png" />
+    <Content Include="template\qy\theme\default\js\jquery.js" />
+    <Content Include="template\qy\theme\default\js\main.js" />
+    <Content Include="template\qy\theme\default\js\swiper.js" />
+    <Content Include="template\qy\theme\default\video\video-js.swf" />
+    <Content Include="template\qy\theme\default\video\video.js" />
+    <Content Include="template\yqx\tjxw.html" />
+    <Content Include="template\yqx\lzp.html" />
+    <Content Include="template\yqx\gngl.html" />
+    <Content Include="template\yqx\tjsj.html" />
+    <Content Include="template\yqx\gsdz.html" />
+    <Content Include="template\yqx\spjx.html" />
+    <Content Include="template\yqx\jdyl.html" />
+    <Content Include="template\yqx\detail.html" />
+    <Content Include="template\yqx\index.html" />
+    <Content Include="template\yqx\gsxl.html" />
+    <Content Include="template\yqx\ngfx.html" />
+    <Content Include="template\yqx\jszb.html" />
+    <Content Include="template\yqx\cjtt.html" />
+    <Content Include="template\yqx\nrfx.html" />
+    <Content Include="template\yqx\static\font-awesome.css" />
+    <Content Include="template\yqx\static\js\form.js" />
+    <Content Include="template\yqx\static\js\html5.js" />
+    <Content Include="template\yqx\static\js\jquery\jquery.js" />
+    <Content Include="template\yqx\static\js\jquery\jquery.min.js" />
+    <Content Include="template\yqx\static\js\responsiveslides.min.js" />
+    <Content Include="template\yqx\static\js\um.js" />
+    <Content Include="template\yqx\static\js\wp-embed.min.js" />
+    <Content Include="template\yqx\static\style.css" />
+    <Content Include="template\yqx\static\um.css" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="install.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="log4net.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="template\luo\actuals\tzckvideo.shtml" />
+    <None Include="template\czt0731\static\font\fontello.eot" />
+    <None Include="template\czt0731\static\font\fontello.ttf" />
+    <None Include="template\czt0731\static\font\fontello.woff" />
+    <None Include="template\luo\actualmjorderpt.shtml" />
+    <None Include="template\luo\analystlivejsonpt.shtml" />
+    <None Include="template\luo\gjsfxpljsonlist.shtml" />
+    <None Include="template\luo\gzfanslistpt.shtml" />
+    <None Include="template\luo\successrateorderpt.shtml" />
+    <None Include="template\pf\v1.0\static\fontawesome-webfont.eot" />
+    <None Include="template\pf\v1.0\static\fontawesome-webfont.woff" />
+    <None Include="template\wen\gjsxhbylistjson.shtml" />
+    <None Include="template\wen\index.shtml" />
+    <None Include="template\wen\updxzj.shtml" />
+    <None Include="template\wen\upztjb.shtml" />
+    <None Include="template\wen\webabout.shtml" />
+    <None Include="uninstall.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HtmlServiceQY.resx">
+      <DependentUpon>HtmlServiceQY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectInstaller.resx">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="template\luo\actuals\tzckdetail.shtml" />
+    <Content Include="template\luo\actuals\tzckdetail2.shtml" />
+    <Content Include="template\luo\agzbjpdetail.shtml" />
+    <Content Include="template\luo\agzbjplist.shtml" />
+    <Content Include="template\luo\analystlivehtml.html" />
+    <Content Include="template\luo\analystlivejson.shtml" />
+    <Content Include="template\luo\detail.shtml" />
+    <Content Include="template\luo\detail\common\commonad3.shtml" />
+    <Content Include="template\luo\detail\common\commonfooter.shtml" />
+    <Content Include="template\luo\detail\common\commontextbtrmtj.shtml" />
+    <Content Include="template\luo\detail\common\commontextjctj.shtml" />
+    <Content Include="template\luo\detail\common\commontextrmgz.shtml" />
+    <Content Include="template\luo\detail\common\commontextxgwz.shtml" />
+    <Content Include="template\luo\detail\common\commontop.shtml" />
+    <Content Include="template\luo\detail\common\contextjs.shtml" />
+    <Content Include="template\luo\detail\common\contextmryc.shtml" />
+    <Content Include="template\luo\detail\common\contextrightv3.shtml" />
+    <Content Include="template\luo\detail\common\contexttoolsv3.shtml" />
+    <Content Include="template\luo\detail\common\stockbox.shtml" />
+    <Content Include="template\luo\gsgz\gsgzdetail.shtml" />
+    <Content Include="template\luo\gsgz\gsjcldetail.shtml" />
+    <Content Include="template\luo\gsgz\gsjmq.shtml" />
+    <Content Include="template\luo\gsgz\gscjg.shtml" />
+    <Content Include="template\luo\gsgz\gscjgdetail.shtml" />
+    <Content Include="template\luo\gsgz\gsjcl.shtml" />
+    <Content Include="template\luo\hjsd.shtml" />
+    <Content Include="template\luo\include\common\v2012\commonfooter.shtml" />
+    <Content Include="template\luo\include\common\v2012\commonjs.shtml" />
+    <Content Include="template\luo\include\common\v2012\commonnav.shtml" />
+    <Content Include="template\luo\include\common\v2012\commontop.shtml" />
+    <Content Include="template\luo\include\common\v2012\hqbj.shtml" />
+    <Content Include="template\luo\include\common\v2012\stockbox.shtml" />
+    <Content Include="template\luo\include\web\v2012\index\common\contextcss.shtml" />
+    <Content Include="template\luo\include\web\v2012\list\common\commonjs.shtml" />
+    <Content Include="template\luo\include\web\v2012\list\common\contextcss.shtml" />
+    <Content Include="template\luo\indexzb.shtml" />
+    <Content Include="template\luo\index_test.shtml" />
+    <Content Include="template\luo\jsondetail.shtml" />
+    <Content Include="template\luo\jsonlist.shtml" />
+    <Content Include="template\luo\list.shtml" />
+    <Content Include="template\luo\list\common\listfocusimg.shtml" />
+    <Content Include="template\luo\list\common\listright.shtml" />
+    <Content Include="template\luo\index.shtml" />
+    <Content Include="template\luo\appointpage.shtml" />
+    <Content Include="template\luo\newupindex.shtml" />
+    <Content Include="template\luo\upxwc.shtml" />
+    <Content Include="template\luo\upxwcindex.shtml" />
+    <Content Include="template\luo\vip\sddy.shtml" />
+    <Content Include="template\luo\upcontent.shtml" />
+    <Content Include="template\luo\upfooter.shtml" />
+    <Content Include="template\luo\upindex.shtml" />
+    <Content Include="template\luo\upindexzb.shtml" />
+    <Content Include="template\luo\uptzrl.shtml" />
+    <Content Include="template\luo\uptzrl2.shtml" />
+    <Content Include="template\luo\_upxwc.shtml" />
+    <Content Include="template\luo\upzzd.shtml" />
+    <Content Include="template\luo\vip\tznc.shtml" />
+    <Content Include="template\luo\vip\yjlxt.shtml" />
+    <Content Include="template\luo\vip\zzbjhd.shtml" />
+    <Content Include="template\luo\vip\zzbjmd.shtml" />
+    <Content Include="template\luo\vip\zzbjhdjson.shtml" />
+    <Content Include="template\luo\vip\bjbjhd.shtml" />
+    <Content Include="template\luo\vip\bjbjmd.shtml" />
+    <Content Include="template\luo\vip\bjbjhdjson.shtml" />
+    <Content Include="template\luo\vip\bjbjmdjson.shtml" />
+    <Content Include="template\luo\vip\zzbjmdjson.shtml" />
+    <Content Include="template\luo\vip\zsbjhd.shtml" />
+    <Content Include="template\luo\vip\zsbjhdjson.shtml" />
+    <Content Include="template\luo\vip\zsbjmd.shtml" />
+    <Content Include="template\luo\vip\zsbjmdjson.shtml" />
+    <Content Include="template\luo\vip\right.shtml" />
+    <Content Include="template\luo\vip\sxqb.shtml" />
+    <Content Include="template\luo\vip\ygjtjdjson.shtml" />
+    <Content Include="template\luo\vip\ygjright.shtml" />
+    <Content Include="template\luo\vip\ygjtznc.shtml" />
+    <Content Include="template\luo\vip\ygjsdbg.shtml" />
+    <Content Include="template\luo\vip\ygjsxlx.shtml" />
+    <Content Include="template\luo\vip\ygjylgjson.shtml" />
+    <Content Include="template\luo\vip\ygjtjd.shtml" />
+    <Content Include="template\luo\vip\ygjylg.shtml" />
+    <Content Include="template\luo\xhjygdzx.shtml" />
+    <Content Include="template\luo\analystmk.shtml" />
+    <Content Include="template\luo\gzfanslist.shtml" />
+    <Content Include="template\luo\actualmjorder.shtml" />
+    <Content Include="template\luo\successrateorder.shtml" />
+    <Content Include="template\luo\zbupindex.shtml" />
+    <Content Include="template\luo\gjsanalystlivejson.shtml" />
+    <Content Include="template\luo\gjsactualmjorder.shtml" />
+    <Content Include="template\luo\gjssuccessrateorder.shtml" />
+    <Content Include="template\luo\gjsgzfanslist.shtml" />
+    <Content Include="template\luo\test.shtml" />
+    <Content Include="template\luo\actuals\tzck.shtml" />
+    <Content Include="template\luo\gzfanslistjmd.shtml" />
+    <Content Include="template\luo\actualmjorderjmd.shtml" />
+    <Content Include="template\luo\successrateorderjmd.shtml" />
+    <Content Include="template\luo\analystlivejsonjmd.shtml" />
+    <Content Include="template\luo\indexzbjmd.shtml" />
+    <Content Include="template\luo\indexzbpt.shtml" />
+    <Content Include="template\luo\zzjtotal.shtml" />
+    <Content Include="template\luo\zzjtotaljmd.shtml" />
+    <Content Include="template\luo\zzjtotalpt.shtml" />
+    <Content Include="template\luo\mrdx.shtml" />
+    <Content Include="template\luo\pzkxdetail.shtml" />
+    <Content Include="template\luo\pzkxlist.shtml" />
+    <Content Include="template\luo\mrdxindex.shtml" />
+    <Content Include="template\meng\include\common\v2012\img.shtml" />
+    <Content Include="template\meng\include\common\v2012\mcommonfooter.shtml" />
+    <Content Include="template\meng\include\common\v2012\mcommonjs.shtml" />
+    <Content Include="template\meng\include\detail\common\xhyjzysm.shtml" />
+    <Content Include="template\meng\include\soft\v2012\xm_hqbj.shtml" />
+    <Content Include="template\meng\include\soft\v2012\xm_hzh.shtml" />
+    <Content Include="template\meng\include\soft\v2012\xm_littletool.shtml" />
+    <Content Include="template\meng\include\soft\v2012\xm_nryxgg.shtml" />
+    <Content Include="template\meng\include\soft\v2012\xm_productnav.shtml" />
+    <Content Include="template\meng\include\soft\v2012\xm_rmgz.shtml" />
+    <Content Include="template\meng\include\soft\v2012\xm_search.shtml" />
+    <Content Include="template\meng\include\soft\v2012\xm_xgwz.shtml" />
+    <Content Include="template\meng\include\soft\v2012\xm_xxyybgg.shtml" />
+    <Content Include="template\meng\include\soft\v2012\xm_zwysjggw.shtml" />
+    <Content Include="template\meng\include\soft\xm_jctj.shtml" />
+    <Content Include="template\meng\index.css" />
+    <Content Include="template\meng\index.shtml" />
+    <Content Include="template\meng\jmdspzc.shtml" />
+    <Content Include="template\meng\jsondetail.shtml" />
+    <Content Include="template\meng\jsonlist.shtml" />
+    <Content Include="template\meng\lhaqtz.shtml" />
+    <Content Include="template\meng\qhzc.shtml" />
+    <Content Include="template\meng\upjhdcjwt.html" />
+    <Content Include="template\meng\upjhdnew.html" />
+    <Content Include="template\meng\upjhdnewqhdetail.shtml" />
+    <Content Include="template\meng\upjhdnewtest.html" />
+    <Content Include="template\meng\upjhdnewxhdetail.shtml" />
+    <Content Include="template\meng\upxwc.shtml" />
+    <Content Include="template\meng\v2013actualsyjs.shtml" />
+    <Content Include="template\meng\v2013actualsyjsdetail.shtml" />
+    <Content Include="template\meng\v2013actualsyjsjs.shtml" />
+    <Content Include="template\meng\v2013actualsyjsszfc.shtml" />
+    <Content Include="template\meng\v2014detail_actuallhaqtz.shtml" />
+    <Content Include="template\meng\v2014detail_actualstbtjqhzc.shtml" />
+    <Content Include="template\meng\v2014detail_actualstbtjxhzc.shtml" />
+    <Content Include="template\meng\xhzc.shtml" />
+    <Content Include="template\meng\xm_detaillhfx.shtml" />
+    <Content Include="template\meng\xm_index_templae.shtml" />
+    <Content Include="template\meng\xm_list_template.shtml" />
+    <Content Include="template\meng\zaopan.css" />
+    <Content Include="template\meng\zbjp_list.shtml" />
+    <Content Include="template\meng\zbjp_detail.shtml" />
+    <Content Include="template\meng\v2013actualsyjstest.shtml" />
+    <Content Include="template\meng\qhzctest.shtml" />
+    <Content Include="template\meng\xhzctest.shtml" />
+    <Content Include="template\meng\gpzc.shtml" />
+    <Content Include="template\meng\upjhdnewgpdetail.shtml" />
+    <Content Include="template\meng\pxzc.shtml" />
+    <Content Include="template\meng\upjhdnewpxdetail.shtml" />
+    <Content Include="template\meng\pzkxdetail.shtml" />
+    <Content Include="template\meng\upxwcindex.shtml" />
+    <Content Include="template\mqn\cpbcjson.shtml" />
+    <Content Include="template\mqn\cpbcjsonlist.shtml" />
+    <Content Include="template\mqn\cpjhdjson.shtml" />
+    <Content Include="template\mqn\cpjhdjsonlist.shtml" />
+    <Content Include="template\mqn\cpjmdjson.shtml" />
+    <Content Include="template\mqn\index.shtml" />
+    <Content Include="template\mqn\cpjmdjsonlist.shtml" />
+    <Content Include="template\mqn\reset.css" />
+    <Content Include="template\mqn\video.shtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="template\czt0731\static\js\jquery\" />
+    <Folder Include="template\pinyifu\static\js\jquery\" />
+    <Folder Include="template\pinyifu\v2.0\static\js\jquery\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

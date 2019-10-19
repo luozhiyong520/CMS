@@ -1,0 +1,128 @@
+﻿
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+    <title>红旗汇 让互联网+更简单 中小企业互联网+贴心卫士</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="cache-control" content="no-siteapp">
+    <link rel="stylesheet" href="/theme/default/css/style.css">
+    <link href="/theme/default/video/video-js.css" rel="stylesheet" type="text/css">
+    <script src="/theme/default/video/video.js"></script>
+    <script>
+        videojs.options.flash.swf = "theme/default/video/video-js.swf";
+    </script>
+    <!--[if lt IE 9]>
+    <script src="theme/default/js/selectivizr.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div id="channelid" style="display:none">${art.ChannelId}</div>
+    <div class="header">
+        <div class="hd-bar wrap">
+            <div class="logo"><a href="/"><img src="/theme/default/images/logo.png" alt=""></a></div>
+            <div class="hd-tel">
+                <div class="ht-num"> 400-8655-776</div>
+            </div>
+        </div>
+        <div class="hd-nav">
+            <div class="wrap">
+                <ul>
+                    <li><a href="/">首  页</a></li>
+                    <li> <a href="/qy/about.html">关于我们</a></li>
+                    <li>
+                        <a href="/qy/platform.html">贴心服务</a>
+                        <!--<div class="subnav">
+                            <dl>
+                                <dd><a href="/qy/mallpf.html">商城全网平台</a></dd>
+                                <dd><a href="/qy/indplatform.html">行业全网平台</a></dd>
+                            </dl>
+                        </div>-->
+                    </li>
+                    <li id="001017"><a href="/qy/case.html">案例展示</a></li>
+                    <li id="001001"><a href="/qy/tecnews.html">科技新闻</a></li>
+                    <li id="001002"><a href="/qy/industry.html">产业政策</a></li>
+                    <li id="001006"><a href="/qy/college.html">红旗学院</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="wide-main" style="border:none;">
+        <div class="case-banner">
+            <div class="bg"><img src="/theme/default/uploads/181514118530.jpg"></div>
+            <div class="link"><a href="#"><img src="/theme/default/uploads/case-link.png"></a></div>
+        </div>
+    </div>
+    <div class="wide-main">
+        <div class="case-show">
+            <div class="cs-hd">
+                <div class="clogo"><img src="http://img.pinyifu.com${art.ImgUrl}" width="91px" height="74px"></div>
+                <div class="title">${art.Title}</div>
+            </div>
+            <div class="cs-post">
+                <link rel="stylesheet" href="/theme/default/css/style.css" />
+                <div class="cs-post">
+                    ${art.Content}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer wrap">
+        <div class="friendlink">
+            <h4>相关链接</h4>
+            <ul>
+                <#uptag tagtype="01" clsid="001009" pagesize="100" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+                    <li><a href="${d.Url}"><img src="http://img.pinyifu.com/${d.ImgUrl}" style="width:100%;max-width:100%;max-height:170px;" alt="" title="${d.Title}"></a></li>
+                    <#/uptag>
+</ul>
+        </div>
+        <div class="ft">
+            <div class="ft-text" style="margin-top:10px;">
+                <p style="color:#333;font-weight:bold;letter-spacing:1px;">服务监督热线：4008-655-776</p>
+            </div>
+            <div class="ft-nav" style="margin-top:10px;">
+                <a href="#" title="关于我们">关于我们</a>
+                |
+                <a href="#" title="联系方式">联系方式</a>
+                |
+                <a href="#" title="网站地图">网站地图</a>
+                |
+                <a href="#" title="法律声明">法律声明</a>
+            </div>
+            <div class="ft-text">
+                <p>红旗汇版权所有，未经书面授权禁止使用</p>
+                <p>粤ICP备16079988号-1</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/theme/default/js/jquery.js"></script>
+    <script src="/theme/default/js/swiper.js"></script>
+    <script src="/theme/default/js/main.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var channelid = $("#channelid").html();
+
+            if (channelid == "001017") {
+                $("#001017").addClass("cur");
+            } else if (channelid == "001001") {
+                $("#001001").addClass("cur");
+            } else if (channelid == "001002") {
+                $("#001002").addClass("cur");
+            } else if (channelid == "001006") {
+                $("#001006").addClass("cur");
+            }
+        });
+
+    </script>
+</body>
+</html>

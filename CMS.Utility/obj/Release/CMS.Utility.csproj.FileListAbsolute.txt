@@ -1,0 +1,8 @@
+E:\UP\mycms\v1.0\CMS.Utility\bin\Release\CMS.Utility.dll
+E:\UP\mycms\v1.0\CMS.Utility\bin\Release\CMS.Utility.pdb
+E:\UP\mycms\v1.0\CMS.Utility\obj\Release\CMS.Utility.dll
+E:\UP\mycms\v1.0\CMS.Utility\obj\Release\CMS.Utility.pdb
+E:\UP\mycms\v2.0\CMS.Utility\bin\Release\CMS.Utility.dll
+E:\UP\mycms\v2.0\CMS.Utility\bin\Release\CMS.Utility.pdb
+E:\UP\mycms\v2.0\CMS.Utility\obj\Release\CMS.Utility.dll
+E:\UP\mycms\v2.0\CMS.Utility\obj\Release\CMS.Utility.pdb

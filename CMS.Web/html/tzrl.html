@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>投资日历</title>
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/com.js"></script>
+<link href="css/datepicker.css" rel="stylesheet" type="text/css" />
+<script src="js/datepicker.js" type="text/javascript"></script>
+<script src="js/daily.js" type="text/javascript"></script>
+
+</head>
+<body>
+  <script type="text/javascript">
+      $(function () {
+          $('#getdate').DatePicker({
+              format: 'Y-m-d',
+              date: $('#curdate').html(),
+              current: $('#curdate').html(),
+              starts: 1,
+              position: 'bottom',
+              onBeforeShow: function () {
+                  // $('#curdate').DatePickerSetDate($('#curdate').html(), true);
+              },
+              onChange: function (formated, dates) {
+                  $('#curdate').html(formated);
+                  //alert(formated)
+                  document.getElementById("weekul").innerHTML = "";
+                  //alert(formated)
+                  initDate(formated);
+                  $('#getdate').DatePickerHide();
+
+              }
+          });
+      })
+    </script>
+ 
+
+<!--头部-->
+<div style="margin:0 auto; width:1024px">
+<div style="position:fixed; background:#fff;">
+<div class="g-top">
+  <div class="m-logo"></div>
+  <div class="m-date"><span id="curdate"></span><a href="javascript:void(0)" id="getdate"></a></div>
+<!--  <input type="text" id="txtEndDate" name="EndDate" class="myTextbox easyui-datebox" style="width: 120px" />-->
+
+  </div>
+<!--显示每周-->
+<div class="g-week"><a class="pre-week" href="javascript:void(0)" onclick="previousWeek()"></a>
+  <ul id="weekul">
+   <!-- <li class="cur" t="1"><a href="javascript:void(0);" class="u-week">周一</a><a href="javascript:void(0);" class="u-date">8月5日</a></li>
+    <li t="2"><a href="javascript:void(0);" class="u-week">周二</a><a href="javascript:void(0);" class="u-date">8月6日</a></li>
+    <li t="3"><a href="javascript:void(0);" class="u-week">周三</a><a href="javascript:void(0);" class="u-date">8月7日</a></li>
+    <li t="4"><a href="javascript:void(0);" class="u-week">周四</a><a href="javascript:void(0);" class="u-date">8月8日</a></li>
+    <li t="5"><a href="javascript:void(0);" class="u-week">周五</a><a href="javascript:void(0);" class="u-date">8月9日</a></li>
+    <li t="6"><a href="javascript:void(0);" class="u-week">周六</a><a href="javascript:void(0);" class="u-date">8月10日</a></li>
+    <li t="7"><a href="javascript:void(0);" class="u-week">周日</a><a href="javascript:void(0);" class="u-date">8月11日</a></li>-->
+  </ul>
+  <a class="nex-week" href="javascript:void(0)" onclick="nextWeek()"></a></div>
+</div>
+</div>
+  <!--中间部分-->
+<div class="g-con" id="wheellist" >
+  <div class="m-line-top"></div>
+  <div class="m-con current" id="div-1">
+    <div class="m-date" id="date-1">8月5日<br/>
+      星期一</div>
+    <div class="m-line"> </div>
+    <div class="m-bd m-cur" id="m-bd-1">
+      <div class="m-tp">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="54%">事件</td>
+            <td width="29%">上市公司</td>
+            <td width="17%">重要性</td>
+          </tr>
+        </table>
+      </div>
+      <div class="m-ct">
+       
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" id="list-1">
+      <tr><td height="15"></td><td></td><td></td></tr>
+  <tr>
+    <td width="54%"><div class="m-list"><a href="#">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   
+</table>           
+ 
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" id="list-1">
+      <tr><td height="15"></td><td></td><td></td></tr>
+  <tr>
+    <td width="54%"><div class="m-list"><a href="#">saaaaaaaaaaaaaaaaaaaaaaaaaaaa</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   
+</table>           
+ 
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" id="list-1">
+      <tr><td height="15"></td><td></td><td></td></tr>
+  <tr>
+    <td width="54%"><div class="m-list"><a href="#">fasdfasdf</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   
+</table>           
+ 
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" id="list-1">
+      <tr><td height="15"></td><td></td><td></td></tr>
+  <tr>
+    <td width="54%"><div class="m-list"><a href="#">fasdfasdf</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   
+</table>           
+ 
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" id="list-1">
+      <tr><td height="15"></td><td></td><td></td></tr>
+  <tr>
+    <td width="54%"><div class="m-list"><a href="#">fasdfasdf</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   
+</table>           
+ 
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" id="list-1">
+      <tr><td height="15"></td><td></td><td></td></tr>
+  <tr>
+    <td width="54%"><div class="m-list"><a href="#">fasdfasdf</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   
+</table>           
+ 
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" id="list-1">
+      <tr><td height="15"></td><td></td><td></td></tr>
+  <tr>
+    <td width="54%"><div class="m-list"><a href="#">fasdfasdf</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   
+</table>           
+ 
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" id="list-1">
+      <tr><td height="15"></td><td></td><td></td></tr>
+  <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部1：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   
+</table>           
+      
+      </div>
+      <div class="m-bt"></div>
+    </div>
+  </div>
+  <div class="m-con" id="div-2">
+    <div class="m-date"  id="date-2">8月6日<br/>
+      星期二</div>
+    <div class="m-line"></div>
+    <div class="m-bd"  id="m-bd-2">
+      <div class="m-tp">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="54%">事件</td>
+            <td width="29%">上市公司</td>
+            <td width="17%">重要性</td>
+          </tr>
+        </table>
+      </div>
+      <div class="m-ct">
+       <table width="97%" border="0" cellspacing="0" cellpadding="0" style="border-bottom:1px solid #eaeaea;" align="center">
+          <tr>
+            <td width="54%"><div class="m-pic">
+                <div><a href="#"><img src="images/index_25.jpg" width="275" height="182" /></a></div>
+                <p><a href="#">《防止大气污染行为计划》公布</a></p>
+              </div></td>
+            <td width="30%" align="center">科林环保 九龙电力</td>
+            <td width="16%"><div class="m-imp">
+               <span class="u-orange"></span><span class="u-orange"></span><span class="u-orange"></span><span class="u-gray"></span><span class="u-gray"></span>
+              </div></td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr><td height="15"></td><td></td><td></td></tr>
+
+     <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">中青宝 掌趣科技 博瑞传播</td>
+    <td width="17%"><div class="m-imp"><span class="u-orange"></span><span class="u-orange"></span><span class="u-orange"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-orange"></span><span class="u-orange"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+ 
+</table>
+      </div>
+      <div class="m-bt"></div>
+    </div>
+  </div>
+  <div class="m-con" id="div-3">
+    <div class="m-date"  id="date-3">8月7日<br/>
+      星期三</div>
+    <div class="m-line"></div>
+    <div class="m-bd" id="m-bd-3">
+      <div class="m-tp">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="54%">事件</td>
+            <td width="29%">上市公司</td>
+            <td width="17%">重要性</td>
+          </tr>
+        </table>
+      </div>
+      <div class="m-ct">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr><td height="15"></td><td></td><td></td></tr>
+  <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+     <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">中青宝 掌趣科技 博瑞传播</td>
+    <td width="17%"><div class="m-imp"><span class="u-orange"></span><span class="u-orange"></span><span class="u-orange"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-orange"></span><span class="u-orange"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+</table>         
+      </div>
+      <div class="m-bt"></div>
+    </div>
+  </div>
+  <div class="m-con" id="div-4">
+    <div class="m-date"  id="date-4">8月8日<br/>
+      星期四</div>
+    <div class="m-line"></div>
+    <div class="m-bd" id="m-bd-4">
+      <div class="m-tp">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="54%">事件</td>
+            <td width="29%">上市公司</td>
+            <td width="17%">重要性</td>
+          </tr>
+        </table>
+      </div>
+      <div class="m-ct">
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr><td height="15"></td><td></td><td></td></tr>
+  <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+     <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">中青宝 掌趣科技 博瑞传播</td>
+    <td width="17%"><div class="m-imp"><span class="u-orange"></span><span class="u-orange"></span><span class="u-orange"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-orange"></span><span class="u-orange"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+</table>         
+      </div>
+      <div class="m-bt"></div>
+    </div>
+  </div>
+  <div class="m-con" id="div-5">
+    <div class="m-date"  id="date-5">8月9日<br/>
+      星期五</div>
+    <div class="m-line"></div>
+    <div class="m-bd"  id="m-bd-5">
+      <div class="m-tp">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="54%">事件</td>
+            <td width="29%">上市公司</td>
+            <td width="17%">重要性</td>
+          </tr>
+        </table>
+      </div>
+      <div class="m-ct">
+       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr><td height="15"></td><td></td><td></td></tr>
+  <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+     <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">中青宝 掌趣科技 博瑞传播</td>
+    <td width="17%"><div class="m-imp"><span class="u-orange"></span><span class="u-orange"></span><span class="u-orange"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-orange"></span><span class="u-orange"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+</table>         
+      </div>
+      <div class="m-bt"></div>
+    </div>
+  </div>
+  <div class="m-con" id="div-6">
+    <div class="m-date"  id="date-6">8月10日<br/>
+      星期六</div>
+    <div class="m-line"></div>
+    <div class="m-bd"  id="m-bd-6">
+      <div class="m-tp">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="54%">事件</td>
+            <td width="29%">上市公司</td>
+            <td width="17%">重要性</td>
+          </tr>
+        </table>
+      </div>
+      <div class="m-ct">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr><td height="15"></td><td></td><td></td></tr>
+  <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+     <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">中青宝 掌趣科技 博瑞传播</td>
+    <td width="17%"><div class="m-imp"><span class="u-orange"></span><span class="u-orange"></span><span class="u-orange"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-orange"></span><span class="u-orange"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+   <tr>
+    <td width="54%"><div class="m-list"><a href="#">人社部：提高居民医保待遇 全面推广大病保险试点</a></div></td>
+    <td width="29%" align="center">——</td>
+    <td width="17%"><div class="m-imp"><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span><span class="u-gray"></span></div></td>
+  </tr>
+</table>         
+      </div>
+      <div class="m-bt"></div>
+    </div>
+  </div>
+  <div class="m-con" style="padding-bottom:50px;" id="div-7">
+    <div class="m-date"  id="date-7">8月11日<br/>
+      星期日</div>
+    <div class="m-line"></div>
+    <div class="m-bd"  id="m-bd-7">
+      <div class="m-tp">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="54%">事件</td>
+            <td width="29%">上市公司</td>
+            <td width="17%">重要性</td>
+          </tr>
+        </table>
+      </div>
+      <div class="m-ct">
+        <div class="u-icon">今天无重大事项7</div>
+       
+      </div>
+      <div class="m-bt"></div>
+    </div>
+
+  </div>
+  <div class="m-line-bt"></div>
+</div>
+
+
+
+
+</body>
+</html>

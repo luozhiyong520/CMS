@@ -1,0 +1,2070 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>理财大讲堂</title>
+<link href="http://js.upchina.com/sasweb/upjhd/css/index.css" type="text/css" rel="stylesheet"/>
+<!-- <link href="http://js.upchina.com/sasweb/goodsbillboard/css/datepicker.css" rel="stylesheet" type="text/css" />-->
+<script src="http://js.upchina.com/sasweb/mainpage/js/room.js" type="text/javascript"></script>
+<script src="http://js.upchina.com/sasweb/goodsbillboard/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<!--<script src="http://js.upchina.com/sasweb/goodsbillboard/js/datepicker.js" type="text/javascript"></script>-->
+<style type="text/css">
+.right_part_context{   
+width: 100%;
+height: 100%;
+position: absolute;
+left: 304px;
+right: 0px;
+top: 0px;
+overflow-y: scroll;
+overflow-x: none;
+color: #333;
+background: #101010;
+}
+.zList{top: 80px;left:240px;position: absolute;}
+.tab_01 {display: none;}
+.tab_02 {display: none;}
+.tab_03 {display: none;}
+.clear {zoom: 1;}
+.ligb{background-color: #194e6f;}
+/*
+#bgPosition{ background:#000; position:absolute; z-index:99; width:100%; height:100%; top:0; left:0; opacity:0.8; filter:alpha(opacity:80); display:none;}
+#ligBg{ display:none;}
+.tab_video{ min-height:300px;}
+
+.lightBox{ padding:5px 0 0 10px;}
+.lightBox a{ text-decoration:underline;}
+
+.l_bg{display:block; background:#000;opacity:0.9; filter:alpha(opacity=90); position: absolute; top:0; left:0; z-index:20; display:none;}
+.l_box{ width:600px; height: auto; background:#FFF;border:5px solid #666; border-radius:2px; z-index:100; position:absolute; margin-left:-290px; margin-top:-150px;}
+.l_box span{ position:absolute; right:5px; top:5px; width:16px; height:16px; text-align:center;display:block; background:#fff;border-radius:50%; color:#000; border:2px solid #000; cursor:pointer;}
+.l_bg_text{ padding:10px;}
+.l_bg_text dl dt,dd{ line-height:220%;}
+.l_bg_text em{ padding:3px 10px;border-radius:2px;background:#999; cursor:pointer; color:#f00;}
+.height1114{height: 1014px; position:relative;}
+dl, dt, dd
+{
+     border: 0 none;
+    font-family: inherit;
+    font-size: 12px;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 5px;
+    outline: 0 none;
+	
+    list-style:none;
+	
+    text-decoration:none;
+    padding: 0;
+    vertical-align: baseline;
+    }*/
+</style>
+<script type="text/javascript">
+    function GetUrlParame(parame) {
+        var reg = new RegExp("(^|&)" + parame + "=([^&]*)(&|$)", "i");
+        var res = "";
+        try {
+            res = window.location.search.substr(1).match(reg)[2];
+        } catch (e) { }
+        return res;
+    }
+    function Download(url) {
+        if (external.iWinMain) {
+            external.iWinMain('cmd_navigate', url);
+        }
+        else {
+            window.location.href = url;
+        }
+    }
+    var now = new Date();                    //当前日期  
+    var nowDayOfWeek = now.getDay();         //今天本周的第几天  
+    var nowDay = now.getDate();              //当前日  
+    var nowMonth = now.getMonth() + 1;           //当前月  
+    var nowYear = now.getYear();             //当前年  
+    nowYear += (nowYear < 2000) ? 1900 : 0;
+    var nowYearurl = '';
+    var nowMonthurl = '';
+    var nowDayurl = '';
+    var hdyear = '';
+    var hdmoth = '';
+
+    nowYearurl = GetUrlParame('getnowYear');
+    nowMonthurl = GetUrlParame('getnowMonth');
+    nowDayurl = GetUrlParame('getnowDay');
+    hdyear = GetUrlParame('gethdyear');
+    hdmoth = GetUrlParame('gethdmoth');
+
+    $(function () {
+        $(".text").html(nowYear + '年' + nowMonth + '月');
+        nowYearurl = GetUrlParame('getnowYear');
+        nowMonthurl = GetUrlParame('getnowMonth');
+        nowDayurl = GetUrlParame('getnowDay');
+        hdyear = GetUrlParame('gethdyear');
+        hdmoth = GetUrlParame('gethdmoth');
+        if (nowYearurl == '' || nowYearurl == null || nowMonthurl == '' || nowMonthurl == null) {
+            LoadDay(nowMonth, 1, nowYear);
+        } else {
+            $(".calendar_con .date li").removeClass('select');
+            if (hdyear == '' || hdyear == null || hdmoth == '' || hdmoth == null) {
+                $(".text").html(nowYearurl + '年' + nowMonthurl + '月');
+                LoadDay(nowMonthurl, 1, nowYearurl);
+            } else {
+                $(".text").html(hdyear + '年' + hdmoth + '月');
+                LoadDay(hdmoth, 1, hdyear);
+            }
+        }
+        $(".arrow1").click(function () {
+            if (hdmoth != '' || hdyear != '') {
+                var yearNndmonth = $(".calendar_title .text").html();
+                nowYear = parseInt(yearNndmonth.split('年')[0]);
+                nowMonth = parseInt(yearNndmonth.split('年')[1].split('月')[0]);
+                // alert(yearNndmonth.split('年')[0]);
+                // alert(yearNndmonth.split('年')[1].split('月')[0]);
+            }
+            if (nowMonth <= 12 && nowMonth >= 2) {
+                nowMonth = nowMonth - 1;
+            } else {
+                nowMonth = 12;
+                nowYear = nowYear - 1;
+            }
+            LoadDay(nowMonth, 1, nowYear);
+            $(".text").html(nowYear + '年' + nowMonth + '月');
+            $(".calendar_con .date li").removeClass('today');
+            $("#hdyear").val(nowYear);
+            $("#hdmoth").val(nowMonth);
+        });
+        $(".arrow2").click(function () {
+            if (hdmoth != '' || hdyear != '') {
+                var yearNndmonth = $(".calendar_title .text").html();
+               nowYear= parseInt(yearNndmonth.split('年')[0]);
+               nowMonth = parseInt(yearNndmonth.split('年')[1].split('月')[0]);
+            }
+            if (nowMonth < 12 && nowMonth >= 0) {
+                nowMonth = nowMonth + 1;
+            } else if (nowMonth == 12) {
+                nowMonth = 1;
+                nowYear = nowYear + 1;
+            }
+            LoadDay(nowMonth, 1, nowYear);
+            $(".calendar_con .date li").removeClass('today');
+            $(".text").html(nowYear + '年' + nowMonth + '月');
+            $("#hdyear").val(nowYear);
+            $("#hdmoth").val(nowMonth);
+        });
+        $(".lp_content a").each(function () {
+            if ('' + $(this).attr('href') == String(window.location)) {
+                $(this).parent().css('background-color', '#194e6f');
+                $(this).parent().children("span").css('color', '#F3EEEE');
+            }
+        })
+        nowDayurl = GetUrlParame('getnowDay');
+        if (nowDayurl == "" || nowDayurl == null) {
+        } else {
+            $('.calendar_con .date li').each(function () {
+                $(this).removeClass('today');
+                if ($(this).html() == "" || $(this).html() == null) {
+                    $(this).removeClass('today');
+                }
+                if ($(this).html() == nowDayurl) {
+                    $(this).addClass('today').removeClass('select');
+                }
+                //                console.log('$(this).html():' + $(this).html())
+                //                console.log('nowDayurl:' + nowDayurl)
+                //                console.log('nowDay:' + nowDay)
+            });
+        }
+    })
+
+    function getWeekDay(month, day, year) {
+        today = new Date();
+        if (month == nowMonth && year == nowYear) {
+            today = new Date();
+        } else {
+            today = new Date('' + year + '/' + month + '/' + day + '');
+        }
+        year = year || today.getFullYear();
+        today.setFullYear(year, month - 1, day);
+        weekDay = today.getDay();
+        return weekDay
+    }
+
+    //获得某月的天数  
+    function getMonthDays(myMonth) {
+        var monthStartDate = new Date(nowYear, myMonth, 1);
+        var monthEndDate = new Date(nowYear, myMonth + 1, 1);
+        var days = (monthEndDate - monthStartDate) / (1000 * 60 * 60 * 24);
+        return days;
+    }
+    //加载遍历月中的天数
+    function LoadDay(month, day, year) {
+        var li = "";
+        var st = getWeekDay(month, day, year);
+        for (var i = 1; i <= getMonthDays(month - 1) + st; i++) {
+            var ss = (i - st) == nowDay ? 'today' : '';
+            if (i <= st)
+                li += "<li class=" + ss + ">" + "" + "</li>";
+            else {
+                var CDate = new Date(year, month - 1, i - st);
+                var NDate = new Date();
+                var M = 'after';
+                if (CDate > NDate) {
+                    if ((nowYear == nowYearurl && nowDay > nowDayurl) || (nowYear > nowYearurl)) {
+                        li += "<li class=" + ss + ">" + (i - st) + "</li>";
+                    } else
+                    // li += "<li class=" + M + ">" + (i - st) + "</li>";
+                        li += "<li class=" + ss + ">" + (i - st) + "</li>";
+                } else
+                    li += "<li class=" + ss + ">" + (i - st) + "</li>";
+            }
+        }
+        $('.calendar_con .date').html(li);
+        $('.calendar_con .date li').css("cursor", "pointer");
+        //遍历月中的天数的添加点击事件
+        $('.calendar_con .date li').click(function () {
+            $('.calendar_con .date li').each(function () {
+                $(this).removeClass('today');
+            });
+            $(this).addClass('today');
+            if ($(this).attr("class") == "select" || $(this).attr("class") == "select today") {
+                $(".right_part").show();
+                $(".right_part_context").hide();
+                if (hdyear == '' || hdmoth == '') {
+                    hdyear = $("#hdyear").val();
+                    hdmoth = $("#hdmoth").val();
+                }
+                else {
+                    if ((hdyear == $("#hdyear").val()) && (hdmoth == $("#hdmoth").val())) {
+                    } else {
+                        if ($("#hdyear").val() == '' || $("#hdmoth").val() == '') {
+                        } else {
+                            hdyear = $("#hdyear").val();
+                            hdmoth = $("#hdmoth").val();
+                        }
+                    }
+                }
+                if (nowYearurl == '' || nowYearurl == null || nowMonthurl == '' || nowMonthurl == null) {
+                    var getDay = new Date('' + nowYear + '/' + nowMonth + '/' + $(this).html() + '').getDay();
+                    window.location.href = "http://app.upchina.com/news/jhdlizx/upjhd.html?getDay=" + getDay + '&getnowDay=' + $(this).html() + '&getnowYear=' + nowYear + '&getnowMonth=' + nowMonth + '&gethdyear=' + hdyear + '&gethdmoth=' + hdmoth;
+                } else {
+                    var getDay = new Date('' + nowYearurl + '/' + nowMonthurl + '/' + $(this).html() + '').getDay();
+                    window.location.href = "http://app.upchina.com/news/jhdlizx/upjhd.html?getDay=" + getDay + '&getnowDay=' + $(this).html() + '&getnowYear=' + nowYear + '&getnowMonth=' + nowMonth + '&gethdyear=' + hdyear + '&gethdmoth=' + hdmoth;
+                }
+            } else {
+                if ($(this).attr("class") != "after today") {
+                    if ($(this).html() == "" || $(this).html() == null) {
+                        $(this).removeClass('today');
+                    } else {
+                        if (hdyear == '' || hdmoth == '') {
+                            hdyear = $("#hdyear").val();
+                            hdmoth = $("#hdmoth").val();
+                        }
+                        else {
+                            if ((hdyear == $("#hdyear").val()) && (hdmoth == $("#hdmoth").val())) {
+                            } else {
+                                if ($("#hdyear").val() == '' || $("#hdmoth").val() == '') {
+                                } else {
+                                    hdyear = $("#hdyear").val();
+                                    hdmoth = $("#hdmoth").val();
+                                }
+                            }
+                        }
+
+                        if (nowYearurl == '' || nowYearurl == null || nowMonthurl == '' || nowMonthurl == null) {
+                            var getDay = new Date('' + nowYear + '/' + nowMonth + '/' + $(this).html() + '').getDay();
+
+                            window.location.href = "http://app.upchina.com/news/jhdlizx/upjhd.html?getDay=" + getDay + '&getnowDay=' + $(this).html() + '&getnowYear=' + nowYear + '&getnowMonth=' + nowMonth + '&gethdyear=' + hdyear + '&gethdmoth=' + hdmoth;
+                        } else {
+                            if (nowMonth == nowMonthurl && nowYear == nowYearurl) {
+                                var getDay = new Date('' + nowYearurl + '/' + nowMonthurl + '/' + $(this).html() + '').getDay();
+                                //window.location.href = "http://app.upchina.com/news/jhdlizx/upjhd.html?getDay=" + getDay + '&getnowDay=' + $(this).html() + '&getnowYear=' + nowYear + '&getnowMonth=' + nowMonth;
+                                window.location.href = "http://app.upchina.com/news/jhdlizx/upjhd.html?getDay=" + getDay + '&getnowDay=' + $(this).html() + '&getnowYear=' + nowYear + '&getnowMonth=' + nowMonth + '&gethdyear=' + hdyear + '&gethdmoth=' + hdmoth;
+                            } else {
+                                if (hdyear != '') {
+                                    var getDay = new Date('' + hdyear + '/' + hdmoth + '/' + $(this).html() + '').getDay();
+                                    window.location.href = "http://app.upchina.com/news/jhdlizx/upjhd.html?getDay=" + getDay + '&getnowDay=' + $(this).html() + '&getnowYear=' + hdyear + '&getnowMonth=' + hdmoth + '&gethdyear=' + hdyear + '&gethdmoth=' + hdmoth;
+                                } else {
+                                    var getDay = new Date('' + nowYearurl + '/' + nowMonthurl + '/' + $(this).html() + '').getDay();
+                                    //window.location.href = "http://app.upchina.com/news/jhdlizx/upjhd.html?getDay=" + getDay + '&getnowDay=' + $(this).html() + '&getnowYear=' + nowYear + '&getnowMonth=' + nowMonthurl;
+                                    window.location.href = "http://app.upchina.com/news/jhdlizx/upjhd.html?getDay=" + getDay + '&getnowDay=' + $(this).html() + '&getnowYear=' + nowYear + '&getnowMonth=' + nowMonthurl + '&gethdyear=' + hdyear + '&gethdmoth=' + hdmoth;
+                                }
+                            }
+
+                        }
+
+                    }
+                } else
+                    $(this).removeClass('today');
+            }
+        });
+    }
+    
+</script>
+</head>
+<body>
+<div class="left_part">
+<input type="hidden" id="hdyear" />
+<input type="hidden" id="hdmoth" />
+<!--<div id="date" style="width: 301px; height:34px;"></div>  -->   
+  <div class="calendar_title"><div class="arrow1"></div><div class="text">2014年5月</div><div class="arrow2"></div></div>
+  <div class="calendar_con">
+  <ul class="week"><li>日</li><li>一</li><li>二</li><li>三</li><li>四</li><li>五</li><li>六</li></ul>
+ <ul class="date"><!--<li></li><li></li><li></li><li></li><li>1</li><li>2</li><li>3</li><li>4<li>5</li><li>6</li><li>7</li><li class="select">8</li><li>9</li><li>10</li><li>11</li><li12><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li><li>25</li><li>26</li><li>27</li>
+ <li class="today">28</li><li class="after">29</li><li class="after">30</li><li class="after">31</li>--></ul>
+</div>
+<div class="divide">
+     <div class="fin_title">
+<script type="text/javascript">
+    function switchMenu(curr_id, total_num) {
+        for (var i = 0; i < total_num; i++) {
+            var el = document.getElementById('menu_sub_' + i);
+            if (!el) return;
+            var divs = document.getElementById('show_' + i);
+            if (i == curr_id) {
+                el.style.display = "block";
+                divs.className = 't01';
+                el.className = '';
+            }
+            else {
+                el.style.display = "none";
+                divs.className = 't02';
+                el.className = '';
+            }
+        }
+    };
+</script>
+    <ul><li class="t01" onmouseover="switchMenu(0, 4);" id="show_0">股票专场</li>
+	<li class="t02" onmouseover="switchMenu(1, 4);" id="show_1">现货专场</li>
+    <li class="t02" onmouseover="switchMenu(2, 4);" id="show_2">培训专场</li>
+    </ul>
+	</div>    
+       <div class="lp_content">
+        <!--股票专场-->
+         <ul id="menu_sub_0"><!--#include virtual="/news/list/gpzc.html"--></ul> 
+         <!--现货专场-->
+         <ul id="menu_sub_1" style="display:none"><!--#include virtual="/news/list/xhzc.html"--></ul> 
+          <!--培训专场-->
+          <ul id="menu_sub_2" style="display:none">
+          <!--#include virtual="/news/list/pxzc.html"-->   
+          </ul>
+         </div>
+       </div>
+</div>
+<div class="right_part">
+<div class="con_k"><div class="banner"><img src="http://img.upchina.com/sasweb/upjhd/banner.jpg" width="100%"/></div>
+<div class="xz">首次观看直播，请点击下载 <a href="javascript:Download('http://fs.fsmeeting.com/download/FMDesktopSHQLV3.8.exe')" class="text_red">好视通</a> 直播系统<a href="javascript:;" onclick="aopen()" id="lightBox" class="text_red">【查看常见问题】</a></div>
+<div class="con_title">股市大讲堂</div>
+<div class="con_list">
+ <!--tab-->
+<div class="tab_01 clear week1">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="w1">时 间</th>
+    <th class="w3">节目名称</th>
+    <th class="w1">属 性</th>
+    <th class="w2">状 态</th>
+    <th class="w1">操 作</th>
+    </tr>
+  <tr>
+    <td class="text_gray">09:00—09:30</td>
+    <td class="t1">财经早班车</td>
+    <td>公开</td>
+    <td><span class=" em1 in_width105 day1"></span></td>
+    <td><a class="ema1 less1" href="javascript:;" onclick="entermeeting()" style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  <tr class="bg">
+    <td class="text_gray">11:35—11:55</td>
+    <td class="t1">午间评述</td>
+    <td>公开</td>
+    <td><span class=" em2 in_width105 day1"></span></td>
+    <td><a class="ema2 less2" href="javascript:;" onclick="entermeeting()"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr>
+   <td class="text_gray">15:05—15:30</td>
+    <td class="t1">收评聚焦</td>
+    <td>公开</td>
+    <td><span class=" em3 in_width105 day1"></span></td>
+    <td><a class="ema3 less3" href="javascript:;" onclick="entermeeting()"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr class="bg">
+    <td class="text_gray">15:45—16:30</td>
+    <td class="t1">理财大讲堂</td>
+    <td>公开</td>
+    <td><span class=" em4 in_width105 day1"></span></td>
+    <td><a class="ema4 less4" href="javascript:;" onclick="entermeeting(74160)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr>
+   <td class="text_gray">19:30—20:15</td>
+    <td class="t1">安全投资大讲堂</td>
+    <td>公开</td>
+    <td><span class=" em8 in_width105 day1"></span></td>
+    <td><a class="ema8 less3" href="javascript:;" onclick="entermeeting(57046)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  </table>
+</div>
+<!--tab end-->
+ <!--tab2-->
+<div class="tab_01 clear week2">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="w1">时 间</th>
+    <th class="w3">节目名称</th>
+    <th class="w1">属 性</th>
+    <th class="w2">状 态</th>
+    <th class="w1">操 作</th>
+    </tr>
+ <tr>
+    <td class="text_gray">09:00—09:30</td>
+    <td class="t1">财经早班车</td>
+    <td>公开</td>
+    <td><span class=" em1 in_width105 day2"></span></td>
+    <td><a class="ema1 less1" href="javascript:;" onclick="entermeeting()"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  <tr class="bg">
+    <td class="text_gray">11:35—11:55</td>
+    <td class="t1">午间评述</td>
+    <td>公开</td>
+    <td><span class=" em2 in_width105 day2"></span></td>
+    <td><a class="ema2 less2" href="javascript:;" onclick="entermeeting()"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr>
+   <td class="text_gray">15:05—15:30</td>
+    <td class="t1">收评聚焦</td>
+    <td>公开</td>
+    <td><span class=" em3 in_width105 day2"></span></td>
+    <td><a class="ema3 less3" href="javascript:;" onclick="entermeeting()"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr class="bg">
+    <td class="text_gray">15:45—16:30</td>
+    <td class="t1">理财大讲堂</td>
+    <td>公开</td>
+    <td><span class=" em4 in_width105 day2"></span></td>
+    <td><a class="ema4 less4" href="javascript:;" onclick="entermeeting(74160)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr>
+    <td class="text_gray">19:30—20:15</td>
+    <td class="t1">安全投资实战讲堂</td>
+    <td>公开</td>
+    <td><span class=" em5 in_width105 day2"></span></td>
+    <td><a class="ema5 less5" href="javascript:;" onclick="entermeeting(57046)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  </table>
+</div>
+<!--tab end-->
+ <!--tab3-->
+<div class="tab_01 clear week3">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="w1">时 间</th>
+    <th class="w3">节目名称</th>
+    <th class="w1">属 性</th>
+    <th class="w2">状 态</th>
+    <th class="w1">操 作</th>
+    </tr>
+  <tr>
+    <td class="text_gray">09:00—09:30</td>
+    <td class="t1">财经早班车</td>
+    <td>公开</td>
+    <td><span class=" em1 in_width105 day3"></span></td>
+    <td><a class="ema1 less1" href="javascript:;" onclick="entermeeting()"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  <tr class="bg">
+    <td class="text_gray">11:35—11:55</td>
+    <td class="t1">午间评述</td>
+    <td>公开</td>
+    <td><span class=" em2 in_width105 day3"></span></td>
+    <td><a class="ema2 less2" href="javascript:;" onclick="entermeeting()"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr>
+   <td class="text_gray">15:05—15:30</td>
+    <td class="t1">收评聚焦</td>
+    <td>公开</td>
+    <td><span class=" em3 in_width105 day3"></span></td>
+    <td><a class="ema3 less3" href="javascript:;" onclick="entermeeting()"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr class="bg">
+    <td class="text_gray">15:45—16:30</td>
+    <td class="t1">理财大讲堂</td>
+    <td>公开</td>
+    <td><span class=" em4 in_width105 day3"></span></td>
+    <td><a class="ema4 less4" href="javascript:;" onclick="entermeeting(74160)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr>
+    <td class="text_gray">19:30—20:15</td>
+    <td class="t1">安全投资大讲堂<br /></td>
+    <td>公开</td>
+    <td><span class=" em8 in_width105 day3"></span></td>
+    <td><a class="ema8 less5" href="javascript:;" onclick="entermeeting(57046)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr style="display:none;">
+    <td class="text_gray">19:30—20:15</td>
+    <td class="t1">T+0实战分析和应用<br /></td>
+    <td>加密</td>
+    <td><span class=" em5 in_width105 day3"></span></td>
+    <td><a class="ema5 less5" href="javascript:;" onclick="entermeeting(62667)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  </table>
+</div>
+<!--tab end-->
+ <!--tab4-->
+<div class="tab_01 clear week4">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="w1">时 间</th>
+    <th class="w3">节目名称</th>
+    <th class="w1">属 性</th>
+    <th class="w2">状 态</th>
+    <th class="w1">操 作</th>
+    </tr>
+  <tr>
+    <td class="text_gray">09:00—09:30</td>
+    <td class="t1">财经早班车</td>
+    <td>公开</td>
+    <td><span class=" em1 in_width105 day4"></span></td>
+    <td><a class="ema1 less1" href="javascript:;" onclick="entermeeting()"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  <tr class="bg">
+    <td class="text_gray">11:35—11:55</td>
+    <td class="t1">午间评述</td>
+    <td>公开</td>
+    <td><span class=" em2 in_width105 day4"></span></td>
+    <td><a class="ema2 less2" href="javascript:;" onclick="entermeeting()"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr>
+   <td class="text_gray">15:05—15:30</td>
+    <td class="t1">收评聚焦</td>
+    <td>公开</td>
+    <td><span class=" em3 in_width105 day4"></span></td>
+    <td><a class="ema3 less3" href="javascript:;" onclick="entermeeting()"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr class="bg">
+    <td class="text_gray">15:45—16:30</td>
+    <td class="t1">理财大讲堂</td>
+    <td>公开</td>
+    <td><span class=" em4 in_width105 day4"></span></td>
+    <td><a class="ema4 less4" href="javascript:;" onclick="entermeeting(74160)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr>
+    <td class="text_gray">19:30—20:15</td>
+    <td class="t1">UP资金分析实盘运用</td>
+    <td>加密</td>
+    <td><span class=" em5 in_width105 day4"></span></td>
+    <td><a class="ema5 less5" href="javascript:;" onclick="entermeeting(57046)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  </table>
+</div>
+<!--tab end-->
+ <!--tab5-->
+<div class="tab_01 clear week5">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="w1">时 间</th>
+    <th class="w3">节目名称</th>
+    <th class="w1">属 性</th>
+    <th class="w2">状 态</th>
+    <th class="w1">操 作</th>
+    </tr>
+    <tr>
+    <td class="text_gray">09:00—09:30</td>
+    <td class="t1">财经早班车</td>
+    <td>公开</td>
+    <td><span class=" em1 in_width105 day5"></span></td>
+    <td><a class="ema1 less1" href="javascript:;" onclick="entermeeting()"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  <tr class="bg">
+    <td class="text_gray">11:35—11:55</td>
+    <td class="t1">午间评述</td>
+    <td>公开</td>
+    <td><span class=" em2 in_width105 day5"></span></td>
+    <td><a class="ema2 less2" href="javascript:;" onclick="entermeeting()"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr>
+   <td class="text_gray">15:05—15:30</td>
+    <td class="t1">收评聚焦</td>
+    <td>公开</td>
+    <td><span class=" em3 in_width105 day5"></span></td>
+    <td><a class="ema3 less3" href="javascript:;" onclick="entermeeting()"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr class="bg">
+    <td class="text_gray">15:45—16:30</td>
+    <td class="t1">理财大讲堂</td>
+    <td>公开</td>
+    <td><span class=" em4 in_width105 day5"></span></td>
+    <td><a class="ema4 less4" href="javascript:;" onclick="entermeeting(74160)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr style="display:none;">
+    <td class="text_gray">19:30—20:15</td>
+    <td class="t1">T+0实战分析和应用</td>
+    <td>加密</td>
+    <td><span class=" em5 in_width105 day5"></span></td>
+    <td><a class="ema5 less5" href="javascript:;" onclick="entermeeting(62667)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  </table>
+</div>
+<!--tab end-->
+ <!--tab6-->
+<div class="tab_01 clear week6">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td><div class="tishi">今日股市休息哦～</div></td>
+    </tr>
+  </tbody></table>
+</div>
+<!--tab end-->
+ <!--tab7-->
+<div class="tab_01 clear week7">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td><div class="tishi">今日股市休息哦～</div></td>
+    </tr>
+  </tbody></table>
+</div>
+<!--tab end-->
+</div>
+<div class="tab_vip_video">
+<div class="con_title">现货操盘室</div>
+<div class="con_list">
+ <!--tab-->
+<div class="tab_02 clear week1">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="w1">时 间</th>
+    <th class="w3">节目名称</th>
+    <th class="w1">属 性</th>
+    <th class="w2">状 态</th>
+    <th class="w1">操 作</th>
+    </tr>
+  <tr>
+    <td class="text_gray">08:50—21:30</td>
+    <td class="t1">钻石实播课堂</td>
+    <td>现货钻石客户</td>
+    <td><span class=" xh1 in_width105 day1"></span></td>
+    <td><a class="xha1" href="javascript:;" onclick="checkbox(2)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  <tr class="bg" style="display:none;">
+    <td class="text_gray">08:50—21:30</td>
+    <td class="t1">皇冠实播课堂</td>
+    <td>现货皇冠客户</td>
+    <td><span class="text_red xh2 in_width105 day1"></span></td>
+    <td><a class="xha2" href="javascript:;" onclick="checkbox(3)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  </table>
+</div>
+<!--tab end-->
+<!--tab2-->
+<div class="tab_02 clear week2">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="w1">时 间</th>
+    <th class="w3">节目名称</th>
+    <th class="w1">属 性</th>
+    <th class="w2">状 态</th>
+    <th class="w1">操 作</th>
+    </tr>
+  <tr>
+    <td class="text_gray">08:50—21:30</td>
+    <td class="t1">钻石实播课堂</td>
+    <td>现货钻石客户</td>
+    <td><span class="text_red xh1 in_width105 day1"></span></td>
+    <td><a class="xha1" href="javascript:;" onclick="checkbox(2)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  <tr class="bg" style="display:none;">
+    <td class="text_gray">08:50—21:30</td>
+    <td class="t1">皇冠实播课堂</td>
+    <td>现货皇冠客户</td>
+    <td><span class="text_red xh2 in_width105 day1"></span></td>
+    <td><a class="xha2" href="javascript:;" onclick="checkbox(3)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  </table>
+</div>
+<!--tab end-->
+<!--tab3-->
+<div class="tab_02 clear week3">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="w1">时 间</th>
+    <th class="w3">节目名称</th>
+    <th class="w1">属 性</th>
+    <th class="w2">状 态</th>
+    <th class="w1">操 作</th>
+    </tr>
+  <tr>
+    <td class="text_gray">08:50—21:30</td>
+    <td class="t1">钻石实播课堂</td>
+    <td>现货钻石客户</td>
+    <td><span class="text_red xh1 in_width105 day1"></span></td>
+    <td><a class="xha1" href="javascript:;" onclick="checkbox(2)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  <tr class="bg" style="display:none;">
+    <td class="text_gray">08:50—21:30</td>
+    <td class="t1">皇冠实播课堂</td>
+    <td>现货皇冠客户</td>
+    <td><span class="text_red xh2 in_width105 day1"></span></td>
+    <td><a class="xha2" href="javascript:;" onclick="checkbox(3)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  </table>
+</div>
+<!--tab end-->
+<!--tab4-->
+<div class="tab_02 clear week4">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="w1">时 间</th>
+    <th class="w3">节目名称</th>
+    <th class="w1">属 性</th>
+    <th class="w2">状 态</th>
+    <th class="w1">操 作</th>
+    </tr>
+  <tr>
+    <td class="text_gray">08:50—21:30</td>
+    <td class="t1">钻石实播课堂</td>
+    <td>现货钻石客户</td>
+    <td><span class="text_red xh1 in_width105 day1"></span></td>
+    <td><a class="xha1" href="javascript:;" onclick="checkbox(2)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  <tr class="bg" style="display:none;">
+    <td class="text_gray">08:50—21:30</td>
+    <td class="t1">皇冠实播课堂</td>
+    <td>现货皇冠客户</td>
+    <td><span class="text_red xh2 in_width105 day1"></span></td>
+    <td><a class="xha2 less2" href="javascript:;" onclick="checkbox(3)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  </table>
+</div>
+<!--tab end-->
+<!--tab5-->
+<div class="tab_02 clear week5">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="w1">时 间</th>
+    <th class="w3">节目名称</th>
+    <th class="w1">属 性</th>
+    <th class="w2">状 态</th>
+    <th class="w1">操 作</th>
+    </tr>
+  <tr>
+    <td class="text_gray">08:50—21:30</td>
+    <td class="t1">钻石实播课堂</td>
+    <td>现货钻石客户</td>
+    <td><span class="text_red xh1 in_width105 day1"></span></td>
+    <td><a class="xha1" href="javascript:;" onclick="checkbox(2)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  <tr class="bg" style="display:none;">
+    <td class="text_gray">08:50—21:30</td>
+    <td class="t1">皇冠实播课堂</td>
+    <td>现货皇冠客户</td>
+    <td><span class="text_red xh2 in_width105 day1"></span></td>
+    <td><a class="xha2" href="javascript:;" onclick="checkbox(3)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  </table>
+</div>
+<!--tab end-->
+<!--tab6-->
+<div class="tab_02 clear week6">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="w1">时 间</th>
+    <th class="w3">节目名称</th>
+    <th class="w1">属 性</th>
+    <th class="w2">状 态</th>
+    <th class="w1">操 作</th>
+    </tr>
+  <tr>
+    <td class="text_gray">08:50—15:30</td>
+    <td class="t1">钻石实播课堂</td>
+    <td>现货钻石客户</td>
+    <td><span class="text_red xh1 in_width105 day1"></span></td>
+    <td><a class="xha1" href="javascript:;" onclick="checkbox(2)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  <tr class="bg" style="display:none;">
+    <td class="text_gray">08:50—15:30</td>
+    <td class="t1">皇冠实播课堂</td>
+    <td>现货皇冠客户</td>
+    <td><span class="text_red xh2 in_width105 day1"></span></td>
+    <td><a class="xha2" href="javascript:;" onclick="checkbox(3)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  </table>
+</div>
+<!--tab end-->
+<!--tab7-->
+<div class="tab_02 clear week7">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td><div class="tishi">今日股市休息哦～</div></td>
+    </tr>
+  </tbody></table>
+</div>
+<!--tab end-->
+</div>
+<div class="tab_vip_video">
+<div class="con_title">白银财富讲堂</div>
+<div class="con_list">
+ <!--tab-->
+<div class="tab_03 clear week1">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="w1">时 间</th>
+    <th class="w3">节目名称</th>
+    <th class="w1">属 性</th>
+    <th class="w2">状 态</th>
+    <th class="w1">操 作</th>
+    </tr>
+  <tr>
+    <td class="" myinit="1">10:00—10:30</td>
+    <td class="t1">早点消息点睛</td>
+    <td>公开</td>
+    <td><span class=""></span></td>
+    <td><a class="" href="javascript:;" onclick="entermeeting(78405)" style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  <tr class="bg">
+    <td class="" myinit="1">15:30—16:00</td>
+    <td class="t1">午间机会突击</td>
+    <td>公开</td>
+    <td><span class=""></span></td>
+    <td><a class="" href="javascript:;" onclick="entermeeting(78405)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr>
+    <td class="" myinit="1">19:30—20:30</td>
+    <td class="t1">确定性大机会——数据投资</td>
+    <td>加密</td>
+    <td><span class=" "></span></td>
+    <td><a class="" href="javascript:;" onclick="entermeetingcheck(79767)" style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  </table>
+</div>
+<!--tab end-->
+<!--tab2-->
+<div class="tab_03 clear week2">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="w1">时 间</th>
+    <th class="w3">节目名称</th>
+    <th class="w1">属 性</th>
+    <th class="w2">状 态</th>
+    <th class="w1">操 作</th>
+    </tr>
+  <tr>
+    <td class="" myinit="1">10:00—10:30</td>
+    <td class="t1">早点消息点睛</td>
+    <td>公开</td>
+    <td><span class=""></span></td>
+    <td><a class="" href="javascript:;" onclick="entermeeting(78405)" style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  <tr class="bg">
+    <td class="" myinit="1">15:30—16:00</td>
+    <td class="t1">午间机会突击</td>
+    <td>公开</td>
+    <td><span class=""></span></td>
+    <td><a class="" href="javascript:;" onclick="entermeeting(78405)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr>
+    <td class="" myinit="1">19:30—20:30</td>
+    <td class="t1">确定性大机会——数据投资</td>
+    <td>加密</td>
+    <td><span class=" "></span></td>
+    <td><a class="" href="javascript:;" onclick="entermeetingcheck(79767)" style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  </table>
+</div>
+<!--tab end-->
+<!--tab3-->
+<div class="tab_03 clear week3">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="w1">时 间</th>
+    <th class="w3">节目名称</th>
+    <th class="w1">属 性</th>
+    <th class="w2">状 态</th>
+    <th class="w1">操 作</th>
+    </tr>
+  <tr>
+    <td class="" myinit="1">10:00—10:30</td>
+    <td class="t1">早点消息点睛</td>
+    <td>公开</td>
+    <td><span class=""></span></td>
+    <td><a class="" href="javascript:;" onclick="entermeeting(78405)" style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  <tr class="bg">
+    <td class="" myinit="1">15:30—16:00</td>
+    <td class="t1">午间机会突击</td>
+    <td>公开</td>
+    <td><span class=""></span></td>
+    <td><a class="" href="javascript:;" onclick="entermeeting(78405)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr>
+    <td class="" myinit="1">19:30—20:30</td>
+    <td class="t1">确定性大机会——数据投资</td>
+    <td>加密</td>
+    <td><span class=" "></span></td>
+    <td><a class="" href="javascript:;" onclick="entermeetingcheck(79767)" style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  </table>
+</div>
+<!--tab end-->
+<!--tab4-->
+<div class="tab_03 clear week4">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="w1">时 间</th>
+    <th class="w3">节目名称</th>
+    <th class="w1">属 性</th>
+    <th class="w2">状 态</th>
+    <th class="w1">操 作</th>
+    </tr>
+  <tr>
+    <td class="" myinit="1">10:00—10:30</td>
+    <td class="t1">早点消息点睛</td>
+    <td>公开</td>
+    <td><span class=""></span></td>
+    <td><a class="" href="javascript:;" onclick="entermeeting(78405)" style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  <tr class="bg">
+    <td class="" myinit="1">15:30—16:00</td>
+    <td class="t1">午间机会突击</td>
+    <td>公开</td>
+    <td><span class=""></span></td>
+    <td><a class="" href="javascript:;" onclick="entermeeting(78405)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr>
+    <td class="" myinit="1">19:30—20:30</td>
+    <td class="t1">确定性大机会——数据投资</td>
+    <td>加密</td>
+    <td><span class=" "></span></td>
+    <td><a class="" href="javascript:;" onclick="entermeetingcheck(79767)" style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  </table>
+</div>
+<!--tab end-->
+<!--tab5-->
+<div class="tab_03 clear week5">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <th class="w1">时 间</th>
+    <th class="w3">节目名称</th>
+    <th class="w1">属 性</th>
+    <th class="w2">状 态</th>
+    <th class="w1">操 作</th>
+    </tr>
+  <tr>
+    <td class="" myinit="1">10:00—10:30</td>
+    <td class="t1">早点消息点睛</td>
+    <td>公开</td>
+    <td><span class=""></span></td>
+    <td><a class="" href="javascript:;" onclick="entermeeting(78405)" style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  <tr class="bg">
+    <td class="" myinit="1">15:30—16:00</td>
+    <td class="t1">午间机会突击</td>
+    <td>公开</td>
+    <td><span class=""></span></td>
+    <td><a class="" href="javascript:;" onclick="entermeeting(78405)"  style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+  </tr>
+  <tr>
+    <td class="" myinit="1">19:30—20:30</td>
+    <td class="t1">确定性大机会——数据投资</td>
+    <td>加密</td>
+    <td><span class=" "></span></td>
+    <td><a class="" href="javascript:;" onclick="entermeetingcheck(79767)" style="display:none"><img src="http://img.upchina.com/sasweb/upjhd/jrkt.gif" /></a>    </td>
+    </tr>
+  </table>
+</div>
+<!--tab end-->
+<!--tab6-->
+<div class="tab_03 clear week6">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td><div class="tishi">今日白银休息哦～</div></td>
+    </tr>
+  </tbody></table>
+</div>
+<!--tab end-->
+<!--tab7-->
+<div class="tab_03 clear week7">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td><div class="tishi">今日白银休息哦～</div></td>
+    </tr>
+  </tbody></table>
+</div>
+<!--tab end-->
+</div>
+</div>    
+<div class="tab_vip_video">                   
+</div>
+
+<div id="box" style="display:none">
+	    <div class="rz_ck" id="showbox1">
+		    <div class="rz_info">
+			    <p><span>用户姓名：</span><input type="text" name="roomusername" id="roomusername"  class="rz_text" onfocus="if(this.value=='例:李先生/小姐')this.value=''"   onblur="if(this.value=='')this.value='例:李先生/小姐'"  value="例:李先生/小姐"/></p>
+			    <p><span>手机号码：</span><input type="text" name="roomtelphone" id="roomtelphone" maxlength="11" class="rz_text" onblur="if(this.value=='')this.value='请输入有效的手机号码'"  value="请输入有效的手机号码"  onfocus="if(this.value=='请输入有效的手机号码')this.value=''"/>
+                <input type="button" value="" class="rz_button" name="button" id="button2" onclick="postMobileRoom()" /></p>
+		    </div>
+		    <div class="rz_ts">注：为了方便您更快捷的参与本周日19:40的渤商所路演推荐会，请留下您准确的联系方式，客服人员24小时内会通过020-39195200与您取得联系告知参会事宜。
+</div>
+	    </div>
+    </div>
+				
+    <div id="box1" style="display:none;">
+	    <div class="yrz_ck" id="showbox2">
+		    <p class="p_1">提示： 恭喜您已成功报名参加本周日19:40的渤商所路演推荐会，客服人员24小时内会通过020-39195200与您取得联系告知参会事宜，请届时准时进入课堂。
+</p>
+	    </div>
+    </div>
+
+    <div id="divbox" style="display:none; width:428px; height:320px;background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #666666; border-radius: 2px 2px 2px 2px;
+    margin-left: -290px;
+    margin-top: -150px;
+    position: absolute;
+    z-index: 100;">
+    <div style="background:none repeat scroll 0 0 #4a4d52; height:50px;">
+    <span id="spanclose" style=" font-size:18px;
+    color: #9b9d9c;
+    cursor: pointer;
+    display: block;
+    height: 16px;
+    position: absolute;
+    right: 5px;
+    text-align: center;
+    top: 5px;
+    width: 16px;">×</span>
+    </div>    
+     <div style="background:none repeat scroll 0 0 #620702; height:260px;">
+         <p id="pinfo" style=" padding: 40px 100px ; color:White; font-size:16px; line-height:25px; font-weight:bold;">欢迎进入VIP实盘课堂，登录需输入听课密码，获取密码请致电020-39195200</p>
+        <p id="btnp" align="center" style="display:none;"><a href="javascript:;" id="acheck"><img src="http://img.upchina.com/sasweb/upjhd/goclasses.gif" /></a></p>
+        <p id="btnp2" align="center" style="display:none;"><a href="javascript:;" id="acheck2"><img src="http://img.upchina.com/sasweb/upjhd/goclasses.gif" /></a></p>
+        <p id="btnp3" align="center" style="display:none;"><a href="javascript:;" id="acheck3"><img src="http://img.upchina.com/sasweb/upjhd/goclasses.gif" /></a></p>
+     </div>
+     <div style="background:none repeat scroll 0 0 #4a4d52; height:30px;padding-top:18px; text-align:right; color:White;">
+        <input type="checkbox" id="IsInfo" />近期不再提示
+     </div>
+    </div>
+
+   <!-- <div id="bgPosition"></div>
+  <div class="l_box" id="ligBg"> <span id="close">×</span>
+    <div class="l_bg_text">
+      <dl>
+        <dt>常见问题:</dt>
+        <dd>1、进入培训课堂请使用IE浏览器，切勿使用其他浏览器。</dd>
+        <dd>2、如果下载安装后仍无法正常登陆培训课堂，请复制以下链接到IE浏览器中打开后输入任意昵称即可进入课堂。</dd>
+         <dd><b>普通用户培训课堂游客链接</b></dd>
+        <dd style="table-layout:fixed; word-break: break-all; overflow:hidden; "><a href="javascript:;" id="crtC4" >http://ws.fsmeeting.com:80/userMgr/entermeeting.jsp?userType=0&roomID=36916</a> <em onclick="copyText(document.all.crtC4)">复制</em></dd>
+        <dd><b>会员用户晚间加密培训链接:(登陆输入会员培训课堂密码)</b></dd>
+        <dd style="table-layout:fixed; word-break: break-all; overflow:hidden;"><a href="javascript:;" id="crtC5">http://ws.fsmeeting.com:80/userMgr/entermeeting.jsp?userType=0&roomID=57046</a> <em onclick="copyText(document.all.crtC5)">复制</em></dd>
+        <dd><b>钻石实播课堂链接:(登陆输入钻石培训课堂密码)</b></dd>
+        <dd style="table-layout:fixed; word-break: break-all; overflow:hidden; "><a href="javascript:;" id="crtC" >http://ws.fsmeeting.com:80/userMgr/entermeeting.jsp?userType=0&roomID=51138</a> <em onclick="copyText(document.all.crtC)">复制</em></dd>
+        <dd><b>皇冠实播课堂链接:(登陆输入皇冠培训课堂密码)</b></dd>
+        <dd style="table-layout:fixed; word-break: break-all; overflow:hidden;"><a href="javascript:;" id="crtC2">http://ws.fsmeeting.com:80/userMgr/entermeeting.jsp?userType=0&roomID=59026</a> <em onclick="copyText(document.all.crtC2)">复制</em></dd>
+        <dd><b>理财大讲堂大课堂链接:(登陆输vip课堂密码)</b></dd>
+        <dd style="table-layout:fixed; word-break: break-all; overflow:hidden;"><a href="javascript:;" id="crtC3">http://ws.fsmeeting.com:80/userMgr/entermeeting.jsp?userType=0&roomID=59028</a> <em onclick="copyText(document.all.crtC3)">复制</em></dd>
+      </dl>
+    </div>
+</div>-->
+</div>
+<script type="text/javascript">
+    PriorityLoad();
+    function PriorityLoad() {
+        var time = new Date(), oLi = $(".gai_nav li"), tab_01 = $(".tab_01"), tab_02 = $(".tab_02"), tab_03 = $(".tab_03");
+        var clearTime = null;
+        var week;
+        var day = GetUrlParame('getDay');
+        if (day == '') {
+            day = time.getDay();
+        }
+        day = parseInt(day);
+        switch (day) {
+            case 1:
+                //oLi[0].className = "redActive";
+                tab_01[0].style.display = "block";
+                tab_02[0].style.display = "block";
+                tab_03[0].style.display = "block";
+                week = "week1"
+                break;
+            case 2:
+                //oLi[1].className = "redActive";
+                tab_01[1].style.display = "block";
+                tab_02[1].style.display = "block";
+                tab_03[1].style.display = "block";
+                week = "week2"
+                break;
+            case 3:
+                // oLi[2].className = "redActive";
+                tab_01[2].style.display = "block";
+                tab_02[2].style.display = "block";
+                tab_03[2].style.display = "block";
+                week = "week3"
+                break;
+            case 4:
+                //oLi[3].className = "redActive";
+                tab_01[3].style.display = "block";
+                tab_02[3].style.display = "block";
+                tab_03[3].style.display = "block";
+                week = "week4"
+                break;
+            case 5:
+                // oLi[4].className = "redActive";
+                tab_01[4].style.display = "block";
+                tab_02[4].style.display = "block";
+                tab_03[4].style.display = "block";
+                week = "week5"
+                break;
+            case 6:
+                //oLi[5].className = "redActive";
+                tab_01[5].style.display = "block";
+                tab_02[5].style.display = "block";
+                tab_03[5].style.display = "block";
+                week = "week6"
+                break;
+            case 0:
+                //oLi[0].className = "redActive";
+                tab_01[6].style.display = "block";
+                tab_02[6].style.display = "block";
+                tab_03[6].style.display = "block";
+                week = "week7"
+                break;
+        }
+        var w = week;
+        var date = new Date();
+        curryear = date.getFullYear();
+        currmonth = date.getMonth() + 1;
+        // var day = date.getDay();
+        // var da = date.getDate();
+        // var mon = date.getMonth() + 1;
+        //        var time = date.getTime() / 1000;
+        //        var hour = date.getHours();
+        //        var mint = date.getMinutes();
+
+        //        var s = date.getSeconds();
+
+        var day = GetUrlParame('getDay');
+        var da = GetUrlParame('getnowDay');
+
+        var year = GetUrlParame('getnowYear');
+        var month = GetUrlParame('getnowMonth');
+        if (year == '' || month == '') {
+            year = curryear;
+            month = currmonth;
+        }
+        year = parseInt(year);
+        month = parseInt(month);
+        if ((year == curryear && month == currmonth) && (day == '' || (day == date.getDay() && da == date.getDate()))) {
+            day = date.getDay();
+            da = date.getDate();
+            mon = date.getMonth() + 1;
+            time = date.getTime() / 1000;
+            hour = date.getHours();
+            mint = date.getMinutes();
+            s = date.getSeconds();
+
+            myInit();
+            vTimer1 = setInterval(myInit, 5000);
+        } else {
+            //这里需要获取参数
+            if ((date.getFullYear() == nowYearurl && (date.getMonth() + 1) == nowMonthurl && date.getDate() < nowDayurl) || (date.getFullYear() == nowYearurl && (date.getMonth() + 1) <= nowMonthurl && date.getDate() < nowDayurl) || (date.getFullYear() == nowYearurl && (date.getMonth() + 1) < nowMonthurl) || date.getFullYear() < nowYearurl) {
+                $("." + w + " .em1").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em2").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em3").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em4").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em5").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em6").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em7").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em8").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .ema1").css("display", "none");
+                $("." + w + " .ema2").css("display", "none");
+                $("." + w + " .ema3").css("display", "none");
+                $("." + w + " .ema4").css("display", "none");
+                $("." + w + " .ema5").css("display", "none");
+
+                $("." + w + " .xh1").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .xh2").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .xha1").css("display", "none");
+                $("." + w + " .xha2").css("display", "none");
+
+                $("[myinit]").parent().find("span").html("等待课程");
+                $("[myinit]").parent().find("a").hide();
+                return;
+            } else {
+                $("." + w + " .em1").html('已结束').addClass("text_gray");
+                $("." + w + " .em2").html('已结束').addClass("text_gray");
+                $("." + w + " .em3").html('已结束').addClass("text_gray");
+                $("." + w + " .em4").html('已结束').addClass("text_gray");
+                $("." + w + " .em5").html('已结束').addClass("text_gray");
+                $("." + w + " .em6").html('已结束').addClass("text_gray");
+                $("." + w + " .em7").html('已结束').addClass("text_gray");
+                $("." + w + " .em8").html('已结束').addClass("text_gray");
+                $("." + w + " .ema1").css("display", "none");
+                $("." + w + " .ema2").css("display", "none");
+                $("." + w + " .ema3").css("display", "none");
+                $("." + w + " .ema4").css("display", "none");
+                $("." + w + " .ema5").css("display", "none");
+
+                $("." + w + " .xh1").html('已结束').addClass("text_gray");
+                $("." + w + " .xh2").html('已结束').addClass("text_gray");
+                $("." + w + " .xha1").css("display", "none");
+                $("." + w + " .xha2").css("display", "none");
+
+                $("[myinit]").parent().find("span").html("已结束");
+                $("[myinit]").parent().find("a").hide();
+                return;
+            }
+        }
+    }
+
+
+    function myInit() {
+        $("[myinit]").each(function () {
+            var strTime = $(this).html();
+            var vState = GetLessonState(strTime);
+            SetLessonStateImg(this, vState);
+        });
+    }
+
+    function SetLessonStateImg(Element, State) {
+        var vClass = 'no';
+        if (State == 0) {//没课
+            vClass = 'no';
+        }
+        if (State == 1) {//等待
+            $(Element).parent().find("span").html("等待课程");
+            $(Element).parent().find("a").hide();
+        }
+        if (State == 2) {//直播
+            $(Element).parent().find("span").html("进入课堂");
+            $(Element).parent().find("a").show();
+        }
+        if (State == 3) {//结束
+            $(Element).parent().find("span").html("已结束");
+            $(Element).parent().find("a").hide();
+        }
+    }
+
+    //时间格式  12:00-12:30
+    function GetLessonState(strTime) {
+        var myDate2 = new Date(); //当前时间
+        var ihour2 = myDate2.getHours(); //当前小时
+        var iminute2 = myDate2.getMinutes(); //当前分钟
+        var vlessontime = strTime; //课程开始结束时间字符串
+        vlessontime = $.trim(vlessontime);
+        var vstartend = new Array(); //时间段数组，按-分割
+        var vstart = new Array(); //开始时间数组，按:分割
+        var vend = new Array(); //结束时间数组，按:分割
+        vstartend = vlessontime.split('—');
+        vstart = vstartend[0].split(':');
+        vend = vstartend[1].split(':');
+        var vstarthour = parseFloat(vstart[0]); //开始小时数
+        var vstartminu = parseFloat(vstart[1]); //开始分钟数
+        var vprevminu = 30; //提前进课堂时间，以分钟为单位
+        if (vstartminu > vprevminu) {
+            vstartminu = vstartminu - vprevminu;
+        }
+        else {
+            vstarthour = vstarthour - 1;
+            vstartminu = 60 - (vprevminu - vstartminu);
+        }
+        var vendthour = parseFloat(vend[0]); //结束小时数
+        var vendtminu = parseFloat(vend[1]); //结束分钟数
+        if (ihour2 < vstarthour || (ihour2 == vstarthour && iminute2 < vstartminu)) {
+            return 1; //等待开课
+        }
+        else if (ihour2 > vendthour || (ihour2 == vendthour && iminute2 > vendtminu)) {
+            return 3; //课堂结束
+        }
+        else {
+            return 2; //正在直播
+        }
+    }
+    
+    $(function () {
+        $("#spanclose").click(function () {
+            $("#divbox").hide();
+        });
+    });
+    function checkbox(valtext) {
+        $("#divbox").show();
+        $("#divbox").css({ left: 60 + '%', top: 60 + '%' })
+        $("#divbox").css("display", "block");
+        if (valtext == 1) {//vip
+            $("#pinfo").html("");
+            $("#pinfo").html("欢迎进入VIP实盘课堂，登录需输入听课密码，获取密码请致电020-39195200");
+            $("#btnp").css("display", "block");
+            $("#btnp2").css("display", "none");
+            $("#btnp3").css("display", "none");
+            if (Cookie.read('usname') != "") {
+                if (Cookie.read('usname') == User.GetUserName()) {
+                    $("#divbox").css("display", "none");
+                    entermeetingvip(59028);
+                } else {
+                    Cookie.remove('usname');
+                }
+            }
+            $("#acheck").click(function () {
+                $("#divbox").css("display", "none");
+                entermeetingvip(59028);
+            });
+            if ($("#IsInfo").attr("checked")) {
+                var username = User.GetUserName();
+                Cookie.write("usname", username, 1)
+                entermeetingvip(59028);
+            }
+
+        } else if (valtext == 2) {//钻石
+            $("#divbox").css("display", "none");
+            entermeetingcheck(51138);
+            // $("#pinfo").html("");
+            //            $("#pinfo").html("欢迎进入钻石实盘课堂，登录需输入听课密码，获取密码请致电020-39195200");
+            //            $("#btnp").css("display", "none");
+            //            $("#btnp2").css("display", "block");
+            //            $("#btnp3").css("display", "none");
+            //
+            //            if (Cookie.read('usname') != "") {
+            //                if (Cookie.read('usname') == User.GetUserName()) {
+            //                    $("#divbox").css("display", "none");
+            //                     entermeetingcheck(51138);
+            //					//entermeetingcheck(61598);
+            //                } else {
+            //                    Cookie.remove('usname');
+            //                }
+            //            }
+            //            $("#acheck2").click(function () {
+            //                $("#divbox").css("display", "none");
+            //                entermeetingcheck(51138);
+            //				//entermeetingcheck(61598);
+            //            });
+            //            if ($("#IsInfo").attr("checked")) {
+            //                var username = User.GetUserName();
+            //                Cookie.write("usname", username, 1)
+            //                entermeetingcheck(51138);
+            //				//entermeetingcheck(61598);
+            //            } 
+
+        } else if (valtext == 3) {//皇冠
+            $("#pinfo").html("");
+            $("#pinfo").html("欢迎进入皇冠实盘课堂，登录需输入听课密码，获取密码请致电020-39195200");
+            $("#btnp").css("display", "none");
+            $("#btnp2").css("display", "none");
+            $("#btnp3").css("display", "block");
+            if (Cookie.read('usname') != "") {
+                if (Cookie.read('usname') == User.GetUserName()) {
+                    $("#divbox").css("display", "none");
+                    entermeetingvip(59026);
+                } else {
+                    Cookie.remove('usname');
+                }
+            }
+            $("#acheck3").click(function () {
+                $("#divbox").css("display", "none");
+                entermeetingvip(59026);
+            });
+            if ($("#IsInfo").attr("checked")) {
+                var username = User.GetUserName();
+                Cookie.write("usname", username, 1);
+                entermeetingvip(59026);
+            }
+        }
+    }
+
+    function entermeetingcheck(roomID) {
+        var room = roomID;
+        var username = User.GetUserName();
+        var hstusername = "";
+        var hstpwd = "";
+        var isenter = false;
+        $.ajax({
+            async: false,
+            type: "GET",
+            url: "http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/iface/GetHstUserInfo",
+            data: $.param({ username: username, roomId: roomID }),
+            success: function (responseText) {
+                var arr = responseText.split("|");
+                if (arr.length == 4) {
+
+                    var room_arr = arr[3].split(",");
+                    hstusername = arr[1];
+                    hstpwd = arr[2];
+                    for (var i = 0; i < room_arr.length; i++) {
+                        if (room_arr[i] == room) {
+                            isenter = true;
+                            break;
+                        }
+                    }
+                } else {
+                    //  alert('没权限进入课堂');
+                    entermeetingvip(roomID);
+                    return false;
+                }
+                if (isenter == false) {
+                    entermeetingvip(roomID);
+                    //alert('没有开通此房间');
+                    return false;
+                } else {
+                    url = 'http://ws.fsmeeting.com/userMgr/entermeeting.jsp?userName=' + encodeURI(hstusername) + '&userPwd=' + hstpwd + '&roomPwd=null&roomID=' + roomID + '&lan=zh-CN';
+                    external.iWinMain('cmd_navigate', url);
+                }
+            }
+        });
+    }
+    function entermeeting(roomID) {
+        var room = roomID;
+        //var url = 'http://manager.liveuc.net/acenter/ocx/ameeting_popup.jsp?purpose=1&oem=&enc_mode=1&username=&password=&isanyuser=1&roomid=11442&classpwd=&layout=&layout_url=&rename=0&inputpassword=1';//收费
+
+        if (roomID == "" || roomID == undefined) {
+            room = 36916;
+            //url = 'http://manager.liveuc.net/acenter/ocx/ameeting_popup.jsp?purpose=1&oem=&enc_mode=1&username=&password=NDU5MTg3&isanyuser=1&roomid=11495&classpwd=NDU5MTg3&layout=&layout_url=&rename=0&inputpassword=0';//免费
+        }
+        //room=42074;
+        var timee = new Date().getTime();
+        var username = User.GetUserName();
+        //alert(username);  
+        var url = 'http://ws.fsmeeting.com/userMgr/entermeeting.jsp?userType=0&roomID=' + room + '&userName=' + encodeURI(username);
+        //var url = "http://ws.fsmeeting.com/userMgr/entermeeting_shql.jsp?userType=0&roomID="+room+"&userName="+encodeURI(username);
+        //var url = "http://up.gensee.com/webcast/site/entry/join-4f6399d5ec994da596de92462ae62fce";
+        external.iWinMain('cmd_navigate', url);
+    }
+    function entermeetingvip(roomID) {
+        var room = roomID;
+        var timee = new Date().getTime();
+        var username = User.GetUserName();
+        var url = 'http://ws.fsmeeting.com:80/userMgr/entermeeting.jsp?userType=0&roomID=' + room + '&userName=' + encodeURI(username);
+        external.iWinMain('cmd_navigate', url);
+    }
+    //设置Cookie
+    //    function setCookie(c_name, value, expiredays) {
+    //        var exdate = new Date();
+    //        exdate.setDate(exdate.getDate() + expiredays);
+    //        document.cookie = c_name + "=" + escape(value) + ((expiredays == null) ? "" : ";expires=" + exdate.toGMTString());
+    //    }
+    /*
+    *设置与获取Cookie
+    */
+    var Cookie = {}
+    //写入Cookie，key为键，value是值
+    //duration过期时间（天为单位，默认1天）
+    Cookie.write = function (key, value, duration) {
+        Cookie.remove(key);
+        var d = new Date();
+        if (duration >= 0)
+            duration = 1;
+        d.setTime(d.getTime() + 1000 * 60 * 60 * 24 * duration);
+        document.cookie = key + "=" + encodeURI(value) + "; expires=" + d.toGMTString() + ";path=/";
+    };
+    //移除Cookie,key为键
+    Cookie.remove = function (key) {
+        var d = new Date();
+        if (Cookie.read(key) != "") {
+            d.setTime(d.getTime() - (86400 * 1000 * 1));
+            document.cookie = key + "=;expires=" + d.toGMTString();
+        }
+    };
+    //读取Cookie，key是键
+    //不存在返回空字符串""
+    Cookie.read = function (key) {
+        var arr = document.cookie.match(new RegExp("(^| )" + key + "=([^;]*)(;|$)"));
+        if (arr != null)
+            return decodeURIComponent(arr[2]);
+        return "";
+    };
+    //    //常见问题
+    //    $(document).ready(light);
+    //    $(window).resize(light);
+    //    function light() {
+    //        var l_box = $("#ligBg"), l_bg = $("#bgPosition"), light = $("#lightBox"), oClose = $("#close");
+    //        l_box.css({ left: 50 + '%', top: 50 + '%' })
+    //        l_bg.css({ height: function () { return $(window).height() }, width: function () { return $(document.body).width() } });
+    //        light.click(function () {
+    //            l_box.show();
+    //            l_bg.css("display", "block");
+    //        });
+    //        oClose.click(function () {
+    //            l_box.hide();
+    //            l_bg.hide();
+    //        });
+    //    }
+    //
+    //    function copyText(obj) {
+    //        var rng = document.body.createTextRange();
+    //        rng.moveToElementText(obj);
+    //        rng.scrollIntoView();
+    //        rng.select();
+    //        rng.execCommand("Copy");
+    //        rng.collapse(false);
+    //        alert("已经复制");
+    //    } 
+</script>
+<script type="text/javascript">
+    function updateEndTime(h, m, w) {
+
+        var date = new Date();
+        curryear = date.getFullYear();
+        currmonth = date.getMonth() + 1;
+        // var day = date.getDay();
+        // var da = date.getDate();
+        // var mon = date.getMonth() + 1;
+        //        var time = date.getTime() / 1000;
+        //        var hour = date.getHours();
+        //        var mint = date.getMinutes();
+
+        //        var s = date.getSeconds();
+
+        var day = GetUrlParame('getDay');
+        var da = GetUrlParame('getnowDay');
+
+        var year = GetUrlParame('getnowYear');
+        var month = GetUrlParame('getnowMonth');
+        if (year == '' || month == '') {
+            year = curryear;
+            month = currmonth;
+        }
+        year = parseInt(year);
+        month = parseInt(month);
+        if ((year == curryear && month == currmonth) && (day == '' || (day == date.getDay() && da == date.getDate()))) {
+            day = date.getDay();
+            da = date.getDate();
+            mon = date.getMonth() + 1;
+            time = date.getTime() / 1000;
+            hour = date.getHours();
+            mint = date.getMinutes();
+            s = date.getSeconds();
+        } else {
+            //这里需要获取参数
+            if ((date.getFullYear() == nowYearurl && (date.getMonth() + 1) == nowMonthurl && date.getDate() < nowDayurl) || (date.getFullYear() == nowYearurl && (date.getMonth() + 1) <= nowMonthurl && date.getDate() < nowDayurl) || (date.getFullYear() == nowYearurl && (date.getMonth() + 1) < nowMonthurl) || date.getFullYear() < nowYearurl) {
+                $("." + w + " .em1").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em2").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em3").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em4").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em5").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em6").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em7").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em8").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .ema1").css("display", "none");
+                $("." + w + " .ema2").css("display", "none");
+                $("." + w + " .ema3").css("display", "none");
+                $("." + w + " .ema4").css("display", "none");
+                $("." + w + " .ema5").css("display", "none");
+
+                $("." + w + " .xh1").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .xh2").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .xha1").css("display", "none");
+                $("." + w + " .xha2").css("display", "none");
+                return;
+            } else {
+                $("." + w + " .em1").html('已结束').addClass("text_gray");
+                $("." + w + " .em2").html('已结束').addClass("text_gray");
+                $("." + w + " .em3").html('已结束').addClass("text_gray");
+                $("." + w + " .em4").html('已结束').addClass("text_gray");
+                $("." + w + " .em5").html('已结束').addClass("text_gray");
+                $("." + w + " .em6").html('已结束').addClass("text_gray");
+                $("." + w + " .em7").html('已结束').addClass("text_gray");
+                $("." + w + " .em8").html('已结束').addClass("text_gray");
+                $("." + w + " .ema1").css("display", "none");
+                $("." + w + " .ema2").css("display", "none");
+                $("." + w + " .ema3").css("display", "none");
+                $("." + w + " .ema4").css("display", "none");
+                $("." + w + " .ema5").css("display", "none");
+
+                $("." + w + " .xh1").html('已结束').addClass("text_gray");
+                $("." + w + " .xh2").html('已结束').addClass("text_gray");
+                $("." + w + " .xha1").css("display", "none");
+                $("." + w + " .xha2").css("display", "none");
+                return;
+            }
+        }
+        if (year != curryear && month != currmonth) {
+        } else {
+            var v;
+            //现货操盘室时间的控制 周一到周五08:50—21:30（周六08:50—15:30）
+            if (hour < 8) {
+                h = 8;
+                m = 0;
+                $("." + w + " .xh1").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .xh2").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .xha1").css("display", "none");
+                $("." + w + " .xha2").css("display", "none");
+                v = $("." + w + " .xh1");
+                getv(h, m, v);
+                v = $("." + w + " .xh2");
+                getv(h, m, v);
+            } else if (hour == 8 && mint < 50) {
+                h = 8;
+                m = 50;
+                $("." + w + " .xh1").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .xh2").html('等待课程').removeClass("text_gray text_red");
+                if (hour == 8 && mint >= 20) {  //提前半个小时进入课堂
+                    $("." + w + " .xha1").css("display", "block");
+                    $("." + w + " .xha2").css("display", "block");
+                }
+
+                v = $("." + w + " .xh1");
+                getv(h, m, v);
+                v = $("." + w + " .xh2");
+                getv(h, m, v);
+            } else if ((hour == 8 && mint >= 50) || hour <= 21 || (hour == 21 && mint <= 30)) {
+                if (hour == 21 && mint > 30) {
+                    $("." + w + " .xh1").html('已结束').addClass("text_gray");
+                    $("." + w + " .xh2").html('已结束').addClass("text_gray");
+                    $("." + w + " .xha1").css("display", "none");
+                    $("." + w + " .xha2").css("display", "none");
+                } else {
+                    $("." + w + " .xh1").html('进入课堂').css("display", "block").addClass('text_red ');
+                    $("." + w + " .xh2").html('进入课堂').css("display", "block").addClass('text_red ');
+                    $("." + w + " .xha1").css("display", "block");
+                    $("." + w + " .xha2").css("display", "block");
+                }
+                //周六
+                if ((day == 6 && (hour >= 15 && mint > 30)) || day == 6 && hour>=16) {
+                    $("." + w + " .xh1").html('已结束').addClass("text_gray");
+                    $("." + w + " .xh2").html('已结束').addClass("text_gray");
+                    $("." + w + " .xha1").css("display", "none");
+                    $("." + w + " .xha2").css("display", "none");
+                }
+            } else {
+                $("." + w + " .xh1").html('已结束').addClass("text_gray");
+                $("." + w + " .xh2").html('已结束').addClass("text_gray");
+                $("." + w + " .xha1").css("display", "none");
+                $("." + w + " .xha2").css("display", "none");
+            }
+            //现货时间的控制结束
+
+            if (hour < 9) {
+                h = 9;
+                m = 0;
+                $("." + w + " .em2").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em3").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em4").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em5").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em8").html('等待课程').removeClass("text_gray text_red");
+                if (hour == 8 && mint >= 30) { //提前半个小时进入课堂
+                    $("." + w + " .ema1").css("display", "block");
+                } else
+                    $("." + w + " .ema1").css("display", "none");
+                $("." + w + " .ema2").css("display", "none");
+                $("." + w + " .ema3").css("display", "none");
+                $("." + w + " .ema4").css("display", "none");
+                $("." + w + " .ema5").css("display", "none");
+                $("." + w + " .ema8").css("display", "none");
+                v = $("." + w + " .em1");
+                getv(h, m, v);
+            }
+            else if (hour == 9 || (hour == 9 && mint <= 30)) {
+                h = 11;
+                m = 35;
+                if (hour == 9 && mint > 30) {
+                    $("." + w + " .em1").html('已结束').addClass("text_gray");
+                    $("." + w + " .ema1").css("display", "none");
+                } else {
+                    $("." + w + " .em1").html('进入课堂').css("display", "block").addClass('text_red ');
+                    $("." + w + " .ema1").css("display", "block");
+                }
+                $("." + w + " .em3").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em4").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em5").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em8").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .ema2").css("display", "none");
+                $("." + w + " .ema3").css("display", "none");
+                $("." + w + " .ema4").css("display", "none");
+                $("." + w + " .ema5").css("display", "none");
+                $("." + w + " .ema8").css("display", "none");
+                v = $("." + w + " .em2");
+                getv(h, m, v);
+            } else if ((hour == 9 && mint >= 30) || hour < 11 || (hour == 11 && mint < 35)) {
+                h = 11;
+                m = 35;
+                $("." + w + " .em1").html('已结束').addClass("text_gray");
+                $("." + w + " .ema1").css("display", "none");
+                if (hour == 11 && mint >= 5) { //提前半个小时进入课堂
+                    $("." + w + " .ema2").css("display", "block");
+                } else
+                    $("." + w + " .ema2").css("display", "none");
+
+                $("." + w + " .ema3").css("display", "none");
+                $("." + w + " .ema4").css("display", "none");
+                $("." + w + " .ema5").css("display", "none");
+                $("." + w + " .ema6").css("display", "none");
+                $("." + w + " .ema7").css("display", "none");
+                $("." + w + " .ema8").css("display", "none");
+                $("." + w + " .em2").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em3").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em4").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em5").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em8").html('等待课程').removeClass("text_gray text_red");
+                v = $("." + w + " .em2");
+                getv(h, m, v);
+            } else if (hour == 11 && (mint >= 35 && mint <= 55)) {
+                h = 15;
+                m = 5;
+                $("." + w + " .em1").html('已结束').addClass("text_gray");
+                $("." + w + " .ema1").css("display", "none");
+                $("." + w + " .em2").html('进入课堂').css("display", "block").addClass('text_red ');
+                $("." + w + " .ema2").css("display", "block"); //11:35—11:55 进入课堂按钮显示
+                $("." + w + " .ema3").css("display", "none");
+                $("." + w + " .ema4").css("display", "none");
+                $("." + w + " .ema5").css("display", "none");
+                $("." + w + " .ema6").css("display", "none");
+                $("." + w + " .ema7").css("display", "none");
+                $("." + w + " .ema8").css("display", "none");
+                $("." + w + " .em3").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em4").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em5").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em6").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em7").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em8").html('等待课程').removeClass("text_gray text_red");
+                v = $("." + w + " .em3");
+                getv(h, m, v);
+            }
+            else if ((hour == 11 && mint > 55) || (hour >= 12 && hour < 15) || (hour == 15 && mint < 5)) {
+                h = 15;
+                m = 5;
+                $("." + w + " .em1").html('已结束').addClass("text_gray");
+                $("." + w + " .em2").html('已结束').addClass("text_gray");
+                // $("." + w + " .em3").html('已结束').addClass("text_gray");
+                $("." + w + " .ema1").css("display", "none");
+                $("." + w + " .ema2").css("display", "none");
+                if (hour == 14 && mint >= 35) { //提前半个小时进入课堂
+                    $("." + w + " .ema3").css("display", "block");
+                } else
+                    $("." + w + " .ema3").css("display", "none");
+                if (hour == 15 && mint <= 5) {
+                    $("." + w + " .ema3").css("display", "block");
+                    v = $("." + w + " .em3"); //周一 em3
+                    getv(h, m, v);
+                    $("." + w + " .ema4").css("display", "block");
+                    var v2 = $("." + w + " .em4");
+                    //getv(h, 45, v2);
+                    //return false;
+                } else {
+                    $("." + w + " .ema3").css("display", "block");
+                }
+                if (hour == 15 && mint <= 30) {
+                    $("." + w + " .ema4").css("display", "block");
+                }
+                $("." + w + " .ema4").css("display", "none");
+                $("." + w + " .ema5").css("display", "none");
+                $("." + w + " .ema8").css("display", "none");
+                if ((hour >= 12 && hour < 14) || hour == 14 && mint < 30) {
+                    $("." + w + " .em3").html('等待课程').removeClass("text_gray text_red");
+                    $("." + w + " .em4").html('等待课程').removeClass("text_gray text_red");
+                    $("." + w + " .ema3").css("display", "none");
+                    v = $("." + w + " .em3"); // em3
+                    getv(h, m, v);
+                } else {
+                    $("." + w + " .em3").removeClass("text_gray text_red");
+                    v = $("." + w + " .em3"); // em3
+                    getv(h, m, v);
+                }
+                $("." + w + " .em4").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em5").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em6").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em7").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em8").html('等待课程').removeClass("text_gray text_red");
+
+
+            } else if ((hour == 15 && mint >= 5) && (hour == 15 && mint <= 45)) {
+                h = 15;
+                m = 45;
+                $("." + w + " .em1").html('已结束').addClass("text_gray");
+                $("." + w + " .em2").html('已结束').addClass("text_gray");
+                $("." + w + " .ema1").css("display", "none");
+                $("." + w + " .ema2").css("display", "none");
+                $("." + w + " .em3").html('进入课堂').css("display", "block").addClass('text_red ');
+                $("." + w + " .ema3").css("display", "block"); //周一 15:05-15:30
+                if (hour == 15 && mint <= 45) { //提前半个小时进入课堂
+                    $("." + w + " .ema4").css("display", "block");
+                } else
+                    $("." + w + " .ema4").css("display", "none");
+                $("." + w + " .ema5").css("display", "none");
+                if (mint != 30) { // 15:30 理财大讲堂开始
+                    $("." + w + " .em4").html('等待课程').removeClass("text_gray text_red");
+                } else {
+                    $("." + w + " .em4").html('进入课程').addClass("text_red");
+                    $("." + w + " .ema4").css("display", "block");
+                }
+                $("." + w + " .em5").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em6").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em7").html('等待课程').removeClass("text_gray text_red");
+                $("." + w + " .em8").html('等待课程').removeClass("text_gray text_red");
+                v = $("." + w + " .em4");
+                getv(h, m, v);
+
+            } else if ((hour == 15 && mint > 45) || hour >= 16 && hour < 19 || (hour == 19 && mint < 30)) {
+                h = 19;
+                m = 30;
+                $("." + w + " .em1").html('已结束').addClass("text_gray");
+                $("." + w + " .em2").html('已结束').addClass("text_gray");
+                $("." + w + " .em3").html('已结束').addClass("text_gray");
+                $("." + w + " .ema1").css("display", "none");
+                $("." + w + " .ema2").css("display", "none");
+                $("." + w + " .ema3").css("display", "none");
+                $("." + w + " .em4").html('进入课堂').css("display", "block").addClass('text_red ');
+                $("." + w + " .ema4").css("display", "block");
+                if (hour == 19 && mint < 30) { //提前半个小时进入课堂
+                    $("." + w + " .ema5").css("display", "block");
+                } else
+                    $("." + w + " .ema5").css("display", "none");
+                v = $("." + w + " .em5");
+                getv(h, m, v);
+                v2 = $("." + w + " .em8");
+                getv(19, 30, v2);
+                if (hour == 19 && mint <= 30) { //提前半个小时进入课堂
+                    $("." + w + " .ema8").css("display", "block");
+                }
+
+            } else if ((hour == 19 && mint >= 30) || (hour == 20 && mint <= 15)) { //19:30-20:15
+//                if ((hour == 19 && mint >= 30) || (hour == 20 && mint <= 15)) {
+                    $("." + w + " .em1").html('已结束').addClass("text_gray");
+                    $("." + w + " .em2").html('已结束').addClass("text_gray");
+                    $("." + w + " .em3").html('已结束').addClass("text_gray");
+                    $("." + w + " .em4").html('已结束').addClass("text_gray");
+                    $("." + w + " .ema1").css("display", "none");
+                    $("." + w + " .ema2").css("display", "none");
+                    $("." + w + " .ema3").css("display", "none");
+                    $("." + w + " .ema4").css("display", "none");
+                    $("." + w + " .em5").html('进入课堂').css("display", "block").addClass('text_red '); //19:30-20:15 显示进入课堂
+                    $("." + w + " .em8").html('进入课堂').css("display", "block").addClass('text_red ');
+                    $("." + w + " .ema5").css("display", "block");
+                    $("." + w + " .ema8").css("display", "block");
+//                } else {
+//                    $("." + w + " .em1").html('已结束').addClass("text_gray");
+//                    $("." + w + " .em2").html('已结束').addClass("text_gray");
+//                    $("." + w + " .em3").html('已结束').addClass("text_gray");
+//                    $("." + w + " .em4").html('已结束').addClass("text_gray");
+//                    $("." + w + " .em5").html('已结束').addClass("text_gray");
+//                    $("." + w + " .ema1").css("display", "none");
+//                    $("." + w + " .ema2").css("display", "none");
+//                    $("." + w + " .ema3").css("display", "none");
+//                    $("." + w + " .ema4").css("display", "none");
+//                    $("." + w + " .ema5").css("display", "none");
+//                    $("." + w + " .em8").html('进入课堂').css("display", "block").addClass('text_red ');
+//                    $("." + w + " .ema8").css("display", "block");
+//                }
+            }
+            else {
+                $("." + w + " .em1").html('已结束').addClass("text_gray");
+                $("." + w + " .em2").html('已结束').addClass("text_gray");
+                $("." + w + " .em3").html('已结束').addClass("text_gray");
+                $("." + w + " .em4").html('已结束').addClass("text_gray");
+                $("." + w + " .em5").html('已结束').addClass("text_gray");
+                $("." + w + " .em6").html('已结束').addClass("text_gray");
+                $("." + w + " .em7").html('已结束').addClass("text_gray");
+                $("." + w + " .em8").html('已结束').addClass("text_gray");
+                $("." + w + " .ema1").css("display", "none");
+                $("." + w + " .ema2").css("display", "none");
+                $("." + w + " .ema3").css("display", "none");
+                $("." + w + " .ema4").css("display", "none");
+                $("." + w + " .ema5").css("display", "none");
+                $("." + w + " .ema8").css("display", "none");
+            }
+
+            if (hour == 15 && mint > 30) {
+                h = 19;
+                m = 30;
+                $("." + w + " .em1").html('已结束').addClass("text_gray");
+                $("." + w + " .em2").html('已结束').addClass("text_gray");
+                $("." + w + " .less3").css("display", "none");
+                $("." + w + " .em3").html('已结束');
+                //$("." + w + " .em4").css("display", "none"); //周一
+                if (hour == 15 && mint > 45)
+                $("." + w + " .ema4").css("display", "inline-block");
+                $("." + w + " .em5").html('等待课程');
+                v = $("." + w + " .em4");
+                // getv(h, m, v);
+            } else if ((hour >= 16 && hour <= 30) || (hour == 19 && mint < 30)) {
+                if (day != 3 || day != 5) {
+                    h = 19;
+                    m = 30;
+                    if (hour == 16 && mint <= 30) {
+                        $("." + w + " .em4").html('进入课堂').css("display", "block").addClass('text_red ').removeClass("text_gray");
+                        $("." + w + " .ema4").css("display", "block");
+                    } else {
+                        $("." + w + " .em4").html('已结束').addClass("text_gray");
+                        $("." + w + " .ema4").css("display", "none");
+                    }
+                    // $("." + w + " .em5").html('等待课程').removeClass("text_gray text_red");
+                    // $("." + w + " .ema5").css("display", "none");
+//                    v = $("." + w + " .em5");
+//                    getv(h, m, v);
+                    return;
+                }
+                $("." + w + " .ema4").css("display", "none");
+            } else if ((hour == 19 && mint >= 30) || (hour == 24 && mint < 30)) {
+                // alert('hour == 3')
+                $("." + w + " .em1").html('已结束').addClass("text_gray");
+                $("." + w + " .em2").html('已结束').addClass("text_gray");
+                $("." + w + " .em3").html('已结束').addClass("text_gray");
+                $("." + w + " .em4").html('已结束').addClass("text_gray");
+                $("." + w + " .ema1").css("display", "none");
+                $("." + w + " .ema2").css("display", "none");
+                $("." + w + " .ema3").css("display", "none");
+                $("." + w + " .ema4").css("display", "none");
+//                $("." + w + " .em5").css("display", "block"); //显示进入课堂
+//                $("." + w + " .ema5").css("display", "block"); 
+                $("." + w + " .em8").html('进入课堂').css("display", "block").addClass('text_red ').removeClass("text_gray");
+                $("." + w + " .ema8").css("display", "block");
+
+            }
+        }
+    }
+
+
+    function getv(h, m, v) {
+        var date = new Date();
+        var mint = date.getMinutes();
+        var s = date.getSeconds();
+        var hour = date.getHours();
+
+        var end = h * 3600 + m * 60;
+        var st = hour * 3600 + mint * 60 + s;
+
+        var lag = (end - st)
+        if (lag > 0) {
+            var second = Math.floor(lag % 60) > 9 ? Math.floor(lag % 60) : "0" + Math.floor(lag % 60);
+            var minite = Math.floor((lag / 60) % 60) > 9 ? Math.floor((lag / 60) % 60) : "0" + Math.floor((lag / 60) % 60);
+            var hour = Math.floor((lag / 3600) % 24) > 9 ? Math.floor((lag / 3600) % 24) : "0" + Math.floor((lag / 3600) % 24);
+            $(v).html("<span class=\"text_ora\">距开课还有" + hour + "时" + minite + "分" + second + "秒</span>");
+        }
+        else {
+            return false;
+        }
+    }
+ 
+ 
+</script>
+<script type="text/javascript">
+
+    //判读星期几显示tab
+    $(function () {
+
+
+
+        var time = new Date(), oLi = $(".gai_nav li"), tab_01 = $(".tab_01"), tab_02 = $(".tab_02"), tab_03 = $(".tab_03");
+        var clearTime = null;
+        var week;
+        var day = GetUrlParame('getDay');
+        if (day == '') {
+            day = time.getDay();
+        }
+        day = parseInt(day);
+            switch (day) {
+                case 1:
+                    //oLi[0].className = "redActive";
+                    tab_01[0].style.display = "block";
+                    tab_02[0].style.display = "block";
+                    tab_03[0].style.display = "block";
+                    week = "week1"
+                    break;
+                case 2:
+                    //oLi[1].className = "redActive";
+                    tab_01[1].style.display = "block";
+                    tab_02[1].style.display = "block";
+                    tab_03[1].style.display = "block";
+                    week = "week2"
+                    break;
+                case 3:
+                    // oLi[2].className = "redActive";
+                    tab_01[2].style.display = "block";
+                    tab_02[2].style.display = "block";
+                    tab_03[2].style.display = "block";
+                    week = "week3"
+                    break;
+                case 4:
+                    //oLi[3].className = "redActive";
+                    tab_01[3].style.display = "block";
+                    tab_02[3].style.display = "block";
+                    tab_03[3].style.display = "block";
+                    week = "week4"
+                    break;
+                case 5:
+                    // oLi[4].className = "redActive";
+                    tab_01[4].style.display = "block";
+                    tab_02[4].style.display = "block";
+                    tab_03[4].style.display = "block";
+                    week = "week5"
+                    break;
+                case 6:
+                    //oLi[5].className = "redActive";
+                    tab_01[5].style.display = "block";
+                    tab_02[5].style.display = "block";
+                    tab_03[5].style.display = "block";
+                    week = "week6"
+                    break;
+                case 0:
+                    //oLi[0].className = "redActive";
+                    tab_01[6].style.display = "block";
+                    tab_02[6].style.display = "block";
+                    tab_03[6].style.display = "block";
+                    week = "week7"
+                    break;
+            }
+        var clearTime = setInterval(function () { updateEndTime(23, 59, week) }, 1000)
+
+    })
+    function aopen() {
+        external.iWinMain('cmd_PopupWindow', 'http://app.upchina.com/news/jhdlizx/upjhdcjwt.html', '620px', '380px');
+    }
+    //    //切换
+    //    $(function () {
+
+    //        var oLi = $(".gai_nav li"), tab = $(".tab_01");
+    //        for (var i = 0; i < oLi.length; i++) {
+
+    //            oLi[i].index = i;
+    //            oLi[i].onclick = function () {
+    //                for (var z = 0; z < tab.length; z++) {
+    //                    tab[z].style.display = "none";
+    //                }
+    //                for (var i = 0; i < oLi.length; i++) {
+    //                    oLi[i].className = oLi[i].className.replace("redActive", '');
+
+    //                }
+    //                oLi[this.index].className += " redActive";
+    //                tab[this.index].style.display = "block";
+
+    //            }
+
+
+    //        }
+
+    //    })
+    //    $(function () {
+    //        var li = $(".into_cont li"), li2 = $(".into_cont2 li");
+    //        bgcolor(li);
+    //        bgcolor(li2);
+    //        function bgcolor(li) {
+    //            for (var i = 0; i < li.length; i++) {
+    //                if (i % 2 == 0) {
+    //                    li[i].style.backgroundColor = "#f8f8f8";
+    //                }
+    //            }
+    //        }
+    //    })
+    // 常见问题
+    //    $(document).ready(light);
+    //    $(window).resize(light);
+    //    function light() {
+    //        var l_box = $("#ligBg"), l_bg = $("#bgPosition"), light = $("#lightBox"), oClose = $("#close");
+    //        l_box.css({ left: 40 + '%', top: 40 + '%' })
+    //        l_bg.css({ height: function () { return $(window).height() }, width: function () { return $(document.body).width() } });
+    //        light.click(function () {
+    //            l_box.show();
+    //            l_bg.css("display", "block");
+    //        });
+    //        oClose.click(function () {
+    //            l_box.hide();
+    //            l_bg.hide();
+    //        });
+    //    }
+
+    //    function copyText(obj) {
+    //        var rng = document.body.createTextRange();
+    //        rng.moveToElementText(obj);
+    //        rng.scrollIntoView();
+    //        rng.select();
+    //        rng.execCommand("Copy");
+    //        rng.collapse(false);
+    //        alert("已经复制");
+    //    }
+
+
+</script>
+<div style="display:none;">
+<script src="http://s22.cnzz.com/z_stat.php?id=1000125520&web_id=1000125520" language="JavaScript"></script>  
+</div>     
+</body>
+</html>

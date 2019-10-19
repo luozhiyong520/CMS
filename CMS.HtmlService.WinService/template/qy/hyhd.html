@@ -1,0 +1,265 @@
+﻿
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+    <title>红旗汇 让互联网+更简单 中小企业互联网+贴心卫士</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="cache-control" content="no-siteapp">
+    <link rel="stylesheet" href="/theme/default/css/style.css">
+    <link href="/theme/default/video/video-js.css" rel="stylesheet" type="text/css">
+    <script src="/theme/default/video/video.js"></script>
+    <script>
+        videojs.options.flash.swf = "/theme/default/video/video-js.swf";
+    </script>
+    <!--[if lt IE 9]>
+    <script src="/theme/default/js/selectivizr.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <div class="header">
+        <div class="hd-bar wrap">
+            <div class="logo"><a href="/"><img src="/theme/default/images/logo.png" alt=""></a></div>
+            <div class="hd-tel">
+                <div class="ht-num"> 400-8655-776</div>
+            </div>
+        </div>
+        <div class="hd-nav">
+            <div class="wrap">
+                <ul>
+                    <li class="cur"><a href="/">首  页</a></li>
+                    <li>
+                        <a href="/qy/about.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="/qy/platform.html">贴心服务</a>
+                        <!--<div class="subnav">
+                            <dl>
+                                <dd><a href="/qy/mallpf.html">商城全网平台</a></dd>
+                                <dd><a href="/qy/indplatform.html">行业全网平台</a></dd>
+                            </dl>
+                        </div>-->
+                    </li>
+                    <li>
+                        <a href="/qy/case.html">案例展示</a>
+                    </li>
+                    <li>
+                        <a href="/qy/tecnews.html">科技新闻</a>
+                    </li>
+                    <li>
+                        <a href="/qy/industry.html">产业政策</a>
+                    </li>
+                    <!--<li>
+                        <a href="/qy/datanews.html">数据资讯</a>
+                    </li>
+                    <li>
+                        <a href="/qy/business.html">企业人物</a>
+                    </li>-->
+                    <li>
+                        <a href="/qy/college.html">红旗学院</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="left-main">
+            <div class="page-banner"><img src="/theme/default/images/news-banner.jpg"></div>
+            <div class="act-news">
+                <h4>活  动</h4>
+
+            </div>
+            <div class="news-list">
+                <ul>
+                    <#uptag tagtype="01" clsid="001005" pagesize="30" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+
+
+                        <li>
+                            <div class="pic">
+                                <a href="${d.Url}"><img src="http://img.pinyifu.com/${d.ImgUrl}" alt=""></a>
+                            </div>
+                            <div class="cont">
+                                <div class="title"><a href="${d.Url}" title="${d.Title}">${d.Title}</a></div>
+                                <div class="text"><p>${substr(filterhtml(d.Content),20)}</p></div>
+                                <div class="info">
+                                    <span class="l"></span>
+                                    <span class="r">${cdatestring(d.CreatedTime,"MM-dd HH:mm")}</span>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+                        <#/uptag>
+                </ul>
+                <div class="load-more" lastpage="" pnum="2">没有更多了</div>
+            </div>
+        </div>
+        <div class="right-bar">
+            <div class="hot-news">
+                <div class="hn-hd">最新资讯</div>
+                <div class="hn-list">
+                    <ul>
+                        <#uptag tagtype="01" clsid="001001,001002,001003,001004,001005,001006" pagesize="5" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+                            <li>
+                                <a href="${d.Url}" title="${d.Title}">
+                                    <span class="title">${substr(filterhtml(d.Title),20)}</span>
+                                    <span class="text">${substr(filterhtml(d.Content),20)}</span>
+                                </a>
+                            </li>
+
+
+                            <#/uptag>
+                    </ul>
+                </div>
+            </div>
+            <div class="side-search">
+                <span class="name">红旗汇服务平台查询端口</span>
+                <p><input type="text" name="word" id="word"><input type="button" value="搜索" onclick="checkdk()"></p>
+                <span class="name">全国红旗汇服务商查询端口</span>
+                <p><input type="text" name="title2" id="title2"><input type="button" value="搜索" onclick="checkh()"></p>
+            </div>
+            <div class="side-video">
+                <div class="sv-hd">会员展示<em class="en">MEMBER DISPLAY</em></div>
+                <div class="sv-block swiper-container">
+                    <div class="mv-box act swiper-wrapper">
+
+
+                        <#uptag tagtype="01" clsid="001008" pagesize="3" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+                            <div class="swiper-slide"><img src="http://img.pinyifu.com/${d.ImgUrl}" width="287px" height="200px"></div>
+                            <#/uptag>
+                    </div>
+                    <div class="pagination"></div>
+                </div>
+                <!--<div class="sv-point">
+                    <span class="act"></span>
+                </div>-->
+            </div>
+            <!--<div class="ad-slide">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <#uptag tagtype="01" clsid="001011" pagesize="3" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+                                        <div class="swiper-slide"><img src="http://img.pinyifu.com/${d.ImgUrl}"></div>
+                                        <#/uptag>
+            </div>
+                            </div>
+                            <div class="pagination"></div>
+                        </div>-->
+
+            <div class="app-list">
+                <div class="al-hd">最新合作会员</div>
+
+                <div class="al-box">
+                    <ul class="act">
+                        <#uptag tagtype="01" clsid="001012" pagesize="20" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+
+                            <li>
+                                <div class="pic">
+                                    <div class="img"><img src="http://img.pinyifu.com/${d.ImgUrl}"></div>
+                                    <div class="wx"><img src="http://img.pinyifu.com/${d.ImgUrl}"></div>
+                                </div>
+                                <div class="name"><a href="${d.Url}">${d.Title}</a></div>
+                            </li>
+                            <#/uptag>
+                    </ul>
+                </div>
+            </div>
+            <div class="new-pro">
+                <div class="np-hd">服务资讯<em class="en">SERVICE INFORMATION</em></div>
+                <div class="np-slide" style="background:none;">
+                    <#uptag tagtype="01" clsid="001020" pagesize="20" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+                        <a href="${d.Url}"><img src="http://img.pinyifu.com/${d.ImgUrl}" style="width:100%;max-width:100%;max-height:170px;" alt="" title="${d.Title}"></a>
+                        <#/uptag>
+
+                </div>
+                <div class="np-list">
+                    <ul>
+                        <#uptag tagtype="01" clsid="001013" pagesize="10" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+                            <li><a href="${d.Url}">${d.Title}</a></li>
+                            <#/uptag>
+                    </ul>
+                </div>
+            </div>
+            <div class="fly-password">
+                <div class="fp-box">
+                    <div class="fpb-hd">输入查询密码，并确认</div>
+                    <div class="fpb-form">
+                        <form action="index.php" method="get" onsubmit="return ckeckm();" name="form1">
+                            <input type="hidden" name="c" value="article">
+                            <input type="hidden" name="a" value="type">
+                            <input type="hidden" name="tid" value="24">
+                            <p><input type="password" name="pass" id="pass"><input type="hidden" name="title" id="title"></p>
+                            <p><input type="submit" value="确认"><span class="cancel" style="cursor:pointer;">取消</span></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="fly-close"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer wrap">
+        <div class="friendlink">
+            <h4>相关链接</h4>
+            <ul>
+                <#uptag tagtype="01" clsid="001009" pagesize="100" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+                    <li><a href="${d.Url}"><img src="http://img.pinyifu.com/${d.ImgUrl}" style="width:100%;max-width:100%;max-height:170px;" alt="" title="${d.Title}"></a></li>
+                    <#/uptag>
+</ul>
+        </div>
+        <div class="ft">
+            <div class="ft-text" style="margin-top:10px;">
+                <p style="color:#333;font-weight:bold;letter-spacing:1px;">服务监督热线：4008-655-776</p>
+            </div>
+            <div class="ft-nav" style="margin-top:10px;">
+                <a href="#" title="关于我们">关于我们</a>
+                |
+                <a href="#" title="联系方式">联系方式</a>
+                |
+                <a href="#" title="网站地图">网站地图</a>
+                |
+                <a href="#" title="法律声明">法律声明</a>
+            </div>
+            <div class="ft-text">
+                <p>红旗汇版权所有，未经书面授权禁止使用</p>
+                <p>粤ICP备16079988号-1</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/theme/default/js/jquery.js"></script>
+    <script src="/theme/default/js/swiper.js"></script>
+    <script src="/theme/default/js/main.js"></script>
+</body>
+</html>
+<script>
+    $(".load-more").click(function(){
+        var pnum = parseInt($(".load-more").attr('pnum'));
+        var lastpage = parseInt($(".load-more").attr('lastpage'));
+        if(pnum<=lastpage){
+            $.ajax({
+                type: "POST",
+                url: "/index.php?c=article&a=type&tid=17&page="+pnum,
+                timeout: 20000,
+                error: function(){alert('error');},
+                data: {},
+                success: function(data){
+                    var con="";
+                    for(var i=0;i<data.length;i++){
+                        if(data[i]['ndescription']=="") data[i]['ndescription']='暂无简介';
+                        con+='<li><div class="pic"><a href="'+data[i]['url']+'"><img src="'+data[i]['litpic']+'" alt="'+data[i]['keywords']+'"></a></div><div class="cont"><div class="title"><a href="'+data[i]['url']+'" title="'+data[i]['title']+'">'+data[i]['ntitle']+'</a></div><div class="text"><p>'+data[i]['ndescription']+'</p></div><div class="info"><span class="l">'+data[i]['sign']+'</span><span class="r">'+data[i]['addtime']+'</span></div></div></li>';
+                    }
+                    $(".news-list").find("ul").append(con);
+                    var page = pnum+1;
+                    $(".load-more").attr('pnum',page);
+                    if(page>lastpage) $(".load-more").html('没有更多了');
+                }
+            });
+        }
+    })
+</script>

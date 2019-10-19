@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>${art.Title}-Up投资</title>
+<meta name="keywords" content="${art.KeyWord}" />
+<meta name="description" content="${art.NewsAbstract}" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<base target="_blank">
+<!-- 正文页css start -->
+<!--#include virtual="/detail/common/productcss.shtml"-->
+<!-- 正文页css end -->
+
+<!--通用js start -->
+<!--#include virtual="/include/common/v2012/commonjs.shtml"-->
+<!--通用js end -->
+
+</head>
+
+<body>
+<!-- 顶部  登录 收藏 设为首页  start-->
+<!--#include virtual="/include/common/v2012/commontop.shtml"-->
+<!-- 顶部  登录 收藏 设为首页  end-->
+
+<div class="hr_6"></div>
+
+<!-- 网站导航条 start -->
+
+<div class="logonav Area"> 
+  <!-- 导航部分 start --> 
+    <!--#include virtual="/include/soft/v2012/xm_productnav.shtml"-->      
+  <!-- 导航部分 end --> 
+
+<!-- 顶部  登录 收藏 设为首页  end-->
+
+
+
+<!-- 面包屑  start-->
+<!--<div class="Area"> </div>-->
+<!-- 面包屑  end-->
+
+<div class="Area">
+  <div class="wrapper_left upTxtBorder">
+    <div class="block_left"><!--左边-->
+      <div class="content"> 
+        <!-- 文章标题 stat -->
+        <h1>${art.Title}
+</h1>
+        <div class="artInfo"> <span id="art_source"><a href="www.upchina.com">up投资</a> </span> <span id="pub_date">${art.CreatedTime}</span> <span id="media_name">来源：${alt.Source}</span> </div>
+        <!-- 文章标题 end -->
+        <!--标题下热门推荐 start-->
+      	<#uptag tagtype="02" clsid="005001" id="data005001" viewedit="1" var="d"> ${d.Content}
+    <#/uptag>
+
+        <!--标题下热门推荐 end-->
+        <!-- 正文部分 start -->
+        <div class="wz_ctn">
+          <div class="fenge"></div>
+          <!-- 画中画 start -->
+           <!--#include virtual="/include/soft/v2012/xm_hzh.shtml"-->  
+          
+          <!-- 画中画 end --> 
+          <!-- 正文 start -->
+         	${art.Content}
+          <!-- 正文 end --> 
+        </div>
+        <!-- 正文部分 end -->
+       
+       
+        <!-- 作者 start-->
+        <div class="editor">
+          <div class="edit_ctn"><span>  （责任编辑：${art.Author}）</span></div>
+        </div>
+        <!-- 作者 end-->
+        <div class="hr_10"></div>
+        
+         
+          <!-- 声明/小工具 start-->
+			  <!--#include virtual="/include/soft/v2012/xm_littletool.shtml"-->  
+      
+       <!-- 声明小工具 end -->
+       </div>
+       
+      <div class="hr_10"></div>
+       <!-- 热门/关注 start-->
+       	 <!--#include virtual="/include/soft/v2012/xm_rmgz.shtml"--> 
+       <!-- 热门/关注 end-->
+    </div>
+    <div class="hr_10"></div>
+     <!-- 内容页下面广告 start-->
+     <!--#include virtual="/include/soft/v2012/xm_nryxgg.shtml"--> 
+    <!-- 内容页下面广告 end-->
+    <div class="hr_10"></div>
+    <!-- 相关文章 start-->
+    <!--#include virtual="/include/soft/v2012/xm_xgwz.shtml"--> 
+    <!-- 相关文章 end-->
+    
+    <div class="hr_10"></div>
+    
+    <!-- 精彩推荐 start-->
+    <!--#include virtual="/include/soft/v2012/xm_jctj.shtml"--> 
+  <!-- 精彩推荐 end-->
+  </div>
+  <!-- 正文页右侧 start -->
+   <div class="wrapper_right">
+    <div class="move"> 
+      <!-- 正文右上角广告位 start  --> 
+      <!--#include virtual="/include/soft/v2012/xm_zwysjggw.shtml"-->  		   		
+      <!-- 正文右上角广告位 end  --> 
+    </div>
+    <div class="hr_6"></div>
+    <!-- 全网站公用文件-股票查询框 start-->
+   		 <!--#include virtual="/include/soft/v2012/xm_search.shtml"-->  
+    <!-- 全网站公用文件-股票查询框 end--> 
+    <!-- 列表页-正文页公共-行情报价 start-->
+  <!--#include virtual="/include/soft/v2012/xm_hqbj.shtml"-->  
+
+    <!-- 列表页-正文页公共-行情报价 end-->
+    
+    <!--详细面右边广告 start-->
+     <!--#include virtual="/include/soft/v2012/xm_xxyybgg.shtml"-->  	
+    		
+    <!--详细面右边广告 end-->
+    
+    <div class="hr_6"></div>
+    <div class="Micro_bo ">
+      <div class="title3 title_ctn"> <a class="need" href="http://weibo.com/u/2676385273" target="_blank">微博</a> </div>
+      <div class="Micro_bo_ctn">
+        <iframe width="260" scrolling="no" height="275" frameborder="0" src="http://widget.weibo.com/weiboshow/index.php?language=&amp;width=260&amp;height=275&amp;fansRow=2&amp;ptype=1&amp;speed=0&amp;skin=4&amp;isTitle=0&amp;noborder=0&amp;isWeibo=1&amp;isFans=0&amp;uid=2676385273&amp;verifier=f8e78e80&amp;dpc=1" class="share_self"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 正文页右侧 end -->
+</div>
+ 
+<div class="hr_10"></div>
+<!-- 尾部 start -->
+<!--#include virtual="/include/common/v2012/xm_commonfooter.shtml"-->
+<!-- 尾部 end --> 
+
+<!-- 正文页使用js  start -->
+
+<!--#include virtual="/include/common/v2012/xm_commonjs.shtml"-->
+<!-- 正文页使用js  end --> 
+<!-- create html time:2012-11-28 11:20:24 -->
+</body>
+</html>
+<!-- update Time : ${curdate}-->

@@ -1,0 +1,98 @@
+2013-08-06 11:29:38,397 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-08-06 11:29:38,416 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-08-06 11:29:38,424 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-08-06 11:29:46,054 [5] INFO  log [(null)] - 方法名：CreateSingleNews，修改新闻，生成NewsId:394文件成功，文件路径:/qwfx/201308/05165439542.html
+2013-08-06 11:30:03,882 [8] INFO  log [(null)] - 方法名：CreateSingleNews，修改新闻，生成NewsId:394文件成功，文件路径:/qwfx/201308/05165439542.html
+2013-08-06 11:30:19,378 [7] INFO  log [(null)] - 方法名：CreateSingleNews，新增新闻，生成NewsId:396文件成功，文件路径:/gsyw/201308/06112918356.html
+2013-08-06 11:34:12,464 [13] ERROR log [(null)] - System.Data.SqlClient.SqlException (0x80131904): 在向服务器发送请求时发生传输级错误。 (provider: TCP Provider, error: 0 - 远程主机强迫关闭了一个现有的连接。)
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   在 System.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode)
+   在 System.Data.SqlClient.TdsParserStateObject.ExecuteFlush()
+   在 System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 Common.SqlHelper.ExecuteReader(SqlConnection connection, SqlTransaction transaction, CommandType commandType, String commandText, SqlParameter[] commandParameters, SqlConnectionOwnership connectionOwnership) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 813
+   在 Common.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 864
+   在 CMS.DAL.NewsDAL.GetNewsInfo(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\Ext\NewsDAL.cs:行号 107
+   在 CMS.BLL.NewsBLL.GetNewsInfo(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.BLL\Ext\NewsBLL.cs:行号 47
+   在 CMS.HtmlService.HtmlEngine.getNews(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 220
+   在 CMS.HtmlService.HtmlEngine.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 35
+   在 SyncInvokeCreateSingleNews(Object , Object[] , Object[] )
+   在 System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+2013-08-06 11:34:12,717 [13] ERROR log [(null)] - System.ServiceModel.CommunicationException: 套接字连接已中止。这可能是由于处理消息时出错或远程主机超过接收超时或者潜在的网络资源问题导致的。本地套接字超时是“00:00:10”。 ---> System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.ServiceModel.Channels.SocketConnection.ReadCore(Byte[] buffer, Int32 offset, Int32 size, TimeSpan timeout, Boolean closing)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.ServiceModel.Channels.SocketConnection.ReadCore(Byte[] buffer, Int32 offset, Int32 size, TimeSpan timeout, Boolean closing)
+   在 System.ServiceModel.Channels.SocketConnection.Read(Byte[] buffer, Int32 offset, Int32 size, TimeSpan timeout)
+   在 System.ServiceModel.Channels.DelegatingConnection.Read(Byte[] buffer, Int32 offset, Int32 size, TimeSpan timeout)
+   在 System.ServiceModel.Channels.SessionConnectionReader.Receive(TimeSpan timeout)
+   在 System.ServiceModel.Channels.SynchronizedMessageSource.Receive(TimeSpan timeout)
+   在 System.ServiceModel.Channels.FramingDuplexSessionChannel.OnClose(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Close(TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.OnClose(TimeSpan timeout)
+   在 System.ServiceModel.Channels.CommunicationObject.Close(TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.MessageRpc.CloseChannel()
+2013-08-06 11:34:12,756 [13] ERROR log [(null)] - System.Data.SqlClient.SqlException (0x80131904): 在向服务器发送请求时发生传输级错误。 (provider: TCP Provider, error: 0 - 远程主机强迫关闭了一个现有的连接。)
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   在 System.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode)
+   在 System.Data.SqlClient.TdsParserStateObject.ExecuteFlush()
+   在 System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 Common.SqlHelper.ExecuteReader(SqlConnection connection, SqlTransaction transaction, CommandType commandType, String commandText, SqlParameter[] commandParameters, SqlConnectionOwnership connectionOwnership) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 813
+   在 Common.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 864
+   在 CMS.DAL.NewsDAL.GetNewsInfo(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\Ext\NewsDAL.cs:行号 107
+   在 CMS.BLL.NewsBLL.GetNewsInfo(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.BLL\Ext\NewsBLL.cs:行号 47
+   在 CMS.HtmlService.HtmlEngine.getNews(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 220
+   在 CMS.HtmlService.HtmlEngine.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 35
+   在 SyncInvokeCreateSingleNews(Object , Object[] , Object[] )
+   在 System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+2013-08-06 11:34:35,271 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-08-06 11:34:35,289 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-08-06 11:34:35,297 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-08-06 11:34:35,299 [1] INFO  log [(null)] - 停止HtmlEngine服务。
+2013-08-06 11:34:35,301 [1] INFO  log [(null)] - HtmlEngine服务已停止。
+2013-08-06 11:34:35,302 [1] INFO  log [(null)] - 停止FileReceive服务。
+2013-08-06 11:34:35,303 [1] INFO  log [(null)] - FileReceive服务已停止。
+2013-08-06 11:34:35,304 [1] INFO  log [(null)] - 停止SsoOutWindow服务。
+2013-08-06 11:34:35,305 [1] INFO  log [(null)] - SsoOutWindow服务已停止。
+2013-08-06 11:34:39,934 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-08-06 11:34:39,952 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-08-06 11:34:39,960 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-08-06 11:34:58,460 [6] INFO  log [(null)] - 方法名：CreateSingleNews，新增新闻，生成NewsId:398文件成功，文件路径:/tjxb/201308/06113425952.html
+2013-08-06 11:36:40,192 [9] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-08-06 11:36:40,221 [9] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-08-06 11:36:40,236 [9] INFO  log [(null)] - 己成功启动SsoOutWindow服务。

@@ -1,0 +1,3 @@
+﻿[<#uptag tagtype="09" softVersion="百川" id="data006" viewedit="1"  newssort="1"  pagecount="1" var="d" index="i" islast="flag"> 
+{"Title":"${d.Title}","Introduction":"${d.Introduction}","DateStart":"${d.DateStart}","DateTimeStart":"${d.DateTimeStart}","DateTimeEnd":"${d.DateTimeEnd}","RoomId":"${d.RoomId}","PassageType":"${d.PassageType}"}
+<#/uptag>]

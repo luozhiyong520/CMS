@@ -1,0 +1,14 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>高手解码器</title>
+	</head>
+	<body>
+	    <div class="video_title">
+                <h1>${cdatestring(art.CreatedTime,"yyyy-MM-dd")}  ${art.title}   </h1>
+            </div>
+            <div class="video_play">
+                 ${Content} 
+            </div>
+	</body>
+</html>

@@ -1,0 +1,4 @@
+2013-12-16 15:46:13,016 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-12-16 15:46:13,068 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-12-16 15:46:13,113 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-12-16 15:46:22,112 [3] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：88，模板名称：UP下午茶，生成文件路径：E:\comsite\sasweb\zhuanti\/upxwc/{yyyy}/{MM}-{dd}.html@Custom成功！

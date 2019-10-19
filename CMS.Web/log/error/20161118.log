@@ -1,0 +1,85 @@
+【异常时间】：2016-11-18 16:03:35,895 [7] 
+【异常级别】：ERROR 
+【异常类型】：TargetInvocationException
+【异常堆栈】：   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SMVC.ActionExecutor.ExecuteActionInternal(HttpContext context, InvokeInfo invoke)
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke)
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：调用的目标发生了异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/AjaxArticle/MakeChannelIdArticle.cspx?ChannelId=003007&_=1479456215270
+------------------------------------
+【异常时间】：2016-11-18 16:04:04,018 [18] 
+【异常级别】：ERROR 
+【异常类型】：TargetInvocationException
+【异常堆栈】：   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SMVC.ActionExecutor.ExecuteActionInternal(HttpContext context, InvokeInfo invoke)
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke)
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：调用的目标发生了异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/AjaxArticle/MakeChannelIdArticle.cspx?ChannelId=003007&_=1479456243854
+------------------------------------
+【异常时间】：2016-11-18 16:04:09,997 [13] 
+【异常级别】：ERROR 
+【异常类型】：TargetInvocationException
+【异常堆栈】：   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SMVC.ActionExecutor.ExecuteActionInternal(HttpContext context, InvokeInfo invoke)
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke)
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：调用的目标发生了异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/AjaxArticle/MakeChannelIdArticle.cspx?ChannelId=003007&_=1479456243854
+------------------------------------
+【异常时间】：2016-11-18 16:04:59,787 [16] 
+【异常级别】：ERROR 
+【异常类型】：TargetInvocationException
+【异常堆栈】：   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SMVC.ActionExecutor.ExecuteActionInternal(HttpContext context, InvokeInfo invoke)
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke)
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：调用的目标发生了异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/AjaxArticle/MakeChannelIdArticle.cspx?ChannelId=003007&_=1479456243854
+------------------------------------
+【异常时间】：2016-11-18 16:05:01,453 [20] 
+【异常级别】：ERROR 
+【异常类型】：TargetInvocationException
+【异常堆栈】：   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SMVC.ActionExecutor.ExecuteActionInternal(HttpContext context, InvokeInfo invoke)
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke)
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context)
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：调用的目标发生了异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/AjaxArticle/MakeChannelIdArticle.cspx?ChannelId=003007&_=1479456243854
+------------------------------------

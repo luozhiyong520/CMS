@@ -1,0 +1,28 @@
+<div class="logonav Area"> 
+  <!-- 导航部分 start --> 
+  <a href="#"><img src="http://img.upchina.com/detail/2012/08/20120813153153744.jpg" /></a>
+  <ul class="upTxt clearfix">
+    <li><a href="#" style="padding-left:0;">首页</a>|</li>
+    <li><a href="#">今日头条</a>|</li>
+    <li><a href="#">每日必读</a>|</li>
+    <li><a href="#">UP研究</a>|</li>
+    <li><a href="#">UP视点</a>|</li>
+    <li><a href="#">UP教学</a>|</li>
+    <li><a href="#">免费产品</a></li>
+  </ul>
+  <div class="upTxt_sonNav">
+    <div class="upTxt_crbLeft"> <a href="#" class="upTxtLogo"><img src="http://img.upchina.com/logo/logoold.png" /></a>
+      <ul class="upTxt_crub">
+        <li><a href="#">首页</a>></li>
+        <li> <UPTAG tagtype="02"  showformat="0011"/></li>
+        <li><a href="#">正文</a></li>
+      </ul>
+      <div class="upTxtSearch">
+        <p>
+         <!--#include virtual="/include/common/v2012/mryc_xm.shtml"-->
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- 导航部分 end --> 
+</div>

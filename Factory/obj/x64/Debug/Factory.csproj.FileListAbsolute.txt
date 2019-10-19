@@ -1,0 +1,17 @@
+E:\comsite\svn\dev456\CMS\code\branches\v1.0\Factory\bin\x64\Debug\Factory.dll
+E:\comsite\svn\dev456\CMS\code\branches\v1.0\Factory\bin\x64\Debug\Factory.pdb
+E:\comsite\svn\dev456\CMS\code\branches\v1.0\Factory\bin\x64\Debug\DynamicProxy.dll
+E:\comsite\svn\dev456\CMS\code\branches\v1.0\Factory\obj\x64\Debug\ResolveAssemblyReference.cache
+E:\comsite\svn\dev456\CMS\code\branches\v1.0\Factory\obj\x64\Debug\Factory.dll
+E:\comsite\svn\dev456\CMS\code\branches\v1.0\Factory\obj\x64\Debug\Factory.pdb
+E:\UP\mycms\v1.0\Factory\bin\x64\Debug\Factory.dll
+E:\UP\mycms\v1.0\Factory\bin\x64\Debug\Factory.pdb
+E:\UP\mycms\v1.0\Factory\bin\x64\Debug\DynamicProxy.dll
+E:\UP\mycms\v1.0\Factory\obj\x64\Debug\Factory.dll
+E:\UP\mycms\v1.0\Factory\obj\x64\Debug\Factory.pdb
+E:\UP\mycms\v2.0\Factory\bin\x64\Debug\Factory.dll
+E:\UP\mycms\v2.0\Factory\bin\x64\Debug\Factory.pdb
+E:\UP\mycms\v2.0\Factory\bin\x64\Debug\DynamicProxy.dll
+E:\UP\mycms\v2.0\Factory\obj\x64\Debug\Factory.dll
+E:\UP\mycms\v2.0\Factory\obj\x64\Debug\Factory.pdb
+E:\UP\mycms\v2.0\Factory\obj\x64\Debug\Factory.csprojResolveAssemblyReference.cache

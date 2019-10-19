@@ -1,0 +1,444 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>渤海研究所</title>
+<link rel="stylesheet" href="http://js.upchina.com/upchinav2/css/xhyj1.css"/>
+<script src="http://js.upchina.com/lib/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="http://js.upchina.com/upchinav2/js/wing.js" type="text/javascript"></script>
+<script language="javascript">
+    Date.prototype.format = function (format) {
+        var o = {
+            "M+": this.getMonth() + 1, //month
+            "d+": this.getDate(),    //day
+            "h+": this.getHours(),   //hour
+            "m+": this.getMinutes(), //minute
+            "s+": this.getSeconds(), //second
+            "q+": Math.floor((this.getMonth() + 3) / 3),  //quarter
+            "S": this.getMilliseconds() //millisecond
+        }
+        if (/(y+)/.test(format)) format = format.replace(RegExp.$1,
+	(this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for (var k in o) if (new RegExp("(" + k + ")").test(format))
+            format = format.replace(RegExp.$1,
+	RegExp.$1.length == 1 ? o[k] :
+	("00" + o[k]).substr(("" + o[k]).length));
+        return format;
+    }
+</script>
+</head>
+<body style="overflow:hidden;">
+	<div class="xhyj clear">
+    	<div class="yj_left" id="left">
+        	<h2></h2>
+            <div class="nav clear">
+            	<ul id="nav">
+            		<li id="li1" class="active"><a href="javascript:;">今日推荐</a></li>
+            		<li id="li2"><a href="javascript:;">策略研究</a></li>
+            		<li id="li3"><a href="javascript:;">品种研究</a></li>
+            		<li id="li4"><a href="javascript:;">量化研究</a></li>
+                   <!-- <li id="li5"><a href="xianhuozhibo.html">分析师直播</a></li>-->
+
+            	</ul>
+                <div class="search">
+                	<input type="text" value="" class="t" id="keyword">
+                    <input type="button" value="搜搜" class="btn">
+                </div>
+            </div>
+            
+            
+            
+            
+             <!--tab content-->
+            <div id="search" style="display:none">
+                <!--2-->
+                <div class="clyj" >
+                	<div class="yj_11">
+                    	<div class="yj_ft">
+	                    	<h3 class="yj_node yj_open" style="border-top:none;">共计<span class="red_f00 total"></span>相关信息</h3>
+                            <div class="searchPage"  style="display:block;line-height: 25px;">
+		                        <ul>
+		                            
+		                        </ul>
+                            </div>
+	                    </div>
+                    </div>
+                </div>
+                <!--end2-->
+            </div>
+            <!--tab content end-->
+            
+            <!--tab content-->
+            <div id="tab" style="display:">
+                <div class="jrtj tabs" style="display:block;">
+                	<div class="ce1">
+                    <div id="jrtjdata">
+                    </div>
+                    <#uptag tagtype="02" clsid="009003" id="data009003" viewedit="1" var="d"> ${d.Content}<#/uptag>
+                    </div>
+                    <div class="ce3">
+                        <h4><i>盘中快讯</i></h4>
+                    </div>
+                    <div class="ce2">
+                        <ul>
+                            <#uptag tagtype="01" clsid="008001" pagesize="100" pagecount="1" viewedit="1" id="dataId008001"  var="d" index="i">                        
+                              <li><a href="/news/pzkx/pzkxdetail.html?url=${d.Url}&title=${stringtounicode(d.Title)}" target="frame" title="${d.Title}">·${substr(d.Title,38)}</a><span> ${cdatestring(d.CreatedTime,"MM-dd hh:mm")}</span></li>
+                            <#/uptag>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!--2-->
+                
+                
+                
+                
+                
+                <div class="clyj tabs">
+                	<div class="yj_1">
+                    	<div class="yj_ft">
+	                    	<h3 class="yj_node yj_open" style="border-top:none;">日报</h3>
+                            <div class="yj_list"  style="display:block;">
+		                        <ul id="rblist">
+ 
+<script type="text/javascript">
+    var url = "http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/boce/yjsrb.aspx?num=50&jsoncallback=res";
+   // var url = "/boce/yjsrb.aspx?num=50&jsoncallback=res";
+    jQuery.getScript(url, function () {
+        if (json.res == undefined || json.res == "" || json.res == null || json.res == "null")
+            return false;
+        var obj = eval('(' + json.res + ')');
+        var jrtjlist = "";
+        var rblist = "";
+        for (var i = 0; i < obj.length; i++) {
+            //http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/bocepopup/yjscontentnew.html
+            if (i == 0) {
+                jrtjlist += "<div class=\"ce1_list clear\">";
+                jrtjlist += "<a href=\"http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/bocepopup/yjscontentnew.html?id=" + obj[0]["ID"] + "\" target=\"frame\">";
+                jrtjlist += "<img src=\"http://img.upchina.com/detail///2013/07/20130722092043542.gif\"></a>";
+                jrtjlist += "<div class=\"ce1_list_txt\">";
+                jrtjlist += "<h3><a href=\"http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/bocepopup/yjscontentnew.html?id=" + obj[0]["ID"] + "\" target=\"frame\">" + obj[0]["Title"] + "</a></h3>";
+                jrtjlist += "<p><a href=\"http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/bocepopup/yjscontentnew.html?id=" + obj[0]["ID"] + "\" target=\"frame\">" + obj[0]["Intro"] + "</a></p>";
+                jrtjlist += "</div><div class=\"border_f72\"></div></div>";
+                $("#jrtjdata").html(jrtjlist);
+            }
+            rblist += "<li><a href=\"http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/bocepopup/yjscontentnew.html?id=" + obj[i]["ID"] + "\" target=\"frame\" title=\"" + obj[i]["Title"] + "\">·" + obj[i]["Title"] + "</a><span>" + new Date(obj[i]["Date"]).format('MM-dd') + "</span></li>"
+
+        }
+        $("#rblist").html(rblist)
+        var url1 = $(".ce1:first a").attr("href");
+        $('#iframe_a').attr("src", url1);
+        $("#rblist a").each(function () {
+            $(this).click(function () {
+                $("#rblist a").each(function () {
+                    $(this).removeClass("red_f00");
+                });
+                $(this).addClass("red_f00");
+            })
+        });
+    });
+
+</script>
+		                       
+		                        </ul>
+                            </div>
+	                    </div>
+                        
+                        
+                    	<div class="yj_ft" style=" display:none;">
+	                    	<h3 class="yj_node">周报</h3>
+                            <div class="yj_list" >
+		                        <ul>
+		                            <#uptag tagtype="01" clsid="008003" pagesize="100" pagecount="1" viewedit="1" id="dataId008003"  var="d" index="i">                        
+                                      <li><a href="/news${d.Url}" target="frame" title="${d.Title}">·${substr(d.Title,38)}</a><span> ${cdatestring(d.CreatedTime,"MM-dd")}</span></li>
+                                    <#/uptag>
+		                        </ul>
+                            </div>
+	                    </div>
+                    	<div class="yj_ft" >
+	                    	<h3 class="yj_node">月/季/年报</h3>
+                            <div class="yj_list" >
+		                        <ul>
+		                            <#uptag tagtype="01" clsid="008004" pagesize="100" pagecount="1" viewedit="1" id="dataId008004"  var="d" index="i">                        
+                                      <li><a href="/news${d.Url}" target="frame" title="${d.Title}">·${substr(d.Title,38)}</a><span> ${cdatestring(d.CreatedTime,"MM-dd")}</span></li>
+                                    <#/uptag>
+		                        </ul>
+                            </div>
+	                    </div>
+                    	<div class="yj_ft" >
+	                    	<h3 class="yj_node ">专题报告</h3>
+                            <div class="yj_list">
+		                        <ul>
+		                                <#uptag tagtype="01" clsid="008005" pagesize="100" pagecount="1" viewedit="1" id="dataId008005"  var="d" index="i">                        
+                                          <li><a href="/news${d.Url}" target="frame" title="${d.Title}">·${substr(d.Title,38)}</a><span> ${cdatestring(d.CreatedTime,"MM-dd")}</span></li>
+                                        <#/uptag> 
+		                        </ul>
+                            </div>
+	                    </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                <!--end2-->
+                
+                
+                
+                
+                <!--3-->
+                <div class="jrtj tabs">
+                	<div class="pingzhong_list">
+                        <ul style="display:block;">
+                            <#uptag tagtype="01" clsid="008006" pagesize="100" pagecount="1" viewedit="1" id="dataId008006"  var="d" index="i">                        
+                              <#if test="${equals(i,1)}">
+                              <li><a href="/news${d.Url}" target="frame" class="red_f00" title="${d.Title}">·${substr(d.Title,38)}</a><span> ${cdatestring(d.CreatedTime,"yyyyMMdd")}</span></li>
+                              <#else>
+                                <li><a href="/news${d.Url}" target="frame" title="${d.Title}">·${substr(d.Title,38)}</a><span> ${cdatestring(d.CreatedTime,"yyyyMMdd")}</span></li>
+                              <#/if>
+                            <#/uptag>  
+                        </ul>
+                    </div>
+                </div>
+                <!--end3-->
+				<!--4-->
+                <div class="jrtj tabs">
+                	<div class="pingzhong_list">
+                        <ul style="display:block;">
+                            <#uptag tagtype="01" clsid="008007" pagesize="100" pagecount="1" viewedit="1" id="dataId008007"  var="d" index="i">                        
+                              <#if test="${equals(i,1)}">
+                              <li><a href="/news${d.Url}" target="frame" class="red_f00" title="${d.Title}">·${substr(d.Title,38)}</a><span> ${cdatestring(d.CreatedTime,"yyyyMMdd")}</span></li>
+                              <#else>
+                                <li><a href="/news${d.Url}" target="frame" title="${d.Title}">·${substr(d.Title,38)}</a><span> ${cdatestring(d.CreatedTime,"yyyyMMdd")}</span></li>
+                              <#/if>
+                            <#/uptag>
+                        </ul>
+                    </div>
+                </div>
+                <!--end4-->
+            </div>
+            <!--tab content end-->
+            <ul class="foot_nav clear">
+            	<li><a href="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/actuals/iwantaccount.html
+" class="fn1" target="_blank">免费开户</a></li>
+            	<li><a href="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew/jhdlizx/upjhd.html
+" class="fn2" target="_blank">视	频</a></li>
+            	<li><a href="/news/detail/v2013/actualsyjsjs.html" class="fn3" target="frame">研究所介绍</a></li>
+            	<li style="border-right:1px solid #c0d1e6;"><a href="/news/detail/v2013/actualsyjsszfc.html" target="frame" class="fn4">分析师风采</a></li>
+            </ul>
+        </div>
+        <div class="yj_right" id="yj_right" >
+    <div id="line"><span><img id="jtou" src="http://img.upchina.com/upchinav2/yanjiusuo/drag3.jpg"></span></div>
+    <div class="frame" id="iframe" style="float:left; overflow:hidden;">
+       <div id="setHeight" style="height:700px; width:100%; overflow:hidden; overflow-y:auto">
+         <iframe src="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/bocepopup/yjscontentnew.html?id=4309" id="iframe_a" name="frame" style="width:100%; height:100%"  frameborder="0"></iframe>
+       </div>
+    </div>
+  </div>
+   </div>
+</body>
+<script type="text/javascript">
+    $(function () {
+        $(".btn").click(function () {
+            $("#tab").css("display", "none");
+            $("#search").css("display", "block");
+            $("#nav li").attr("class", "");
+            var key = $("#keyword").val();
+            //document.write(encodeURIComponent(key)) '001021','001022','001023','001024','001025','001026','001027' 001021,001022,001023,001024,001025,001026,001027
+            //url: "http://www.upchina.com/json/360/s.php?key=" + key + "&cid=008001,008002,008003,008004,008005,008006,008007",
+            //  url: "/AjaxNews/GetNewsSeach.cspx?key=" + encodeURIComponent(key) + "&channelId=008001,008002,008003,008004,008005,008006,008007",
+            // url: "http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew/news/getnewsseach.aspx?key=" + encodeURIComponent(key),
+            $.ajax({
+                type: "POST",
+                url: "http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew/news/getnewsseach.aspx?key=" + encodeURIComponent(key),
+                success: function (json) {
+                    var str = "";
+                    if (json == null || json == "") {
+                        $(".total").empty();
+                        $(".searchPage").empty();
+                        $(".total").append("0条");
+                    } else {
+                        var obj = eval('(' + json + ')');
+                        var total = obj.length;
+                        for (var i = 0; i < total; i++) {
+                            var ds = ConertJsonTimeAndFormat(obj[i].CreatedTime, 'MM-dd');
+                            str += "<li><a href=/news" + obj[i].Url + "  target='frame'>·【" + obj[i].ChannelName + "】" + obj[i].Title + "</a><span>" + ds + "</span></li>";
+                        }
+                        $(".total").empty();
+                        $(".total").append(total + "条");
+                        $(".searchPage").empty();
+                        $(".searchPage").append("<ul>" + str + "</ul>");
+                        $(".searchPage a").each(function () {
+                            $(this).click(function () {
+                                $(".searchPage a").each(function () {
+                                    $(this).removeClass("red_f00");
+                                });
+                                $(this).addClass("red_f00");
+                            });
+                        });
+                        var onehref = "";
+                        if (total != 0) {
+                            onehref = "/news" + obj[0].Url
+                        }
+                        $('#iframe_a').attr("src", onehref);
+                    }
+                }
+            });
+        })
+
+    });
+    function getClass(parent, _class) {
+        var nodes = parent.getElementsByTagName('*'), arr = [], reg = new RegExp('\\b' + _class + '\\b', 'i');
+        for (var i = 0; i < nodes.length; i++) {
+            if (reg.test(nodes[i].className)) arr.push(nodes[i]);
+        }
+        return arr;
+    }
+    function tab(oLi, divs, cur) {
+        for (var i = 0; i < oLi.length; i++) {
+            oLi[i].index = i;
+            oLi[i].onclick = function () {
+                $("#tab").css("display", "block");
+                $("#search").css("display", "none");
+                for (var i = 0; i < oLi.length; i++) oLi[i].className = '';
+                this.className = cur
+                for (var j = 0; j < divs.length; j++) {
+                    divs[j].style.display = 'none';
+                }
+                divs[this.index].style.display = 'block';
+                var u = divs[this.index].getElementsByTagName('a')[0].href;
+                //                if (i==1) {
+                //                    
+                //                }else
+                //                $('#iframe_a').attr("src", "/news"+u);
+                $('#iframe_a').attr("src", u);
+            }
+        }
+    }
+    window.onload = function () {
+
+
+        var line = document.getElementById('line'), left = document.getElementById('left'), jtou = document.getElementById('jtou'), yj_right = document.getElementById('yj_right'), divs = getClass(document, 'tabs'), oLi = document.getElementById('nav').getElementsByTagName('li'); var leftWdith = left.offsetWidth;
+        //line.style.height=left.offsetHeight+'px';
+        //yj_right.style.width=document.documentElement.clientWidth-leftWdith+'px';
+        //frame.style.width=parseInt(yj_right.style.width)+'px';
+
+
+        var me = this;
+        /*
+        line.onclick=function()
+        {
+        if(left.offsetWidth < 10)
+        {
+        jtou.setAttribute('src','images/drag.jpg');
+        left.style.display='';
+        //left.style.visibility = "hidden";
+        //frame.style.width=yj_right.style.width=document.documentElement.clientWidth-leftWdith+'px';
+        //frame.style.width = yj_right.offsetWidth - this.offsetWidth +"px";
+        yj_right.style.width = "60%"
+        me.onresize();
+        }else
+        {
+        jtou.setAttribute('src','images/drag2.jpg');
+        //frame.style.width=yj_right.style.width=document.documentElement.clientWidth-20+'px';
+        //var ds = document.documentElement?document.documentElement:document.body
+        left.style.display='none';
+        yj_right.style.width = "100%"
+        //frame.style.width =ds.clientWidth - this.offsetWidth +"px";
+        me.onresize();
+        }
+        }
+        */
+        //tab
+
+
+        tab(oLi, divs, 'active')
+        //toggle
+        function toggle() {
+            var yj_node = getClass(document, 'yj_1')[0].getElementsByTagName('h3');
+            var yj_list = getClass(document, 'yj_list');
+            tab(yj_node, yj_list, 'yj_open')
+        }
+        toggle();
+        var t = GetUrlParame("t");
+        $("#li" + t).click();
+    }
+
+    function GetUrlParame(parame) {
+        var reg = new RegExp("(^|&)" + parame + "=([^&]*)(&|$)", "i");
+        var res = "";
+        try {
+            res = window.location.search.substr(1).match(reg)[2];
+        } catch (e) { }
+        return res;
+    }
+</script>
+<script type="text/javascript">
+    $(function () {
+        //json时间转化
+        Date.prototype.format = function (format) {
+            /*
+            * eg:format="yyyy-MM-dd hh:mm:ss";
+            */
+            var o = {
+                "M+": this.getMonth() + 1,  //month
+                "d+": this.getDate(),     //day
+                "h+": this.getHours(),    //hour
+                "m+": this.getMinutes(),  //minute
+                "s+": this.getSeconds(), //second
+                "q+": Math.floor((this.getMonth() + 3) / 3),  //quarter
+                "S": this.getMilliseconds() //millisecond
+            }
+
+            if (/(y+)/.test(format)) {
+                format = format.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            }
+
+            for (var k in o) {
+                if (new RegExp("(" + k + ")").test(format)) {
+                    format = format.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));
+                }
+            }
+            return format;
+        }
+    })
+    function ConertJsonTimeAndFormat(jsonTime, format) {
+        return new Date(eval(jsonTime.replace(/\/Date\((\d+)\)\//gi, "new Date($1)"))).format(format);
+    }
+</script>
+<script type="text/javascript">
+    $(function () {
+        //document.body.style.overflow = 'hidden';
+        $(".pingzhong_list a").each(function () {
+            $(this).click(function () {
+                $(".pingzhong_list a").each(function () {
+                    $(this).removeClass("red_f00");
+                });
+                $(this).addClass("red_f00");
+            });
+        });
+        $(".yj_list a").each(function () {
+            $(this).click(function () {
+                $(".yj_list a").each(function () {
+                    $(this).removeClass("red_f00");
+                });
+                $(this).addClass("red_f00");
+            })
+        });
+
+        $(".ce2 li").each(function (i) {
+            //this.style.backgroundColor = ['#F4F9F9', '#F7F7F7'][i % 2];
+            $(this).click(function () {
+                $(".ce2 li").each(function (i) {
+                    this.style.backgroundColor = '#F7F7F7';
+                });
+                this.style.backgroundColor = '#E6E6E6';
+            })
+        })
+    });
+</script>
+<div style="display:none">
+<script src="http://s22.cnzz.com/z_stat.php?id=1000125520&web_id=1000125520" language="JavaScript"></script>
+</div>
+</html>

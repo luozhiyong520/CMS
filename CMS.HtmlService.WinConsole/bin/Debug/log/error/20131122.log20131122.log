@@ -1,0 +1,21 @@
+【异常时间】：2013-11-22 15:20:11,785 [10] 
+【异常级别】：ERROR 
+HtmlEngine服务出错。
+------------------------------------
+【异常时间】：2013-11-22 15:20:11,871 [10] 
+【异常级别】：ERROR 
+【异常类型】：FormatException
+【异常堆栈】：   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(String format, Object arg0)
+   在 CMS.HtmlService.ServerManager`2.Start() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\ServerManager.cs:行号 44
+   在 CMS.HtmlService.WinConsole.Program.Main(String[] args) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HtmlService.WinConsole\Program.cs:行号 16
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.ExecuteAssembly(String assemblyFile, Evidence assemblySecurity, String[] args)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssembly()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean ignoreSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+【异常信息】：索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+------------------------------------

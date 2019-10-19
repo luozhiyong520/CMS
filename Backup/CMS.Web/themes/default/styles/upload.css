@@ -1,0 +1,109 @@
+﻿v\:* { BEHAVIOR: url(#default#VML) }
+
+button,submit,reset {
+	font-size: 12px;
+	height:18px;
+	posdition:relative;
+	top:-1px;
+	cursor:pointer;
+	line-height:16px;
+}
+/* 通用中文按纽 */
+
+.p12 { font-size: 12px;}
+.p14 { font-size: 14px;}
+.p16 { font-size: 16px;}
+
+.btn {
+	border: 1px #717171 solid;
+	background-color: #A3C6EC;
+	height: 20px;
+	font-size: 12px;
+	color: #000000;
+	padding: 2px;
+	cursor: hand
+}
+
+.tablelist {
+	behavior:url(style/xpTable.htc);
+	sortNoneImageUrl:images/sortBlank.gif;
+	sortUpImageUrl:images/sortUp.gif;
+	sortDownImageUrl:images/sortDown.gif;
+	posUpImageUrl:images/upArrow.gif;
+	posDownImageUrl:images/downArrow.gif;
+	highlightBackgroundColor:#E0F6E4;
+	highlightBorderColor:#000000;
+}
+
+.tdBorder {
+	border:1px solid #9EC0E3;
+}
+
+.tdTitle {
+	 background:#72ACDE; 
+	 height:20px;	 
+}
+.td {
+	background:#72ACDE;
+}
+.inputs {
+	font-size: 12px;
+	text-decoration: none;
+	border: 1px solid #CCCCCC;
+}
+.input_gray {
+	font-size: 12px;
+	text-decoration: none;
+	background-color: #CCCCCC;
+}
+
+.menuimg {
+	border:#999999 1px solid;
+}
+
+.page_table{
+	text-align:center; border:2px #f4f4f4 solid; padding:1px; background:#9FD6FF;width:95%;height:30px;
+}
+
+.tdc1 {
+	background:#DBE7F5;
+}
+.tdc2 {
+	background:#fafafa;
+}
+
+.button {
+	border:1px #79A7E2 solid;
+	font-weight:bold;
+	padding:5px 7px 2px 7px;
+	background:#DBE7F5;
+	color:#00f;
+}
+.pageBorder { 
+	border:1px solid #9FD6FF;
+}
+.pageBg {
+	background:#EFF5FF;
+}
+
+
+.button_border {BORDER-RIGHT: #92C96E 1px solid;height:28px;}
+.button_off { border:1px #fff solid; font-weight:bold; line-height:21px; padding-top:2px;
+		filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#919191);}
+.button_on { border:1px #fff solid; color:#f00; font-weight:bold; line-height:21px; padding-top:2px;
+		filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#919191, EndColorStr=#ffffff);}
+
+#top_body {}
+#top_main { border:1px #f4f4f4 solid; border-top:0; border-right:0; padding:1px; background:#72ACDE; text-align:right;}
+	#top_main div.border { border:1px #fff solid; overflow:hidden; height:55px; padding:0 7px 0 0;
+	filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#72ACDE);}
+	#top_logo { display:block; width:150px; float:left; height:55px; background:url(../images/logosliver.gif) no-repeat center;}
+	#top_nav { padding:11px 10px 0 7px; float:left;}
+		#top_nav li { list-style-type:none; float:left; padding:5px 4px;}
+		#top_nav li a { display:block; padding:0 3px; font-size:12px Arial; font-weight:bold; color:#336600;}
+			#top_nav li a:hover { padding:6px 8px 3px 8px; color:#f00;font:12px Arial; text-decoration:none;font-weight:bold}
+		#top_nav li a#close { color:#f00; border:1px #FFADAD solid; font-weight:lighter; background:#FFF4F4; padding:5px 7px 2px 7px;}
+		#top_nav li a#on { border:1px #336600 solid; font-weight:bold; padding:5px 7px 2px 7px; background:#F3F7FF; color:#00f;}
+			#top_nav li a#on:hover, #top_nav li a#close:hover { padding:5px 7px 2px 7px; color:#f00;font-weight:bold}
+
+

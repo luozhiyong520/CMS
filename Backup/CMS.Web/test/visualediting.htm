@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="../themes/default/scripts/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.form.js"></script>
+    <script type="text/javascript" src="../js/test/visualediting.js"></script>
+    <script type="text/javascript" src="../js/test/jquery.fileupload.js"></script>
+</head>
+<body>
+    <br />
+    <br />
+    <div class="wa">
+        <div class="hs_content">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0" class="tb mg">
+                <tbody>
+                    <tr>
+                        <td class="vtop">
+                            <!--焦点图-start-->
+                            <div>
+                                <div id="Focus_Pic">
+                                    <div id="Big_Pics">
+                                        <div class="dis">
+                                            <a target="_blank" href="http://www.upchina.com/detail/2013/03/2609229189.shtml">
+                                                <img width="270" height="270" border="0" src="http://img.upchina.com/detail///2013/03/20130326092652567.jpg"></a></div>
+                                        <div class="undis">
+                                            <a target="_blank" href="http://www.upchina.com/focus/aqyjcgpt/">
+                                                <img width="270" height="270" border="0" src="http://img.upchina.com/detail///2013/03/20130325163419407.jpg"></a></div>
+                                        <div class="undis">
+                                            <a target="_blank" href="http://www.upchina.com/detail/2013/03/2609249190.shtml">
+                                                <img width="270" height="270" border="0" src="http://img.upchina.com/detail///2012/08/20120829094309733.jpg"></a></div>
+                                    </div>
+                                    <div class="ff" id="Titles">
+                                        <ul class="dis">
+                                            <li class="font_s_14 font_w_b line_h_29"><a target="_blank" href="http://www.upchina.com/detail/2013/03/2609229189.shtml">
+                                                北斗概念股业绩爆发或待第二季 </a></li>
+                                        </ul>
+                                        <ul class="undis">
+                                            <li class="font_s_14 font_w_b line_h_29"><a target="_blank" href="http://www.upchina.com/focus/aqyjcgpt/">
+                                                3月26日大盘风向标 </a></li>
+                                        </ul>
+                                        <ul class="undis">
+                                            <li class="font_s_14 font_w_b line_h_29"><a target="_blank" href="http://www.upchina.com/detail/2013/03/2609249190.shtml">
+                                                医药股“高富帅”行情难复制 </a></li>
+                                        </ul>
+                                    </div>
+                                    <div id="bottom">
+                                        <div onmouseout="setAuto();" onmouseover="clearAuto();" id="Pic_Nums">
+                                            <p onclick="Mea(0);" class="on">
+                                                1</p>
+                                            <p onclick="Mea(1);" class="">
+                                                2</p>
+                                            <p onclick="Mea(2);" class="">
+                                                3</p>
+                                        </div>
+                                    </div>
+                                    <!--[if !IE]>|xGv00|77f1f47b36dbb08441ec28fcc597cb97<![endif]-->
+                                </div>
+                                <!--焦点图end-->
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <script>    var n=0;   var showsPic = document.getElementById("Pic_Nums");   var m=showsPic.getElementsByTagName("p").length;   function Mea(value){    n=value;    setBg(value);    plays(value);    cons(value);    }   function setBg(value){    for(var i=0;i&lt;m;i++)      if(value==i){     showsPic.getElementsByTagName("p")[i].className='on';     }     else{      showsPic.getElementsByTagName("p")[i].className='';     }      }    function plays(value){    try    {     with (Big_Pics){      filters[0].Apply();       for(i=0;i&lt;m;i++)i==value?children[i].className="dis":children[i].className="undis";       filters[0].play();         }    }    catch(e)    {     var d = document.getElementById("Big_Pics").getElementsByTagName("div");     for(i=0;i&lt;m;i++)i==value?d[i].className="dis":d[i].className="undis";     }   }    function cons(value){   try    {     with (Titles){      for(i=0;i&lt;m;i++)i==value?children[i].className="dis":children[i].className="undis";      }    }    catch(e)    {     var d = document.getElementById("Titles").getElementsByTagName("ul");     for(i=0;i&lt;m;i++)i==value?d[i].className="dis":d[i].className="undis";     }   }    function clearAuto(){clearInterval(autoStart)}   function setAuto(){autoStart=setInterval("auto(n)", 3000)}   function auto(){    n++;    if(n&gt;=m)n=0;    Mea(n);   }    function sub(){    n--;    if(n&lt;0)n=m-1;    Mea(n);   }    setAuto();  </script>
+        </div>
+    </div>
+    <div deit="deit">
+        <a href="#">点我</a> <a href="#">不要点我</a>
+        <ul class="ul">
+            <li><a href="#">点他</a></li>
+            <li><a href="#">不要点他</a></li>
+            <li><a href="#">还是点他吧</a></li>
+        </ul>
+        <img src="../themes/default/images/001.jpg" alt="" />
+        <div>
+            <img src="../themes/default/images/002.jpg" alt="" />
+        </div>
+        <a href="#">
+            <img src="../themes/default/images/003.jpg" alt="" /></a>
+    </div>
+    <br />
+    <br />
+    <div deit="deit">
+        <a href="#">点我</a> <a href="#">不要点我</a>
+        <ul class="ul">
+            <li><a href="#">点他</a></li>
+            <li><a href="#">不要点他</a></li>
+            <li><a href="#">还是点他吧</a></li>
+        </ul>
+        <img src="../themes/default/images/001.jpg" alt="" />
+        <div>
+            <img src="../themes/default/images/002.jpg" alt="" />
+        </div>
+        <a href="#">
+            <img src="../themes/default/images/003.jpg" alt="" /></a>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</body>
+</html>

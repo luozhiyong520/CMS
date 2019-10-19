@@ -1,0 +1,167 @@
+﻿ <#uptag tagtype="01" clsid="007001" pagesize="5" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+    <#if test="${flag}">
+        <div id="EndCreateTime" style="display:none">${cdatestring(d.CreatedTime,"yyyy-MM-dd HH:mm:ss")}</div>
+    <#/if>
+<div class="information">
+                    <div class="infor_top">
+                        <span class="infor_date">${cdatestring(d.CreatedTime,"MM月dd日 HH:mm")}</span>
+                        ${d.Title}
+                    </div>
+                    <div class="infor_grade">
+                        <div class="reliability">
+                            <span>可信度：</span>
+                            <ul>
+                            <#if  test="${equals(d.Reliability,0)}">
+                                <#for from="1" to="5" index="index">
+                                <li class="star_enpty"></li>
+                                 <#/for>
+                            <#elseif  test="${equals(d.Reliability,1)}">
+                                 <li class="star_half"></li>
+                                <#for from="1" to="4" index="index">
+                                <li class="star_enpty"></li>
+                                 <#/for>
+                             <#elseif test ="${equals(d.Reliability,2)}">
+                                <li class="star_full"></li>
+                                 <#for from="1" to="4" index="index">
+                                <li class="star_enpty"></li>
+                                 <#/for>
+                               <#elseif test ="${equals(d.Reliability,3)}">
+                               <li class="star_full"></li>
+                               <li class="star_half"></li>
+                                 <#for from="1" to="3" index="index">
+                                <li class="star_enpty"></li>
+                                 <#/for>
+                             <#elseif test ="${equals(d.Reliability,4)}">
+                              <#for from="1" to="2" index="index">
+                                 <li class="star_full"></li>
+                                 <#/for>
+                                 <#for from="1" to="3" index="index">
+                                <li class="star_enpty"></li>
+                                 <#/for>
+                            <#elseif test ="${equals(d.Reliability,5)}">
+                                 <#for from="1" to="2" index="index">
+                                 <li class="star_full"></li>
+                                 <#/for>
+                                 <li class="star_half"></li>
+                                 <#for from="1" to="2" index="index">
+                                <li class="star_enpty"></li>
+                                 <#/for>
+                             <#elseif test ="${equals(d.Reliability,6)}">
+                                <#for from="1" to="3" index="index">
+                                 <li class="star_full"></li>
+                                 <#/for>
+                                 <#for from="1" to="2" index="index">
+                                <li class="star_enpty"></li>
+                                 <#/for>
+                            <#elseif test ="${equals(d.Reliability,7)}">
+                                 <#for from="1" to="3" index="index">
+                                 <li class="star_full"></li>
+                                 <#/for>
+                                    <li class="star_half"></li>
+                                 <#for from="1" to="1" index="index">
+                                <li class="star_enpty"></li>
+                                 <#/for>
+                             <#elseif test ="${equals(d.Reliability,8)}">
+                                <#for from="1" to="4" index="index">
+                                 <li class="star_full"></li>
+                                 <#/for>
+                                  <li class="star_enpty"></li>
+                            <#elseif test ="${equals(d.Reliability,9)}">
+                                 <#for from="1" to="4" index="index">
+                                 <li class="star_full"></li>
+                                 <#/for>
+                                   <li class="star_half"></li>
+                            <#elseif test ="${equals(d.Reliability,10)}">
+                                 <#for from="1" to="5" index="index">
+                                 <li class="star_full"></li>
+                                 <#/for>
+                            
+                             
+                             <#/if>
+                            </ul>
+                        </div>
+                        <div class="influence">
+                            <span>影响力：</span>
+                            <ul>
+                        
+                             <#if  test="${equals(d.Effect,0)}">
+                                <#for from="1" to="5" index="index">
+                                <li class="star_enpty"></li>
+                                 <#/for>
+                            <#elseif  test="${equals(d.Effect,1)}">
+                                <li class="star_half"></li>
+                                <#for from="1" to="4" index="index">
+                                <li class="star_enpty"></li>
+                                 <#/for>
+                             <#elseif test ="${equals(d.Effect,2)}">
+                                <li class="star_full"></li>
+                                 <#for from="1" to="4" index="index">
+                                <li class="star_enpty"></li>
+                                 <#/for>
+                               <#elseif test ="${equals(d.Effect,3)}">
+                               <li class="star_full"></li>
+                               <li class="star_half"></li>
+                                 <#for from="1" to="3" index="index">
+                                <li class="star_enpty"></li>
+                                 <#/for>
+                             <#elseif test ="${equals(d.Effect,4)}">
+                              <#for from="1" to="2" index="index">
+                                 <li class="star_full"></li>
+                                 <#/for>
+                                 <#for from="1" to="3" index="index">
+                                <li class="star_enpty"></li>
+                                 <#/for>
+                            <#elseif test ="${equals(d.Effect,5)}">
+                                 <#for from="1" to="2" index="index">
+                                 <li class="star_full"></li>
+                                 <#/for>
+                                 <li class="star_half"></li>
+                                 <#for from="1" to="2" index="index">
+                                <li class="star_enpty"></li>
+                                 <#/for>
+                             <#elseif test ="${equals(d.Effect,6)}">
+                                <#for from="1" to="3" index="index">
+                                 <li class="star_full"></li>
+                                 <#/for>
+                                 <#for from="1" to="2" index="index">
+                                <li class="star_enpty"></li>
+                                 <#/for>
+                            <#elseif test ="${equals(d.Effect,7)}">
+                                 <#for from="1" to="3" index="index">
+                                 <li class="star_full"></li>
+                                 <#/for>
+                                    <li class="star_half"></li>
+                                 <#for from="1" to="1" index="index">
+                                <li class="star_enpty"></li>
+                                 <#/for>
+                             <#elseif test ="${equals(d.Effect,8)}">
+                                <#for from="1" to="4" index="index">
+                                 <li class="star_full"></li>
+                                 <#/for>
+                                  <li class="star_enpty"></li>
+                            <#elseif test ="${equals(d.Effect,9)}">
+                                 <#for from="1" to="4" index="index">
+                                 <li class="star_full"></li>
+                                 <#/for>
+                                   <li class="star_half"></li>
+                            <#elseif test ="${equals(d.Effect,10)}">
+                                 <#for from="1" to="5" index="index">
+                                 <li class="star_full"></li>
+                                 <#/for>
+                            
+                             
+                             <#/if>
+                                 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="divide_line">
+                        
+                    </div>
+                    <div class="infor_detail">
+                        <p>
+                          ${d.Content}
+                        </p>
+                    </div>
+                </div>
+                  <#/uptag>

@@ -1,0 +1,10 @@
+<?php
+
+$host104="192.168.240.122:3307";
+$db104="upchina";
+$dbuser104="UPS_upchina_W";
+$dbpasswd="4vNV1W61014CKe4"; 
+$dbcharset="utf8";
+
+
+?>

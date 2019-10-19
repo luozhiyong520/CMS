@@ -1,0 +1,522 @@
+【异常时间】：2013-11-25 16:30:01,189 [3] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Lexer.TemplateLexer.NextTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 320
+   在 CMS.Template.Lexer.TemplateLexer.Next() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 202
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 32
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 110
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Invalid character in tag: $
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:30:04,687 [3] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Lexer.TemplateLexer.NextTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 320
+   在 CMS.Template.Lexer.TemplateLexer.Next() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 202
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 32
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 110
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Invalid character in tag: $
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:30:45,456 [3] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:30:45,541 [3] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Lexer.TemplateLexer.NextTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 320
+   在 CMS.Template.Lexer.TemplateLexer.Next() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 202
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 32
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 110
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Invalid character in tag: $
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:32:40,550 [3] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:32:40,555 [3] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Lexer.TemplateLexer.NextTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 320
+   在 CMS.Template.Lexer.TemplateLexer.Next() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Lexer\TemplateLexer.cs:行号 202
+   在 CMS.Template.Parser.TemplateParser.Consume(TokenKind kind) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 32
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 110
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Invalid character in tag: $
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:32:58,547 [3] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:35:06,172 [3] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:35:06,177 [3] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Parser.TemplateParser.ReadAttribute() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 147
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 116
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Unexpected token: TagEquals. Was expection '"'
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:35:26,285 [3] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:35:55,488 [3] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:35:55,494 [3] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Parser.TemplateParser.ReadAttribute() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 147
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 116
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Unexpected token: TagEquals. Was expection '"'
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:36:46,808 [3] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:36:46,818 [3] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Parser.TemplateParser.ReadAttribute() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 147
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 116
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Unexpected token: TagEquals. Was expection '"'
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:41:21,940 [3] 
+【异常级别】：ERROR 
+【异常类型】：SqlException
+【异常堆栈】：   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   在 System.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode)
+   在 System.Data.SqlClient.TdsParserStateObject.ExecuteFlush()
+   在 System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 Common.SqlHelper.ExecuteReader(SqlConnection connection, SqlTransaction transaction, CommandType commandType, String commandText, SqlParameter[] commandParameters, SqlConnectionOwnership connectionOwnership) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 813
+   在 Common.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 864
+   在 CMS.DAL.NewsDAL.GetNewsInfo(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\Ext\NewsDAL.cs:行号 125
+   在 CMS.BLL.NewsBLL.GetNewsInfo(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.BLL\Ext\NewsBLL.cs:行号 47
+   在 CMS.HtmlService.HtmlEngine.getNews(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 246
+   在 CMS.HtmlService.HtmlEngine.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 35
+   在 SyncInvokeCreateSingleNews(Object , Object[] , Object[] )
+   在 System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+【异常信息】：在向服务器发送请求时发生传输级错误。 (provider: TCP Provider, error: 0 - 远程主机强迫关闭了一个现有的连接。)
+------------------------------------
+【异常时间】：2013-11-25 16:41:21,997 [3] 
+【异常级别】：ERROR 
+【异常类型】：SqlException
+【异常堆栈】：   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParserStateObject.WriteSni()
+   在 System.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode)
+   在 System.Data.SqlClient.TdsParserStateObject.ExecuteFlush()
+   在 System.Data.SqlClient.TdsParser.TdsExecuteRPC(_SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 Common.SqlHelper.ExecuteReader(SqlConnection connection, SqlTransaction transaction, CommandType commandType, String commandText, SqlParameter[] commandParameters, SqlConnectionOwnership connectionOwnership) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 813
+   在 Common.SqlHelper.ExecuteReader(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\AdoNet\SQLHelper.cs:行号 864
+   在 CMS.DAL.NewsDAL.GetNewsInfo(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.DAL\Ext\NewsDAL.cs:行号 125
+   在 CMS.BLL.NewsBLL.GetNewsInfo(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.BLL\Ext\NewsBLL.cs:行号 47
+   在 CMS.HtmlService.HtmlEngine.getNews(Int32 newsId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 246
+   在 CMS.HtmlService.HtmlEngine.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 35
+   在 SyncInvokeCreateSingleNews(Object , Object[] , Object[] )
+   在 System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   在 System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage41(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage4(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage31(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage3(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage2(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage1(MessageRpc& rpc)
+   在 System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+【异常信息】：在向服务器发送请求时发生传输级错误。 (provider: TCP Provider, error: 0 - 远程主机强迫关闭了一个现有的连接。)
+------------------------------------
+【异常时间】：2013-11-25 16:41:32,880 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:41:32,928 [5] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Parser.TemplateParser.ReadAttribute() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 147
+   在 CMS.Template.Parser.TemplateParser.ReadTag() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 116
+   在 CMS.Template.Parser.TemplateParser.ReadElement() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 73
+   在 CMS.Template.Parser.TemplateParser.Parse() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TemplateParser.cs:行号 57
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 62
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Unexpected token: TagEquals. Was expection '"'
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:42:36,829 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:44:11,084 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:44:11,092 [5] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Parser.TagParser.CreateHierarchy() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TagParser.cs:行号 38
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 65
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Close tag for uptag doesn't have matching start tag.
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:45:11,125 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:45:11,131 [5] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Parser.TagParser.CreateHierarchy() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TagParser.cs:行号 38
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 65
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Close tag for uptag doesn't have matching start tag.
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:46:22,207 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:46:22,212 [5] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Parser.TagParser.CreateHierarchy() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TagParser.cs:行号 38
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 65
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Close tag for uptag doesn't have matching start tag.
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:46:30,402 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:46:30,416 [5] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Parser.TagParser.CreateHierarchy() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TagParser.cs:行号 38
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 65
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Close tag for uptag doesn't have matching start tag.
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:46:55,364 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:46:55,412 [6] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Parser.TagParser.CreateHierarchy() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TagParser.cs:行号 38
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 65
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Close tag for uptag doesn't have matching start tag.
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:47:39,094 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:50:12,659 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:50:12,664 [6] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Parser.TagParser.CreateHierarchy() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TagParser.cs:行号 38
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 65
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Close tag for uptag doesn't have matching start tag.
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:50:53,565 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:50:53,611 [4] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Parser.TagParser.CreateHierarchy() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TagParser.cs:行号 38
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 65
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Close tag for uptag doesn't have matching start tag.
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:51:14,143 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:51:28,321 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:51:28,327 [4] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Parser.TagParser.CreateHierarchy() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TagParser.cs:行号 38
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 65
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Close tag for uptag doesn't have matching start tag.
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:52:16,876 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:52:16,882 [4] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Parser.TagParser.CreateHierarchy() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TagParser.cs:行号 38
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 65
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Close tag for uptag doesn't have matching start tag.
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:52:31,601 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:52:31,606 [4] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Parser.TagParser.CreateHierarchy() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TagParser.cs:行号 38
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 65
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Close tag for uptag doesn't have matching start tag.
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:55:50,220 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:55:50,268 [5] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Parser.TagParser.CreateHierarchy() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TagParser.cs:行号 38
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 65
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Close tag for uptag doesn't have matching start tag.
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:56:11,491 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:56:11,499 [5] 
+【异常级别】：ERROR 
+【异常类型】：ParseException
+【异常堆栈】：   在 CMS.Template.Parser.TagParser.CreateHierarchy() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Parser\TagParser.cs:行号 38
+   在 CMS.Template.Complex.UserTemplate.FromString(String name, String data) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 65
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 48
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 224
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 113
+【异常信息】：Close tag for uptag doesn't have matching start tag.
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-25 16:56:44,959 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:56:56,260 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:57:47,593 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:58:53,745 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:59:15,442 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:59:29,680 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 16:59:43,185 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 17:01:13,942 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 17:02:30,213 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 17:03:04,421 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 17:03:31,220 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 17:05:57,664 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 17:06:27,696 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 17:07:16,171 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 17:09:45,719 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 17:10:27,917 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 17:11:35,513 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 17:13:42,799 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 17:23:30,134 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 17:26:50,123 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 17:27:26,415 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-25 17:57:51,947 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------

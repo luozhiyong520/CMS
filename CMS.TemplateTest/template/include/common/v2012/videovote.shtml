@@ -1,0 +1,93 @@
+         <div class="textTab clearfix" id="tab3">
+            <ul class="tabTitle tabTitle2" id="tabTag3">
+                <li class="thover">多看空盘</li>
+                <li>持仓调查</li>
+                <li>机构看盘</li>
+            </ul>
+            <div id="tabCon3" class="tabc">
+                <div style="display:block;" class="vote">
+               		<input id="getTime" type="hidden" value="">
+                    <b>你觉得&nbsp;<span id="date"></span>&nbsp;的大盘走势如何的大盘走势如何?</b>
+                    <ul>
+                        <li class="touBtn">
+                            <input type="radio" name="vote1" value="1" checked="checked"><label>上涨</label>
+                            <input type="radio" name="vote1" value="2"><label>盘整</label>
+                            <input type="radio" name="vote1" value="3"><label>下跌</label>
+                       </li>
+                       <li class="touBtn">
+                           <a id="vote1" target="_self" style="cursor:pointer">投票</a>
+                            <a href="vote1.html">查看</a>
+                       </li>
+                    </ul>
+                </div>
+                <div class="vote">
+                	<input id="getTime2" type="hidden" value="">
+                    <b>持仓比重每日调查<span id="date2"></span></b>
+                    <ul>
+                        <p class="ccdc">
+                            <span>≥70%</span>
+                            <span>30%~70%</span>
+                            <span>≤30%</span>
+                        </p>
+                        <li class="touBtn ccper">
+                            <input type="radio" name="vote2" value="1" checked="checked">
+                            <input type="radio" name="vote2" value="2">
+                            <input type="radio" name="vote2" value="3">
+                       <li class="touBtn ccper">
+                            <a id="vote2" target="_self" style="cursor:pointer">投票</a>
+                            <a href="vote2.html">查看</a>
+                       </li>
+                    </ul>
+                </div>
+                <div>
+                    <!--#include virtual="/include/common/videovotejgkp.shtml"-->
+                </div>
+            </div> 
+         </div>
+         <script type="text/javascript" src="http://js.upchina.com/upchinav2/js/date.js"></script>
+		<script type="text/javascript">
+            window.onload=function()
+            {
+                var oSpan=document.getElementById('date');
+                var oSpan2=document.getElementById('date2');
+                var input=document.getElementById('getTime');
+                var input2=document.getElementById('getTime2');
+                date(oSpan,input);
+                date2(oSpan2,input2);
+				
+				//大盘涨幅预测投票
+				$("#vote1").click(function(){
+					var voteval = $("input[@type=radio][name=vote1][checked]").val();
+					$.ajax({
+							type:"get",
+							cache:false,
+							url:"http://www.upchina.com/json/video/videojson.php?action=vote&typeid=1&votedate="+$("#getTime").val()+"&voteitem="+voteval,
+							/*data:{action:"vote",
+									typeid:1,
+									votedate:$("#getTime").val(),
+									voteitem:voteval
+								},*/
+							success:function(){
+								alert("投票成功，感谢你的投票！");
+							}
+						})
+				});
+				
+				$("#vote2").click(function(){
+					var voteval = $("input[@type=radio][name=vote2][checked]").val();
+					$.ajax({
+							type:"post",
+							cache:false,
+							url:"http://www.upchina.com/json/video/videojson.php?action=vote&typeid=2&votedate="+$("#getTime2").val()+"&voteitem="+voteval,
+							/*data:{action:"vote",
+									typeid:2,
+									votedate:$("#getTime2").val(),
+									voteitem:voteval
+								},*/
+							success:function(){
+								alert("投票成功，感谢你的投票！");
+							}
+						})
+				});
+            }
+        </script>

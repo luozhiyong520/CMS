@@ -1,0 +1,3 @@
+2016-09-12 20:12:27,501 [9] INFO  log [(null)] - CreateSingleNews：NewsId：1251，OperateType：add，成功
+2016-09-12 20:13:24,255 [11] INFO  log [(null)] - CreateSingleNews：NewsId：1251，OperateType：add，成功
+2016-09-12 20:18:16,823 [14] INFO  log [(null)] - CreateSingleNews：NewsId：1251，OperateType：add，成功

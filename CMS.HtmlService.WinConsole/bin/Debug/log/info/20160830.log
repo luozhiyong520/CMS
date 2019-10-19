@@ -1,0 +1,15 @@
+2016-08-30 15:42:04,543 [9] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2016-08-30 15:42:04,583 [9] INFO  log [(null)] - 己成功启动FileReceive服务。
+2016-08-30 15:42:04,587 [9] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2016-08-30 15:42:23,614 [9] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2016-08-30 15:42:23,632 [9] INFO  log [(null)] - 己成功启动FileReceive服务。
+2016-08-30 15:42:23,635 [9] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2016-08-30 15:44:58,945 [10] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2016-08-30 15:44:58,963 [10] INFO  log [(null)] - 己成功启动FileReceive服务。
+2016-08-30 15:44:58,967 [10] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2016-08-30 16:17:12,950 [8] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2016-08-30 16:17:12,998 [8] INFO  log [(null)] - 己成功启动FileReceive服务。
+2016-08-30 16:17:13,010 [8] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2016-08-30 16:17:30,941 [9] INFO  log [(null)] - E:\comsite\sasweb\news//bbb/201608/26141119593.html
+2016-08-30 16:17:31,369 [9] INFO  log [(null)] - 方法名：CreateSingleNews，修改新闻，生成NewsId:1251文件成功，文件路径:/bbb/201608/26141119593.html
+2016-08-30 16:17:34,806 [9] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：175，模板名称：list，生成文件路径：E:\comsite\sasweb\news/aaa/pf/list.html成功！

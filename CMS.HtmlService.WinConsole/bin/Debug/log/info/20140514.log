@@ -1,0 +1,8 @@
+2014-05-14 09:50:53,048 [9] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-05-14 09:50:53,112 [9] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-05-14 09:50:53,125 [9] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-05-14 09:51:05,667 [11] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：14，模板名称：普通版金蝴蝶--关注列表，生成文件路径：E:\comsite\sasweb\news/analystlive/gzfanslist.html成功！
+2014-05-14 09:51:16,609 [11] INFO  log [(null)] - 方法名：GetTemplagePreview，预览模块Id：14，模板名称：普通版金蝴蝶--关注列表，模板路径：/luo/gzfanslist.shtml成功
+2014-05-14 10:08:24,527 [8] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-05-14 10:08:24,553 [8] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-05-14 10:08:24,560 [8] INFO  log [(null)] - 己成功启动SsoOutWindow服务。

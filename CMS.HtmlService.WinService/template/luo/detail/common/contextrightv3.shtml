@@ -1,0 +1,87 @@
+﻿<div class="wrapper_right">
+    <div class="move"> 
+      <!-- 正文右上角广告位 start  --> 
+            <#UPTAG tagtype="02" clsid="005005" id="data005005" viewedit="1" var="d"> ${d.Content}<#/UPTAG>
+
+      <!-- 正文右上角广告位 end  --> 
+    </div>
+    <div class="hr_6"></div>
+    <!-- 全网站公用文件-股票查询框 start-->
+  <!--#include virtual="/include/common/v2012/stockbox.shtml"-->
+    
+    <!-- 全网站公用文件-股票查询框 end--> 
+    <!-- 视频教学 start-->
+    <div class="hr_6"></div>
+    
+ <#UPTAG tagtype="02" clsid="005006" id="data005006" viewedit="1" var="d"> ${d.Content}<#/UPTAG>
+     <!-- 视频教学 end-->
+    <div class="hr_6"></div>
+    <!--精彩推荐start-->
+    
+    <div class="use_help with_g">
+      <div class="title3 title_ctn"> <a href="http://www.upchina.com/chanpin/help.shtml">精彩推荐</a> </div>
+      <div class="w_list">
+        <ul>
+         <#UPTAG tagtype="01" clsid="001013" pagesize="10" pagecount="1" viewedit="1" id="dataId001013"  var="d" index="i">                        
+          <li><b>[今日头条]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG>
+        
+         <#UPTAG tagtype="01" clsid="001014" pagesize="10" pagecount="1" viewedit="1" id="dataId001014"  var="d" index="i">                        
+          <li><b>[市场热评]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG>
+              
+        <#UPTAG tagtype="01" clsid="001015" pagesize="10" pagecount="1" viewedit="1" id="dataId001015"  var="d" index="i">                        
+          <li><b>[每日必读]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG>
+        
+        
+        <#UPTAG tagtype="01" clsid="001016" pagesize="10" pagecount="1" viewedit="1" id="dataId001016"  var="d" index="i">                        
+          <li><b>[安全决策]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG>        
+        
+       <#UPTAG tagtype="01" clsid="001010" pagesize="10" pagecount="1" viewedit="1" id="dataId001010"  var="d" index="i">                        
+          <li><b>[量化分析]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG>  
+            
+          <#UPTAG tagtype="01" clsid="001006" pagesize="10" pagecount="1" viewedit="1" id="dataId001006"  var="d" index="i">                        
+          <li><b>[大盘走势]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG>       
+        
+       <#UPTAG tagtype="01" clsid="001017" pagesize="10" pagecount="1" viewedit="1" id="dataId001017"  var="d" index="i">                        
+          <li><b>[行业新闻]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG>  
+        
+        <#UPTAG tagtype="01" clsid="001008" pagesize="10" pagecount="1" viewedit="1" id="dataId001008"  var="d" index="i">                        
+          <li><b>[上市公司]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG> 
+        
+       <#UPTAG tagtype="01" clsid="001018" pagesize="10" pagecount="1" viewedit="1" id="dataId001018"  var="d" index="i">                        
+          <li><b>[精品教程]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG> 
+        
+         <#UPTAG tagtype="01" clsid="001019" pagesize="10" pagecount="1" viewedit="1" id="dataId001019"  var="d" index="i">                        
+          <li><b>[九宫视点]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG> 
+             
+            
+           
+        </ul>
+      </div>
+    </div>
+    
+    <!--精彩推荐end-->
+ 
+    
+    <!--详细面右边广告 start-->
+     <#UPTAG tagtype="02" clsid="005007" id="data005007" viewedit="1" var="d"> ${d.Content}<#/UPTAG>
+    <!--详细面右边广告 end-->
+    
+    <div class="hr_6"></div>
+    <div class="Micro_bo ">
+      <div class="title3 title_ctn"> <a class="need" href="http://weibo.com/u/2676385273" target="_blank">微博</a> </div>
+      <div class="Micro_bo_ctn">
+        <iframe width="260" scrolling="no" height="275" frameborder="0" src="http://widget.weibo.com/weiboshow/index.php?language=&amp;width=260&amp;height=275&amp;fansRow=2&amp;ptype=1&amp;speed=0&amp;skin=4&amp;isTitle=0&amp;noborder=0&amp;isWeibo=1&amp;isFans=0&amp;uid=2676385273&amp;verifier=f8e78e80&amp;dpc=1" class="share_self"></iframe>
+      </div>
+    </div>
+  </div>
+</div>

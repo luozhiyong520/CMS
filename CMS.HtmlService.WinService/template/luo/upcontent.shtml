@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>正文</title>
+<link href="http://js.upchina.com/sasweb/bocepopup/css/cbh.css" type="text/css" rel="stylesheet"/>
+<script src="http://js.upchina.com/sasweb/actuals/js/jquery.min.js" type="text/javascript"></script>
+</head>
+ <script type="text/javascript">
+     $(function () {
+         try {
+             external.SetTitle("安全投资卫士");
+         } catch (e) {
+
+         }
+
+         var url = "http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/cms/newshit.aspx?newsId=${art.NewsId}";
+         var domain = window.location.host;
+         if (domain.toLowerCase() == "app.upchina.com") {
+             $.ajax({
+                 async: false,
+                 url: url,
+                 type: "get",
+                 success: function (res) {
+                 }
+             });
+         } else {
+             jQuery.getScript(url, function () { });
+         }
+        
+     });
+
+  </script>
+<body>
+<div class="g-wp">
+    <div class="m-hd">
+        <div id="title">${art.title}</div>
+        <p id="author">${art.CreatedTime}  
+          <#if  test="${isnotempty(art.Author)}">   
+            <span style="margin-left:6px">来源：${art.Author}</span>
+          <#/if>
+        </p>
+    </div>
+    <div class="m-con">
+        <div id="content">${Content}</div>    
+        <div class="m-zs"> <!--#include virtual="/news/include/common/v2013/upfooter.shtml"--></div>
+    </div>
+</div>
+</body>
+</html>

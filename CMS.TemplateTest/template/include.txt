@@ -1,0 +1,21 @@
+﻿Hello World.
+Well Done.
+Perfect.
+
+<#if test="${maketype is "1"}">
+<#UPTAG tagtype="02" clsid="001002008" pagesize="1" pagecount="1" viewedit="1" id="dataId007"  var="d" index="i">
+  <#if test="${equals(i,1)}">
+  ${i}   ${d.Id}  ${d.ChannelId}  ${d.type}    ${d.Content} 
+ <#/if>
+
+<#/UPTAG>
+<#/if>
+***************************************************
+
+<#UPTAG tagtype="02" clsid="001002009" pagesize="2" pagecount="4" viewedit="1" id="dataId008"  var="d" index="i"> 
+  ${i}   ${d.Id}  ${d.ChannelId}  ${d.type}    ${d.Content} 
+<#/UPTAG>
+
+***************************************************
+<#UPTAG tagtype="05" infourl="http://www.upchina.com/include/web/v2012/index/common/contextcss.shtml"
+virtual="common/contextcss.shtml" />

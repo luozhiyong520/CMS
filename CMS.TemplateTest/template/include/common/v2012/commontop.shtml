@@ -1,0 +1,33 @@
+<div id="mininav">
+  <div id="innerToolBar" class="Area">
+    <div id="tb_user">
+      <!-- <form>
+        <div class="usernameFld">
+          <div class="usernameFldlabel">
+            <label class="usernameFldTxt">用户名：</label>
+          </div>
+          <div class="usernameFldinput">
+            <input type="text" value="">
+          </div>
+        </div>
+        <div class="passwordFld">
+          <div class="passwordFldlabel">
+            <label class="passwordFldTxt">密&nbsp;&nbsp;码：</label>
+          </div>
+          <div class="passwordFldinput">
+            <input type="password">
+          </div>
+        </div>
+        <div class="bottonFld">
+          <input type="submit" alt="登 录" value="登录" class="simple-btn">
+          <input type="button" alt="注册" value="注册" class="simple-btn">
+        </div>
+      </form> -->
+    </div>
+    <div id="mini_bar">
+      <a href="javascript:void(0);" onclick="setHomepage();return false;" target="_self">设为首页</a>
+      |<a href="javasrcipt:void(0);" onclick="addFavorites();return false;" target="_self">加入收藏</a>
+      </ul>
+    </div>
+  </div>
+</div>

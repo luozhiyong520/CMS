@@ -1,0 +1,10 @@
+E:\UP\mycms\v1.0\CMS.WCF.Host\bin\Debug\CMS.HtmlService.dll
+E:\UP\mycms\v1.0\CMS.WCF.Host\bin\Debug\CMS.HtmlService.pdb
+E:\UP\mycms\v1.0\CMS.HTMLService\obj\Release\CMS.HtmlService.csprojResolveAssemblyReference.cache
+E:\UP\mycms\v1.0\CMS.HTMLService\obj\Release\CMS.HtmlService.dll
+E:\UP\mycms\v1.0\CMS.HTMLService\obj\Release\CMS.HtmlService.pdb
+E:\UP\mycms\v2.0\CMS.WCF.Host\bin\Debug\CMS.HtmlService.dll
+E:\UP\mycms\v2.0\CMS.WCF.Host\bin\Debug\CMS.HtmlService.pdb
+E:\UP\mycms\v2.0\CMS.HTMLService\obj\Release\CMS.HtmlService.csprojResolveAssemblyReference.cache
+E:\UP\mycms\v2.0\CMS.HTMLService\obj\Release\CMS.HtmlService.dll
+E:\UP\mycms\v2.0\CMS.HTMLService\obj\Release\CMS.HtmlService.pdb

@@ -1,0 +1,176 @@
+﻿ <div class="sxqb">
+       <div class="sxqb_top"></div>
+      
+        <div class="sjz">
+          <#uptag tagtype="01" clsid="007001" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+        <#if  test="${equals(i,1)}">
+            <div class="time_ago1_div">
+                <div class="time1"></div>
+                <div id="date1" style="display:none">${cdatestring(d.CreatedTime,"yyyy-MM-dd HH:mm:ss")}</div>
+                <div class="time_ago1_til">
+                     <a href="sxqb.html">${substr(filterhtml(d.Title),16)}</a>
+                </div>
+                <div class="time_ago1_det">
+                    <#if test="${length(d.Content) gt 50}">
+                        ${substr(filterhtml(d.Content),50)}...
+                    <#else>
+                        ${substr(filterhtml(d.Content),50)}
+                    <#/if>
+                </div>
+            </div>
+        <#else>
+            <div class="time_ago2_div">
+                
+                <#if  test="${equals(i,2)}">
+                    <div class="time2"></div>
+                    <div id="date2" style="display:none">${cdatestring(d.CreatedTime,"yyyy-MM-dd HH:mm:ss")}</div>
+                <#/if>
+                <div class="time_ago2_til"><a href="sxqb.html"> ${substr(filterhtml(d.Title),16)}</a></div>
+              
+            </div>
+        <#/if>
+        <#/uptag>
+        </div>
+
+        <script language="javascript">
+            var date = new Date();
+            var s = date.getTime();
+            if ($("#date1").html() != null) {
+                var date1 = new Date($("#date1").html().replace(/-/g, '/'));
+                var s1 = date1.getTime();
+                var total = (s - s1) / 1000;
+                var day = parseInt(total / (24 * 60 * 60)); //计算整数天数
+                var mint = parseInt(total / 60)              //计算相隔的分钟
+                var hour = parseInt(total / (60 * 60))        //计算相隔的小时
+                if (mint < 60) {
+                    $(".time1").html(mint + "分钟前");
+                } else if (mint > 60 && hour < 24) {
+                    $(".time1").html(hour + "小时前");
+                } else {
+                    $(".time1").html(day + "天前");
+                }
+            }
+
+            if ($("#date2").html() != null) {
+                var date2 = new Date($("#date2").html().replace(/-/g, '/'));
+                s2 = date2.getTime();
+                var total2 = (s - s2) / 1000;
+                var day2 = parseInt(total2 / (24 * 60 * 60)); //计算整数天数
+                var mint2 = parseInt(total2 / 60)              //计算相隔的分钟
+                var hour2 = parseInt(total2 / (60 * 60))        //计算相隔的小时
+                if (mint2 < 60) {
+                    $(".time2").html(mint2 + "分钟前");
+                } else if (mint2 > 60 && hour2 < 24) {
+                    $(".time2").html(hour2 + "小时前");
+                } else {
+                    $(".time2").html(day2 + "天前");
+                }
+            }
+
+ </script>
+        
+</div>
+
+<div class="sddy">
+    <div class="sddy_top"></div>
+        <#uptag tagtype="01" clsid="007002" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+        <#if  test="${equals(i,1)}">
+         <div class="sddy_cont">
+            <div class="sddy_newest">
+                <div class="sddy_newest_top">
+                    <span>${cdatestring(d.CreatedTime,"MM-dd")}</span>
+                    <a href="http://app.upchina.com/news/actualsvip/pdfreader.html?add=${d.FileUrl}&type=1" target="_blank">${d.Title}</a>
+
+                </div>
+                <div class="sddy_newest_cont">
+                    <div class="sddy_newest_img">
+                        <img src="http://img.upchina.com${d.ImgUrl}" width="85px" height="115px"/>
+                    </div> 
+                    <div class="sddy_newest_det">
+                        <p> <#if test="${length(d.Content) gt 100}">
+                            ${substr(filterhtml(d.Content),100)}...
+                        <#else>
+                            ${substr(filterhtml(d.Content),100)}
+                        <#/if></p>
+                    </div> 
+                </div>         
+            </div> 
+           </div>
+            <div class="dot_line"></div>
+         <#/if>
+           
+            <div class="sddy_bottom">
+                <ul>
+                    <#if test ="${i gt 1}" >
+                    <li>
+                        <span>${cdatestring(d.CreatedTime,"MM-dd")}</span>
+
+                        <a href="http://app.upchina.com/news/actualsvip/pdfreader.html?add=${d.FileUrl}&type=1" target="_blank">${d.Title}</a>
+                    </li>
+                    <#/if>   
+                </ul>
+            </div>
+        <#/uptag>
+</div>
+
+<div class="tznc">
+    <div class="tznc_top"></div>
+        <#uptag tagtype="01" clsid="007003" pagesize="3" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+        <#if  test="${equals(i,1)}">
+            <div class="tznc_cont">
+                <div class="tznc_newest">
+                    <div class="tznc_newest_top">
+                            <span>${cdatestring(d.CreatedTime,"MM-dd")}</span>
+                       <a href="http://app.upchina.com/news/actualsvip/pdfreader.html?add=${d.FileUrl}&type=2" target="_blank"> ${d.Title}</a>
+                    </div>
+                    <div class="tznc_newest_cont">
+                        <div class="tznc_newest_img">
+                            <img src="http://img.upchina.com${d.ImgUrl}" width="85px" height="115px"/>
+                        </div> 
+                        <div class="sddy_newest_det">
+                            <p> <#if test="${length(d.Content) gt 100}">
+                                ${substr(filterhtml(d.Content),100)}...
+                            <#else>
+                                ${substr(filterhtml(d.Content),100)}
+                            <#/if></p>
+                        </div> 
+                    </div>         
+                </div> 
+            </div>
+            <div class="dot_line"></div>
+         <#/if>
+        
+        <div class="tznc_bottom">
+            <ul>
+                <#if test ="${i gt 1}" >
+                <li>
+                <span>${cdatestring(d.CreatedTime,"MM-dd")}</span>
+                <a href="http://app.upchina.com/news/actualsvip/pdfreader.html?add=${d.FileUrl}&type=2" target="_blank"> ${d.Title}</a>
+            </li>
+            <#/if>   
+            </ul>
+        </div>
+        <#/uptag>
+</div>
+
+<div class="cpzx">
+    <div class="cpzx_top"></div>
+    <div class="cpzx_cont">
+        <ul>
+            <li>
+                <span><a href="zxgn.html?go=qk">点击查看</a></span>
+                <a href="zxgn.html?go=qk">分时乾坤决策眼</a>
+            </li>
+                    <li id="verzxgn" style="display:none;">
+                <span><a href="zxgn.html?go=yy">点击查看</a></span>
+                <a href="zxgn.html?go=yy">T+0鹰眼狙击</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+                
+ 

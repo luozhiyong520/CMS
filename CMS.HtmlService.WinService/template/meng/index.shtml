@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>早盘必读</title>
+    <link rel="stylesheet" type="text/css" href="http://js.stock.com/upchinav2/css/zaopan.css" media="all"/>
+    <#if test="${equals(maketype,1)}">
+        <script type="text/javascript" src="http://js.stock.com/common/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="http://js.stock.com/common/jquery.form.js"></script>
+        <script type="text/javascript" src="http://js.stock.com/common/visualediting.js"></script>
+     <#else>
+      <script type="text/javascript" src="http://js.stock.com/common/jquery-1.7.2.min.js"></script>
+    <#/if>
+</head>
+<body style="background:#eee;">
+	<div class="zaopan_top">
+    <div class="zp_time"><span>06月1日</span></div>
+    	<div class="zaopan_cont">
+        	<#uptag tagtype="02" clsid="003036" id="data003036" viewedit="1" var="d"> ${d.Content}<#/uptag>
+            <div class="zp_1 clear">
+            	<div class="zp_click1"><a href="javascript:;" id="t1"></a></div>
+                <div class="hide" style="display:block;">
+            	
+                <#uptag tagtype="02" clsid="003037" id="data003037" viewedit="1" var="d"> ${d.Content}<#/uptag>
+                </div>
+            </div>
+            <div class="zp_2 clear">
+            	<div class="zp_click1"><a href="javascript:;" id="t2"></a></div>
+                <#uptag tagtype="02" clsid="003038" id="data003038" viewedit="1" var="d"> ${d.Content}<#/uptag>
+            </div>
+            <div class="zp_3 clear">
+            	<div class="zp_click1"><a href="javascript:;" id="t3"></a></div>
+                 <#uptag tagtype="02" clsid="003039" id="data003039" viewedit="1" var="d"> ${d.Content}<#/uptag>
+            </div>
+            <div class="zp_4 clear">
+            	<div class="zp_click1"><a href="javascript:;" id="t4"></a></div>
+                <div class="hide">
+            	<!--<img class="img_tab" src="http://img.stock.com/detail/2012/09/zp_tab1.jpg">-->
+                <#uptag tagtype="02" clsid="003040" id="data003040" viewedit="1" var="d"> ${d.Content}<#/uptag>
+                </div>
+            </div>
+            <div class="zp_5 clear">
+            	<div class="zp_click1"><a href="javascript:;" id="t5"></a></div>
+                <div class="hide">
+                 <#if test="${equals(maketype,1)}">
+                 <#uptag tagtype="05" infourl="http://www.stock.com/include/common/img.shtml"/>
+                 <#else>
+                     <!--#include virtual="/include/common/img.shtml"-->
+                 <#/if>
+                </div>
+            </div>
+            <div class="zp_6 clear">
+            	<div class="zp_tp">
+                	<dl class="clear">
+                    	<dt>您对《UP早盘必读》的评价如何，还有哪些意见或建议</dt>
+                        <dd><input type="radio" name="z4" id="zw1"><label  for="zw1" class="f_z1">赞一个</label></dd>
+                        <dd><input type="radio" name="z4" id="zw2"><label  for="zw2" class="f_z2">一般</label></dd>
+                        <dd><input type="radio" name="z4" id="zw3"><label  for="zw3" class="f_z3">吐槽</label></dd>
+                    </dl>
+                    <div class="six">
+                    <textarea name="none" id="zp_textarea" cols="60" rows="10">	请输入您的建议和意见...</textarea>
+                    <a href="javascript:;" id="submit"><img src="http://img.stock.com/detail/2012/09/btn.jpg"></a>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="tip">
+        	<a href="#t1" class="t1"></a>
+        	<a href="#t2" class="t2"></a>
+        	<a href="#t3" class="t3"></a>
+        	<a href="#t4" class="t4"></a>
+        	<a href="#t5" class="t5"></a>
+        </div>
+    </div>
+<!--<script type="text/javascript" src="http://js.stock.com/sasweb/js/jquery.min.js"></script>-->
+<script type="text/javascript"> 
+var timer=null;  
+$(function(){  
+  $(window).scroll(function(){
+	clearInterval(timer);  
+	var topScroll=$(window).scrollTop();  
+	if(topScroll>200)
+	{  
+		var top=topScroll+100;  
+		timer=setInterval(function(){  
+			 $(".tip").animate({"top":top},100);  
+		},100)
+	}else
+	{
+		$(".tip").css("top",400)
+	}  
+  })  
+})  
+</script>
+<script type="text/javascript">
+$(function(){
+	var oClick=$(".zp_click1");
+    oClick.siblings("div").css("display","block")
+	oClick.click(function(){
+		$(this).siblings("div").toggle(200);
+		//$(this).parent(".clear").siblings(".clear").children(".hide").hide(200);
+	})
+	var t1=$(".t1"), t2=$(".t2"), t3=$(".t3"), t4=$(".t4"), t5=$(".t5"),tt1=$("#t1"), tt2=$("#t2"), tt3=$("#t3"), tt4=$("#t4"),tt5=$("#t5"); 
+	t1.click(function(){
+		tt1.parent().siblings(".hide").show();
+		tt1.parent().parent().siblings(".clear").children(".hide").hide();
+	})
+	t2.click(function(){
+		tt2.parent().siblings(".hide").show();
+		tt2.parent().parent().siblings(".clear").children(".hide").hide();
+	})
+	t3.click(function(){
+		tt3.parent().siblings(".hide").show();
+		tt3.parent().parent().siblings(".clear").children(".hide").hide();
+	})
+	t4.click(function(){
+		tt4.parent().siblings(".hide").show();
+		tt4.parent().parent().siblings(".clear").children(".hide").hide();
+	})
+	t5.click(function(){
+		tt5.parent().siblings(".hide").show();
+		tt5.parent().parent().siblings(".clear").children(".hide").hide();
+	})
+})
+</script>
+ </body>
+</html>

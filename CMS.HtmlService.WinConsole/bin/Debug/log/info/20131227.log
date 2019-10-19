@@ -1,0 +1,4 @@
+2013-12-27 18:02:24,280 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-12-27 18:02:24,298 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-12-27 18:02:24,305 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-12-27 18:02:37,473 [4] INFO  log [(null)] - 方法名：CreateFileImage，创建图片文件成功，文件路径:E:\\test\\/upimg/201312/27180237155.jpg

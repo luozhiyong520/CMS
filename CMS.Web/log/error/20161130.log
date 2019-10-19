@@ -1,0 +1,17 @@
+【异常时间】：2016-11-30 12:38:56,625 [6] 
+【异常级别】：ERROR 
+【异常类型】：HttpException
+【异常堆栈】：   在 System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)
+   在 System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   在 SMVC.PageExecutor.Render(HttpContext context, String pageVirtualPath, Object model) 位置 E:\UP\mycms\v2.0\SMVC\MVC\PageExecutor.cs:行号 39
+   在 SMVC.PageResult.SMVC.IActionResult.Output(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionResult.cs:行号 51
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 32
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\Pipeline\ActionHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：执行处理程序“ASP.news_editarticle_aspx”的子请求时出错。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/news/editarticle.aspx?newsId=22774
+------------------------------------

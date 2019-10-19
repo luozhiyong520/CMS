@@ -1,0 +1,7 @@
+﻿[<#uptag tagtype="06" modudle="zzjtotal" count="100" viewedit="1" id="dataId001006"  var="d" index="i" islast="flag">
+<#if test="${flag}"> 
+{"SuccessRate":"${d.SuccessRate}","FansNum":"${d.FansNum}","AnalystId":"${d.AnalystId}","ImgUrl":"${d.ImgUrl}","AnalystName":"${stringtounicode(d.AnalystName)}","Intro":"${stringtounicode(d.Intro)}"}
+ <#else>
+{"SuccessRate":"${d.SuccessRate}","FansNum":"${d.FansNum}","AnalystId":"${d.AnalystId}","ImgUrl":"${d.ImgUrl}","AnalystName":"${stringtounicode(d.AnalystName)}","Intro":"${stringtounicode(d.Intro)}"},
+ <#/if>
+ <#/uptag>]

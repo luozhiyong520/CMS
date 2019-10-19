@@ -1,0 +1,225 @@
+﻿
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+    <title>红旗汇 让互联网+更简单 中小企业互联网+贴心卫士</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="cache-control" content="no-siteapp">
+    <link rel="stylesheet" href="/theme/default/css/style.css">
+    <link href="/theme/default/video/video-js.css" rel="stylesheet" type="text/css">
+    <script src="/theme/default/video/video.js"></script>
+    <script>
+        videojs.options.flash.swf = "theme/default/video/video-js.swf";
+    </script>
+    <!--[if lt IE 9]>
+    <script src="theme/default/js/selectivizr.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div id="channelid" style="display:none">${art.ChannelId}</div>
+    <div class="header">
+        <div class="hd-bar wrap">
+            <div class="logo"><a href="/"><img src="/theme/default/images/logo.png" alt=""></a></div>
+            <div class="hd-tel">
+                <div class="ht-num"> 400-8655-776</div>
+            </div>
+        </div>
+        <div class="hd-nav">
+            <div class="wrap">
+                <ul>
+                    <li><a href="/">首  页</a></li>
+                    <li> <a href="/qy/about.html">关于我们</a></li>
+                    <li>
+                        <a href="/qy/platform.html">贴心服务</a>
+                        <!--<div class="subnav">
+                            <dl>
+                                <dd><a href="/qy/mallpf.html">商城全网平台</a></dd>
+                                <dd><a href="/qy/indplatform.html">行业全网平台</a></dd>
+                            </dl>
+                        </div>-->
+                    </li>
+                    <li id="001017"><a href="/qy/case.html">案例展示</a></li>
+                    <li id="001001"><a href="/qy/tecnews.html">科技新闻</a></li>
+                    <li id="001002"><a href="/qy/industry.html">产业政策</a></li>     
+                    <li id="001006"><a href="/qy/college.html">红旗学院</a></li>
+</ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="left-main">
+            <div class="show-crumbs">当前位置：<a href="/">首页</a>  &gt;  <a href="${art.Url}">${art.ChannelName}</a></div>
+            <div class="show-hd">
+                <h3>${art.Title}</h3>
+                <p>发布时间：${cdatestring(art.CreatedTime,"yyyy-MM-dd")}  | 来源：${art.author}</p>
+            </div>
+            <div class="show-cont">
+                ${art.Content}
+            </div>
+            <!--<div class="show-rel">
+                <a href="/index.php?c=article&a=type&tid=8" class="backlink">返回</a>
+                <span class="prev"><a href="/index.php?c=article&id=241">上一篇：中关村创业大街，一杯咖啡后面的生态</a></span>
+                <span class="next"> 无</span>
+            </div>-->
+        </div>
+        <div class="right-bar">
+            <div class="hot-news">
+                <div class="hn-hd">最新资讯</div>
+                <div class="hn-list">
+                    <ul>
+                        <#uptag tagtype="01" clsid="001001,001002,001003,001004,001005,001006" pagesize="5" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+                            <li>
+                                <a href="${d.Url}" title="${d.Title}">
+                                    <span class="title">${substr(filterhtml(d.Title),20)}</span>
+                                    <span class="text">${substr(filterhtml(d.Content),20)}</span>
+                                </a>
+                            </li>
+
+
+                            <#/uptag>
+                    </ul>
+                </div>
+            </div>
+            <div class="side-search">
+                <span class="name">红旗汇服务平台查询端口</span>
+                <p><input type="text" name="word" id="word"><input type="button" value="搜索" onclick="checkdk()"></p>
+                <span class="name">全国红旗汇服务商查询端口</span>
+                <p><input type="text" name="title2" id="title2"><input type="button" value="搜索" onclick="checkh()"></p>
+            </div>
+            <div class="side-video">
+                <div class="sv-hd">会员展示<em class="en">MEMBER DISPLAY</em></div>
+                <div class="sv-block swiper-container">
+                    <div class="mv-box act swiper-wrapper">
+
+
+                        <#uptag tagtype="01" clsid="001008" pagesize="3" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+                            <div class="swiper-slide"><img src="http://img.pinyifu.com/${d.ImgUrl}" width="287px" height="200px"></div>
+                            <#/uptag>
+                    </div>
+                    <div class="pagination"></div>
+                </div>
+                <!--<div class="sv-point">
+            <span class="act"></span>
+        </div>-->
+            </div>
+            <!--<div class="ad-slide">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <#uptag tagtype="01" clsid="001011" pagesize="3" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+                            <div class="swiper-slide"><img src="http://img.pinyifu.com/${d.ImgUrl}"></div>
+                            <#/uptag>
+                    </div>
+                </div>
+                <div class="pagination"></div>
+            </div>-->
+
+            <div class="app-list">
+                <div class="al-hd">最新合作会员</div>
+                
+                  
+                <div class="al-box">
+                    <ul class="act">
+
+                        <#uptag tagtype="01" clsid="001012" pagesize="20" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+
+                            <li>
+                                <div class="pic">
+                                    <div class="img"><img src="http://img.pinyifu.com/${d.ImgUrl}"></div>
+                                    <div class="wx"><img src="http://img.pinyifu.com/${d.ImgUrl}"></div>
+                                </div>
+                                <div class="name"><a href="${d.Url}">${d.Title}</a></div>
+                            </li>
+                            <#/uptag>
+
+
+                    </ul>
+                </div>
+            </div>
+            <div class="new-pro">
+                <div class="np-hd">服务资讯<em class="en">SERVICE INFORMATION</em></div>
+                <div class="np-slide" style="background:none;">
+                    <#uptag tagtype="01" clsid="001020" pagesize="20" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+                        <a href="${d.Url}"><img src="http://img.pinyifu.com/${d.ImgUrl}" style="width:100%;max-width:100%;max-height:170px;" alt="" title="${d.Title}"></a>
+                        <#/uptag>
+
+                </div>
+                <div class="np-list">
+                    <ul>
+                        <#uptag tagtype="01" clsid="001013" pagesize="10" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+                            <li><a href="${d.Url}">${d.Title}</a></li>
+                            <#/uptag>
+                    </ul>
+                </div>
+            </div>
+            <div class="fly-password">
+                <div class="fp-box">
+                    <div class="fpb-hd">输入查询密码，并确认</div>
+                    <div class="fpb-form">
+                        <p><input type="password" name="pass" id="pass"><input type="hidden" name="title" id="title"></p>
+                        <p><input type="button" value="确认" onclick="ckeckm()"><span class="cancel" style="cursor:pointer;">取消</span></p>
+
+                    </div>
+                </div>
+                <div class="fly-close"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer wrap">
+        <div class="friendlink">
+            <h4>相关链接</h4>
+            <ul>
+                <#uptag tagtype="01" clsid="001009" pagesize="100" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+                    <li><a href="${d.Url}"><img src="http://img.pinyifu.com/${d.ImgUrl}" style="width:100%;max-width:100%;max-height:170px;" alt="" title="${d.Title}"></a></li>
+                    <#/uptag>
+</ul>
+        </div>
+        <div class="ft">
+            <div class="ft-text" style="margin-top:10px;">
+                <p style="color:#333;font-weight:bold;letter-spacing:1px;">服务监督热线：4008-655-776</p>
+            </div>
+            <div class="ft-nav" style="margin-top:10px;">
+                <a href="#" title="关于我们">关于我们</a>
+                |
+                <a href="#" title="联系方式">联系方式</a>
+                |
+                <a href="#" title="网站地图">网站地图</a>
+                |
+                <a href="#" title="法律声明">法律声明</a>
+            </div>
+            <div class="ft-text">
+                <p>红旗汇版权所有，未经书面授权禁止使用</p>
+                <p>粤ICP备16079988号-1</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/theme/default/js/jquery.js"></script>
+    <script src="/theme/default/js/swiper.js"></script>
+    <script src="/theme/default/js/main.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var channelid = $("#channelid").html();
+        
+            if (channelid == "001017") {
+                $("#001017").addClass("cur");
+            } else if (channelid == "001001") {
+                $("#001001").addClass("cur");
+            } else if (channelid == "001002") {
+                $("#001002").addClass("cur");
+            } else if (channelid == "001006") {
+                $("#001006").addClass("cur");
+            }
+        });
+
+    </script>
+</body>
+</html>

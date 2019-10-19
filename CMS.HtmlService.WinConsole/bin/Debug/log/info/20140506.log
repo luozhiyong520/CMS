@@ -1,0 +1,12 @@
+2014-05-06 16:26:09,729 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-05-06 16:26:09,765 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-05-06 16:26:09,771 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-05-06 16:27:19,192 [10] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-05-06 16:27:19,216 [10] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-05-06 16:27:19,242 [10] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-05-06 16:32:47,448 [8] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-05-06 16:32:47,506 [8] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-05-06 16:32:47,513 [8] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-05-06 16:33:14,792 [10] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：69，模板名称：投资参考日刊内容晚，生成文件路径：E:\comsite\sasweb\news/tzck/201405/2014-05-04_2.html成功！
+2014-05-06 16:34:33,817 [10] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：69，模板名称：投资参考日刊内容晚，生成文件路径：E:\comsite\sasweb\news/tzck/201404/2014-04-30_2.html成功！
+2014-05-06 16:37:07,482 [10] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：58，模板名称：投资参考日刊内容早，生成文件路径：E:\comsite\sasweb\news/tzck/201404/2014-04-24_1.html成功！

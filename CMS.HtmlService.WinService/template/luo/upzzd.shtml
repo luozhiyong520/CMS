@@ -1,0 +1,228 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>UP早知道</title>
+<link href="http://js.upchina.com/sasweb/zhuanti/css/upzzd.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="http://js.upchina.com/upchinav2/js/jquery-1.4.2.js"></script>
+<link href="http://js.upchina.com/sasweb/zhuanti/css/date.css" type="text/css" rel="stylesheet"/>
+<script src="http://js.upchina.com/sasweb/zhuanti/js/updatepicker.js" type="text/javascript"></script>
+<script src="http://js.upchina.com/sasweb/actuals/js/init.js" type="text/javascript"></script>
+    <script src="http://js.upchina.com/sasweb/popup/js/uplogo.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="http://cbjs.baidu.com/js/m.js"></script>
+     <script type="text/javascript">
+
+         BAIDU_CLB_addSlot("951726"); //左边广告
+         BAIDU_CLB_addSlot("951727"); //右边广告
+         BAIDU_CLB_addSlot("951729"); //底部广告
+         
+
+         BAIDU_CLB_enableAllSlots();
+
+         BAIDU_CLB_addOrientation("tgaccount", tgTypeName); //天贵用户
+         BAIDU_CLB_addOrientation("bceaccount", bhTypeName); //渤海用户
+         BAIDU_CLB_addOrientation("version", version);      //软件版本
+         BAIDU_CLB_addOrientation("bhmdeposit", bhmaxDeposit); //渤海入金额
+         BAIDU_CLB_addOrientation("tgmdeposit", tgmaxDeposit); //天贵入金额
+
+         BAIDU_CLB_preloadSlots("951726", "951727", "951729");
+
+    </script>
+
+<style type="text/css">
+  .summarize_details {font-size: 14px;}
+  .news_intro p{color:#333;letter-spacing:1px;line-height:24px;font-family:宋体;color:#333;}
+  .news_title{ font-size: 14px;}
+  .pl{padding-left:4px;font-size: 14px;font-family: 宋体;}
+  #m3 .news_title{ font-size: 15px;font-weight: bold;}
+  #m4 .news_title{ font-size: 15px;font-weight: bold;}
+  #m5 .news_title{ font-size: 15px;font-weight: bold;}
+  #m6 .news_title{ font-size: 15px;font-weight: bold;}
+  .g-con h1 {font-size:25px;}
+  .news {padding: 12px 0 0 42px;}
+</style>
+
+<script type="text/javascript">
+    $(function () {
+        /*导航点击事件*/
+        $(".m-nav ul li a").click(function () {
+            $(".cur .active_nav_top").remove();
+            $(this).after("<div class='active_nav_top'></div>");
+        });
+    });
+</script>
+</head>
+<body>
+ 
+<div class="g-head">
+  <div class="g-top ie6fixedTL">
+    <!--头部-->
+    <div class="m-top">
+      <div class="m-logo"></div>
+      <div class="m-date"><span id="curdate"></span><a href="javascript:void(0)" id="getdate"></a></div>
+    </div>
+    <!--导航-->
+    <div class="m-nav">
+      <ul>
+        <li class="cur">
+            <a href="#m1">UP视点</a>
+            <div class="active_nav_top"></div>
+        </li>
+        <li><a href="#m2">要闻精选</a></li>
+        <li><a href="#m3">热点狙击</a></li>
+        <li><a href="#m4">个股掘金</a></li>
+        <li><a href="#m5">机构风向</a></li>
+        <li><a href="#m6">资金视野</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="m-interval">
+
+</div>
+<div class="content">
+    <div id="m1">
+     <#uptag tagtype="01" clsid="005009" pagesize="1" pagecount="1" viewedit="1" id="dataId005009"  var="d" index="i"   begindate="today">
+        <div class="summarize" style="height:auto">
+            <div class="summarize_title">
+                综述
+            </div>
+            <div class="summarize_details">
+                <p>
+                      ${d.Content}
+                </p>
+            </div>
+        </div>
+       <!-- <div class="inside_img">
+             <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+                 <img src="${d.ImgUrl}" width="361px" height="188px" />
+             <#else>
+                 <img src="http://img.upchina.com${d.ImgUrl}" width="361px" height="188px" />
+            <#/if>
+        </div>-->
+         <#/uptag>  
+    </div>
+    <div class="g-con" id="m2">
+        <h1>要闻精选</h1>
+        <div class="line">
+
+        </div>
+         <#uptag tagtype="01" clsid="005016" pagesize="20" pagecount="1" viewedit="1" id="dataId005016"  var="d" index="i"   begindate="today">
+        <div class="news">
+        
+            <div class="news_title">
+                <span class="number">${i}</span>
+                <span class="pl">
+                  ${filterhtml(d.Content)}
+               </span>
+            </div>
+             
+        </div>
+         
+        <#/uptag> 
+         
+    </div>
+    <div class="g-con" id="m3">
+        <h1>热点狙击</h1>
+        <div class="line">
+
+        </div>
+         <#uptag tagtype="01" clsid="005012" pagesize="20" pagecount="1" viewedit="1" id="dataId005012"  var="d" index="i"   begindate="today">
+        <div class="news">
+        
+            <div class="news_title">
+                <span class="number">${i}</span>
+                 ${d.Title} 
+            </div>
+            <div class="news_intro">
+                <p>
+                    ${d.Content}
+                </p>
+            </div>
+        </div>
+         
+        <#/uptag> 
+    </div>
+    <div class="g-con" id="m4">
+        <h1>个股掘金</h1>
+        <div class="line">
+
+        </div>
+        <#uptag tagtype="01" clsid="005013" pagesize="20" pagecount="1" viewedit="1" id="dataId005013"  var="d" index="i"   begindate="today">
+        <div class="news">
+            <div class="news_title">
+                <span class="number">${i}</span>
+             ${d.Title} 
+            </div>
+            <div class="news_intro">
+                <p>
+                     ${d.Content}
+                </p>
+            </div>
+        </div>
+          <#/uptag> 
+    </div>
+    <div class="g-con" id="m5">
+        <h1>机构风向</h1>
+        <div class="line">
+
+        </div>
+         <#uptag tagtype="01" clsid="005014" pagesize="20" pagecount="1" viewedit="1" id="dataId005014"  var="d" index="i"   begindate="today">
+        <div class="news">
+            <div class="news_title">
+                <span class="number">${i}</span>
+             ${d.Title} 
+            </div>
+            <div class="news_intro">
+                <p>
+                     ${d.Content}
+                </p>
+            </div>
+        </div>
+          <#/uptag> 
+    </div>
+    <div class="g-con" id="m6">
+        <h1>资金视野</h1>
+        <div class="line">
+
+        </div>
+         <#uptag tagtype="01" clsid="005015" pagesize="20" pagecount="1" viewedit="1" id="dataId005015"  var="d" index="i"   begindate="today">
+        <div class="news">
+            <div class="news_title">
+                <span class="number">${i}</span>
+             ${d.Title} 
+            </div>
+            <div class="news_intro">
+                <p>
+                     ${d.Content}
+                </p>
+            </div>
+        </div>
+          <#/uptag> 
+    </div>
+
+    <iframe frameborder="0" scrolling="no"  src="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/questionnai/upzzd.aspx" id="main" name="main" style="width: 100%; height: 450px; margin-top:15px; "></iframe>
+   
+</div>
+
+<script src="http://js.upchina.com/sasweb/zhuanti/js/upxwc.js" type="text/javascript"></script>
+
+<div style="display:none">
+<script src="http://s22.cnzz.com/z_stat.php?id=1000125520&web_id=1000125520" language="JavaScript"></script>
+</div>
+<div>
+    <script type="text/javascript">
+        BAIDU_CLB_fillSlot("951726");
+        BAIDU_CLB_fillSlot("951727");
+    </script>
+</div>
+<div style="width:960px;margin: 0 auto;">
+    <script type="text/javascript">        BAIDU_CLB_fillSlot("951729");</script>
+</div>
+<div style="display: none">
+<script type="text/javascript" src="http://s22.cnzz.com/z_stat.php?id=1000125520&web_id=1000125520" language="JavaScript"></script>
+</div>
+</body>
+</html>

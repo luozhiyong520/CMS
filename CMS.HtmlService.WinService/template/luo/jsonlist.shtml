@@ -1,0 +1,7 @@
+﻿[<#uptag tagtype="01" clsid="004001" id="data004001" viewedit="1"  newssort="1"  pagecount="1" pagesize="50" var="d" index="i" islast="flag"> 
+<#if test="${flag}">{"id":"${d.NewsId}","p":"${stringtounicode(d.Prefix)}","t":"${stringtounicode(d.Title)}","d":"${cdatestring(d.CreatedTime,"yyyy-MM-dd HH:mm:ss")}","s":"${stringtounicode(d.Author)}","url":"http://app.upchina.com/news${d.url}"}
+            <#else>{"id":"${d.NewsId}","p":"${stringtounicode(d.Prefix)}","t":"${stringtounicode(d.Title)}","d":"${cdatestring(d.CreatedTime,"yyyy-MM-dd HH:mm:ss")}","s":"${stringtounicode(d.Author)}","url":"http://app.upchina.com/news${d.url}"},
+            <#/if>
+    <#/uptag>]
+
+

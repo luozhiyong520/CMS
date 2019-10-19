@@ -1,0 +1,5 @@
+2014-07-01 13:42:03,541 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-07-01 13:42:03,683 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-07-01 13:42:03,691 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-07-01 13:42:08,509 [5] INFO  log [(null)] - 方法名：CreateFileImage，创建图片文件成功，文件路径:E:\comsite\ftp\sasweb/updoc/201407/01134207700.rar
+2014-07-01 13:42:23,177 [5] INFO  log [(null)] - 方法名：CreateFileImage，创建图片文件成功，文件路径:E:\comsite\ftp\sasweb/updoc/201407/01134223074.rar

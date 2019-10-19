@@ -1,0 +1,64 @@
+﻿ <div class="contain">
+  <#uptag tagtype="01" clsid="007002" pagesize="7" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" islast="flag">
+    <#if test="${equals(i,1)}">
+    <div class="contain_top">
+    <div class="l_arrow"></div>
+    <div class="r_arrow"></div>
+    <div class="contain_top_ct">
+       <ul>
+            <li>
+                <div class="cover_img">
+                    <div class="label_new"></div>
+					 <img src="http://img.upchina.com${d.ImgUrl}" width="226px" height="306px" /> 
+                </div>
+                 <div class="report_detail">
+                    <div class="report_date">
+                        <div class="label_arrow"></div>
+                        ${cdatestring(d.CreatedTime,"MM-dd HH:mm")}
+                    </div>
+                    <div class="report_til">
+                        ${d.Title}
+                    </div>
+                    <div class="report_intro">
+                        ${substr(d.NewsAbstract,53)}...
+                    </div>
+                    <div class="read_btn">
+                        <a href="http://app.upchina.com/news/actualsvip/pdfreader.html?add=${d.FileUrl}&type=1" target="_blank">在线阅读</a>
+                    </div>
+                </div> 
+            </li>
+         </ul>
+      </div>
+   </div>
+   <div class="divide_line"></div>
+   <div class="contain_bottom">
+    <ul>
+   <#else>
+         <#if test="${iseven(i)}">
+            <li class="mr">
+            <#else>
+            <li>
+         <#/if>
+        <div class="pre_cover_img">
+            <img src="http://img.upchina.com${d.ImgUrl}" width="110px" height="150px" />
+        </div>
+        <div class="pre_report_detail">
+            <div class="pre_report_date">
+                ${cdatestring(d.CreatedTime,"MM-dd HH:mm")}
+            </div>
+            <div class="pre_report_til">
+                ${d.Title}
+            </div>
+            <div class="pre_report_intro">
+                    ${substr(d.NewsAbstract,35)}....
+            </div>
+            <div class="read_btn_lit">
+                <a href="http://app.upchina.com/news/actualsvip/pdfreader.html?add=${d.FileUrl}&type=1" target="_blank">在线阅读</a>
+            </div>
+        </div>
+    </li> 
+  <#/if>      
+  <#/uptag>
+       </ul>
+   </div>
+</div>

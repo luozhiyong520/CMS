@@ -1,0 +1,271 @@
+【异常时间】：2014-04-24 09:22:49,302 [13] 
+【异常级别】：ERROR 
+【异常类型】：DirectoryNotFoundException
+【异常堆栈】：   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   在 System.IO.StreamReader..ctor(String path)
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 45
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 61
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 256
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 115
+【异常信息】：未能找到路径“E:\upproject\CMS\code\branches\v1.0\CMS.HtmlService.WinService\template\luo\actuals\tzck.shtml”的一部分。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：59，模板名称：投资参考首页，模板路径：/luo/actuals/tzck.shtml失败！
+------------------------------------
+【异常时间】：2014-04-24 09:42:33,979 [11] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 287
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 180
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：58，模板名称：投资参考日刊内容，模板路径：/luo/actuals/tzckdetail.shtml失败！
+------------------------------------
+【异常时间】：2014-04-24 10:28:32,009 [4] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 287
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 163
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：58，模板名称：投资参考日刊内容，模板路径：/luo/actuals/tzckdetail.shtml失败！
+------------------------------------
+【异常时间】：2014-04-24 10:28:50,604 [4] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 287
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 163
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：58，模板名称：投资参考日刊内容，模板路径：/luo/actuals/tzckdetail.shtml失败！
+------------------------------------
+【异常时间】：2014-04-24 11:01:37,856 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-24 11:02:13,534 [4] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 287
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 180
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：58，模板名称：投资参考日刊内容，模板路径：/luo/actuals/tzckdetail.shtml失败！
+------------------------------------
+【异常时间】：2014-04-24 11:05:13,797 [13] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 287
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 180
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：58，模板名称：投资参考日刊内容，模板路径：/luo/actuals/tzckdetail.shtml失败！
+------------------------------------
+【异常时间】：2014-04-24 11:06:18,561 [13] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 287
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 180
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：58，模板名称：投资参考日刊内容，模板路径：/luo/actuals/tzckdetail.shtml失败！
+------------------------------------
+【异常时间】：2014-04-24 11:08:58,290 [12] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-24 11:09:10,096 [12] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 287
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 180
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：58，模板名称：投资参考日刊内容，模板路径：/luo/actuals/tzckdetail.shtml失败！
+------------------------------------
+【异常时间】：2014-04-24 11:10:51,894 [12] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 287
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 180
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：58，模板名称：投资参考日刊内容，模板路径：/luo/actuals/tzckdetail.shtml失败！
+------------------------------------
+【异常时间】：2014-04-24 11:12:00,347 [12] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-24 11:20:20,761 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-24 11:20:29,440 [6] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 287
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 180
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：58，模板名称：投资参考日刊内容，模板路径：/luo/actuals/tzckdetail.shtml失败！
+------------------------------------
+【异常时间】：2014-04-24 11:22:58,280 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-24 11:24:33,165 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-24 11:24:41,690 [6] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 287
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 180
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：58，模板名称：投资参考日刊内容，模板路径：/luo/actuals/tzckdetail.shtml失败！
+------------------------------------
+【异常时间】：2014-04-24 11:25:33,962 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-24 11:25:38,128 [6] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 287
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 180
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：58，模板名称：投资参考日刊内容，模板路径：/luo/actuals/tzckdetail.shtml失败！
+------------------------------------
+【异常时间】：2014-04-24 11:30:13,280 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-24 11:31:00,577 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-24 11:31:35,085 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-24 12:20:55,252 [6] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 287
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 180
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：58，模板名称：投资参考日刊内容，模板路径：/luo/actuals/tzckdetail.shtml失败！
+------------------------------------
+【异常时间】：2014-04-24 13:00:12,297 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-24 14:04:19,161 [6] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-04-24 14:09:46,209 [5] 
+【异常级别】：ERROR 
+模板/luo/newupindex.shtml,状态不可用
+------------------------------------
+【异常时间】：2014-04-24 14:09:46,297 [5] 
+【异常级别】：ERROR 
+模板/luo/zbupindex.shtml,状态不可用
+------------------------------------
+【异常时间】：2014-04-24 14:09:56,849 [8] 
+【异常级别】：ERROR 
+模板/luo/newupindex.shtml,状态不可用
+------------------------------------
+【异常时间】：2014-04-24 14:09:56,938 [8] 
+【异常级别】：ERROR 
+模板/luo/zbupindex.shtml,状态不可用
+------------------------------------
+【异常时间】：2014-04-24 14:10:01,343 [6] 
+【异常级别】：ERROR 
+模板/luo/newupindex.shtml,状态不可用
+------------------------------------
+【异常时间】：2014-04-24 14:10:01,749 [6] 
+【异常级别】：ERROR 
+模板/luo/zbupindex.shtml,状态不可用
+------------------------------------
+【异常时间】：2014-04-24 14:10:01,899 [4] 
+【异常级别】：ERROR 
+模板/luo/newupindex.shtml,状态不可用
+------------------------------------
+【异常时间】：2014-04-24 14:10:01,986 [4] 
+【异常级别】：ERROR 
+模板/luo/zbupindex.shtml,状态不可用
+------------------------------------
+【异常时间】：2014-04-24 14:10:03,159 [3] 
+【异常级别】：ERROR 
+模板/luo/newupindex.shtml,状态不可用
+------------------------------------
+【异常时间】：2014-04-24 14:10:03,247 [3] 
+【异常级别】：ERROR 
+模板/luo/zbupindex.shtml,状态不可用
+------------------------------------

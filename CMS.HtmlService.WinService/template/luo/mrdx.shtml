@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>每日电讯</title>
+<link href="http://js.upchina.com/sasweb/zhuanti/css/mrdx.css?20140704" type="text/css" rel="stylesheet"/>
+ <link href="http://js.upchina.com/sasweb/zhuanti/css/date.css" type="text/css" rel="stylesheet"/>
+     <script src="http://js.upchina.com/sasweb/actuals/js/init.js" type="text/javascript"></script>
+    <script src="http://js.upchina.com/sasweb/popup/js/uplogo.js" type="text/javascript"></script>
+
+
+ 
+</head>
+<body id="nav0">
+<div id="wrap">
+<div class="content">
+<div class="top_title"> <div class="m-date"><span id="curdate"></span><a href="javascript:void(0)" id="getdate"></a></div></div>
+<div class="top_pic">
+<#uptag tagtype="01" clsid="005017" pagesize="1" pagecount="1" viewedit="1" id="dataId005017"  var="d" index="i">
+  ${d.Content}
+ <#/uptag>
+</div>
+<div class="lf_title" id="nav1">UP策略</div>
+<#uptag tagtype="01" clsid="005018" pagesize="10" pagecount="1" viewedit="1" id="dataId005018"  var="d" index="i">
+<div class="title_list"><span>${d.Title}</span></div>
+<div class="con">
+ ${d.Content}
+</div>
+<#/uptag>
+<div class="lf_title" id="nav2">今日"升"态</div>
+<#uptag tagtype="01" clsid="005020" pagesize="10" pagecount="1" viewedit="1" id="dataId005020"  var="d" index="i">
+<div class="k"> ${d.Content}</div>
+<#/uptag>
+
+<div class="lf_title" id="nav3">热点索骥</div>
+<#uptag tagtype="01" clsid="005019" pagesize="10" pagecount="1" viewedit="1" id="dataId005019"  var="d" index="i">
+<div class="pic"> ${d.Content}</div>
+ <#/uptag>
+<div class="lf_title" id="nav4">征服股迹</div>
+<#uptag tagtype="01" clsid="005021" pagesize="10" pagecount="1" viewedit="1" id="dataId005020"  var="d" index="i">
+<div class="pic"> ${d.Content}</div>
+ <#/uptag>
+<div class="lf_title" id="nav5">今日上榜</div>
+<#uptag tagtype="01" clsid="005022" pagesize="10" pagecount="1" viewedit="1" id="dataId005021"  var="d" index="i">
+<div class="pic"> ${d.Content}</div>
+<#/uptag>
+<div class="lf_title" id="nav6">投资日历</div>
+<#uptag tagtype="01" clsid="005023" pagesize="10" pagecount="1" viewedit="1" id="dataId005022"  var="d" index="i">
+<div class="pic"> ${d.Content}</div>
+ <#/uptag>
+
+<!--<div class="us"><img src="http://img.upchina.com/sasweb/zhuanti/mrdx/up_logo.gif" /><ul>
+  <li class="up">来源：UP金融研究所</li><li>在金融自由化和资产配置全球化的背景下，金汇研究所以UP！China（雄起！中国）为己任，致力于成为中国实现公民金融权的推动者、投资渠道的拓宽者和财富安全的捍卫者。</li></ul></div>-->
+
+  <div class="us"><img src="http://img.upchina.com/sasweb/zhuanti/mrdx/up_logo.gif" /><ul>
+  <li><span class="up">UP金融研究所：</span>在金融自由化和资产配置全球化的背景下，金汇研究所以UP！China（雄起！中国）为己任，致力于成为中国实现公民金融权的推动者、投资渠道的拓宽者和财富安全的捍卫者。</li>
+  <li>联系邮件：<a href="mailto:research@upchina.com" class="email">research@upchina.com</a><a href="http://www.upchina.com/hezuo.html" target="_blank" class="link">商务合作</a><a href="http://www.upchina.com/about.html?gourl=jrwm" target="_blank" class="link">招聘</a></li>
+  </ul></div>
+
+<div class="title_list"><span>公司声明及风险提示：</span></div>
+<div class="state">
+<p>负责撰写此报告的分析师（一人或多人）就本研究报告确认：本人具有中国证券业协会授权的证券投资咨询职业资格。本公司研究报告是针对与公司签署服务协议的签约客户的专属研究产品，为该类客户进行投资决策时提供辅助和参考，双方对权利与义务均有严格约定。本公司研究报告仅提供给上述特定客户，并不面向公众发布。未经书面授权刊载或者转发的，本公司将采取维权措施追究其侵权责任。</p>
+<p>证券市场是一个风险无时不在的市场。您在进行证券交易时存在赢利的可能，也存在亏损的风险。请您务必对此有清醒的认识，认真考虑是否进行证券交易。市场有风险，投资需谨慎。</p>
+<p class="b">免责条款：</p>
+<p>此报告旨为发给UP投资的特定客户及其他专业人士。未经UP投资事先书面明文批准，不得更改或以任何方式传送、复印或派发此报告的材料、内容及其复印本予任何其他人。</p>
+<p>此报告所载资料的来源及观点的出处皆被UP投资认为可靠，但UP投资不能担保其准确性或完整性，报告中的信息或所表达观点不构成所述证券买卖的出价或询价，报告内容仅供参考。UP投资不对因使用此报告的材料而引致的损失而负上任何责任，除非法律法规有明确规定。客户并不能尽依靠此报告而取代行使独立判断。</p>
+<p>UP投资可发出其他与本报告所载资料不一致及有不同结论的报告。本报告及该等报告反映编写分析员的不同设想、见解及分析方法。报告所载资料、意见及推测仅反映分析员于发出此报告日期当日的判断，可随时更改。此报告所指的证券价格、价值及收入可跌可升。为免生疑问，此报告所载观点并不代表UP投资的立场。</p>
+<p>UP投资在法律许可的情况下可能参与此报告所提及的发行商的投资银行业务或投资其发行的证券。</p>
+<p>UP投资2014版权所有。保留一切权利。</p>
+</div>
+</div>
+
+<script type="text/javascript" src="http://js.upchina.com/upchinav2/js/jquery-1.4.2.js"></script>
+<script src="http://js.upchina.com/sasweb/zhuanti/js/updatepicker.js" type="text/javascript"></script>
+<script src="http://js.upchina.com/sasweb/zhuanti/js/upxwc.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+    $(function () {
+        navpos();
+        var nav1_top, nav2_top, nav3_top, nav4_top, nav5_top, nav6_top, nav0_top;
+        //alert(tops);
+        $(window).scroll(function () {
+            nav1_top = $("#nav1").offset().top - 40;
+            nav2_top = $("#nav2").offset().top - 40;
+            nav3_top = $("#nav3").offset().top - 40;
+            nav4_top = $("#nav4").offset().top - 40;
+            nav5_top = $("#nav5").offset().top - 40;
+            nav6_top = $("#nav6").offset().top - 40;
+            nav0_top = $("#nav0").offset().top - 40;
+            var scroH = $(this).scrollTop();
+            if (scroH >= nav6_top) {
+                set_cur(".nav6");
+            } else if (scroH >= nav5_top) {
+                set_cur(".nav5");
+            } else if (scroH >= nav4_top) {
+                set_cur(".nav4");
+            } else if (scroH >= nav3_top) {
+                set_cur(".nav3");
+            } else if (scroH >= nav2_top) {
+                set_cur(".nav2");
+            } else if (scroH >= nav1_top) {
+                set_cur(".nav1");
+            } else if (scroH >= nav0_top) {
+                set_cur(".nav0");
+            }
+        });
+
+        $(".nav li a").click(function () {
+            var el = $(this).attr('class');
+            $('html, body').animate({
+                scrollTop: $("#" + el).offset().top
+            }, 5);
+            $(this).addClass("cur").parent().siblings().find("a").removeClass("cur");
+        });
+
+        $("#yjfk").click(function () {
+            $("#light").css("display", "block");
+           // $("#fade").css("diplay", "block");
+        })
+
+        var browser = {
+            versions: function () {
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {         //移动终端浏览器版本信息
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+                    iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                    iPad: u.indexOf('iPad') > -1, //是否iPad
+                    webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+                };
+            } (),
+            language: (navigator.browserLanguage || navigator.language).toLowerCase()
+        }
+        if (browser.versions.android || browser.versions.ios) {
+            $("#menu1").css("display", "none");
+        }
+
+    });
+    $(window).resize(function () {
+        navpos();
+    });
+    function navpos() {
+        var offset = $("#wrap").offset().left;
+        var nav_w = $(".nav").outerWidth();
+        var right = offset - nav_w;
+        
+        if (right > 10) {
+            $(".nav").css('right', right - 10);
+        } else {
+            $(".nav").css('right', 10);
+        }
+    }
+    function set_cur(n) {
+        if ($(".nav a").hasClass("cur")) {
+            $(".nav a").removeClass("cur");
+        }
+        $(".nav a" + n).addClass("cur");
+    }
+</script>
+</div>
+<div class="nav" id="menu1">
+	<ul>
+	  <li><a class="nav1">UP策略</a></li>
+	  <li><a class="nav2">今日"升"态</a></li>
+	  <li><a class="nav3">热点索骥</a></li>
+	  <li><a class="nav4">征服股迹</a></li>
+	  <li><a class="nav5">今日上榜</a></li>
+	  <li><a class="nav6">投资日历</a></li>
+	  <li class="top"><a class="nav0">回到顶部</a></li>
+	  <li class="yjfk" id="yjfk">意见反馈</li>
+	</ul>
+	<img src="http://img.upchina.com/sasweb/zhuanti/mrdx/weixin.jpg" width="110" height="150" />
+	<div id="light" class="fk"  style="display:none;position:absolute;margin:-151px 0 0 -217px;">
+        <iframe frameborder="0" scrolling="no"  src="http://app.upchina.com/sasweb/xysidkdydnhensydn_cdhds.dyshg/dsfyewlrndsfpoidsfewlkdsnf.cxgdsf_hdsfnew_gz/questionnai/upmrdx.aspx" id="main" name="main" style="width: 300px; height: 270px;"></iframe>
+		 
+	</div>
+	<div id="fade"></div> 
+</div>
+<div style="display:none">
+<script src="http://s22.cnzz.com/z_stat.php?id=1000125520&web_id=1000125520" language="JavaScript"></script>
+</div>
+
+<div>
+<script type="text/javascript">
+    var CNZZ_ADM_Orientation = 'version(' + version + ')|tianguiaccount(' + tgTypeName + ')|boceaccount(' + bhTypeName + ')|tianjinmaxdeposit(' + tgmaxDeposit + ')|bohaimaxDeposit(' + bhmaxDeposit + ')';
+        </script>
+<!-- 广告位：up每日电讯对联广告-->
+<script type='text/javascript' charset='gb2312' src='http://js.adm.cnzz.net/s.php?sid=291281'></script>
+</div>
+<div style="width:960px;margin: 0 auto;">
+<script type="text/javascript">
+    var CNZZ_ADM_Orientation = 'version(' + version + ')|tianguiaccount(' + tgTypeName + ')|boceaccount(' + bhTypeName + ')|tianjinmaxdeposit(' + tgmaxDeposit + ')|bohaimaxDeposit(' + bhmaxDeposit + ')';
+        </script>
+    <!-- 广告位：up每日电讯底部广告-->
+<script type='text/javascript' charset='gb2312' src='http://js.adm.cnzz.net/s.php?sid=291280'></script>
+</div>
+<div style="display: none">
+<script type="text/javascript" src="http://s22.cnzz.com/z_stat.php?id=1000125520&web_id=1000125520" language="JavaScript"></script>
+</div>
+</body>
+</html>

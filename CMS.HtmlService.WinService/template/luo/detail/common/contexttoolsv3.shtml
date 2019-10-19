@@ -1,0 +1,58 @@
+﻿<p class="declaration">声明：此文章以及UP投资网所有所载文章、数据仅供参考，使用前请自行核实，由此所产生的风险均由您个人承担。UP投资网致力打造成为优质的财经资讯聚合平台，如果您愿意为我们供稿，请点击这里提交；如果该文章侵犯了您的版权或相关权益，请点击这里与我们联系，我们将及时处理。</p>
+
+<div class="shareBox">
+          <div id="share">
+            <ul>
+              <li><span class="fenxd">分享到:</span></li>
+				<li><a target="_self" href="javascript:(function(){window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href)+'&source=bookmark','_blank','width=450,height=400');})()" title="新浪微博分享"><img src="http://img.upchina.com/upchinav2/images/ico_sina.gif"  alt="新浪微博分享" border="0"></a>	</li>	
+		        <li><a target="_self" title="分享到搜狐微博" href="javascript:void((function(s,d,e,r,l,p,t,z,c){var f='http://t.sohu.com/third/post.jsp?',u=z||d.location,p=['&url=',e(u),'&title=',e(t||d.title),'&content=',c||'gb2312','&pic=',e(p||'')].join('');function%20a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=660,height=470,left=',(s.width-660)/2,',top=',(s.height-470)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,'','','','','','utf-8'));" style="font-size:12px;font-family:'\5b8b\4f53';color:#369"><img src="http://s2.cr.itc.cn/img/t/152.png"/></a></li>
+		        <li><a target="_self" href="javascript:void(0)" onclick="postToWb();" title="腾讯微博分享" class="tmblog"><img src="http://img.upchina.com/upchinav2/share/share_3.jpg" alt="腾讯微博分享"></a></li>
+		        <li><a target="_self" id="ckepop" class="jiathis_button_qzone" style="margin:7px 0 0;"></a><script type="text/javascript" src="http://v2.jiathis.com/code/jia.js" charset="utf-8"></script></li>
+
+            </ul>
+            <script type="text/javascript">
+  function postToWb(){
+   var _t = encodeURI(document.title);
+   var _url = encodeURI(document.location);
+   var _appkey = encodeURI("appkey");//你从腾讯获得的appkey
+   var _pic = encodeURI('');//（列如：var _pic='图片url1|图片url2|图片url3....）
+   var _site = '';//你的网站地址
+   var _u = 'http://v.t.qq.com/share/share.php?title='+_t+'&url='+_url+'&appkey='+_appkey+'&site='+_site+'&pic='+_pic;
+   window.open( _u,'转播到腾讯微博', 'width=700, height=680, top=0, left=0, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no' );
+  }
+  </script> 
+          </div>
+          <div class="shareWeibo">
+            <div class="wbCtn fr">
+              <div class="left_logo"> <img src="http://img.upchina.com/upchinav2/images/wbLogo2.gif"> </div>
+              <div class="right_ms">
+                <div class="mc">
+                  <ul>
+                    <li> <a href="http://1.t.qq.com/UPtouzi">UP投资网</a> </li>
+                    <li> <img src="http://img.upchina.com/upchinav2/images/txWB.gif"> </li>
+                  </ul>
+                </div>
+                <div class="hr_6"></div>
+                <div class="guanZhu">
+                  <div class="add_guanzhu"> <a href="http://1.t.qq.com/UPtouzi"><img src="http://img.upchina.com/upchinav2/images/addGz.gif"></a> </div>
+                </div>
+              </div>
+            </div>
+            <div class="wbCtn fl09"><!--新浪微博-->
+              <div class="left_logo"> <img src="http://img.upchina.com/upchinav2/images/wbLogo1.gif"> </div>
+              <div class="right_ms">
+                <div class="mc">
+                  <ul>
+                    <li> <a href="http://weibo.com/u/2676385273?s=6cm7D0">UP投资网</a> </li>
+                    <li> <img src="http://img.upchina.com/upchinav2/images/xinlangWB.gif"> </li>
+                  </ul>
+                </div>
+                <div class="hr_6"></div>
+                <div class="guanZhu">
+                  <div class="add_guanzhu"> <a href="http://weibo.com/u/2676385273?s=6cm7D0"><img src="http://img.upchina.com/upchinav2/images/addGz.gif"></a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      

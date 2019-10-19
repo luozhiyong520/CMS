@@ -1,0 +1,305 @@
+﻿
+<!doctype html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>${art.Title}-中学教育(zongxue.net)</title>
+<meta name="keywords" content="${art.Title}--中学教育,课外教育，思维，探索，发现，智力开发，智力教育" />
+<meta name="description" content="${art.Title}--中学教育提供中学类智力题目，心理教育，口才与辩论，每日一句外语，家庭教育，探索发现奥秘，在中国中学生学习压力沉重，如何释放自己，让思维变得更活跃，中学教育轻松陪伴你。" />
+<link href="/static/css/base.css" rel="stylesheet">
+<link href="/static/css/view.css" rel="stylesheet">
+<script type="text/javascript" src="http://www.kouweipai.com/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/myfocus-2.0.4.min.js"></script>
+<!--[if lt IE 9]>
+<script src="/static/js/modernizr.js"></script>
+<![endif]-->
+ </head>
+<body>
+<header>
+  <div class="topbg">
+    <ul class="topnav">
+      <a href="http://www.zongxue.net/ " target="_blank">Home</a><a href="http://weibo.com/jiyouh" target="_blank">一起学金融</a><a href="about.html " target="_blank">关于我们</a>
+    </ul>
+  </div>
+  <div class="topbgline"></div>
+  <div class="logo">
+    <div class="logo_l f_l"><a href="/"><img src="static/images/zxlogo.png"></a></div>
+    <div class="logo_r f_r">
+        <div class="bdcs-container">
+        <div class="bdcs-main bdcs-clearfix" id="default-searchbox">  
+            <div class="bdcs-search bdcs-clearfix" id="bdcs-search-inline">      
+                <form action="http://search.jiyouh.com/cse/search" method="get" target="_blank" class="bdcs-search-form" autocomplete="off" id="bdcs-search-form">   
+                <input type="hidden" name="s" value="8679668726502783496">    
+                <input type="hidden" name="entry" value="1">                
+                <input type="hidden" name="ie" value="gbk">      
+                <input type="text" name="q" class="bdcs-search-form-input" id="bdcs-search-form-input" placeholder="请输入关键词" style="height: 28px; line-height: 28px;">         
+                <input type="submit" class="bdcs-search-form-submit " id="bdcs-search-form-submit" value="搜索">        
+                </form>     
+             </div>              
+        </div>
+       </div>
+    </div>
+  </div>
+  <nav id="topnav">
+    <ul>
+      <a href="http://www.zongxue.net/">首页</a>
+        <a href="http://www.zongxue.net/zlkd/">智力开导</a>
+        <a href="http://www.zongxue.net/kcbl/">口才辩论</a>
+        <a href="http://www.zongxue.net/mrwy/">每日外语</a>
+        <a href="http://www.zongxue.net/tsfx/">探索发现</a>
+        <a href="http://www.zongxue.net/jtjy/">家庭教育</a> 
+        <a href="http://www.zongxue.net/jjh/">交际花</a> 
+        <a href="http://www.zongxue.net/xljy/">心理教育</a>
+        <a href="http://www.zongxue.net/about.html">关于我们</a>
+    </ul>
+    <script src="static/js/silder.js"></script> 
+  </nav>
+
+</header>
+
+<article>
+  <div class="l_box f_l">
+    <div class="topnews">
+      <h2>您现在的位置是：<a href="http://www.zongxue.net/">首页</a>&nbsp;>&nbsp;<a href="http://www.zongxue.net/${art.ChannelEnName}/">${art.ChannelName}</a>&nbsp;>&nbsp;<a href="${art.Url}">${art.Title}</a></h2>
+      <div class="news_title">${art.Title}</div>
+      
+<div class="news_author"><span class="au01"></span><span class="au02">${cdatestring(d.CreatedTime,"yyyy-MM-dd")}</span><strong class="au04 f_r"><div class="ds-thread-count" data-thread-key="140" data-count-type="comments"></a></div></strong></div>  
+   <div class="news_about"><strong>简介</strong>${substr(filterhtml(d.NewsAbstract))}</div>
+      <div class="news_content">
+        <ul>
+           ${art.Content}
+        </ul>
+<div class="footend"> </div>
+      </div>
+      <div class="fenx"><div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_huaban" data-cmd="huaban" title="分享到花瓣"></a><a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a><a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></div>
+      <div class="nextinfo">
+                  <#uptag tagtype="01" clsid="001004" pagesize="2" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+                        <#if test="${equals(i,1)}">
+                 
+                            <p>上一篇：<a href='${art.Url}'>${art.Title}</a></p
+                            <#else>
+                                   <p>下一篇：<a href='${art.Url}'>${art.Title}</a></p>
+                                <#/if>
+                    <#/uptag>
+
+       
+      </div>
+      <div class="otherlink">
+        <h2>相关文章</h2>
+        <ul>
+            <#uptag tagtype="01" clsid="001002" pagesize="10" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">
+            <li><a href="${art.Url}" title="${art.Title}">${art.Title}</a></li>
+            <#/uptag>
+        </ul>
+      </div>
+      <div class="news_pl">
+        <h2>文章评论</h2>
+        <ul>
+<div class="ds-thread" data-category="15" data-thread-key="140" data-title="${art.Title}"></div>
+ <!-- UY BEGIN -->
+                        <div id="uyan_frame"></div>
+                        <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1959336"></script>
+                        <!-- UY END -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="r_box f_r">
+    <!--<div class="tit01">
+      <h3>关注我们</h3>
+     <div class="gzwm">
+        <ul>
+          <li><a class="xlwb" href="http://weibo.com/jiyouh" target="_blank">新浪微博</a></li>
+          <li><a class="txwb" href="http://t.qq.com/jiyouh" target="_blank">腾讯微博</a></li>
+          <li><a class="rss" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=HGZvdHBcdnVlc2l0Mn9zcQ" target="_blank">邮箱</a></li>
+          <li><a class="wx" href="#" onmouseover="tip.start(this)" tips="<font color='#fff'>关注<b>机友汇</b>微信账号</font><br><b><img src='http://www.jiyouh.com/skin/jiyouhui/images/weixintop.jpg'></b>">微信</a></li>
+        </ul>
+      </div>
+    </div>--> 
+ <div id="mjs:tip" class="tip" style="position:absolute;left:0;top:0;display:none;"> </div>
+ <script>
+		  var tip={$:function(ele){
+  if(typeof(ele)=="object")
+    return ele;
+  else if(typeof(ele)=="string"||typeof(ele)=="number")
+    return document.getElementById(ele.toString());
+    return null;
+  },
+  mousePos:function(e){
+    var x,y;
+    var e = e||window.event;
+    return{x:e.clientX+document.body.scrollLeft+document.documentElement.scrollLeft,
+y:e.clientY+document.body.scrollTop+document.documentElement.scrollTop};
+  },
+  start:function(obj){
+    var self = this;
+    var t = self.$("mjs:tip");
+    obj.onmousemove=function(e){
+      var mouse = self.mousePos(e);
+      t.style.left = mouse.x + 10 + 'px';
+      t.style.top = mouse.y + 10 + 'px';
+      t.innerHTML = obj.getAttribute("tips");
+      t.style.display = '';
+    };
+    obj.onmouseout=function(){
+      t.style.display = 'none';
+    };
+  }
+  }
+		  </script>
+
+      <#uptag tagtype="01" clsid="001010" pagesize="1" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">      
+    <div class="ad300x100"><a href="${d.Url}" target="_blank"><img src="${d.ImgUrl}"></a> </div>
+   <#/uptag>  
+
+ 
+
+<script type="text/javascript">
+//设置
+myFocus.set({
+	id:'myFocus',//ID
+	pattern:'mF_kdui'//风格
+});
+</script>
+
+<div id="myFocus"><!--焦点图盒子-->
+        <div class="loading"></div>
+        <!--载入画面(可删除)-->
+        <div class="pic"><!--图片列表-->
+          <ul>
+  <#uptag tagtype="01" clsid="001008" pagesize="5" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">    
+               
+                   <#if test="${isnotempty(d.ImgUrl) and notequals(d.ImgUrl,"")}">
+                        <#if test="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+                            <li><a href="${d.Url}" target="_blank" title="${d.Title}"><img src="${d.ImgUrl}" thumb="" alt="${d.Title}" /></a></li>
+                        <#else>
+                           <li><a href="${d.Url}" target="_blank" title="${d.Title}"><img src="http://img.pinyifu.com${d.ImgUrl}" thumb="" alt="${d.Title}" /></a></li>
+                        <#/if>
+                        <#/if>          
+                 <#/uptag>
+          </ul>
+        </div>
+      </div> 
+      <div class="moreSelect" id="lp_right_select"> 
+<script>
+window.onload = function ()
+{
+	var oLi = document.getElementById("tab").getElementsByTagName("li");
+	var oUl = document.getElementById("ms-main").getElementsByTagName("div");
+	
+	for(var i = 0; i < oLi.length; i++)
+	{
+		oLi[i].index = i;
+		oLi[i].onmouseover = function ()
+		{
+			for(var n = 0; n < oLi.length; n++) oLi[n].className="";
+			this.className = "cur";
+			for(var n = 0; n < oUl.length; n++) oUl[n].style.display = "none";
+			oUl[this.index].style.display = "block"
+		}	
+	}
+}
+</script>
+      <div class="ms-top">
+        <ul class="hd" id="tab">
+          <li class="cur"><a href="/">点击排行</a></li>
+          <li><a href="/">最新文章</a></li>
+          <li><a href="/">站长推荐</a></li>
+        </ul>
+      </div>
+     <div class="ms-main" id="ms-main">
+        <div style="display: block;" class="bd bd-news" >
+          <ul>
+               <#uptag tagtype="01" clsid="001001,001002" pagesize="10" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">      
+                    <li><a href="${d.Url}" title="${d.Title}">${d.Title}</a></li>
+                <#/uptag>  
+          </ul>
+        </div>
+        <div  class="bd bd-news">
+          <ul>
+                <#uptag tagtype="01" clsid="001003,001004" pagesize="10" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">      
+                    <li><a href="${d.Url}" title="${d.Title}">${d.Title}</a></li>
+                <#/uptag>
+          </ul>
+        </div>
+        <div class="bd bd-news">
+          <ul>
+                <#uptag tagtype="01" clsid="001005,001006,001007" pagesize="10" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">      
+                    <li><a href="${d.Url}" title="${d.Title}">${d.Title}</a></li>
+                <#/uptag>
+          </ul>
+        </div>
+      </div>
+      <!--ms-main end -->  
+    </div>   
+    <div class="cloud">
+      <h3>热门标签</h3>
+      <ul>
+
+          <#uptag tagtype="01" clsid="001011" pagesize="15" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">      
+       <a href="http://www.zongxue.net/so.html?keywords=${toescape(d.title)}" target="_blank">${d.Title}</a>  
+       <#/uptag>
+              
+              </ul>
+    </div>
+ 
+           <#uptag tagtype="01" clsid="001012" pagesize="1" pagecount="1" viewedit="1" id="dataId001001" var="d" index="i" islast="flag">      
+       <div class="ad"  id="r_ad"><a href="${d.Url}" target="_blank"><img src="${d.ImgUrl}"></a> </div>
+   <#/uptag> 
+    <script type="text/javascript">
+
+jQuery(function() { 
+    var elm = jQuery('#r_ad'); 
+    var startPos = jQuery(elm).offset().top; 
+    jQuery.event.add(window, "scroll", function() { 
+        var p = jQuery(window).scrollTop(); 
+        jQuery(elm).css('position',((p) > startPos) ? 'fixed' : 'static'); 
+        jQuery(elm).css('top',((p) > startPos) ? '30px' : ''); 
+    }); 
+}); 
+</script> 
+  </div>
+  <!--r_box end --> 
+</article>
+<footer>
+    <div class="endfoot">
+    <div class="ft-info f_l">
+      <div class="ftlogo"><a href="http://www.zongxue.net/" target="_blank"><img src="/static/images/zxlogo.png"></a></div>
+      <div class="ft-title">
+        <p>中学教育网(zongxue.net)，开发中学生思维,让学生活跃起来! </p>
+      </div>
+    </div>
+    <div class="ft-list f_r">
+       <!--<div class="ft-shares">    
+         <a class="shares-sina" title="邮箱" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=HGZvdHBcdnVlc2l0Mn9zcQ" target="_blank"></a>
+         <a class="shares-ten" title="腾讯微博" href="http://t.qq.com/jiyouh" target="_blank"></a>
+          <a class="shares-dib" title="新浪微博" href="http://weibo.com/jiyouh" target="_blank"></a>
+      </div>-->
+      <div class="ft-nav">
+        <a href="http://www.zongxue.net/about.html" target="_blank">关于我们</a> 
+        <a href="http://www.zongxue.com/about.html" target="_blank">联系我们</a> 
+        <a href="http://www.zongxue.net/jobs.html" target="_blank">加入我们</a> 
+ 
+ 
+      </div>
+      <p class="ft-copyright"> Copyright 2015 <a href="http://www.miitbeian.gov.cn/" target="_blank"> 粤ICP备15098883号-2</a></p>
+
+
+
+
+
+ 
+
+
+
+    </div>
+  </div>
+
+
+
+  
+</footer>
+ 
+</body>
+</html>

@@ -1,0 +1,7 @@
+﻿[<#uptag tagtype="06" modudle="analystLiveMk" count="5" viewedit="1" id="dataId001006"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+{"CreateTime":"${cdatestring(d.CreateTime,"yyyy-MM-dd HH:mm:ss")}","AnalystName":"${stringtounicode(d.AnalystName)}","AnalystId":"${d.AnalystId}","ActualName":"${stringtounicode(d.ActualName)}","TransPrice":"${d.TransPrice}","TransType":"${stringtounicode(d.TransType)}"}
+ <#else>
+{"CreateTime":"${cdatestring(d.CreateTime,"yyyy-MM-dd HH:mm:ss")}","AnalystName":"${stringtounicode(d.AnalystName)}","AnalystId":"${d.AnalystId}","ActualName":"${stringtounicode(d.ActualName)}","TransPrice":"${d.TransPrice}","TransType":"${stringtounicode(d.TransType)}"},
+ <#/if>
+ <#/uptag>]

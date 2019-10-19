@@ -1,0 +1,71 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>了解现货</title>
+<link rel="stylesheet" href="http://app.stock.com/app/css/reset.css">
+</head>
+<body class="redColor">
+  <#uptag tagtype="02" clsid="006" pagesize="1" pagecount="1" viewedit="1" id="dataId006"  var="d" index="i">                        
+     ${d.Content}
+  <#/uptag>
+</body>
+<script type="text/javascript">
+    window.onload = function () {
+        var dom1 = document.getElementById("demo1"), tab1 = document.getElementById("xh_tab1"), tab2 = document.getElementById("xh_tab2"), tab1_div = tab1.getElementsByTagName("div"), tab2_div = tab2.getElementsByTagName("div"), t1li = tab1.getElementsByTagName("ul")[0].getElementsByTagName("li"), t2li = tab2.getElementsByTagName("ul")[0].getElementsByTagName("li");
+        //
+        gun(dom1)
+        tab(t1li, tab1_div, "ye_act");
+        tab(t2li, tab2_div, "ye_177");
+
+        var c1 = document.getElementById("clo1"), c2 = document.getElementById("clo2"), img = document.getElementById("imgv");
+        c2.onclick = function () {
+            img.style.display = "none"
+        }
+        //视频关闭
+        var vClose = document.getElementById('vClose'), float_video = document.getElementById('float_video');
+        vClose.onclick = function () {
+            float_video.style.display = 'none';
+        }
+    }
+
+    function tab(obj, tag, className) {
+        for (var i = 0; i < obj.length; i++) {
+            obj[i].index = i;
+            obj[i].onclick = function () {
+                for (var j = 0; j < obj.length; j++) obj[j].className = "";
+                obj[this.index].className = className;
+                for (var j = 0; j < tag.length; j++) {
+                    tag[j].style.display = "none";
+                }
+                tag[this.index].style.display = "block";
+            }
+        }
+    }
+    function gun(obj) {
+        var oUl = obj.getElementsByTagName("ul")[0];
+        var oLi = oUl.getElementsByTagName("li");
+        var timer = null;
+        var speed = -1;
+        oUl.innerHTML += oUl.innerHTML;
+        oUl.style.width = (oLi[0].offsetWidth + 6) * oLi.length + 'px';
+        function aout() {
+            timer = setInterval(function () {
+                oUl.style.left = oUl.offsetLeft + speed + 'px';
+                if (oUl.offsetLeft < -oUl.offsetWidth / 2) {
+                    oUl.style.left = 0;
+                } else if (oUl.offsetLeft > 0) {
+                    oUl.style.left = -oUl.offsetWidth / 2 + 'px';
+                }
+            }, 30)
+        }
+        aout();
+        oUl.onmouseover = function () {
+            clearInterval(timer);
+        }
+        oUl.onmouseout = function () {
+            aout();
+        }
+    }
+</script> 
+</html>

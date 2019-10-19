@@ -1,0 +1,7 @@
+﻿[<#uptag tagtype="06" modudle="gjsgzfanslist" count="7" viewedit="1" id="dataId001006"  var="d" index="i" islast="flag">
+<#if test="${flag}">
+{"AnalystName":"${stringtounicode(d.AnalystName)}","AnalystId":"${d.AnalystId}","CustomerName":"${stringtounicode(d.CustomerName)}","CreateTime":"${cdatestring(d.CreateTime,"yyyy-MM-dd HH:mm:ss")}"}
+ <#else>
+{"AnalystName":"${stringtounicode(d.AnalystName)}","AnalystId":"${d.AnalystId}","CustomerName":"${stringtounicode(d.CustomerName)}","CreateTime":"${cdatestring(d.CreateTime,"yyyy-MM-dd HH:mm:ss")}"},
+ <#/if>
+ <#/uptag>]

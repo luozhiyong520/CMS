@@ -1,0 +1,92 @@
+﻿ <script language="javascript">
+     $(function () {
+         $("embed").css("width", "700px")
+         $("embed").css("height", "450px")
+
+         var newsid = GetUrlParame("id");
+         
+         if (newsid != "" && newsid != undefined)
+            playsp('content'+ newsid+'', 'title'+newsid+'');
+
+     });
+     //获取URL参数的值
+     function GetUrlParame(parame) {
+         var reg = new RegExp("(^|&)" + parame + "=([^&]*)(&|$)", "i");
+         var res = "";
+         try {
+             res = window.location.search.substr(1).match(reg)[2];
+         } catch (e) { }
+         return res;
+     }
+
+     function playsp(content, title) {
+         
+         $("#title").html($("#"+title).html());
+         var url = $("#" + content).find("embed").attr("src");
+ 
+          $("#sp_embed").html($("#" + content).html());
+          $("#sp_embed > embed").remove();
+          var video = document.getElementById("sp_embed");
+          var htmlstr;
+          if (navigator.userAgent.indexOf("MSIE 6.0") < 0) {
+              htmlstr = "<object  id='obx' name='obx' width='700px' height='520px'>";
+              htmlstr += "<param name='movie' value='" + url + "'></param>";
+              htmlstr += "<param name='allowFullScreen' value='true'></param>";
+              htmlstr += "<param name='allowscriptaccess' value='always'></param>";
+
+              htmlstr += "<param name='wmode' value='opaque'></param>";
+              htmlstr += "<embed src='" + url + "' type='application/x-shockwave-flash' allowscriptaccess='always' allowfullscreen='true' wmode='opaque' width='700px' height='520px'></embed>";
+              htmlstr += "</object>";
+              video.innerHTML = htmlstr;
+          } else {
+              //适用与ie6
+              htmlstr = "";
+              htmlstr += "<embed src='" + url + "' type='application/x-shockwave-flash' allowscriptaccess='always' allowfullscreen='true' wmode='opaque' width='700px' height='520px'></embed>";
+              video.innerHTML = htmlstr;
+              return false;
+          }
+     }
+    </script>
+
+
+<div class="contain">
+<#uptag tagtype="01" clsid="003004" pagesize="7" pagecount="1" viewedit="1" id="dataId003004"  var="d" index="i" islast="flag">
+<#if test="${equals(i,1)}">
+    <div class="contain_top">
+        <h2 id="title">${d.Title}</h2>
+                   
+        <div class="splx_sp" id="sp_embed">
+            ${d.Content}
+        </div>
+                  
+    </div>
+
+    <div class="divide_line"></div>
+
+    <div class="splx_bottom">
+        <ul>
+            <#else>
+
+            <li>
+                <div class="splx_img">
+                
+                        <#if test="${isnotempty(filterhtml(d.ImgUrl))}">
+                            <a href="javascript:void(0)" onclick="playsp('content${d.NewsId}','title${d.NewsId}')" title="${d.Title}"><img src="http://img.upchina.com${d.ImgUrl}" width="200px" height="129px" /></a>
+                        <#else>
+                            <a href="javascript:void(0)" onclick="playsp('content${d.NewsId}','title${d.NewsId}')" title="${d.Title}"><img src="http://img.upchina.com/sasweb/analystlive/silvervip/tjd/sp_img.jpg" width="200px" height="129px" /></a>
+                        <#/if>
+                  </div>
+                        <div id="content${d.NewsId}" style="display:none">${d.Content}</div>
+                        <div id="title${d.NewsId}" style="display:none">${d.Title}</div>
+                        <p><a href="javascript:void(0)" onclick="playsp('content${d.NewsId}','title${d.NewsId}')" title="${d.Title}"> ${substr(filterhtml(d.Title),40)}</a></p>
+              
+                            
+            </li>
+            <#/if>         
+                       
+     
+<#/uptag>
+
+   </ul>
+    </div>
+</div>

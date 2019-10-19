@@ -1,0 +1,4 @@
+2014-03-19 13:48:21,409 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-03-19 13:48:21,433 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-03-19 13:48:21,440 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-03-19 13:48:43,158 [6] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：106，模板名称：早盘必读，生成文件路径：E:\comsite\sasweb\zhuanti/upzzd.html成功！

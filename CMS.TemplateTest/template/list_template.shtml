@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <base target="_blank" />
+    <meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
+    <meta name="keywords" content="UP投资网,今日头条" />
+    <meta name="description" content="欢迎访问UP投资网站今日头条栏目，今日头条栏目全面即时为您报导国内国际股市新闻资讯,关注大盘、个股、新股、上市公司、行业动态。" />
+    <title>每日必读-UP投资网</title>
+    <!-- 列表页用css start -->
+    <#if test="${equals(maketype,0)}">
+    <#uptag tagtype="05" infourl="http://www.templatetest.com/include/web/v2012/list/common/contextcss.shtml"/>   
+      <#else>
+        <!--#include virtual="/include/web/v2012/list/common/contextcss.shtml"-->
+    <#/if>
+
+  
+    <!-- 列表用css end -->
+    <!--通用js start -->
+
+      <#if test="${equals(maketype,0)}">
+    <#uptag tagtype="05" infourl="http://www.templatetest.com/include/common/v2012/commonjs.shtml"/>   
+      <#else>
+        <!--#include virtual="/include/common/v2012/commonjs.shtml"-->
+    <#/if> 
+    <!--通用js end -->
+</head>
+<body>
+    <!--mininav-->
+    <!-- 顶部  登录 收藏 设为首页  start-->
+      <#if test="${equals(maketype,0)}">
+    <#uptag tagtype="05" infourl="http://www.templatetest.com/include/common/v2012/commontop.shtml"/>   
+      <#else>
+            <!--#include virtual="/include/common/v2012/commontop.shtml"-->
+    <#/if> 
+
+    <!-- 顶部  登录 收藏 设为首页  end-->
+    <!--\mininav-->
+    <div class="hr_6">
+    </div>
+    <!-- 网站导航条 start -->
+     <#if test="${equals(maketype,0)}">
+    <#uptag tagtype="05" infourl="http://www.templatetest.com/include/common/v2012/commonnav.shtml"/>   
+      <#else>
+          <!--#include virtual="/include/common/v2012/commonnav.shtml"-->
+    <#/if> 
+   
+    <!-- 网站导航条 end -->
+    <div class="hr_10">
+    </div>
+    <div class="Area">
+        <div class="wrapper_left">
+            <div class="mini_banner">
+                <!--列表页焦点图-2012-v1 start-->
+                <!--#include virtual="/list/common/listfocusimg.shtml"-->
+                <!--列表页焦点图-2012-v1 end-->
+            </div>
+            <div class="hr_6">
+            </div>
+            <div class="crumbs">
+                <ul>
+                    <li>当前位置:</li>
+                    <li><a href="http://www.upchina.com">UP投资首页</a> </li>
+                    <li>&gt;</li>
+                    <li>每日必读 </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="title3 title_ctn">
+                    <a class="need">每日必读</a>
+                </div>
+                <div class="list_ctn">
+                         <ul>
+                        <#UPTAG tagtype="01" clsid="001" pagesize="2" pagecount="3" viewedit="1" id="dataId007"  var="d" index="i">
+                        <#if test="${equals(i,9)} or equals(i,19) or equales(i,29)">
+                        </ul>
+                           <div class="division"> &nbsp;</div>
+                        <ul>
+                        <#/if>
+                           <li><a href="${d.Url}" title="${d.Title}">${substr(d.Title,60)}</a><span> ${cdatestring(d.CreatedTime,"yy-MM-dd")}</span></li>
+                        <#/UPTAG>
+                      
+                    </ul>
+                </div>
+                <div class="pager">
+                    <ul>
+                        <li>
+                        <#set name="locafilename" value="jrtt"/>
+                         <#for from="1" to="${pagecount}" index="rowindex">
+                            <#if test="${equals(rowindex,1)}"> 
+                                <#if test="${equals(curpage,rowindex)}">
+                                    <li class="current"><span><a>${rowindex}</a></span></li>
+                                <#else>
+                                     <li><span><a href="${locafilename}.shtml" target="_self">${rowindex}</a></span></li>
+                                <#/if> 
+                            <#else> 
+                                <#if test="${equals(curpage,rowindex)}">
+                                   <li class="current"><span><a>${rowindex}</a></span></li>
+                                <#else>
+                                   <li><span><a href="${locafilename}-${rowindex}.shtml" target="_self">${rowindex}</a></span></li>
+                                <#/if> 
+                            <#/if> 
+                         <#/for> 
+                          </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 列表页-正文页右侧 start -->
+        <!-- 网站导航条 start -->
+         <#if test="${equals(maketype,0)}">
+    <#uptag tagtype="05" infourl="http://www.templatetest.com/list/common/listright.shtml"/>   
+      <#else>
+          <!--#include virtual="/list/common/listright.shtml"-->
+    <#/if> 
+        
+        <!-- 列表页-正文页右侧 end -->
+    </div>
+    <!--列表页用js start -->
+    <#if test="${equals(maketype,0)}">
+    <#uptag tagtype="05" infourl="http://www.templatetest.com/include/web/v2012/list/common/commonjs.shtml"/>   
+      <#else>
+          <!--#include virtual="/include/web/v2012/list/common/commonjs.shtml"-->
+    <#/if> 
+   
+    <!--列表页用js end -->
+    <div class="hr_10">
+    </div>
+    <!-- 尾部 start -->
+     <#if test="${equals(maketype,0)}">
+    <#uptag tagtype="05" infourl="http://www.templatetest.com/include/common/v2012/commonfooter.shtml"/>   
+      <#else>
+           <!--#include virtual="/include/common/v2012/commonfooter.shtml"-->
+    <#/if> 
+   
+    <!-- 尾部 end -->
+</body>
+</html>
+<#set name="update" value="2012-12-31"/>
+<!-- update Time : ${update}-->

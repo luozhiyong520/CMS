@@ -1,0 +1,519 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>投资日历</title>
+<link href="http://js.upchina.com/sasweb/zhuanti/css/tzrl.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="http://js.upchina.com/upchinav2/js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="http://js.upchina.com/sasweb/zhuanti/js/tzrl.js"></script>
+<link href="http://js.upchina.com/sasweb/zhuanti/css/date.css" type="text/css" rel="stylesheet"/>
+<script src="http://js.upchina.com/sasweb/zhuanti/js/updatepicker.js" type="text/javascript"></script>
+<script type="text/javascript" language="javascript">
+    $(function () {
+        $('.m-date').DatePicker({
+            format: 'Y-m-d',
+            date: $('#curdate').html(),
+            current: $('#curdate').html(),
+            starts: 1,
+            position: 'bottom',
+            onBeforeShow: function () {
+            },
+            onChange: function (formated, dates) {
+                if (initDate(formated) != false) {
+                    $('#curdate').html(formated);
+                }
+                $('#getdate').DatePickerHide();
+            }
+        });
+
+        $(".scroll-bg").height(document.body.scrollHeight);
+
+        /*判断浏览器版本*/
+        if ($.browser.msie) {
+            var ie_version = $.browser.version;
+            ie_version = ie_version.substring(0, 1);
+        }
+
+        /*解决ie6下滚动条滚动而顶部导航不滚动*/
+        if (ie_version == 6) {
+            $("#weekul li:last > a").css("borderRight", "none");
+            $(window).scroll(function () {
+                /*获取屏幕滚动高度*/
+                var st = document.documentElement.scrollTop;
+                $(".scroll-bg").animate({ top: "+" + st + "px" }, "fast");
+                $(".nav").animate({ top: "+" + st + "px" }, "fast");
+
+            });
+        }
+
+    });
+    </script>
+</head>
+<body>
+ 
+ 
+
+<!--头部-->
+<div class="g-bg">
+
+<!--[if IE 6]>
+    <div class="scroll-bg"></div>
+<![endif]-->
+<div class="top">
+<div class="nav">
+<div class="g-top">
+  <div class="m-logo"></div>
+   <div class="m-date"><span id="curdate"></span><a href="javascript:void(0)" id="getdate"></a></div>
+  </div>
+<!--显示每周-->
+<div class="g-week">
+
+<!--<a class="pre-week" href="javascript:void(0)" onclick="javascript:previousWeek();return false;"></a>
+<ul id="weekul"></ul>
+<a class="nex-week" href="javascript:void(0)" onclick="javascript:nextWeek();return false;"></a>-->
+
+    <!--[if IE 6]>
+        <a class="pre-week-a" href="javascript:;" onclick="javascript:previousWeek();return false;"></a>
+    <![endif]-->
+    <!--[if !IE 6]><!-->
+        <a class="pre-week" href="javascript:void(0)" onclick="javascript:previousWeek();return false;"></a>
+    <!--<![endif]-->
+   
+  <ul id="weekul">
+  </ul>
+
+    <!--[if IE 6]>
+        <a class="next-week-a" href="javascript:;"  onclick="javascript:nextWeek();return false;"></a>
+    <![endif]-->
+    <!--[if !IE 6]><!-->
+        <a class="nex-week" href="javascript:void(0)" onclick="javascript:nextWeek();return false;"></a>
+    <!--<![endif]-->
+
+</div>
+</div>
+</div>
+  <!--中间部分-->
+<div class="g-con" id="wheellist" >
+  <div class="m-line-top"></div>
+  <div class="m-con current" id="div-1">
+    <div class="m-date" id="date-1">8月5日<br/>
+      星期一</div>
+    <div class="m-line"> </div>
+    <div class="m-bd m-cur" id="m-bd-1">
+      <div class="m-tp">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="54%">事件</td>
+            <td width="29%">市场影响</td>
+            <td width="17%">重要性</td>
+          </tr>
+        </table>
+      </div>
+      <div class="m-ct">
+     
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" id="list-1"  style="padding-top:10px">
+       <#uptag tagtype="01" clsid="005001" pagesize="10" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" week="week1"> 
+      
+          <tr>
+             <#if  test="${isempty(d.ImgUrl)}">   
+            <td width="54%"><div class="m-list">
+            <#if test="${equals(d.IsBold,1)}">
+                 <font color="${d.TitleColor}" style="font-weight:bold">${d.Title}</font>
+            <#else>
+                  <font color="${d.TitleColor}">${d.Title}</font>
+            <#/if>
+            </div></td>
+            <#else>
+             <td width="54%"><div class="m-pic">
+                 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+                     <div><img src="${d.ImgUrl}" width="295" height="122"/></div>
+                 <#else>
+                     <div><img src="http://img.upchina.com/${d.ImgUrl}" width="295" height="122" /></div>
+                  <#/if>
+                
+                <p> <#if test="${equals(d.IsBold,1)}">
+                 <font color="${d.TitleColor}" style="font-weight:bold">${d.Title}</font>
+            <#else>
+                  <font color="${d.TitleColor}">${d.Title}</font>
+            <#/if></p>
+              </div></td>
+             <#/if>
+             <#if  test="${isempty(d.StockCode)}">  
+             <td width="29%" align="center" style="color:gray">——</td>
+               <#else>
+            <td width="29%" align="center" id="week1-${i}" >${d.StockCode}</td>
+            <#/if>
+
+            <td width="17%">
+                <div class="m-imp" id="important1-${i}">${d.Important}</div>
+            </td>
+          </tr>
+        <#/uptag>  
+        </table>           
+      </div>
+      <div class="m-bt"></div>
+    </div>
+  </div>
+  <div class="m-con" id="div-2">
+    <div class="m-date"  id="date-2">8月6日<br/>
+      星期二</div>
+    <div class="m-line"></div>
+    <div class="m-bd"  id="m-bd-2">
+      <div class="m-tp">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="54%">事件</td>
+            <td width="29%">市场影响</td>
+            <td width="17%">重要性</td>
+          </tr>
+        </table>
+      </div>
+      <div class="m-ct">
+      
+       <table width="100%" border="0" cellspacing="0" cellpadding="0"  align="center" id="list-2"  style="padding-top:10px">
+          <#uptag tagtype="01" clsid="005001" pagesize="10" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" week="week2"> 
+      
+          <tr>
+             <#if  test="${isempty(d.ImgUrl)}">   
+            <td width="54%"><div class="m-list"> <#if test="${equals(d.IsBold,1)}">
+                 <font color="${d.TitleColor}" style="font-weight:bold">${d.Title}</font>
+            <#else>
+                  <font color="${d.TitleColor}">${d.Title}</font>
+            <#/if></div></td>
+            <#else>
+             <td width="54%"><div class="m-pic">
+                <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+                     <div><img src="${d.ImgUrl}" width="295" height="122" /></div>
+                 <#else>
+                     <div><img src="http://img.upchina.com/${d.ImgUrl}" width="295" height="122" /></div>
+                  <#/if>
+                <p> <#if test="${equals(d.IsBold,1)}">
+                 <font color="${d.TitleColor}" style="font-weight:bold">${d.Title}</font>
+            <#else>
+                  <font color="${d.TitleColor}">${d.Title}</font>
+            <#/if></p>
+              </div></td>
+             <#/if>
+             <#if  test="${isempty(d.StockCode)}">  
+             <td width="29%" align="center" style="color:gray">——</td>
+               <#else>
+            <td width="29%" align="center" id="week2-${i}" >${d.StockCode}</td>
+            <#/if>
+
+            <td width="17%">
+                <div class="m-imp" id="important2-${i}">${d.Important}</div>
+            </td>
+          </tr>
+        <#/uptag>   
+   
+ 
+</table>
+
+   
+      </div>
+      <div class="m-bt"></div>
+    </div>
+  </div>
+
+  <div class="m-con" id="div-3">
+    <div class="m-date"  id="date-3">8月7日<br/>
+      星期三</div>
+    <div class="m-line"></div>
+    <div class="m-bd" id="m-bd-3">
+      <div class="m-tp">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="54%">事件</td>
+            <td width="29%">市场影响</td>
+            <td width="17%">重要性</td>
+          </tr>
+        </table>
+      </div>
+      <div class="m-ct">
+       
+        <table width="100%" border="0" cellspacing="0" cellpadding="0"  id="list-3"  style="padding-top:10px">
+     <#uptag tagtype="01" clsid="005001" pagesize="10" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" week="week3"> 
+      
+          <tr>
+             <#if  test="${isempty(d.ImgUrl)}">   
+            <td width="54%"><div class="m-list"> <#if test="${equals(d.IsBold,1)}">
+                 <font color="${d.TitleColor}" style="font-weight:bold">${d.Title}</font>
+            <#else>
+                  <font color="${d.TitleColor}">${d.Title}</font>
+            <#/if></div></td>
+            <#else>
+             <td width="54%"><div class="m-pic">
+                <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+                     <div><img src="${d.ImgUrl}" width="295" height="122" /></div>
+                 <#else>
+                     <div><img src="http://img.upchina.com/${d.ImgUrl}" width="295" height="122" /></div>
+                  <#/if>
+                <p> <#if test="${equals(d.IsBold,1)}">
+                 <font color="${d.TitleColor}" style="font-weight:bold">${d.Title}</font>
+            <#else>
+                  <font color="${d.TitleColor}">${d.Title}</font>
+            <#/if></p>
+              </div></td>
+             <#/if>
+             <#if  test="${isempty(d.StockCode)}">  
+             <td width="29%" align="center" style="color:gray">——</td>
+               <#else>
+            <td width="29%" align="center" id="week3-${i}" >${d.StockCode}</td>
+            <#/if>
+
+            <td width="17%">
+                <div class="m-imp" id="important3-${i}">${d.Important}</div>
+            </td>
+          </tr>
+        <#/uptag>  
+ 
+</table>      
+    
+      </div>
+      <div class="m-bt"></div>
+    </div>
+  </div>
+  <div class="m-con" id="div-4">
+    <div class="m-date"  id="date-4">8月8日<br/>
+      星期四</div>
+    <div class="m-line"></div>
+    <div class="m-bd" id="m-bd-4">
+      <div class="m-tp">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="54%">事件</td>
+            <td width="29%">市场影响</td>
+            <td width="17%">重要性</td>
+          </tr>
+        </table>
+      </div>
+      <div class="m-ct">
+        
+       <table width="100%" border="0" cellspacing="0" cellpadding="0"  id="list-4"  style="padding-top:10px">
+ <#uptag tagtype="01" clsid="005001" pagesize="10" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" week="week4"> 
+      
+          <tr>
+             <#if  test="${isempty(d.ImgUrl)}">   
+            <td width="54%"><div class="m-list"> <#if test="${equals(d.IsBold,1)}">
+                 <font color="${d.TitleColor}" style="font-weight:bold">${d.Title}</font>
+            <#else>
+                  <font color="${d.TitleColor}">${d.Title}</font>
+            <#/if></div></td>
+            <#else>
+             <td width="54%"><div class="m-pic">
+                 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+                     <div><img src="${d.ImgUrl}" width="295" height="122" /></div>
+                 <#else>
+                     <div><img src="http://img.upchina.com/${d.ImgUrl}" width="295" height="122" /></div>
+                  <#/if>
+                <p> <#if test="${equals(d.IsBold,1)}">
+                 <font color="${d.TitleColor}" style="font-weight:bold">${d.Title}</font>
+            <#else>
+                  <font color="${d.TitleColor}">${d.Title}</font>
+            <#/if></p>
+              </div></td>
+             <#/if>
+             <#if  test="${isempty(d.StockCode)}">  
+             <td width="29%" align="center" style="color:gray">——</td>
+               <#else>
+            <td width="29%" align="center" id="week4-${i}" >${d.StockCode}</td>
+            <#/if>
+
+            <td width="17%">
+                <div class="m-imp" id="important4-${i}">${d.Important}</div>
+            </td>
+          </tr>
+        <#/uptag>    
+ 
+</table>     
+   
+      </div>
+      <div class="m-bt"></div>
+    </div>
+  </div>
+  <div class="m-con" id="div-5">
+    <div class="m-date"  id="date-5">8月9日<br/>
+      星期五</div>
+    <div class="m-line"></div>
+    <div class="m-bd"  id="m-bd-5">
+      <div class="m-tp">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="54%">事件</td>
+            <td width="29%">市场影响</td>
+            <td width="17%">重要性</td>
+          </tr>
+        </table>
+      </div>
+      <div class="m-ct">
+       
+       <table width="100%" border="0" cellspacing="0" cellpadding="0"  id="list-5"  style="padding-top:10px">
+ <#uptag tagtype="01" clsid="005001" pagesize="10" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" week="week5"> 
+      
+          <tr>
+             <#if  test="${isempty(d.ImgUrl)}">   
+            <td width="54%"><div class="m-list"> <#if test="${equals(d.IsBold,1)}">
+                 <font color="${d.TitleColor}" style="font-weight:bold">${d.Title}</font>
+            <#else>
+                  <font color="${d.TitleColor}">${d.Title}</font>
+            <#/if></td>
+            <#else>
+             <td width="54%"><div class="m-pic">
+                <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+                     <div><img src="${d.ImgUrl}" width="295" height="122" /></div>
+                 <#else>
+                     <div><img src="http://img.upchina.com/${d.ImgUrl}" width="295" height="122"/></div>
+                  <#/if>
+                <p> <#if test="${equals(d.IsBold,1)}">
+                 <font color="${d.TitleColor}" style="font-weight:bold">${d.Title}</font>
+            <#else>
+                  <font color="${d.TitleColor}">${d.Title}</font>
+            <#/if></p>
+              </div></td>
+             <#/if>
+             <#if  test="${isempty(d.StockCode)}">  
+             <td width="29%" align="center" style="color:gray">——</td>
+               <#else>
+            <td width="29%" align="center" id="week5-${i}" >${d.StockCode}</td>
+            <#/if>
+
+            <td width="17%">
+                <div class="m-imp" id="important5-${i}">${d.Important}</div>
+            </td>
+          </tr>
+        <#/uptag>   
+  
+</table>         
+ 
+      </div>
+      <div class="m-bt"></div>
+    </div>
+  </div>
+  <div class="m-con" id="div-6">
+    <div class="m-date"  id="date-6">8月10日<br/>
+      星期六</div>
+    <div class="m-line"></div>
+    <div class="m-bd"  id="m-bd-6">
+      <div class="m-tp">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="54%">事件</td>
+            <td width="29%">市场影响</td>
+            <td width="17%">重要性</td>
+          </tr>
+        </table>
+      </div>
+      <div class="m-ct">
+           
+        <table width="100%" border="0" cellspacing="0" cellpadding="0"  id="list-6"  style="padding-top:10px">
+  <#uptag tagtype="01" clsid="005001" pagesize="10" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" week="week6"> 
+      
+          <tr>
+             <#if  test="${isempty(d.ImgUrl)}">   
+            <td width="54%"><div class="m-list"> <#if test="${equals(d.IsBold,1)}">
+                 <font color="${d.TitleColor}" style="font-weight:bold">${d.Title}</font>
+            <#else>
+                  <font color="${d.TitleColor}">${d.Title}</font>
+            <#/if></div></td>
+            <#else>
+             <td width="54%"><div class="m-pic">
+                 <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+                     <div><img src="${d.ImgUrl}" width="295" height="122" /></div>
+                 <#else>
+                     <div><img src="http://img.upchina.com/${d.ImgUrl}" width="295" height="122"/></div>
+                  <#/if>
+                <p> <#if test="${equals(d.IsBold,1)}">
+                 <font color="${d.TitleColor}" style="font-weight:bold">${d.Title}</font>
+            <#else>
+                  <font color="${d.TitleColor}">${d.Title}</font>
+            <#/if></p>
+              </div></td>
+             <#/if>
+             <#if  test="${isempty(d.StockCode)}">  
+             <td width="29%" align="center" style="color:gray">——</td>
+               <#else>
+            <td width="29%" align="center" id="week6-${i}" >${d.StockCode}</td>
+            <#/if>
+
+            <td width="17%">
+                <div class="m-imp" id="important6-${i}">${d.Important}</div>
+            </td>
+          </tr>
+        <#/uptag>   
+ 
+</table>    
+     
+      </div>
+      <div class="m-bt"></div>
+    </div>
+  </div>
+  <div class="m-con" style="padding-bottom:50px;" id="div-7">
+    <div class="m-date"  id="date-7">8月11日<br/>
+      星期日</div>
+    <div class="m-line"></div>
+    <div class="m-bd"  id="m-bd-7">
+      <div class="m-tp">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="54%">事件</td>
+            <td width="29%">市场影响</td>
+            <td width="17%">重要性</td>
+          </tr>
+        </table>
+      </div>
+      <div class="m-ct">
+      
+        <table width="100%" border="0" cellspacing="0" cellpadding="0"  id="list-7"  style="padding-top:10px">
+  <#uptag tagtype="01" clsid="005001" pagesize="10" pagecount="1" viewedit="1" id="dataId001001"  var="d" index="i" week="week0"> 
+      
+          <tr>
+             <#if  test="${isempty(d.ImgUrl)}">   
+            <td width="54%"><div class="m-list"> <#if test="${equals(d.IsBold,1)}">
+                 <font color="${d.TitleColor}" style="font-weight:bold">${d.Title}</font>
+            <#else>
+                  <font color="${d.TitleColor}">${d.Title}</font>
+            <#/if></div></td>
+            <#else>
+             <td width="54%"><div class="m-pic">
+               <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+                     <div><img src="${d.ImgUrl}" width="295" height="122"/></div>
+                 <#else>
+                     <div><img src="http://img.upchina.com/${d.ImgUrl}" width="295" height="122" /></div>
+                  <#/if>
+                <p> <#if test="${equals(d.IsBold,1)}">
+                 <font color="${d.TitleColor}" style="font-weight:bold">${d.Title}</font>
+            <#else>
+                  <font color="${d.TitleColor}">${d.Title}</font>
+            <#/if></p>
+              </div></td>
+             <#/if>
+             <#if  test="${isempty(d.StockCode)}">  
+             <td width="29%" align="center" style="color:gray">——</td>
+               <#else>
+            <td width="29%" align="center" id="week7-${i}" >${d.StockCode}</td>
+            <#/if>
+
+            <td width="17%">
+                <div class="m-imp" id="important7-${i}">${d.Important}</div>
+            </td>
+          </tr>
+        <#/uptag> 
+ 
+</table>    
+     
+       
+      </div>
+      <div class="m-bt"></div>
+    </div>
+
+  </div>
+  <div class="m-line-bt"></div>
+</div>
+</div>
+
+<div style="display:none">
+<script src="http://s22.cnzz.com/z_stat.php?id=1000125520&web_id=1000125520" language="JavaScript"></script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+2013-11-14 11:42:00,853 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-11-14 11:42:00,914 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-11-14 11:42:00,920 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-11-14 11:42:59,333 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-11-14 11:44:39,201 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-11-14 11:47:18,663 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-11-14 14:16:28,132 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-11-14 14:16:28,208 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-11-14 14:16:28,217 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。

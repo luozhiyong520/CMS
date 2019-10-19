@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <#uptag tagtype="03" id="data003001_1" clsid="003001" var="d" count="1">
+	<title>登录前弹出的《交易商承诺》部分重要更新 ${cdatestring(d.CreatedTime,"yy-MM-dd")}</title>
+  <#/uptag>
+
+<style type="text/css">
+/*======= page css begin =======*/
+body{ background-color:#f3f3f3; line-height:160%;font-size:12px;font-family:"宋体",Arial, Helvetica, sans-serif;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	text-decoration:none;
+	font-family:"宋体";
+}
+dl,dd,dt,ul,li{list-style-position:outside;list-style-type:none;margin:0;padding:0;border:0;}
+.clear{clear:both;}
+a:link{color:#FFF;text-decoration:none;}   
+a:visited{color:#0099FF;text-decoration:none;}   
+a:hover{color:#FFF;text-decoration:underline;}   
+a:active{color:#636363;text-decoration:none;}	
+img,a img{border:none;}
+.fl { float:left;}
+.fr { float:right;}
+.clearfix { display:inline-block;}
+/*======= page css end =======*/
+.contbox { margin:0 auto; padding:20px 0; background-color:#FFF;}
+.title { text-align:center; font-size:18px; font-weight:bold;}
+.text00 { padding:0 20px; margin:20px auto 0; line-height:22px; font-size:14px;}
+.text00 p { text-indent:2em;}
+.color_bl { color:#000;}
+.color_rd { color:#e61928;}
+.tit_blac { font-weight:bold; font-size:16px;}
+</style>
+</head>
+
+<body>
+<div class="contbox">
+ <#uptag tagtype="03" id="data003001" clsid="003001" var="d" count="1">
+	<div class="title">${d.title}</div>
+    ${d.Content}
+  <#/uptag>
+</div>
+</body>
+</html>

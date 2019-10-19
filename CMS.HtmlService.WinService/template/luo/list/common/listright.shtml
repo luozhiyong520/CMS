@@ -1,0 +1,65 @@
+<div class="wrapper_right">
+    <div class="move">
+    	<!-- 列表页-正文页公共右上角广告位 start  -->
+      		
+					   		<object class id="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="265" height="189">
+  <param name="movie" value="http://js.upchina.com/video/Flvplayer.swf">
+  <param name="quality" value="high">
+  <param name="allowFullScreen" value="true">
+  <param name="FlashVars" value="vcastr_file=http://js.upchina.com/video/1.flv&LogoText=www.zzjs.net&BufferTime=3">
+  <embed src="http://js.upchina.com/video/Flvplayer.swf" allowfullscreen="true" flashvars="vcastr_file=http://js.upchina.com/video/1.flv&LogoText=www.upchina.com" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="265" height="189"></embed>
+</object>
+        <!-- 列表页-正文页公共右上角广告位 end  -->
+    </div>
+    <div class="hr_6"></div>
+<!-- 全网站公用文件-股票查询框 start-->
+<!--#include virtual="/include/common/v2012/stockbox.shtml"-->
+<!-- 全网站公用文件-股票查询框 end-->
+<!-- 列表页-正文页公共-行情报价 start-->
+<!--#include virtual="/include/common/v2012/hqbj.shtml"-->
+<!-- 列表页-正文页公共-行情报价 end-->
+    <div class="hr_6"></div>
+    <!-- 列表页-正文页公共-精彩视频 start-->
+    
+	   		<div class="title1 title_ctn">
+      <a href="#">精彩视频</a>
+    </div>
+    <div class="Wonderful_video">
+      <div class="video video_left">
+        <div class="show">
+          <a href="http://v.youku.com/v_show/id_XNDIyNzg2NDI0=.html"><img src="http://img.upchina.com/upchinav2/images/lin_15.jpg"/></a>
+        </div>
+        <a href="#">三季策略使用方法</a>
+      </div>
+      <div class="video video_right">
+        <div class="show">
+          <a href="http://v.youku.com/v_show/id_XNDIyNzA0NjI4=.html"><img src="http://img.upchina.com/upchinav2/images/lin_15.jpg"/></a>
+        </div>
+        <a href="#">动态估值使用方法</a>
+      </div>
+    </div>
+     <!-- 列表页-正文页公共-精彩视频 end-->
+    <div class="hr_6"></div>
+    <!--列表页-正文页公共-热点专题 start  -->
+    
+	   		<div class="title1 title_ctn">
+      <a href="#">热点专题</a>
+    </div>
+    <div class="Hot_topic ">
+      <a href="http://www.upchina.com/a/chanpin/"><img src="http://img.upchina.com/detail///2012/08/20120814132203496.jpg"/></a>
+    </div>
+    <div class="hr_6"></div>
+    <div class="Hot_topic ">
+      <a href="http://www.upchina.com/focus/aqtzyjzx/index.shtml"><img src="http://img.upchina.com/detail///2012/08/20120814132204133.gif"/></a>
+    </div>
+    <!--列表页-正文页公共-热点专题 end  -->
+    <div class="hr_6"></div>
+    <div class="Micro_bo ">
+      <div class="title3 title_ctn">
+        <a class="need" href="http://weibo.com/u/2676385273" target="_blank">微博</a>       
+      </div>
+      <div class="Micro_bo_ctn">      
+      <iframe width="260" height="275" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=260&height=275&fansRow=2&ptype=1&speed=0&skin=4&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=2676385273&verifier=f8e78e80&dpc=1"></iframe>
+      </div>     
+    </div>
+  </div>

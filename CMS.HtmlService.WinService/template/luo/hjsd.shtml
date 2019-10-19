@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>汇金时代</title>
+<style type=text/css>
+body{margin:0;color:#999;background:#000;}
+ul,li,p,*{list-style:none;padding:0;margin:0}
+.wrap{width:1000px;margin:0 auto}
+.banner{width:1000px;padding-bottom:10px;}
+.content{width:998px;border:1px solid #1c1c1c;background:#111;margin-bottom:10px;padding:20px 0;float:left}
+.hj{width:620px;border-right:1px dashed #222;float:left}
+.hj .pic{width:250px;padding-left:20px;float:left}
+.hj .pic img{width:220px;height:280px;float:left}
+.hj .pic .date{width:220px;color:#666;font-size:12px;text-align:center;line-height:30px;float:left}
+.intro{width:280px;line-height:30px;font-size:14px;float:left}
+.hj .title{width:280px;height:36px;font:16px/30px "Microsoft Yahei";font-weight:bold;color:#ff4900;}
+.hj .btn{padding:12px 0 0 4px}
+.info p,info li{ color:#999999;}
+.hj .btn img{width:170px;height:47px;}
+.about{width:345px;float:right}
+.about .yjs{padding-left:30px;height:36px;font:16px/30px "Microsoft Yahei";font-weight:bold;color:#ff4900;background:url(http://img.upchina.com/sasweb/zhuanti/hjsd/about_ico.gif) no-repeat 1px 4px}
+.about dl{width:320px;padding:4px 0;line-height:28px;font-size:14px;float:left}
+.about dl dt{width:50px;font-weight:bold;float:left}
+.about dl dd{width:270px;float:left}
+.yb{width:998px;float:left}
+.yb .more{width:958px;height:36px;border-bottom:2px solid #333;margin-left:20px;display:inline;float:left}
+.yb .more span{width:100px;padding-left:10px;height:36px;margin-bottom:-2px;border-bottom:2px solid #ff4900;font:20px/30px "Microsoft Yahei";font-weight:bold;color:#ff4900;letter-spacing:1px;float:left}
+.yb ul{width:170px;padding:0 40px 0 20px;float:left}
+.yb ul li{width:170px;padding:6px 0;text-align:center;font-size:12px;float:left}
+.rollBox{width:980px;padding:20px 0 0 18px;overflow:hidden;}
+.rollBox img.btn{padding-top:80px;cursor:pointer;float:left}
+.rollBox .Cont{width:904px;overflow:hidden;float:left}
+.rollBox .ScrCont{width:10000000px;}
+.rollBox #List1,.rollBox #List2{float:left;}
+</style>
+</head>
+<script type="text/javascript" src="http://js.upchina.com/lib/jquery-1.8.0.min.js"></script>
+<script type="text/javascript">
+    function down(url) {
+    
+        if (external.iWinMain) {
+            external.iWinMain('cmd_navigate', url);
+        } else {
+            window.location = url;
+        }
+    }
+     
+</script>
+<body>
+ 
+<div class="wrap">
+<div class="banner"><img src="http://img.upchina.com/sasweb/zhuanti/hjsd/banner1.jpg" width="1000" height="240" /></div>
+<div class="content">
+
+<#uptag tagtype="01" clsid="005024" pagesize="100" pagecount="1" viewedit="1" id="dataId005024"  var="d" index="i">
+ <#if test="${equals(i,1)}">
+    <div class="hj">
+    <div class="pic">
+    <#if test="${isnotempty(d.ImgUrl)}">
+        <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+           <img src="${d.ImgUrl}" width="220" height="280" />
+        <#else>
+          <img src="http://img.upchina.com${d.ImgUrl}" width="220" height="280" />
+        <#/if>
+    <#/if>
+    <p class="date">推出时间： ${cdatestring(d.CreatedTime,"yyyy年MM月dd日")}</p></div>
+    <div class="intro">
+    <div class="title">${d.Title}</div>
+    <p style="padding-bottom:5px"><b>本期研究要点：</b></p>
+    <div class="info">
+    ${d.Content}
+    </div>
+    <p class="btn"><a href="javascript:void(0)" onclick="down('http://img.upchina.com${d.FileUrl}')"/><img src="http://img.upchina.com/sasweb/zhuanti/hjsd/xz1.jpg" width="170" height="47" border="0" /></a></p>
+    </div></div>
+ 
+
+<div class="about"><div class="yjs">关于研究所</div>
+<dl><dt>定位：</dt><dd>服务型研究，互联网金融的先行者，安全投资的推动者；</dd></dl>
+<dl><dt>理念：</dt><dd>以创新思维引领变革时代，以定性研究寻找政策方向，以定量分析把握市场趋势；</dd></dl>
+<dl><dt>使命：</dt><dd>致力于成为中国实现公民金融权的推动者、投资渠道的拓宽者和财富安全的捍卫者。</dd></dl>
+</div>
+</div>
+
+<div class="content">
+<div class="yb">
+<div class="more"><span>往期回顾</span></div>
+ 
+<div class="rollBox">
+<img onMouseDown="ISL_GoDown()" onMouseUp="ISL_StopDown()" onMouseOut="ISL_StopDown()"  class="btn" src="http://img.upchina.com/sasweb/zhuanti/hjsd/arrow_left.gif" width="30" height="60" />
+     <div class="Cont" id="ISL_Cont">
+      <div class="ScrCont">
+       <div id="List1">
+  <#else>
+       <ul><li>
+       <#if test ="${equals(substr(tolower(d.ImgUrl),7),"http://")}">
+            <img src="${d.ImgUrl}"  width="170" height="218" border="0" >    
+       <#else>
+            <img src="http://img.upchina.com${d.ImgUrl}"   width="170" height="218" border="0" >  
+        <#/if>
+        </li>
+        <li>${d.Title}</li>
+        <li>推出时间： ${cdatestring(d.CreatedTime,"yyyy年MM月dd日")}</li>
+        <li><a href="javascript:void(0)" onclick="down('http://img.upchina.com${d.FileUrl}')"/><img src="http://img.upchina.com/sasweb/zhuanti/hjsd/xz1.jpg" width="170" height="47" border="0" /></a></li>
+        </ul>
+ 
+  <#/if> 
+ <#/uptag>
+</div>
+       <div id="List2"></div>
+      </div>
+     </div>
+<img  onmousedown="ISL_GoUp()" onMouseUp="ISL_StopUp()" onMouseOut="ISL_StopUp()"  class="btn" src="http://img.upchina.com/sasweb/zhuanti/hjsd/arrow_right.gif" width="30" height="60" />
+</div>
+<script src="http://js.upchina.com/sasweb/zhuanti/js/scroll.js" type=text/javascript></script>
+</div>
+</div>
+</div>
+
+<div style="display:none">
+<script src="http://s22.cnzz.com/z_stat.php?id=1000125520&web_id=1000125520" language="JavaScript"></script>
+</div>
+</body>
+</html>

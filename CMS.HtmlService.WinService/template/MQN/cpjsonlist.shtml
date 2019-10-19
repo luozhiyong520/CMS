@@ -1,0 +1,5 @@
+﻿[<#uptag tagtype="08" softVersion="jhd" id="data001" viewedit="1"  newssort="1"  pagecount="1" var="d" index="i" islast="flag"> 
+<#if test="${flag}">{"CourseType":"${d.CourseType}","ProgramTimeStart":"${d.ProgramTimeStart}","ProgramTimeEnd":"${d.ProgramTimeEnd}","ProgramUrl":"${d.ProgramUrl}","ProgramName":"${d.ProgramName}","Property":"${d.Property}","Weeks":"{d.Weeks}","Status":"{d.Status}"}
+            <#else>{"CourseType":"${d.CourseType}","ProgramTimeStart":"${d.ProgramTimeStart}","ProgramTimeEnd":"${d.ProgramTimeEnd}","ProgramUrl":"${d.ProgramUrl}","ProgramName":"${d.ProgramName}","Property":"${d.Property}","Weeks":"{d.Weeks}","Status":"{d.Status}"},
+            <#/if>
+    <#/uptag>]

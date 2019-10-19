@@ -1,0 +1,40 @@
+﻿ <div class="hban">
+  <a href="http://www.upchina.com/focus/aqyjcgpt/"><img src="http://img.upchina.com/detail///2012/08/20120813153153744.jpg"/></a>
+</div>
+
+
+
+		   		  <ul class="upTxt clearfix">
+    <li><a href="http://www.upchina.com/" style="padding-left:0;">首页</a>|</li>
+    <li><a href="http://www.upchina.com/list/jttt.shtml">今日头条</a>|</li>
+    <li><a href="http://www.upchina.com/list/dpzs.shtml">大盘走势</a>|</li>
+    <li><a href="http://www.upchina.com/list/upyj.shtml">UP研究</a>|</li>
+    <li><a href="http://www.upchina.com/v/upsd.shtml">UP视点</a>|</li>
+    <li><a href="http://www.upchina.com/v/cppx.shtml">产品培训</a>|</li>
+    <li><a href="http://www.upchina.com/focus/aqyjcgpt/">免费产品</a></li>
+  </ul>
+
+  
+
+
+<div class="upTxt_sonNav">
+    <div class="upTxt_crbLeft"> <a href="/" class="upTxtLogo"><img src="http://img.upchina.com/logo/x_logo.jpg" /></a>
+      <ul class="upTxt_crub">
+        <li><a href="/">首页</a>&gt;</li>
+        <li><a href="http://www.upchina.com/list/dtgz.shtml" >${art.Title}</a> &gt; 正文<input id="newsId" name="newsId" type="hidden" value="9009"/>
+<input id="chId" name="chId" type="hidden" value="001" />
+<input id="clsId" name="clsId" type="hidden" value="001014" />
+<input id="importentnew" name="importentnew" type="hidden" value="1" />
+</li>
+      </ul>
+       <!--<div class="upTxtSearch">
+        <p>
+          <label> 每日一测:</label>
+          <input type="text" value="" size="8" class="upTtext">
+          <input type="text" value="" size="12" class="upTtext">
+          <input type="button" value="测股" class="btn" />
+        </p>
+      </div>-->
+    </div>
+</div>
+</div>

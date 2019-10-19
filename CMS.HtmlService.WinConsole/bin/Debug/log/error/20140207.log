@@ -1,0 +1,253 @@
+【异常时间】：2014-02-07 10:26:25,151 [5] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 286
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 163
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：88，模板名称：UP下午茶，模板路径：/luo/upxwc.shtml失败！
+------------------------------------
+【异常时间】：2014-02-07 10:27:23,959 [6] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 286
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 163
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：88，模板名称：UP下午茶，模板路径：/luo/upxwc.shtml失败！
+------------------------------------
+【异常时间】：2014-02-07 10:30:52,632 [6] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 286
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 163
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：88，模板名称：UP下午茶，模板路径：/luo/upxwc.shtml失败！
+------------------------------------
+【异常时间】：2014-02-07 10:32:54,264 [5] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 286
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 163
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：88，模板名称：UP下午茶，模板路径：/luo/upxwc.shtml失败！
+------------------------------------
+【异常时间】：2014-02-07 10:34:49,229 [12] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 286
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 163
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：88，模板名称：UP下午茶，模板路径：/luo/upxwc.shtml失败！
+------------------------------------
+【异常时间】：2014-02-07 10:35:32,708 [12] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 286
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 163
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：88，模板名称：UP下午茶，模板路径：/luo/upxwc.shtml失败！
+------------------------------------
+【异常时间】：2014-02-07 10:35:51,195 [12] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 286
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 163
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2014-02-07 10:36:23,556 [12] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 286
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 163
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2014-02-07 10:36:30,530 [12] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 286
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 163
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2014-02-07 13:13:55,139 [10] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 286
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 163
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2014-02-07 13:17:58,534 [10] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 286
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 163
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：88，模板名称：UP下午茶，模板路径：/luo/upxwc.shtml失败！
+------------------------------------
+【异常时间】：2014-02-07 13:19:09,878 [10] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-02-07 13:22:16,979 [10] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 286
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 163
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2014-02-07 13:23:57,576 [10] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 286
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 163
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2014-02-07 13:42:05,752 [11] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 286
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 172
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2014-02-07 13:59:07,707 [10] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 286
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 172
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：88，模板名称：UP下午茶，模板路径：/luo/upxwc.shtml失败！
+------------------------------------
+【异常时间】：2014-02-07 14:09:14,735 [12] 
+【异常级别】：ERROR 
+【异常类型】：NullReferenceException
+【异常堆栈】：   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 141
+【异常信息】：未将对象引用设置到对象的实例。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：88，模板名称：UP下午茶，模板路径：/luo/upxwc.shtml失败！
+------------------------------------
+【异常时间】：2014-02-07 14:44:37,773 [13] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2014-02-07 18:09:06,760 [1] 
+【异常级别】：ERROR 
+HtmlEngine服务出错。
+------------------------------------
+【异常时间】：2014-02-07 18:09:06,870 [1] 
+【异常级别】：ERROR 
+【异常类型】：FormatException
+【异常堆栈】：   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(String format, Object arg0)
+   在 CMS.HtmlService.ServerManager`2.Start() 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\ServerManager.cs:行号 44
+   在 CMS.HtmlService.WinConsole.Program.Main(String[] args) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HtmlService.WinConsole\Program.cs:行号 16
+【异常信息】：索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+------------------------------------
+【异常时间】：2014-02-07 18:10:01,014 [5] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 286
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 163
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：88，模板名称：UP下午茶，模板路径：/luo/upxwc.shtml失败！
+------------------------------------

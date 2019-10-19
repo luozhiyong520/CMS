@@ -1,0 +1,410 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>UP投资-关于我们</title>
+<link href="http://js.upchina.com/upchinav2/css/style.css" type="text/css" rel="stylesheet"/>  
+<script type="text/javascript" src="http://js.upchina.com/lib/jquery-1.4.4.min.js"></script>
+<script src="http://js.upchina.com/upchinav2/js/com.js" type="text/javascript"></script>
+ 
+</head>
+<body>
+<div class="g-top">
+  <div class="m-top">
+    <div class="logo"></div>
+    <div class="menu">
+      <ul class="tt" id="menuul">
+        <li  t="1" ><a href="/">首页</a></li>
+        <li t="2"  class="menubg"><a href="about.html">关于我们</a></li>
+        <li t="3" ><a href="#">投资卫士</a></li>
+        <li t="4"><a href="yjs.html">研究所</a></li>
+        <li t="5"><a href="aqtz.html">万里行</a></li>
+        <li t="6"><a href="hezuo.html">商务合作</a></li>
+      </ul>
+      <div id="mout">
+      <div class="con con1" id="con-1" style="display:none;"></div>
+        <div class="con con2" id="con-2"  style="display:none;"> <a href="about.html?gourl=aboutus">公司介绍</a> <a href="about.html?gourl=qywh">企业文化</a> <a href="about.html?gourl=fzlc">发展历程</a> <a href="about.html?gourl=zzry">资质荣誉</a> <a href="about.html?gourl=zlhz">战略合作</a> <a href="about.html?gourl=jrwm">加入我们</a> <a href="about.html?gourl=lxwm">联系我们</a> </div>
+      <div class="con con3" id="con-3" style="display:none;"> <a href="http://www.upchina.com/cp/index.html" target="_blank">电脑版</a> <a href="http://m.upchina.com/" target="_blank">手机版</a> <a href="http://www.upchina.com/upwx/index.html" target="_blank">微信版</a> </div>
+      <div class="con con4" id="con-4" style="display:none;"></div>
+      <div class="con con5" id="con-5" style="display:none;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--图片广告-->
+<div class="g-aboutbar">
+  <div class="m-aboutbar"></div>
+</div>
+<!--中间内容-->
+<div class="g-con">
+  <div class="about-top"></div>
+  <div class="about-con">
+    <div class="about-nav">
+      <ul id="aboutul">
+        <li t="1" id="aboutus" class="aboutbg "><a href="about.html" class="orange-1">公司介绍</a></li>
+        <li t="2" id="qywh"><a href="#" class="icon-2">企业文化</a></li>
+        <li t="3" id="fzlc"><a href="#" class="icon-3">发展历程</a></li>
+        <li t="4" id="zzry"><a href="#" class="icon-4">资质荣誉</a></li>
+        <li t="5" id="zlhz"><a href="#" class="icon-5">战略合作</a></li>
+        <li t="6" id="jrwm"><a href="#" class="icon-6">加入我们</a></li>
+        <li t="7" id="lxwm"><a href="#" class="icon-7">联系我们</a></li>
+      </ul>
+    </div>
+    <!--公司介绍-->
+    <div class="about-txt" id="about-txt-1" >
+      <div class="m-brdnav"><span>公司介绍</span>
+        <p><a href="/">首页</a> > <a href="#">关于我们</a> > 公司介绍</p>
+      </div>
+      <div class="txt">
+       <p style="font-weight:bold">"UP投资"的历史与传承</p>
+
+<p>创办于1996年的上海金汇信息系统有限公司，是中国领先的互联网金融综合服务提供商，是中国安全投资理念的开创者和推动者，也是首批获得中国证监会证券投资咨询业务许可（ZX0111）的机构、国家认定的软件企业和高新技术企业。成立十多年来，上海金汇秉承"安全投资、多元化投资"的理念，以"UP"为核心品牌和价值传承，成功打造了金融分析平台（UP量化安全炒股卫士）、专业研究平台（UP金融研究所）、专业服务平台等三位一体的财富管理投资体系，专注于为各类投资者提供一站式、全方位、多平台的资产配置管理方案。
+在金融自由化和资产配置全球化的背景下，"UP投资"以UP！China（雄起！中国）为己任，致力于成为中国实现公民金融权的推动者、投资渠道的拓宽者和财富安全的捍卫者。</p>
+
+<p style="font-weight:bold">中国领先的安全投资品牌</p>
+
+<p>作为公民金融权的推动者，"UP投资"致力于为中央职能机构、国务院各部委、各级政府等政策制定者提供政策分析、课题调研等服务，为中国投资者金融权的实现拓展政治空间。目前"UP投资"作为国家商务部研究院信用评级与认证中心战略合作伙伴，已成为商务部研究院评级中心唯一指定的评级信息对外发布平台，也是国内首家成功引入独立第三方财务安全评级和投资价值评级的投资综合服务网络平台，开创并全面倡导安全投资理念与方法论体系。</p>
+
+<p style="font-weight:bold">中国最广阔的多元化投资平台</p>
+
+<p>作为公民投资渠道的拓宽者，我们积极与国内外顶级金融机构开展战略研究、金融创新等合作，努力为中国投资者开辟最广阔的资产配置渠道。自1996年成立开始，"UP投资"先后与上海证券交易所、渤海商品交易所、天津贵金属交易所，上海严林信息技术有限公司、国泰君安期货、上海金字塔公司等达成战略伙伴关系，投资渠道已经覆盖股票、基金、信托、期货、贵金属、普惠金融等全金融产业链。</p>
+
+<p style="font-weight:bold">中国互联金融的颠覆式创新者</p>
+
+<p>作为公民财富安全的捍卫者，"UP投资"以破除利益群体对金融权的垄断、消除信息不对称、保护中小投资者的合法权益为己任，引入"公平、交互、免费"的互联网金融理念，致力于将创新的金融工程技术与高效数据云处理技术结合，为投资者打造行情、资讯、分析工具、研究、交易、互动于一体的综合服务金融平台，引领了中国互联网金融创新服务的潮流。"UP投资"现已开发了UP量化安全炒股卫士、UP渤海现货操盘卫士、UP期货程序化交易解决方案等知名产品，并与国泰君安期货、上海金字塔公司、上海严林信息技术有限公司等著名机构合作，为投资者提供程序化服务解决方案。</p>
+<p>上善若水，厚德载物。"UP投资（www.upchina.com）"以诚信恒远，以分享恒乐，致力于成为所有中小投资者安全投资的忠诚卫士。</p>
+
+      </div>
+    </div>
+    <!--企业文化-->
+    <div class="about-txt" id="about-txt-2" style="display:none;">
+      <div class="m-brdnav"><span>企业文化</span>
+        <p><a href="/">首页</a> > <a href="#">关于我们</a> > 企业文化</p>
+      </div>
+      <div class="pinpai-top">品牌释义</div>
+      <div class="pinpai-con"><span></span>
+        <div>
+          <p>上善若水，厚德载物。UP投资诚信恒远，不断创新，以分享恒乐，致力于成为投资者安全投资的忠诚卫士。</p>
+          <p>就像“UP投资”LOGO释义，UP中文寓意“上涨”“向上”，红色寓意红火、透射出旺盛的生命力，期望客户财富稳进增长，公司发展蒸蒸日上，金融市场蓬勃发展，不断UP。</p>
+        </div>
+      </div>
+      <h1 class="wenhua-tt">使命愿景</h1>
+      <p class="wenhua-con">行业领先的多元化投资服务平台，安全投资理念的开创者和领先者，投资者的忠诚卫士。</p>
+      <h1 class="wenhua-tt">经营理念</h1>
+      <p class="wenhua-con">诚信——诚实正直，知行合一<br/>
+        务实——踏实稳重、真抓实干<br/>
+        创新——创新进去，追求卓越<br/>
+        共赢——合作共赢，共同成长</p>
+      <h1 class="wenhua-tt">价 值 观</h1>
+      <p class="wenhua-con">对客户——以客户为中心，不断改进产品、体验和服务，共赢财富人生。<br/>
+        对员工——以人才为根本，创造和谐激情的成长环境，每一份奉献都有回报。<br/>
+        对伙伴——以双赢为宗旨，互惠互利、共同成长。</p>
+    </div>
+    <!--发展历程-->
+    <div class="about-txt" id="about-txt-3" style="display:none;">
+      <div class="m-brdnav"><span>发展历程</span>
+        <p><a href="/">首页</a> > <a href="#">关于我们</a> > 发展历程</p>
+      </div>
+      <div class="licheng-top"></div>
+      <div class="licheng-ct">
+<#uptag tagtype="02" clsid="012001" id="data012001" viewedit="1" var="d"> ${d.Content}<#/uptag>
+      </div>
+      <div class="licheng-ft"></div>
+    </div>
+    <!--资质荣誉-->
+    <div class="about-txt" id="about-txt-4" style="display:none;">
+      <div class="m-brdnav"><span>资质荣誉</span>
+        <p><a href="/">首页</a> > <a href="#">关于我们</a> > 资质荣誉</p>
+      </div>
+     <table width="97%" border="0" cellspacing="0" cellpadding="0" class="zizhi-con">
+  <tr>
+    <td height="40"><span class="yellow">·</span>  计算机软件著作权登记证书</td>
+    <td><span class="yellow">·</span>  商务部研究院themis评级授权证书</td>
+  </tr>
+  <tr>
+    <td><img src="http://img.upchina.com/upchinav2/uptzgw/zizhi_26.jpg" /></td>
+    <td><img src="http://img.upchina.com/upchinav2/uptzgw/zizhi_28.jpg" /></td>
+  </tr>
+    <tr>
+    <td height="35"></td>
+    <td></td>
+  </tr>
+</table>
+     <table width="97%" border="0" cellspacing="0" cellpadding="0" class="zizhi-con">
+  <tr>
+    <td height="40"><span class="yellow">·</span>  上海证券交易所行情经营许可证</td>
+    <td><span class="yellow">·</span>  深交所专有信息经营许可证</td>
+  </tr>
+  <tr>
+    <td><img src="http://img.upchina.com/upchinav2/uptzgw/shzq.jpg" /></td>
+    <td valign="top"><img src="http://img.upchina.com/upchinav2/uptzgw/zizhi_36.jpg" /></td>
+  </tr>
+    <tr>
+    <td height="35"></td>
+    <td></td>
+  </tr>
+</table>
+     <table width="97%" border="0" cellspacing="0" cellpadding="0" class="zizhi-con" style="border:none;">
+  <tr>
+    <td height="40"><span class="yellow">·</span>  电信增值业务许可证</td>
+    <td><span class="yellow">·</span>  证券投资咨询业务许可证</td>
+  </tr>
+  <tr>
+    <td rowspan="3"><img src="http://img.upchina.com/upchinav2/uptzgw/zizhi_39.jpg" /></td>
+    <td valign="top"><img src="http://img.upchina.com/upchinav2/uptzgw/zizhi_40.jpg" /></td>
+  </tr>
+   
+  
+</table>
+    </div>
+     <!--战略合作-->
+    <div class="about-txt" id="about-txt-5" style="display:none;">
+      <div class="m-brdnav"><span>战略合作</span>
+        <p><a href="/">首页</a> > <a href="#">关于我们</a> > 战略合作</p>
+      </div>
+      <div class="pinpai-top">战略合作伙伴</div>
+      <div class="hezuo-con1"><img src="http://img.upchina.com/upchinav2/uptzgw/hezuo_31.jpg" border="0" usemap="#Map2" />
+        <map name="Map2" id="Map2">
+          <area shape="rect" coords="6,-2,168,45" href="http://www.creditcn.com/" target="_blank" />
+          <area shape="rect" coords="170,-3,252,42" href="http://www.themisrating.com/" target="_blank" />
+          <area shape="rect" coords="258,-13,367,43" href="http://www.ce.cn/" target="_blank" />
+          <area shape="rect" coords="366,-2,494,41" href="http://www.boce.cn/web/index.jsp" target="_blank" />
+          <area shape="rect" coords="501,-4,691,39" href="http://www.gtja.com/portal/" target="_blank" />
+        </map>
+</div>
+       <h1 class="wenhua-tt">战略合作媒体</h1>
+        <div class="hezuo-con1"><img src="http://img.upchina.com/upchinav2/uptzgw/hezuo_41.jpg" border="0" usemap="#Map" />
+          <map name="Map" id="Map">
+            <area shape="rect" coords="1,1,151,60" href="http://www.sina.com.cn/" target="_blank" />
+            <area shape="rect" coords="150,7,259,53" href="http://www.cctvcjw.com/" target="_blank" />
+            <area shape="rect" coords="272,9,413,54" href="http://finance.ifeng.com/" target="_blank" />
+            <area shape="rect" coords="425,11,564,53" href="http://www.dayoo.com/" target="_blank" />
+          </map>
+</div>
+          <h1 class="wenhua-tt">合作媒体</h1>
+          <div class="hezuo-con1"><a target="_blank" href="http://www.stcn.com">证券时报</a>
+            <a target="_blank" href="http://www.ccstock.cn">证券日报</a>
+            
+            
+            <a target="_blank" href="http://jjsb.cet.com.cn/">中国经济时报</a>
+            <a target="_blank" href="http://paper.ce.cn">经济日报</a>
+            <a target="_blank" href="http://www.ftchinese.com">金融时报</a>
+    
+            <a target="_blank" href="http://www.gemag.com.cn">环球企业家</a>
+            <a target="_blank" href="http://www.jinghua.cn">京华时报</a>
+            <a target="_blank" href="http://www.cnstock.com">上海证券报</a>
+            <a target="_blank" href="http://www.eeo.com.cn">经济观察报</a><br>
+             <a target="_blank" href="http://moneyweek.dooland.com/">理财周报</a>
+            <a target="_blank" href="http://www.bbtnews.com.cn">北京商报</a>
+            <a target="_blank" href="http://www.yicai.com">第一财经日报</a>
+            <a target="_blank" href="http://www.morningpost.com.c">北京晨报</a>
+            <a target="_blank" href=http://"www.bjd.com.cn">北京日报</a>
+            <a target="_blank" href="http://www.cnstock.com">中国证券报</a>
+            <a target="_blank" href="http://www.iceo.com.cn">中国企业家</a>
+            <a target="_blank" href="http://bjyouth.ynet.com/">北京青年报</a><br>
+            <a target="_blank" href="http://www.ycwb.com">羊城晚报</a>
+            
+            <a target="_blank" href="http://www.xxcb.cn">潇湘晨报</a>
+              <a target="_blank" href="http://www.nbd.com.cn">每日经济新闻</a>
+             <a target="_blank" href="http://www.investorchina.com.cn">投资者报</a>
+            
+            
+            
+            
+
+            <a target="_blank" href="http://www.21cbh.com/">21世纪经济报道</a>
+</div>
+            <h1 class="wenhua-tt">合作金融机构</h1>
+          <div class="hezuo-con1"><a target="_blank" href=http://"www.gsstock.com">国盛证券</a>
+       
+            <a target="_blank" href="http://ww.zszq.com.cn">中山证券</a>
+            <a target="_blank" href="http://www.tebon.com.cn">德邦证券</a>
+            <a target="_blank" href="http://www.foundersc.com">方正证券</a>
+            <a target="_blank" href="http://www.mszq.com">民生证券</a>
+            <a target="_blank" href="http://www.gfhfzq.com.cn">广发华福</a>
+            <a target="_blank" href="http://www.gf.com.cn">广发证券</a>
+            <a target="_blank" href="http://www.htsc.com.cn">华泰证券</a>
+            <a target="_blank" href="http://www.hlzqgs.com">华龙证券</a>
+            <a target="_blank" href="http://www.hazq.com">华安证券</a><br>
+            
+            <a target="_blank" href="http://www.longone.com.cn">东海证券</a>
+            <a target="_blank" href="http://www.i618.com.cn">山西证券</a>
+            <a target="_blank" href="http://www.bocichina.com">中银国际</a>
+            <a target="_blank" href="http://www.hysec.com">宏源证券</a>
+            <a target="_blank" href="http://www.bigsun.com.cn">中信金通</a>
+            <a target="_blank" href="http://www.lhzq.com">联合证券</a>
+            <a target="_blank" href="http://www.dwjq.com.cn">东吴证券</a>
+            <a target="_blank" href="http://www.xyzq.com.cn">兴业证券</a>
+            <a target="_blank" href="http://www.qlzq.com.cn">齐鲁证券</a>
+            <a target="_blank" href="http://www.gfhfzq.com.cn">华福证券</a><br>
+            <a target="_blank" href="http://www.zxwt.com.c">中信万通</a>
+            <a target="_blank" href="http://www.cczq.com">川财证券</a>
+            <a target="_blank" href="http://www.nesc.cn">东北证券</a>
+             <a target="_blank" href=http://"www.dtsbc.com.c">大同证券</a>
+            <a target="_blank" href="http://www.westsecu.com">西部证券</a>
+            <a target="_blank" href="http://www.chinastock.com.cn">银河证券</a>
+            <a target="_blank" href="http://www.htsec.com">海通证券</a>
+            <a target="_blank" href="http://www.gtja.com">国泰君安</a>
+            <a target="_blank" href="http://www.estock.com.cn">大通证券</a>
+            <a target="_blank" href="http://www.cfzq.com">财富证券</a><br>
+            <a target="_blank" href="http://www.gtja.com">国泰君安</a>
+            <a target="_blank" href="http://www.cnpsec.com.cn">中邮证券</a>
+           
+            <a target="_blank" href="http://www.bhzq.com">渤海证券</a>
+            <a target="_blank" href="http://www.tpyzq.com">太平洋证券</a>
+                 <a target="_blank" href="http://www.chstock.com">沈阳诚浩证券</a>
+</div>
+    </div>
+    <!--加入我们-->
+    <div class="about-txt" id="about-txt-6" style="display:none;">
+     <div class="m-brdnav"><span>加入我们</span>
+        <p><a href="/">首页</a> > <a href="#">关于我们</a> > 加入我们</p>
+      </div>
+     <div class="joinus-top">
+     <strong>职位名称：</strong>宏观研究员<br/>
+     <strong>职位类别：</strong>研究支持类<br/>
+     <strong>工作地点：</strong>上海 武汉 广州<br/>
+     <strong>邮箱：</strong>hr@upchina.com     </div>
+    <div class="joinus-con"> <span>岗位职责：</span><br/>
+1.在国际金融市场和全球宏观经济、政策领域开展广泛的跟踪与研究；跟踪宏观经济运行状况及宏观事件的动态，分析及评估有关资料、数据，提供投资策略建议与参考；<br />
+2.基于市场行为或者经济政治事件确定市场焦点，并针对焦点撰写《专题报告》，协助投研团队了解事件背景以及市场预期；<br />
+3.定期完成外汇、金属、能源等领域的《经济研究报告》，协助投研团队对重点投资品种进行研究；<br />
+<span>任职要求：</span><br/>
+1.重点大学硕士以上学历，经济金融相关专业，或者数学类专业有相关经济背景；<br />
+2.在政府部门、证券公司、咨询机构等从事宏观研究1年以上；<br />
+3.理论功底扎实，熟练掌握宏观经济研究方法，对数据或政策变化有比较敏锐的感觉；<br />
+4.有突出的分析能力、解决问题能力及沟通能力；<br />
+</div>     
+ <div class="joinus-tt">
+   <strong>职位名称：</strong>策略研究员<br/>
+     <strong>职位类别：</strong>研究支持类<br/>
+     <strong>工作地点：</strong>上海 武汉 广州<br/>
+     <strong>邮箱：</strong>hr@upchina.com    
+ </div>    
+      <div class="joinus-con"> <span>工作职责：</span><br/>
+1. 对于重大事件、政策进行深度解读和分析，并且根据不同事件、政策对后期市场的影响程度提供独立全面的分析报告；<br/>
+3. 实时跟踪A股市场动态，熟悉并掌握中国证券市场特性及各个板块的特点； 在不同的市场环境下，确定整体资产池的择时选股标准。<br/>
+3. 从投资者行为、流动性波动、政策预期、盈利预期、技术特点等多角度进行A股整体走势策略分析，并且提供具体可行的投资策略报告书；<br/>
+4、定期撰写投资分析报告以及投资策略报告；<br/>
+<span>任职要求：</span><br/>
+1.重点大学金融、经济本科或者相关专业本科（211或者958 院校），或者金融专业硕士以上学历； <br/>
+2. 具有5年以上证券研究或者3年以上证券资产管理工作经验, 在基金、证券公司有过相关工作经历，并且具有突出过往业绩者优先考虑； <br/>
+3. 具有相关的行业研究背景，能独立完成策略研究工作； <br/>
+4. 具有扎实的金融理论功底和极强的逻辑分析能力； <br/>
+</div>   
+
+
+<div class="joinus-tt">
+   <strong>职位名称：</strong>行业研究员（TMT方向,新能源、环保及其它新兴产业,金融及大消费方向）<br/>
+     <strong>职位类别：</strong>研究支持类<br/>
+     <strong>工作地点：</strong>上海 武汉 广州<br/>
+     <strong>邮箱：</strong>hr@upchina.com    
+ </div>    
+      <div class="joinus-con"> <span>工作职责：</span><br/>
+1.制定、优化、完善相关行业研究框架体系；<br />
+2.收集分析相关行业信息，保证行业投资分析数据的有效性；<br />
+3.分析行业性质、特点及趋势，预判行业长、中、短期发展趋势；<br />
+4. 负责对行业内关键企业核心优势、商业模式、运营管理、财务表现等进行分析和研究；<br />
+5. 就行业和公司撰写专题、深度和点评报告，为上市公司及主题投资的研究提供支持；<br />
+6.综合行业及主题研究成果，以证券市场环境为基础，推荐投资标的并参与资产池的建立及维护。跟踪资产池中的公司业绩，对所属行业或公司出现的重大变化予以及时分析研究，提出投资调整建议。<br />
+7. 将研究成果在公司内外进行培训推广。<br />
+<span>任职要求：</span><br/>
+1. 重点高校硕士及以上学历，有互联网等行业专业背景或从业经验，条件特别优秀者可放宽至本科学历；<br />
+2. 对市场有独特的敏感度。对上述行业有很强的逻辑推理分析能力；<br />
+3、对证券投资分析有深刻理解，具有深厚的股票分析理论知识，熟练掌握行业和企业管理分析知识、熟练掌握财务会计知识和会计报表的分析方法；<br />
+4. 有一定的研究基础，能根据要求出具研究报告；文笔简介清晰；<br />
+</div>    
+
+
+
+
+ <div class="joinus-tt">
+   <strong>职位名称：</strong>证券分析师（主题投资）<br/>
+     <strong>职位类别：</strong>研究支持类<br/>
+     <strong>工作地点：</strong>上海 武汉 广州<br/>
+     <strong>邮箱：</strong>hr@upchina.com    
+ </div>    
+      <div class="joinus-con"> <span>工作职责：</span><br/>
+1.对企业（含非上市公司）公开信息进行事件系统性研究，并撰写报告；<br/>
+2.敏锐捕捉政策变动、突发事件（自然灾害、重大疫情、军事冲突）、商业界的重大变化（并购重组）等发生、演变的过程及趋势，并给出对策；<br/>
+3.持续追踪全球范围内对中国资本市场有影响力的新技术，新商业模式，新应用，发掘新的投资模式和机会，并形成系统性研究框架；<br/>
+4.综合行业及主题研究成果，以证券市场环境为基础，推荐投资标的并参与资产池的建立及维护。<br/>
+5.将研究成果在公司内外进行培训推广。<br/>
+<span>任职要求：</span><br/>
+1.硕士以上学历，专业不限；对投资有偏执的热爱，英语阅读能力良好者优先考虑<br/>
+2.具有阅读偏好，对政治、文史哲、心理、管理、刑侦等内容广泛涉猎；<br/>
+3.逻辑推理能力突出，富有想象力，情商高；<br/>
+4.有一定的研究基础，能根据要求出具研究报告；文笔简介清晰；<br/>
+</div>   
+
+
+
+
+ <div class="joinus-tt">
+   <strong>职位名称：</strong>期货研究员<br/>
+     <strong>职位类别：</strong>研究支持类<br/>
+     <strong>工作地点：</strong>上海 武汉 广州<br/>
+     <strong>邮箱：</strong>hr@upchina.com    
+ </div>    
+      <div class="joinus-con"> <span>工作职责：</span><br/>
+1.制定、优化、完善相关品种（贵金属为主）研究框架体系；<br/>
+2.跟踪和研究全球及中国市场金属、能源化工及农产品状况；搜集宏观经济信息、行业供求信息和其他影响商品走势的信息并评估影响，掘期货市场投资机会,并撰写相关研究分析报告；<br/>
+3.为业务部门提供相关期现货的讲座、培训等支持工作；<br/>
+3.定期完成外汇、金属、能源等领域的《经济研究报告》，协助投研团队对重点投资品种进行研究；<br/>
+<span>任职要求：</span><br/>
+1.重点大学硕士以上学历，经济金融相关专业，或者数学类专业有相关经济背景；<br/>
+2.有良好的英语水平, 能够独立阅读理解并分析各类有关报告, 数据, 对影响市场的信息作出准确判断；<br/>
+3.具有期货、证券研究所或其他研究咨询机构从业经历；对商品期货、现货行业有较深刻的认识，能把握行业发展的发展趋势者优先考虑；<br/>
+4.对行业产业链有较深理解，掌握期货理论知识与各种分析工具，具有对期货市场较深刻的认识和准确的判断能力，具有扎实的理论水平，熟练掌握宏微观基本面分析方法，有较强的逻辑思考和分析能力；<br/>
+5.具有良好的沟通能力，有较强的团队合作精神，工作富有主动性；<br/>
+</div>   
+
+
+<div class="joinus-tt">
+   <strong>职位名称：</strong>高级产品经理<br>
+     <strong>职位类别：</strong>运营支持类<br>
+     <strong>工作地点：</strong>上海<br>
+     <strong>邮箱：</strong>hr@upchina.com    
+ </div>
+ 
+ <div class="joinus-con"> <span>工作职责：</span><br>
+1、不断丰富公司现有的安全投资理念与方法体系，研发、设计、创新符合中国证券市场的安全投资决策型产品，提出相应的产品设计方案，推动安全投资决策方法的创新发展；<br>
+2、制定和完善产品研发、设计等管理办法和流程,保障产品稳健运行；<br>
+3、跟踪所研发产品后续情况，建立所涉及产品领域的可持续发展模式；<br>
+4、获取产品外部反馈，跟踪了解市场和业界产品动态；<br>
+5、负责海外及新兴市场业务研究，发掘新兴市场和海外市场业务机会，进行新兴市场和海外市场业务品种创新。<br>
+<span>任职要求：</span><br>
+1、金融类/经济类/法律类等相关专业全日制大学本科及以上学历；<br>
+2、具有证券公司投资银行部或研究所、信托公司、商业银行产品部或公司业务部门、会计师事务所、股权投资机构、海外投资基金、对冲基金、地产投资领域或其他直接投资公司等金融机构五年以上业务工作经历、三年以上金融产品研发设计工作经验者优先；<br>
+3、具备系统的价值投资理念，熟悉投资银行、证券研究、股权投资、另类投资、金融产品创新、国际贸易融资、海外投资等其中一个领域，具有丰富业务经验者优先；<br>
+4、熟悉国家经济、金融政策和法律法规，具备金融产品、金融投资理论和实践经验;<br>
+5、具有较强的分析研究能力、学习能力和语言文字表达能力，具备良好的沟通协调能力和团队合作意识，具有较强的创新意识，对商业银行产品有一定程度的了解;<br>
+6、具备良好的职业道德，以往的工作经历中无不良记录。
+</div>
+
+
+    </div>
+    <!--联系我们-->
+    <div class="about-txt" id="about-txt-7" style="display:none;">
+     <div class="m-brdnav"><span>联系我们</span>
+        <p><a href="/">首页</a> > <a href="#">关于我们</a> > 联系我们</p>
+      </div>
+    <div class="pinpai-top">上海金汇信息系统有限公司 </div>
+    <div class="contactus-con">公司地址：上海市浦东新区陆家嘴金融贸易区东方路989号中达广场7楼<br/> 
+邮政编码：200122<br/>
+企业邮箱：service@upchina.com<br/><br/>
+<img src="http://img.upchina.com/upchinav2/uptzgw/contactus_33.jpg" />
+
+</div>
+    </div>
+  </div>
+</div>
+<!--底部-->
+ 
+<!--底部-->
+<!--#include virtual="/footer.shtml"-->
+ 
+
+ 
+</body>
+</html>

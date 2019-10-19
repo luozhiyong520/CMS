@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <base target="_blank" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="http://js.upchina.com/sasweb/actuals/css/pxcss.css" media="all"></link>
+</head>
+
+<body>
+  <div class="wrap">
+	<#uptag tagtype="02" clsid="005009" id="data005009" viewedit="1" var="d"> ${d.Content}<#/uptag>
+    <div class="main">
+    	<div class="clear">
+    		<div class="left">
+            	<div class="zList"> ${Content}</div>
+            </div>
+        	<div class="right">
+            	<h3 class="title">经典视频回顾</h3>
+                <div class="right_list">
+                	<div class="list_inside">
+                        <ul class="tabUl clear" id="tabul">
+                          <li>日期</li>
+                    	  <li style="border:none;">视频名称</li>
+                        </ul>
+                        <ul class="date_scroll clear" id="ul">
+                         <#uptag tagtype="01" clsid="001020" pagesize="1" pagecount="1" viewedit="1" id="dataId001020"  var="d" index="i">                        
+                            <li><span> ${cdatestring(d.CreatedTime,"yy-MM-dd")}</span><a href="${d.Url}" title="${d.Title}">${substr(d.Title,60)}</a></li>
+                        <#/uptag>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video clear">
+        	<h3 class="title">更多视频回顾</h3>
+                <div class="marquee">
+                    <a href="javascript:;" class="mq_prve"></a>
+                    <a href="javascript:;" class="mq_next"></a>
+                    <div class="marqueeHide">
+                     <#uptag tagtype="02" clsid="005006" id="data005006" viewedit="1" var="d"> ${d.Content}<#/uptag>
+                    </div>
+                </div>     
+	   </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+      window.onload = function () {
+          var ul = document.getElementById("ul"), li = ul.getElementsByTagName("li"), i = 0;
+          for (i = 0; i < li.length; i++) {
+              if (i % 2 == 1) {
+                  li[i].style.backgroundColor = "#eee";
+              }
+              li[i].onmouseover = function () { this.className += " black_border" }
+              li[i].onmouseout = function () { this.className = this.className.replace("black_border", "") }
+          }
+      }
+</script>
+<script type="text/javascript" src="../../../../../upWeb/html/branches/upchina_v1.1/js/upchinav2/js/jquery-1.4.2.js"></script>
+<script src="../../../../../upWeb/html/branches/upchina_v1.1/js/upchinav2/js/scroll.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.marqueeHide').jCarouselLite({
+            btnPrev: '.mq_prve',
+            btnNext: '.mq_next',
+            speed: 1000,
+            visible: 5
+        });
+    })
+</script>
+</body>
+</html>

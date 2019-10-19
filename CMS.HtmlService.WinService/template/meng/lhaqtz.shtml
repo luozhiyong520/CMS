@@ -1,0 +1,3 @@
+﻿<#uptag tagtype="01" clsid="010001" pagesize="100" pagecount="1" viewedit="1" id="dataId010001"  var="d" index="i">                        
+<li><span><a href="/news${d.Url}" title="${d.Title}">${substr(d.Title,38)}</a></span></li>
+<#/uptag>

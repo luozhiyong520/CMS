@@ -1,0 +1,8 @@
+2014-05-12 14:17:45,537 [10] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-05-12 14:17:45,644 [10] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-05-12 14:17:45,656 [10] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-05-12 14:18:04,848 [13] INFO  log [(null)] - 方法名：GetTemplagePreview，预览模块Id：30，模板名称：UP早知道，模板路径：/luo/upzzd.shtml成功
+2014-05-12 14:19:20,326 [9] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-05-12 14:19:20,350 [9] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-05-12 14:19:20,357 [9] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-05-12 14:19:27,414 [10] INFO  log [(null)] - 方法名：GetTemplagePreview，预览模块Id：30，模板名称：UP早知道，模板路径：/luo/upzzd.shtml成功

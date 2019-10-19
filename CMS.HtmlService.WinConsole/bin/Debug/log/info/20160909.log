@@ -1,0 +1,20 @@
+2016-09-09 13:15:27,608 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2016-09-09 13:15:27,635 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2016-09-09 13:15:27,686 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2016-09-09 13:15:40,103 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2016-09-09 13:15:40,117 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2016-09-09 13:15:40,143 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2016-09-09 13:39:18,128 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2016-09-09 13:39:18,141 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2016-09-09 13:39:18,148 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2016-09-09 14:04:12,232 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：177，模板名称：首页，生成文件路径：E:\comsite\sasweb\news/www.pinyifu.com /index.html成功！
+2016-09-09 14:09:35,006 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2016-09-09 14:09:35,020 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2016-09-09 14:09:35,025 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2016-09-09 14:09:52,860 [5] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：177，模板名称：首页，生成文件路径：E:\comsite\sasweb\news/www.pinyifu.com /index.html成功！
+2016-09-09 16:43:46,376 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2016-09-09 16:43:46,392 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2016-09-09 16:43:46,392 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2016-09-09 16:44:30,637 [3] INFO  log [(null)] - 1251
+2016-09-09 16:44:31,101 [3] INFO  log [(null)] - E:\comsite\sasweb\news//bbb/201608/26141119593.html
+2016-09-09 16:44:31,147 [3] INFO  log [(null)] - 方法名：CreateSingleNews，新增新闻，生成NewsId:1251文件成功，文件路径:/bbb/201608/26141119593.html

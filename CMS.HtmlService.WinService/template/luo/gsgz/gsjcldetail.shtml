@@ -1,0 +1,48 @@
+﻿ 
+  <div class="wrap_div">
+                <div class="news_title">
+                    <h1 id="topicTitle"></h1>
+                </div>
+                <div class="date_and_source">
+                    <span class="source"></span>
+                    <span class="update_date" id="update_time"></span>
+                     <span class="update_date" id="source">来源：UP金融研究所</span>
+                </div>
+                <div class="news_title" style="width:85%">
+                    <img alt="" src="http://img.upchina.com/upimg/201407/16173624449.jpg" width="100%" style=" height: 175px;"> 
+                </div>
+                <#uptag tagtype="01" clsid="005027" pagesize="10" pagecount="1" viewedit="1" id="dataId005027"  var="d" index="i" islast="flag"  begindate="mdate">
+                <div class="each_news">
+                 <div class="each_news_til">
+                     <#if test="${isnotempty(filterhtml(d.Prefix))}">
+                        <b>【${d.Prefix}】</b> ${d.Title}
+                    <#else>
+                        ${d.Title}
+
+                      <#/if>
+                    </div>
+                      <div class="divide_line">
+                        
+                    </div>
+                    <!--<span class="dy_btn">
+                        订阅
+                    </span>
+                    <span class="sj_btn">
+                        
+                    </span>
+                    <span class="yj_btn">
+                        
+                    </span>-->
+
+                    <!--<div style="text-align:center;">
+                        <img src="./images/person.jpg" />
+                    </div>-->
+                    <div class="each_news_ct">
+                         ${d.Content}
+                    </div>
+                </div>
+                <#/uptag>
+            </div>
+
+ 
+ 

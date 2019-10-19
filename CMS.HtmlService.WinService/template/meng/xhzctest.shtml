@@ -1,0 +1,3 @@
+﻿<#uptag tagtype="01" clsid="001050" pagesize="100" pagecount="1" viewedit="1" id="dataId001050"  var="d" index="i">                        
+<li><span class="date">${cdatestring(d.CreatedTime,"dd:mm")}</span><a href="/news${d.Url}"><span class="ti">[现货]</span>${substr(d.Title,38)}</a></li>
+<#/uptag>

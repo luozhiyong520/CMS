@@ -1,0 +1,22 @@
+2013-09-10 16:14:01,646 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-10 16:14:01,679 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-10 16:14:01,683 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-10 16:14:26,839 [3] DEBUG log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，模板路径：/luo/upindex.shtml失败！
+2013-09-10 16:14:26,911 [3] DEBUG log [(null)] - System.IO.DirectoryNotFoundException: 未能找到路径“E:\up项目2\CMS2\code\branches\v1.0\CMS.HtmlService.WinService\template\luo\upindex.shtml”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   在 System.IO.StreamReader..ctor(String path)
+   在 CMS.Template.Complex.UserTemplate.FromFile(String name, String filename) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\UserTemplate.cs:行号 45
+   在 CMS.Template.Complex.TemplateManager.FromFile(String filename, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Template\Complex\TemplateManager.cs:行号 60
+   在 CMS.HtmlService.HtmlEngine.createManager(PageTemplate pageTemplate, Boolean isPreview) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 212
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 112
+2013-09-10 16:16:42,718 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-10 16:16:42,736 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-10 16:16:42,740 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-10 16:16:49,322 [6] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-10 16:17:55,010 [6] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-10 16:42:05,162 [6] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-10 16:43:11,965 [6] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！
+2013-09-10 16:45:32,530 [6] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：82，模板名称：up首页，生成文件路径：E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.Web\html\/index.html成功！

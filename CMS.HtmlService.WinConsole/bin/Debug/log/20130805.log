@@ -1,0 +1,5 @@
+2013-08-05 10:17:34,834 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-08-05 10:17:34,860 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-08-05 10:17:34,877 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-08-05 10:17:54,465 [8] INFO  log [(null)] - 方法名：CreateSingleNews，修改新闻，生成NewsId:392文件成功，文件路径:/qwfx/201308/01170510780.html
+2013-08-05 10:18:52,588 [9] INFO  log [(null)] - 方法名：CreateSingleNews，修改新闻，生成NewsId:392文件成功，文件路径:/qwfx/201308/01170510780.html

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>课程计划</title>
+    <link href="/themes/default/styles/manage.css" type="text/css" rel="stylesheet"/>
+    <link type="text/css" rel="Stylesheet" href="/themes/default/scripts/jquery-easyui-1.3/themes/default/easyui.css" />
+    <link type="text/css" rel="Stylesheet" href="/themes/default/scripts/jquery-easyui-1.3/themes/icon.css" />
+    <script type="text/javascript" src="/themes/default/scripts/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.dragsort-0.4.min.js"></script>
+    <script type="text/javascript" src="/themes/default/scripts/jquery-easyui-1.3/jquery.easyui.min.js"></script> 
+<script type="text/javascript" src="/themes/default/scripts/jquery-easyui-1.2/easyui-lang-zh_CN.js"></script> 
+
+    <script src="index.js" type="text/javascript"></script>
+    <style type="text/css">
+        .cz_xx a { line-height: 24px; text-align: center; padding-left: 5px; }
+        .c_table tr { height: 30px; }
+        .c_table td { text-align: center }
+        .c_table th { border-top: 1px solid #ccc; }
+        
+        .selTime div { line-height: 25px; font-size: 12px; }
+        .selTime ul { width: 230px; float: left; margin: 0; padding: 0; }
+        .selTime li { width: 20px; height: 20px; line-height: 20px; margin-right: 1px; margin-bottom: 1px; text-align: center; font-size: 12px; color: #090808; float: left; list-style: none; border: 1px dotted #ccc; background: #F7E1E1; cursor: pointer; }
+        .selTime li.selthisTime{ color: #fff;background: #AC9999;}
+        
+        .mybg{background-color: #F0F0F0;}
+        .selbg{background-color: #D4EEF7;}
+        
+        .cpOrder{display:none;margin: 40px;}
+        .cpOrder li{font-size: 14px;padding: 4px 10px; font-weight: bold;color: #E05600;}
+        .cpOrder div{padding: 30px 0 0 40px;}
+    </style>
+</head>
+<body>
+<div class="cz_bk" style="overflow: hidden;*zoom: 1;">
+    <div class="lm_div">管理选项</div>
+    <div class="cz_xx" id="versionList" style="float:left; margin-left:30px">
+    </div>
+    <div class="cz_xx" style="float:left;">
+        <a href="javascript:void(0)" onclick="AddVersion()" class='easyui-linkbutton l-btn l-btn-plain' plain="true" iconCls='icon-add' >添加版本</a>
+    </div>
+    <div class="cz_xx" style="float:left;">
+        <a href="javascript:void(0)" onclick="SetProgramOrder()" class='easyui-linkbutton l-btn l-btn-plain' plain="true" iconCls='icon-edit' >课程排序</a>
+    </div>
+</div>
+<div id="cpOrder" class="cpOrder"></div>
+<div id="cpList"></div>
+<div style="padding: 150px 0;"></div>
+</body>
+</html>

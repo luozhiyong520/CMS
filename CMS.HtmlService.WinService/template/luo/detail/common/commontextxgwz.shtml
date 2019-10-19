@@ -1,0 +1,53 @@
+﻿   <div class="tJiHua">
+      <div class="use_help with_g">
+        <div class="title3 title_ctn"> <a href="http://www.upchina.com/chanpin/help.shtml">相关文章</a> </div>
+        <div class="w_list2 clearfix">
+          <ul>        
+        <#UPTAG tagtype="01" clsid="001013" pagesize="10" pagecount="1" viewedit="1" id="dataId001013"  var="d" index="i">                        
+          <li><b>[今日头条]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG>
+        
+         <#UPTAG tagtype="01" clsid="001014" pagesize="10" pagecount="1" viewedit="1" id="dataId001014"  var="d" index="i">                        
+          <li><b>[市场热评]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG>
+              
+        <#UPTAG tagtype="01" clsid="001015" pagesize="10" pagecount="1" viewedit="1" id="dataId001015"  var="d" index="i">                        
+          <li><b>[每日必读]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG>
+        
+        
+        <#UPTAG tagtype="01" clsid="001016" pagesize="10" pagecount="1" viewedit="1" id="dataId001016"  var="d" index="i">                        
+          <li><b>[安全决策]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG>        
+        
+       <#UPTAG tagtype="01" clsid="001010" pagesize="10" pagecount="1" viewedit="1" id="dataId001010"  var="d" index="i">                        
+          <li><b>[量化分析]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG>  
+        </ul>
+        
+        <ul>
+       <#UPTAG tagtype="01" clsid="001006" pagesize="10" pagecount="1" viewedit="1" id="dataId001006"  var="d" index="i">                        
+          <li><b>[大盘走势]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG>       
+        
+       <#UPTAG tagtype="01" clsid="001017" pagesize="10" pagecount="1" viewedit="1" id="dataId001017"  var="d" index="i">                        
+          <li><b>[行业新闻]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG>  
+        
+        <#UPTAG tagtype="01" clsid="001008" pagesize="10" pagecount="1" viewedit="1" id="dataId001008"  var="d" index="i">                        
+          <li><b>[上市公司]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG> 
+        
+       <#UPTAG tagtype="01" clsid="001018" pagesize="10" pagecount="1" viewedit="1" id="dataId001018"  var="d" index="i">                        
+          <li><b>[精品教程]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG> 
+        
+         <#UPTAG tagtype="01" clsid="001019" pagesize="10" pagecount="1" viewedit="1" id="dataId001019"  var="d" index="i">                        
+          <li><b>[九宫视点]</b><a href="${d.url}" title="${d.title}">${substr(d.Title,32)}</a></li>
+       <#/UPTAG> 
+        
+        
+          </ul>
+        </div>
+      </div>
+    </div>

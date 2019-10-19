@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CMS.Template.Complex.IncludeTagHandler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.25" Y="14" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQCAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Complex\IncludeTagHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CMS.Template.Complex.StaticTypeReference" Collapsed="true">
+    <Position X="15.75" Y="14" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Complex\StaticTypeReference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Complex.TemplateManager" Collapsed="true">
+    <Position X="15.75" Y="15" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>CBAUEGgAICgOJnogG4QwMuYoUAuBEU0lgcCKISAkgaA=</HashCode>
+      <FileName>Complex\TemplateManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Complex.UserTemplate" Collapsed="true">
+    <Position X="15.75" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EEAAAAAAAEAAAAAAEAASQAQAAAAAIAAEAACAAAAAACI=</HashCode>
+      <FileName>Complex\UserTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Complex.Util" Collapsed="true">
+    <Position X="17.5" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAACAAAAAAAIAAAAAgAAAAAAAAAIAAA=</HashCode>
+      <FileName>Complex\Util.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Complex.VariableScope" Collapsed="true">
+    <Position X="12.25" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAACAAAQCAAAAAAIAAAAAAAAABAAAA=</HashCode>
+      <FileName>Complex\VariableScope.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Except.ParseException" Collapsed="true">
+    <Position X="14" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAIAEAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Except\ParseException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Except.TemplateRuntimeException" Collapsed="true">
+    <Position X="12.25" Y="16" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Except\TemplateRuntimeException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Lexer.TemplateLexer" Collapsed="true">
+    <Position X="14" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgmAAAkYBAEgBAAAAAAAAIAAQAAAASACBQgSECAAABA=</HashCode>
+      <FileName>Lexer\TemplateLexer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Lexer.Token" Collapsed="true">
+    <Position X="14" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAIAAAAAAIAEAABAACAAAAAABAgA=</HashCode>
+      <FileName>Lexer\Token.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.AST.ArrayAccess" Collapsed="true">
+    <Position X="4.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAAEAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Parser\AST\ArrayAccess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.AST.BinaryExpression" Collapsed="true">
+    <Position X="11.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAQIAQAAIAA=</HashCode>
+      <FileName>Parser\AST\BinaryExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.AST.DoubleLiteral" Collapsed="true">
+    <Position X="9.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Parser\AST\DoubleLiteral.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.AST.Element" Collapsed="true">
+    <Position X="14.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAIAEAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Parser\AST\Element.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.AST.Expression" Collapsed="true">
+    <Position X="11.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parser\AST\Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.AST.FCall" Collapsed="true">
+    <Position X="2.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAQAAAAAACAAAAAAAAAEAAA=</HashCode>
+      <FileName>Parser\AST\FCall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.AST.FieldAccess" Collapsed="true">
+    <Position X="6" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAgAA=</HashCode>
+      <FileName>Parser\AST\FieldAccess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.AST.IntLiteral" Collapsed="true">
+    <Position X="8.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Parser\AST\IntLiteral.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.AST.MethodCall" Collapsed="true">
+    <Position X="12.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAQAAAAAQAAAAAQAIAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Parser\AST\MethodCall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.AST.Name" Collapsed="true">
+    <Position X="14" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Parser\AST\Name.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.AST.StringExpression" Collapsed="true">
+    <Position X="1" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAQAAAAAAAAAAACAAAAAAAIAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Parser\AST\StringExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.AST.StringLiteral" Collapsed="true">
+    <Position X="3.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Parser\AST\StringLiteral.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.AST.Tag" Collapsed="true">
+    <Position X="17.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EIAAQAAAAACACAAAAAAAAAQYCAEAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parser\AST\Tag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.AST.TagAttribute" Collapsed="true">
+    <Position X="17.5" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAEAAAAAAAAQAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Parser\AST\TagAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.AST.TagClose" Collapsed="true">
+    <Position X="19.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parser\AST\TagClose.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.AST.TagIf" Collapsed="true">
+    <Position X="17.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAEAAAAAAAIAAAAAACAAAAAA=</HashCode>
+      <FileName>Parser\AST\TagIf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.AST.Text" Collapsed="true">
+    <Position X="15.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parser\AST\Text.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.TagParser" Collapsed="true">
+    <Position X="12.25" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAACBA=</HashCode>
+      <FileName>Parser\TagParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMS.Template.Parser.TemplateParser" Collapsed="true">
+    <Position X="17.5" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACgAAAKAAAIABASAACAAACAgAAAAQAARAAAQQAAAhA=</HashCode>
+      <FileName>Parser\TemplateParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CMS.Template.Complex.ITagHandler" Collapsed="true">
+    <Position X="12.25" Y="18.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQCAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Complex\ITagHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CMS.Template.Complex.ITemplateHandler" Collapsed="true">
+    <Position X="14" Y="18.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Complex\ITemplateHandler.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="CMS.Template.Enum.TokenKind" Collapsed="true">
+    <Position X="12.25" Y="19.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEBBAMBBAAhCgijgAAAAIACAAC0gRAAAAAAAAAAEI=</HashCode>
+      <FileName>Enum\TokenKind.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="CMS.Template.Complex.TemplateFunction" Collapsed="true">
+    <Position X="12.25" Y="20.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Complex\TemplateManager.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

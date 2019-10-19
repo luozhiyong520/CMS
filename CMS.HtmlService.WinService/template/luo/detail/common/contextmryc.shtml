@@ -1,0 +1,8 @@
+﻿<div class="upTxtSearch">
+        <p>
+          <label> 每日一测:</label>
+          <input type="text" value="" size="8" class="upTtext">
+          <input type="text" value="" size="12" class="upTtext">
+          <input type="button" value="测股" class="btn" />
+        </p>
+      </div>

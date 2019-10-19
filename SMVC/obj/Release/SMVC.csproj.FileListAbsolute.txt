@@ -1,0 +1,8 @@
+E:\UP\mycms\v1.0\SMVC\bin\Release\SMVC.dll
+E:\UP\mycms\v1.0\SMVC\bin\Release\SMVC.pdb
+E:\UP\mycms\v1.0\SMVC\obj\Release\SMVC.dll
+E:\UP\mycms\v1.0\SMVC\obj\Release\SMVC.pdb
+E:\UP\mycms\v2.0\SMVC\bin\Release\SMVC.dll
+E:\UP\mycms\v2.0\SMVC\bin\Release\SMVC.pdb
+E:\UP\mycms\v2.0\SMVC\obj\Release\SMVC.dll
+E:\UP\mycms\v2.0\SMVC\obj\Release\SMVC.pdb

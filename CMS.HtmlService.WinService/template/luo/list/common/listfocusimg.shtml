@@ -1,0 +1,20 @@
+
+	<div id="qhimg">
+    <a href="#"  ><img src="http://img.upchina.com/upchinav2/images/miniBanner_01.jpg"/></a>
+	<a href="#"  style="display:none;"><img src="http://img.upchina.com/detail///2012/08/20120813160314087.jpg"width="665" height="229"/></a>
+	<a href="#"  style="display:none;"><img src="http://img.upchina.com/detail///2012/08/20120813160326103.jpg"width="665" height="229"/></a>
+	<a href="#"  style="display:none;"><img src="http://img.upchina.com/detail///2012/08/20120813160308085.jpg"width="665" height="229" /></a>
+	<a href="#"  style="display:none;"><img src="http://img.upchina.com/detail///2012/08/20120813160126847.jpg"width="665" height="229" /></a>
+  </div>
+  <div id="dh">
+    <a class="module_3">安全赢家炒股平台</a>
+    <a class="module_1">独创操盘九宫图</a>
+    <a class="module_2">看盘决策大不同</a>
+    <a class="module_4">商务部唯一权威发布</a>
+    <a class="module_5">经典操盘线完美越狱</a>
+  </div>
+			  <script>
+			   jQuery(function(){
+				jQuery("#dh").hoverdom({menuDiv:"qhimg",autoTime:"4000"});
+			  });
+			  </script>

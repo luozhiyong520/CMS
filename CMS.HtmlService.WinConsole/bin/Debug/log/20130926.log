@@ -1,0 +1,12 @@
+2013-09-26 12:29:41,043 [8] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-26 12:29:41,079 [8] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-26 12:29:41,089 [8] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-26 12:29:57,351 [12] DEBUG log [(null)] - 方法名：CreateSingleNews，生成NewsId:576失败
+2013-09-26 12:29:57,353 [12] DEBUG log [(null)] - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CMS.HtmlService.HtmlEngine.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 45
+2013-09-26 12:35:29,516 [10] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2013-09-26 12:35:29,546 [10] INFO  log [(null)] - 己成功启动FileReceive服务。
+2013-09-26 12:35:29,557 [10] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2013-09-26 12:36:01,467 [11] DEBUG log [(null)] - 方法名：CreateSingleNews，生成NewsId:575失败
+2013-09-26 12:36:01,469 [11] DEBUG log [(null)] - System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CMS.HtmlService.HtmlEngine.CreateSingleNews(Int32 newsId, String operateType) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 45

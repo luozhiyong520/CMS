@@ -1,0 +1,59 @@
+【异常时间】：2013-11-27 16:00:39,422 [3] 
+【异常级别】：ERROR 
+【异常类型】：NotSupportedException
+【异常堆栈】：   在 System.Security.Util.StringExpressionSet.CanonicalizePath(String path, Boolean needFullPath)
+   在 System.Security.Util.StringExpressionSet.CreateListFromExpressions(String[] str, Boolean needFullPath)
+   在 System.Security.Permissions.FileIOPermission.AddPathList(FileIOPermissionAccess access, AccessControlActions control, String[] pathListOrig, Boolean checkForDuplicates, Boolean needFullPath, Boolean copyPathList)
+   在 System.Security.Permissions.FileIOPermission..ctor(FileIOPermissionAccess access, AccessControlActions control, String[] pathList, Boolean checkForDuplicates, Boolean needFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   在 Common.FileHelper.WriteFileWithoutBOM(String fullPath, String content) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 306
+   在 Common.FileHelper.WriteFile(String fullPath, String content, String encoding) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\Common\Helper\FileHelper.cs:行号 283
+   在 CMS.HtmlService.HtmlEngine.CreateTemplatePage(Int32 templateId, Dictionary`2 paramDic) 位置 E:\comsite\svn\dev456\CMS\code\branches\v1.0\CMS.HTMLService\HtmlEngine.cs:行号 151
+【异常信息】：不支持给定路径的格式。
+【附加信息】:方法名：CreateTemplatePage，生成模板Id：85，模板名称：投资日历模版，模板路径：/luo/uptzrl.shtml失败！
+------------------------------------
+【异常时间】：2013-11-27 16:01:20,579 [3] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-27 16:11:14,751 [3] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-27 16:11:41,099 [3] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-27 16:44:14,464 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-27 16:44:23,365 [5] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-27 16:48:59,098 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-27 16:49:06,415 [4] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-27 17:17:14,964 [3] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-27 17:17:21,391 [3] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-27 17:19:08,956 [3] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------
+【异常时间】：2013-11-27 17:19:11,980 [3] 
+【异常级别】：ERROR 
+模板不存在
+------------------------------------

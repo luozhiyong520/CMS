@@ -1,0 +1,4 @@
+2014-07-07 10:38:47,388 [1] INFO  log [(null)] - 己成功启动HtmlEngine服务。
+2014-07-07 10:38:47,465 [1] INFO  log [(null)] - 己成功启动FileReceive服务。
+2014-07-07 10:38:47,471 [1] INFO  log [(null)] - 己成功启动SsoOutWindow服务。
+2014-07-07 10:41:13,637 [6] INFO  log [(null)] - 方法名：CreateTemplatePage，生成模板Id：167，模板名称：高手金策略，生成文件路径：E:\comsite\sasweb\news/gsgz/gsjcl.html成功！

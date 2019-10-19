@@ -1,0 +1,34 @@
+【异常时间】：2016-11-14 19:15:36,991 [8] 
+【异常级别】：ERROR 
+【异常类型】：TargetInvocationException
+【异常堆栈】：   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SMVC.ActionExecutor.ExecuteActionInternal(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 52
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 23
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\Pipeline\ActionHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：调用的目标发生了异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/controls/mainmenu.aspx?_=1479122114061
+------------------------------------
+【异常时间】：2016-11-14 19:15:41,016 [8] 
+【异常级别】：ERROR 
+【异常类型】：TargetInvocationException
+【异常堆栈】：   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   在 SMVC.ActionExecutor.ExecuteActionInternal(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 52
+   在 SMVC.ActionExecutor.ExecuteAction(HttpContext context, InvokeInfo invoke) 位置 E:\UP\mycms\v2.0\SMVC\MVC\ActionExecutor.cs:行号 23
+   在 SMVC.ActionHandler.ProcessRequest(HttpContext context) 位置 E:\UP\mycms\v2.0\SMVC\Pipeline\ActionHandler.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+【异常信息】：调用的目标发生了异常。
+【附加信息】:
+客户端IP：::1
+错误页面：http://localhost:29406/AjaxChannel/GetChannelNodeNews.cspx?typeID=1&_=1479122141013
+------------------------------------

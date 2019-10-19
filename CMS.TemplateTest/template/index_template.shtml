@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <base target="_blank" />
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk"/>
+    <!-- 首页用css start -->
+     <#if test="${equals(maketype,0)}">
+    <#uptag tagtype="05" infourl="http://www.templatetest.com/include/web/v2012/list/common/contextcss.shtml"/>   
+      <#else>
+        <!--#include virtual="/include/web/v2012/list/common/contextcss.shtml"-->
+    <#/if>
+
+    <!-- 首页用css end -->
+    <!--通用js start -->
+    <#if test="${equals(maketype,0)}">
+    <#uptag tagtype="05" infourl="http://www.templatetest.com/include/common/v2012/commonjs.shtml"/>   
+      <#else>
+        <!--#include virtual="/include/common/v2012/commonjs.shtml"-->
+    <#/if> 
+    <!--通用js end -->
+    <meta name="keywords" content="UP投资,UP安全赢家炒股平台,安全赢家炒股平台,价值投资,安全投资"/>
+    <meta name="description" content="欢迎访问UP投资网站,“UP投资（www.upchina.com）”是以价值投资为根基，以保护中小投资者利益为宗旨，积极响应监管层号召坚持“长期投资、理性投资、价值投资”，开创并全面倡导安全投资理念与方法论体系。“安全赢家炒股平台”是“UP投资”全力打造的一款融贯全新安全投资理念的投资工具。
+"/>
+    <title>UP投资网-安全投资理念开创者</title>
+</head>
+<body>
+    <!--mininav-->
+    <!-- 顶部  登录 收藏 设为首页  start-->
+    <#if test="${equals(maketype,0)}">
+    <#uptag tagtype="05" infourl="http://www.templatetest.com/include/common/v2012/commontop.shtml"/>   
+      <#else>
+            <!--#include virtual="/include/common/v2012/commontop.shtml"-->
+    <#/if> 
+    <!-- 顶部  登录 收藏 设为首页  end-->
+    <!--\mininav-->
+    <div class="hr_6">
+    </div>
+    <!-- 网站导航条 start -->
+    <#if test="${equals(maketype,0)}">
+    <#uptag tagtype="05" infourl="http://www.templatetest.com/include/common/v2012/commonnav.shtml"/>   
+      <#else>
+          <!--#include virtual="/include/common/v2012/commonnav.shtml"-->
+    <#/if> 
+   
+    <!-- 网站导航条 end -->
+    <div class="hr_10">
+    </div>
+    <div id="banner" class="Area">
+        <!--首页焦点图-2012-v1 start-->
+       
+        <!--首页焦点图-2012-v1 end-->
+    </div>
+    <!--首页UP舆情-2012-v1 start-->
+    <#UPTAG tagtype="02" clsid="002001" id="data002001" viewedit="1" var="d"> ${d.Content}
+    <#/UPTAG>
+    <!--首页UP舆情-2012-v1 end-->
+    <div class="hr_10">
+    </div>
+    <div class="a_Area Area">
+        <!--首页大盘风向标-2012-v1 start-->
+        <!--首页大盘风向标-2012-v1 end-->
+        <!--首页UP看盘-2012-v1 start-->
+        <!--首页UP看盘-2012-v1 end-->
+        <!--首页广告1-2012-v1 start-->
+        <!--首页广告1-2012-v1 end-->
+        <!--首页产品动态-2012-v1 start-->
+        <!--首页产品动态-2012-v1 end-->
+    </div>
+    <!--首页UP独家-2012-v1 start-->
+    <!--首页UP独家-2012-v1 end-->
+    <div class="hr_10">
+    </div>
+    <div class="Area">
+        <!--首页UP量化安全左侧，UP安全+估值安全-2012-v1 start-->
+        <!--首页UP量化安全左侧，UP安全投资+估值安全-2012-v1 end-->
+        <!--首页UP安全中栏，UP安全决策+量化分析-2012-v1 start-->
+        <div class="adArea">
+            <div class="txArea">
+                <!--首页UP安全中栏,UP安全决策+量化分析-2012-v1 end-->
+                <div class="hr_6">
+                </div>
+                <!--首页炒股平台-2012-v1 start-->
+                <!--首页炒股平台-2012-v1 end-->
+            </div>
+            <div class="proArea">
+                <!--首页UP安全右侧,实战视频+使用帮助-2012-v start-->
+                <!--首页UP安全右侧,实战视频+使用帮助-2012-v end-->
+                <!--首页精品教程-2012-v1 start-->
+                <!--首页精品教程-2012-v1 end-->
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="hr_10">
+    </div>
+    <!--首页UP安全-2012-v1 start-->
+    <!--首页广告1-2012-v1 start-->
+    <!--首页广告1-2012-v1 end-->
+    <!--首页up安全-2012-v1 start-->
+    <!--首页安全UP-2012-v1 end-->
+    <div class="hr_10">
+    </div>
+    <div class="Area">
+        <div class="resArea">
+            <!--首页商务部授权-2012-v1 start-->
+            <!--首页商务部授权-2012-v1 end-->
+            <div class="hr_6">
+            </div>
+            <!-- 全网站公用文件-股票查询框 start-->
+           
+            <!-- 全网站公用文件-股票查询框 end-->
+            <!--首页行业投资预测-2012-v1 start-->
+            <!--首页行业投资预测-2012-v1 end-->
+        </div>
+        <div class="adArea">
+            <!--首页安全投资万里行中栏-2012-v1 start-->
+            <!--首页安全投资万里行中栏-2012-v1 end-->
+            <!--首页安全投资万里下方滚动图片-2012-v1 start-->
+            <!--首页安全投资万里下方滚动图片-2012-v1 end-->
+        </div>
+    </div>
+    <div class="hr_10">
+    </div>
+    <div class="hban">
+        <!--首页广告2-2012-v1 start-->
+        <!--首页广告2-2012-v1 end-->
+    </div>
+    <div class="hr_10">
+    </div>
+    <div class="Area">
+        <div class="news fn_1">
+            <!--首页大盘走势-2012-v1 start-->
+            <!--首页大盘走势-2012-v1 end-->
+            <div class="hr_6">
+            </div>
+            <div class="xb">
+                <ul>
+                    <!--首页大盘走势的新闻提取-2012-v1 start-->
+                   <#UPTAG tagtype="01" clsid="001" pagesize="10" pagecount="1" viewedit="1" id="dataId007"  var="d" index="i">                        
+                           <li><a href="${d.Url}" title="${d.Title}">${substr(d.Title,60)}</a><span> ${cdatestring(d.CreatedTime,"yy-MM-dd")}</span></li>
+                        <#/UPTAG>
+                    <!--首页大盘走势的新闻提取-2012-v1 end-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--首页个股新闻-2012-v1 start-->
+    <!--首页个股新闻-2012-v1 end-->
+    <div class="hr_6">
+    </div>
+    <div class="xb">
+        <ul>
+            <!--首页个股新闻的新闻提取-2012-v1 start-->
+            <!--首页个股新闻的新闻提取-2012-v1 end-->
+        </ul>
+    </div>
+    </div> </div>
+    <!--首页上市公司-2012-v1 start-->
+    <!--首页上市公司-2012-v1 end-->
+    <div class="hr_6">
+    </div>
+    <div class="xb">
+        <ul>
+            <!--首页上市公司的新闻提取-2012-v1 start-->
+            <!--首页上市公司的新闻提取-2012-v1 end-->
+        </ul>
+    </div>
+    </div> </div> </div>
+    <div class="hr_10">
+    </div>
+    <div class="Area">
+        <div class="yule y_1">
+            <!--漫画财经-2012-v1 start-->
+            <!--漫画财经-2012-v1 end-->
+            <div class="yl_list">
+                <!--漫画财经的新闻-2012-v1 start-->
+                <!--漫画财经的新闻-2012-v1 end-->
+            </div>
+        </div>
+    </div>
+    <div class="yule y_2">
+        <!--美女财经-2012-v1 start-->
+        <!--美女财经-2012-v1 end-->
+        <div class="yl_list">
+            <!--美女财经的新闻-2012-v1 start-->
+            <!--美女财经的新闻-2012-v1 end-->
+        </div>
+    </div>
+    </div>
+    <div class="yule y_3">
+        <!--八卦财经-2012-v1 start-->
+        <!--八卦财经-2012-v1 end-->
+        <div class="yl_list">
+            <!--八卦财经的新闻-2012-v1 start-->
+            <!--八卦财经的新闻-2012-v1 end-->
+        </div>
+    </div>
+    </div> </div>
+    <div class="hr_10">
+    </div>
+    <!-- 尾部 start -->
+    <#if test="${equals(maketype,0)}">
+    <#uptag tagtype="05" infourl="http://www.templatetest.com/include/common/v2012/commonfooter.shtml"/>   
+      <#else>
+           <!--#include virtual="/include/common/v2012/commonfooter.shtml"-->
+    <#/if> 
+    <!-- 尾部 end -->
+   
+ 
+</body>
+</html>
+<!-- update Time : ${curdate}-->
